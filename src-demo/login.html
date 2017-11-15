@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="NtSF">
+<head>
+    <meta charset="UTF-8">
+    <title>太平鸟网页收银</title>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <script>
+        var storage = window.localStorage;
+        var TOKEN = (!!storage.getItem('NXPB_TOKEN'))?storage.getItem('NXPB_TOKEN'):'';
+        if(!!TOKEN){
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body class="log-bg"  ng-controller="Login">
+    <div class="log-wrap">
+        <div class="log-box">
+            <form method="POST" ng-submit="login()">
+            <div class="t-title">
+            </div>
+            <div class="input-box">
+               <input type="text" ng-model="data.username" placeholder="请输入您的帐号">
+               <i><img src="assets/images/user.png"></i>
+            </div>
+            <div class="input-box">
+               <input type="password" ng-model="data.password" placeholder="请输入您的密码">
+               <i><img src="assets/images/password.png"></i>
+            </div>
+            <button ng-disabled="loading" class="sub-btn">
+                登录
+            </button>
+            </form>
+        </div>
+    </div>
+    <#include 'inc.script.html'>
+
+    <script type="text/javascript">
+        document.title = '登陆';
+        $('.nav li.li-homepage').addClass('active');
+    </script>
+
+
+<#include 'inc.bottom.html'>
