@@ -1,10 +1,28 @@
 <!--  head：页面的</head>之前代码 -->
 <!DOCTYPE html>
-<html ng-app="NtSF" ng-cloak="" class="ng-cloak">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<html lang="zh-CN" ng-app="NtSF" ng-cloak="" class="ng-cloak">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>FE</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style.less -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script>
         // var storage = window.localStorage;
         // var TOKEN = (!!storage.getItem('NXPB_TOKEN'))?storage.getItem('NXPB_TOKEN'):'';
@@ -12,45 +30,87 @@
         //     window.location.href = 'login.html';
         // }
     </script>
-</head>
-<body ng-controller="form">
+  </head>
+<body>
 	<!-- header：body的共同header -->
-    
-<header>
-  <!-- <div class="header new_header"> 
-    <ul> 
-      <li style="width: 10%;height:100%"></li> 
-      <li> 
-        <a href="index.html" class="nav_active header_a" tkey="store_sale"></a>
-      </li> 
-      <li> 
-        <a href="index-indicator.html" class="header_a" tkey="store_target"></a> 
-      </li> 
-      <li> 
-        <a href="index-week.html" class="header_a" tkey="store_week"></a> 
-      </li> 
-      <li> 
-        <a href="index-store.html" class="header_a" tkey="kucun_analysis"></a> 
-      </li> 
-      <li style="width: 10%"> 
-        <div class="shop_change" onclick="show_shop_search()"> 
-          <span tkey="switch_store"></span> 
-          <img src="assets/img/swich@2x.png" /> 
-        </div> 
-      </li> 
-   </ul> 
-  </div>  -->
-</header>
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img class="plum" src="assets/img/plum_2.png" alt=""></a>
+    </div>
 
-    <div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+        <li class="li-homepage">
+          <a href="index.html">
+            首页</a>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            angularJS <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="angular_form.html">表单</a></li>
+              <li><a href="angular.html">angular特性</a></li>
+            </ul>
+        </li>
+        <li class="li-application dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            bootstrap <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bootstrap.html">栅格</a></li>
+            </ul>
+        </li>
+        <li class="li-monitor dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            jQuery <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="table.html">表格</a></li>
+            </ul>
+        </li>
+        <li class="li-monitor dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Test <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="test.html">test</a></li>
+            </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" ng-cloak ng-controller="userInfo">
+        <li><a href="#" class="avatar "><img src="assets/img/avatar.jpg" ng-src="{{user.avatar}}" alt="{{user.name}}" class="img-circle"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" ng-click="logout()">注销</a></li>
+            <li><a href="#" ng-click="reset()">清除缓存</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container" ng-controller="form">
+        <img src="assets/img/fighting.png">
         <!-- your code -->
-        <div><a href="form.html">表单</a></div>
+        <!-- <div><a href="form.html">表单</a></div>
         <div><a href="table.html">表格</a></div>
+        <div><a href="angular.html">angular特性</a></div>
+        <div><a href="bootstrap.html">bootstrap</a></div>
+        <div><a href="test.html">test</a></div> -->
     </div>
     <!-- script：引入 js 文件 -->
     
 <script src="assets/js/jquery.min.js"></script> 
 <script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/angular-1.4.8.min.js"></script>
 <script src="assets/js/angular-resource.js"></script>
 <script src="assets/js/angular-route.js"></script>

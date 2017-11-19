@@ -48,6 +48,7 @@ function _error_handle(data){
     }
 }
 
+$('.dropdown-toggle').dropdown();
 var storage = window.localStorage;
 
 var NtSF = angular.module('NtSF',[]);
@@ -98,6 +99,14 @@ NtSF.controller('Login', ['$scope', '$http', function ($scope, $http) {
 
     }
 }])
+.controller('userInfo', ['$scope', '$http', function ($scope, $http) {
+    //get user info
+    $scope.user = {
+        "avatar":"assets/img/avatar.jpg",
+        "name":"Administrator",
+        "id":1128
+    };
+}])
 .controller('form', ['$scope', '$http', function ($scope, $http) {
     $scope.input = 'input';
     $scope.radio_list = [
@@ -126,6 +135,20 @@ NtSF.controller('Login', ['$scope', '$http', function ($scope, $http) {
     }
 }])
 .controller('table', ['$scope', '$http', function ($scope, $http) {
+
+}])
+
+.controller('angularTest', ['$scope', '$http', function ($scope, $http) {
+
+}])
+
+.controller('bootstrapTest', ['$scope', '$http', function ($scope, $http) {
+
+}])
+.controller('grid', ['$scope', '$http', function ($scope, $http) {
+
+}])
+.controller('test', ['$scope', '$http', function ($scope, $http) {
 
 }])
 

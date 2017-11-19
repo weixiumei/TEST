@@ -1,0 +1,30 @@
+<#include 'inc.head.html'>
+<body>
+	<!-- header：body的共同header -->
+    <#include 'inc.header.html'>
+    <!-- <a href="index.html">首页</a><br><br> -->
+    <div class="container" ng-controller="test">
+    	<div class="dropdown">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    Dropdown
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+		    <li><a href="#">Action</a></li>
+		    <li><a href="#">Another action</a></li>
+		    <li><a href="#">Something else here</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+    </div>
+    <!-- script：引入 js 文件 -->
+    <#include 'inc.script.html'>
+
+    <script type="text/javascript">
+    	// piwik
+        document.title = 'test';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+<#include 'inc.bottom.html'>
