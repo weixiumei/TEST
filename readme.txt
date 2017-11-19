@@ -22,22 +22,4 @@ xxx为项目名称，具体可以在gulp.js中维护
 
 
 【简介】
-stockforce
-fansforce 			微信个人中心
-dataforce 			dataforce可视化
-app-download 		shopforce下载页面
-report 				查询报表
-dashboard 			数据罗盘
-dashboard-phone 	数据罗盘手机版
-products 			商品浏览
-
-【crm类项目的图片说明】
-bg.png 750x380 头图
-gift_item.png 200x250 - 可领优惠券
-grey.png 199x250 - 不可用优惠券
-green_item.png 200x250 - 可用优惠券
-inf_item.png 200x250 - 免费领取优惠券
-item-info.png 490x250 - 优惠券左边部分背景
-logo.png - -
-no_integral.png 322x322 - 暂无内容
-product-default.jpg 240x240 - 默认商品
+前端知识综合应用。
