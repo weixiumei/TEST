@@ -1,0 +1,1893 @@
+Applications Database Info:
+
+** Database info for pid 19269 [system:ui] **
+
+** Database info for pid 22202 [com.xiaomi.metoknlp] **
+
+Connection pool for /data/user/0/com.xiaomi.metoknlp/databases/aloccoll.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:48.778] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:48.778] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:48.773] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:28.678] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:28.678] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:28.675] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:36.496] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:36.496] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:36.490] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:45.770] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:45.769] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:45.760] executeForLong took 9ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:02.457] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:02.457] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:02.454] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:07.703] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:07.703] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:07.697] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:00.862] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:00.861] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.xiaomi.metoknlp/databases/com.amap.android.location.mi_uptunnel.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:07:48.779] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:48.779] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:48.779] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 22:46:45.604] execute took 74ms - succeeded, sql="COMMIT;"
+        4: [2018-05-30 22:46:45.604] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        5: [2018-05-30 22:46:45.604] prepare took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        6: [2018-05-30 22:46:45.604] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        7: [2018-05-30 22:46:45.604] prepare took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        8: [2018-05-30 22:46:45.603] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        9: [2018-05-30 22:46:45.596] executeForCursorWindow took 7ms - succeeded, sql="SELECT sum(size) FROM key_log"
+        10: [2018-05-30 22:46:45.595] prepare took 0ms - succeeded, sql="SELECT sum(size) FROM key_log"
+        11: [2018-05-30 21:46:45.481] execute took 14ms - succeeded, sql="COMMIT;"
+        12: [2018-05-30 21:46:45.481] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        13: [2018-05-30 21:46:45.481] prepare took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        14: [2018-05-30 21:46:45.477] executeForLastInsertedRowId took 4ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        15: [2018-05-30 21:46:45.477] prepare took 0ms - succeeded, sql="INSERT INTO key_log(value,size,time,type) VALUES (?,?,?,?)"
+        16: [2018-05-30 21:46:45.476] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        17: [2018-05-30 21:46:45.458] executeForCursorWindow took 18ms - succeeded, sql="SELECT sum(size) FROM key_log"
+        18: [2018-05-30 21:46:45.457] prepare took 0ms - succeeded, sql="SELECT sum(size) FROM key_log"
+        19: [2018-05-30 20:46:45.256] execute took 23ms - succeeded, sql="COMMIT;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 3630 [com.android.bluetooth] **
+
+Connection pool for /data/user/0/com.android.bluetooth/databases/btopp.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:49.090] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:49.090] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:49.086] executeForLong took 4ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:28.944] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:28.943] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:28.941] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:36.786] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:36.786] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:36.783] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:46.081] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:46.080] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:46.077] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:02.785] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:02.785] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:02.782] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:31:57.347] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:31:57.346] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:31:57.343] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:12:50.576] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:12:50.576] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 27324 [com.jeejen.family.miui:monitor] **
+
+** Database info for pid 27267 [com.qualcomm.qti.autoregistration] **
+
+** Database info for pid 27248 [com.qualcomm.display] **
+
+** Database info for pid 27232 [com.qualcomm.qti.modemtestmode] **
+
+** Database info for pid 21805 [com.qualcomm.qcrilmsgtunnel] **
+
+** Database info for pid 27208 [org.simalliance.openmobileapi.service:remote] **
+
+** Database info for pid 27183 [com.miui.sysbase] **
+
+Connection pool for :memory::
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:14.765] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT INTO fakecell(fakecell) VALUES (?)"
+        1: [2018-05-30 23:17:14.765] prepare took 0ms - succeeded, sql="INSERT INTO fakecell(fakecell) VALUES (?)"
+        2: [2018-05-30 23:17:14.764] executeForChangedRowCount took 0ms - succeeded, sql="CREATE TABLE fakecell(_id integer primary key autoincrement,fakecell INTEGER)"
+        3: [2018-05-30 23:17:14.763] prepare took 1ms - succeeded, sql="CREATE TABLE fakecell(_id integer primary key autoincrement,fakecell INTEGER)"
+        4: [2018-05-30 23:17:14.762] execute took 0ms - succeeded, sql="COMMIT"
+        5: [2018-05-30 23:17:14.762] execute took 0ms - succeeded, sql="REINDEX LOCALIZED"
+        6: [2018-05-30 23:17:14.762] execute took 0ms - succeeded, sql="INSERT INTO android_metadata (locale) VALUES(?)"
+        7: [2018-05-30 23:17:14.762] execute took 0ms - succeeded, sql="DELETE FROM android_metadata"
+        8: [2018-05-30 23:17:14.762] execute took 0ms - succeeded, sql="BEGIN"
+        9: [2018-05-30 23:17:14.762] executeForString took 0ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        10: [2018-05-30 23:17:14.761] execute took 1ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        11: [2018-05-30 23:17:14.761] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 27102 [com.android.mms] **
+
+Connection pool for /data/user/0/com.android.mms/databases/cache.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.989] executeForCursorWindow took 0ms - succeeded, sql="SELECT action_id, action, timestamp FROM ad_cache"
+        1: [2018-05-30 23:17:11.988] prepare took 1ms - succeeded, sql="SELECT action_id, action, timestamp FROM ad_cache"
+        2: [2018-05-30 23:17:11.988] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        3: [2018-05-30 23:17:11.988] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        4: [2018-05-30 23:17:11.985] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        5: [2018-05-30 23:17:11.983] execute took 2ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        6: [2018-05-30 23:17:11.983] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        7: [2018-05-30 23:17:11.983] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        8: [2018-05-30 23:17:11.983] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        9: [2018-05-30 23:17:11.982] executeForLong took 1ms - succeeded, sql="PRAGMA journal_size_limit"
+        10: [2018-05-30 23:17:11.982] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        11: [2018-05-30 23:17:11.982] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        12: [2018-05-30 23:17:11.977] executeForString took 5ms - succeeded, sql="PRAGMA journal_mode"
+        13: [2018-05-30 23:17:11.977] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        14: [2018-05-30 23:17:11.977] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.mms/databases/sms-loan.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.755] executeForCursorWindow took 2ms - succeeded, sql="SELECT * FROM loan_repayment_record"
+        1: [2018-05-30 23:17:11.754] prepare took 0ms - succeeded, sql="SELECT * FROM loan_repayment_record"
+        2: [2018-05-30 23:17:11.754] prepare took 0ms - succeeded, sql="DELETE FROM room_table_modification_log WHERE version NOT IN( SELECT MAX(version) FROM room_table_modification_log GROUP BY table_id)"
+        3: [2018-05-30 23:17:11.753] execute took 0ms - succeeded, sql="COMMIT;"
+        4: [2018-05-30 23:17:11.752] executeForChangedRowCount took 1ms - succeeded, sql="CREATE TEMP TABLE room_table_modification_log(version INTEGER PRIMARY KEY AUTOINCREMENT, table_id INTEGER)"
+        5: [2018-05-30 23:17:11.751] prepare took 1ms - succeeded, sql="CREATE TEMP TABLE room_table_modification_log(version INTEGER PRIMARY KEY AUTOINCREMENT, table_id INTEGER)"
+        6: [2018-05-30 23:17:11.750] executeForChangedRowCount took 0ms - succeeded, sql="PRAGMA recursive_triggers='ON';"
+        7: [2018-05-30 23:17:11.750] prepare took 0ms - succeeded, sql="PRAGMA recursive_triggers='ON';"
+        8: [2018-05-30 23:17:11.750] executeForChangedRowCount took 0ms - succeeded, sql="PRAGMA temp_store = MEMORY;"
+        9: [2018-05-30 23:17:11.750] prepare took 0ms - succeeded, sql="PRAGMA temp_store = MEMORY;"
+        10: [2018-05-30 23:17:11.750] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        11: [2018-05-30 23:17:11.749] executeForCursorWindow took 0ms - succeeded, sql="SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"
+        12: [2018-05-30 23:17:11.748] prepare took 0ms - succeeded, sql="SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"
+        13: [2018-05-30 23:17:11.747] executeForChangedRowCount took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
+        14: [2018-05-30 23:17:11.747] prepare took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
+        15: [2018-05-30 23:17:11.746] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        16: [2018-05-30 23:17:11.746] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        17: [2018-05-30 23:17:11.738] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        18: [2018-05-30 23:17:11.738] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        19: [2018-05-30 23:17:11.737] executeForLong took 1ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 27065 [com.xiaomi.simactivate.service] **
+
+** Database info for pid 18414 [com.miui.cloudservice] **
+
+Connection pool for /data/user/0/com.miui.cloudservice/databases/micloud.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:52.497] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:52.496] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:52.491] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 21:56:36.889] executeForCursorWindow took 1ms - succeeded, sql="SELECT resume_time FROM pause_sync WHERE authority='_all'"
+        4: [2018-05-30 21:56:36.889] prepare took 0ms - succeeded, sql="SELECT resume_time FROM pause_sync WHERE authority='_all'"
+        5: [2018-05-30 21:56:36.878] executeForCursorWindow took 2ms - succeeded, sql="SELECT resume_time FROM pause_sync WHERE authority='com.miui.gallery.cloud.provider'"
+        6: [2018-05-30 21:56:36.877] prepare took 0ms - succeeded, sql="SELECT resume_time FROM pause_sync WHERE authority='com.miui.gallery.cloud.provider'"
+        7: [2018-05-30 21:56:36.876] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        8: [2018-05-30 21:56:36.876] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        9: [2018-05-30 21:56:36.876] executeForString took 0ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        10: [2018-05-30 21:56:36.875] execute took 1ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        11: [2018-05-30 21:56:36.875] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        12: [2018-05-30 21:56:36.875] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        13: [2018-05-30 21:56:36.875] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        14: [2018-05-30 21:56:36.875] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        15: [2018-05-30 21:56:36.875] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        16: [2018-05-30 21:56:36.875] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        17: [2018-05-30 21:56:36.873] executeForString took 2ms - succeeded, sql="PRAGMA journal_mode"
+        18: [2018-05-30 21:56:36.873] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        19: [2018-05-30 21:56:36.872] executeForLong took 1ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 27141 [com.android.shell] **
+
+** Database info for pid 27118 [com.android.externalstorage] **
+
+** Database info for pid 18885 [com.android.quicksearchbox] **
+
+Connection pool for /data/user/0/com.android.quicksearchbox/databases/appindex.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.745] execute took 0ms - succeeded, sql="COMMIT;"
+        1: [2018-05-30 23:17:11.745] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        2: [2018-05-30 23:17:11.745] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        3: [2018-05-30 23:17:11.744] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        4: [2018-05-30 23:17:11.733] prepare took 0ms - succeeded, sql="INSERT INTO functions ('_id', 'search_id', 'title', 'pinyin', 'keywords', 'description', 'intent_action', 'intent_data', 'package', 'dest_package', 'dest_class', 'icon', 'fragment', 'app_name', 'extra', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, 0), COALESCE(?, 0));"
+        5: [2018-05-30 23:17:11.732] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        6: [2018-05-30 23:17:11.731] prepare took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        7: [2018-05-30 23:16:00.865] execute took 0ms - succeeded, sql="COMMIT;"
+        8: [2018-05-30 23:16:00.865] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        9: [2018-05-30 23:16:00.865] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        10: [2018-05-30 23:16:00.865] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        11: [2018-05-30 23:16:00.860] prepare took 0ms - succeeded, sql="INSERT INTO functions ('_id', 'search_id', 'title', 'pinyin', 'keywords', 'description', 'intent_action', 'intent_data', 'package', 'dest_package', 'dest_class', 'icon', 'fragment', 'app_name', 'extra', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, 0), COALESCE(?, 0));"
+        12: [2018-05-30 23:16:00.860] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        13: [2018-05-30 23:16:00.859] prepare took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        14: [2018-05-30 23:16:00.425] execute took 0ms - succeeded, sql="COMMIT;"
+        15: [2018-05-30 23:16:00.425] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        16: [2018-05-30 23:16:00.425] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        17: [2018-05-30 23:16:00.425] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        18: [2018-05-30 23:16:00.421] prepare took 0ms - succeeded, sql="INSERT INTO functions ('_id', 'search_id', 'title', 'pinyin', 'keywords', 'description', 'intent_action', 'intent_data', 'package', 'dest_package', 'dest_class', 'icon', 'fragment', 'app_name', 'extra', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, 0), COALESCE(?, 0));"
+        19: [2018-05-30 23:16:00.420] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.quicksearchbox/databases/applications.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.664] execute took 16ms - succeeded, sql="COMMIT;"
+        1: [2018-05-30 23:17:11.661] executeForChangedRowCount took 2ms - succeeded, sql="DELETE FROM applications WHERE package = ?"
+        2: [2018-05-30 23:17:11.661] prepare took 0ms - succeeded, sql="DELETE FROM applications WHERE package = ?"
+        3: [2018-05-30 23:17:11.660] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        4: [2018-05-30 23:17:11.660] prepare took 0ms - succeeded, sql="INSERT INTO applications ('_id', 'name', 'alias', 'description', 'pinyin', 'for_short', 'package', 'class', 'icon', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, 0), COALESCE(?, 0));"
+        5: [2018-05-30 23:17:11.659] executeForCursorWindow took 1ms - succeeded, sql="PRAGMA table_info(applications)"
+        6: [2018-05-30 23:17:11.658] prepare took 1ms - succeeded, sql="PRAGMA table_info(applications)"
+        7: [2018-05-30 23:16:00.332] execute took 17ms - succeeded, sql="COMMIT;"
+        8: [2018-05-30 23:16:00.331] executeForLastInsertedRowId took 1ms - succeeded, sql="INSERT INTO applications ('_id', 'name', 'alias', 'description', 'pinyin', 'for_short', 'package', 'class', 'icon', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, 0), COALESCE(?, 0));"
+        9: [2018-05-30 23:16:00.327] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM applications WHERE package = ?"
+        10: [2018-05-30 23:16:00.327] prepare took 0ms - succeeded, sql="DELETE FROM applications WHERE package = ?"
+        11: [2018-05-30 23:16:00.327] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        12: [2018-05-30 23:16:00.327] prepare took 0ms - succeeded, sql="INSERT INTO applications ('_id', 'name', 'alias', 'description', 'pinyin', 'for_short', 'package', 'class', 'icon', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, 0), COALESCE(?, 0));"
+        13: [2018-05-30 23:16:00.326] executeForCursorWindow took 1ms - succeeded, sql="PRAGMA table_info(applications)"
+        14: [2018-05-30 23:16:00.326] prepare took 0ms - succeeded, sql="PRAGMA table_info(applications)"
+        15: [2018-05-30 23:16:00.302] execute took 12ms - succeeded, sql="COMMIT;"
+        16: [2018-05-30 23:16:00.301] executeForLastInsertedRowId took 1ms - succeeded, sql="INSERT INTO applications ('_id', 'name', 'alias', 'description', 'pinyin', 'for_short', 'package', 'class', 'icon', 'launch_count', 'last_resume_time') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, 0), COALESCE(?, 0));"
+        17: [2018-05-30 23:16:00.294] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM applications WHERE package = ?"
+        18: [2018-05-30 23:16:00.294] prepare took 0ms - succeeded, sql="DELETE FROM applications WHERE package = ?"
+        19: [2018-05-30 23:16:00.294] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.quicksearchbox/databases/appindex2.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.751] executeForChangedRowCount took 5ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        1: [2018-05-30 23:17:11.751] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        2: [2018-05-30 23:16:00.421] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        3: [2018-05-30 23:16:00.421] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        4: [2018-05-30 23:07:49.907] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        5: [2018-05-30 23:07:49.907] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        6: [2018-05-30 23:07:49.907] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        7: [2018-05-30 23:06:41.054] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.tbstbs.xiacai""
+        8: [2018-05-30 23:06:41.054] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.tbstbs.xiacai""
+        9: [2018-05-30 23:05:54.346] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.tbstbs.xiacai""
+        10: [2018-05-30 23:05:54.346] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.tbstbs.xiacai""
+        11: [2018-05-30 22:00:34.253] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.yuyoogame.ameng.puzzle3.sub1""
+        12: [2018-05-30 22:00:34.253] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.yuyoogame.ameng.puzzle3.sub1""
+        13: [2018-05-30 21:58:17.294] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.yuyoogame.ameng.puzzle3.sub1""
+        14: [2018-05-30 21:58:17.294] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.yuyoogame.ameng.puzzle3.sub1""
+        15: [2018-05-30 21:37:08.246] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.eoffcn.mobile""
+        16: [2018-05-30 21:37:08.246] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.eoffcn.mobile""
+        17: [2018-05-30 21:34:48.967] executeForChangedRowCount took 3ms - succeeded, sql="DELETE FROM functions WHERE package="com.eoffcn.mobile""
+        18: [2018-05-30 21:34:48.967] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.eoffcn.mobile""
+        19: [2018-05-30 21:29:00.107] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM functions WHERE package="oneapp.onechain.androidapp""
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 16473 [android.process.media] **
+
+Connection pool for /data/user/0/com.android.providers.media/databases/external.db:
+  Open: true
+  Max connections: 4
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:08:24.524] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        1: [2018-05-30 23:07:50.208] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        2: [2018-05-30 23:07:50.208] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        3: [2018-05-30 23:07:50.207] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        4: [2018-05-30 20:45:02.490] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        5: [2018-05-30 20:44:30.048] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        6: [2018-05-30 20:44:30.048] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        7: [2018-05-30 20:44:30.047] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        8: [2018-05-30 20:32:12.048] prepare took 1ms - succeeded, sql="PRAGMA user_version;"
+        9: [2018-05-30 20:31:38.137] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 20:31:38.137] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 20:31:38.136] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:54:19.790] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        13: [2018-05-30 19:53:47.177] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        14: [2018-05-30 19:53:47.176] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        15: [2018-05-30 19:53:47.176] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        16: [2018-05-30 19:38:11.081] executeForLastInsertedRowId took 20ms - succeeded, sql="INSERT INTO files(bucket_id,height,date_modified,bucket_display_name,datetaken,parent,format,storage_id,media_type,mime_type,_data,title,_size,width,date_added,_display_name) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        17: [2018-05-30 19:38:11.080] prepare took 1ms - succeeded, sql="INSERT INTO files(bucket_id,height,date_modified,bucket_display_name,datetaken,parent,format,storage_id,media_type,mime_type,_data,title,_size,width,date_added,_display_name) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        18: [2018-05-30 19:34:52.196] executeForLastInsertedRowId took 32ms - succeeded, sql="INSERT INTO files(bucket_id,height,date_modified,bucket_display_name,datetaken,parent,format,storage_id,media_type,mime_type,_data,title,_size,width,date_added,_display_name) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        19: [2018-05-30 19:34:52.195] prepare took 1ms - succeeded, sql="INSERT INTO files(bucket_id,height,date_modified,bucket_display_name,datetaken,parent,format,storage_id,media_type,mime_type,_data,title,_size,width,date_added,_display_name) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+  Available non-primary connections:
+    Connection #1:
+      isPrimaryConnection: false
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.371] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id FROM audio"
+        1: [2018-05-30 23:17:11.369] prepare took 0ms - succeeded, sql="SELECT _id FROM audio"
+        2: [2018-05-30 23:17:11.367] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id FROM video"
+        3: [2018-05-30 23:17:11.366] prepare took 0ms - succeeded, sql="SELECT _id FROM video"
+        4: [2018-05-30 23:17:11.362] executeForCursorWindow took 2ms - succeeded, sql="SELECT _id FROM images"
+        5: [2018-05-30 23:17:11.360] prepare took 0ms - succeeded, sql="SELECT _id FROM images"
+        6: [2018-05-30 23:08:24.526] executeForCursorWindow took 1ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        7: [2018-05-30 23:08:24.526] prepare took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        8: [2018-05-30 23:08:24.525] executeForCursorWindow took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        9: [2018-05-30 23:08:24.525] prepare took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        10: [2018-05-30 23:08:24.524] executeForLong took 1ms - succeeded, sql="PRAGMA user_version;"
+        11: [2018-05-30 23:07:50.209] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        12: [2018-05-30 23:07:50.208] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        13: [2018-05-30 23:07:50.208] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        14: [2018-05-30 23:06:40.434] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id FROM audio"
+        15: [2018-05-30 23:06:40.432] prepare took 0ms - succeeded, sql="SELECT _id FROM audio"
+        16: [2018-05-30 23:06:40.430] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id FROM video"
+        17: [2018-05-30 23:06:40.428] prepare took 0ms - succeeded, sql="SELECT _id FROM video"
+        18: [2018-05-30 23:06:40.425] executeForCursorWindow took 1ms - succeeded, sql="SELECT _id FROM images"
+        19: [2018-05-30 23:06:40.423] prepare took 1ms - succeeded, sql="SELECT _id FROM images"
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.providers.media/databases/internal.db:
+  Open: true
+  Max connections: 4
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:08:24.522] prepare took 1ms - succeeded, sql="PRAGMA user_version;"
+        1: [2018-05-30 23:07:50.213] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        2: [2018-05-30 23:07:50.213] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        3: [2018-05-30 23:07:50.209] executeForLong took 4ms - succeeded, sql="PRAGMA page_count;"
+        4: [2018-05-30 20:45:02.488] prepare took 1ms - succeeded, sql="PRAGMA user_version;"
+        5: [2018-05-30 20:44:30.049] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        6: [2018-05-30 20:44:30.049] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        7: [2018-05-30 20:44:30.048] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        8: [2018-05-30 20:32:12.046] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        9: [2018-05-30 20:31:38.142] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 20:31:38.142] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 20:31:38.137] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:54:19.788] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        13: [2018-05-30 19:53:47.181] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        14: [2018-05-30 19:53:47.181] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        15: [2018-05-30 19:53:47.177] executeForLong took 4ms - succeeded, sql="PRAGMA page_count;"
+        16: [2018-05-30 19:01:36.526] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        17: [2018-05-30 19:01:36.517] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        18: [2018-05-30 19:01:36.517] executeForString took 0ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        19: [2018-05-30 19:01:36.516] execute took 1ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+  Available non-primary connections:
+    Connection #1:
+      isPrimaryConnection: false
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:24.524] executeForCursorWindow took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        1: [2018-05-30 23:08:24.524] prepare took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        2: [2018-05-30 23:08:24.523] executeForCursorWindow took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        3: [2018-05-30 23:08:24.523] prepare took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        4: [2018-05-30 23:08:24.523] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        5: [2018-05-30 23:07:50.214] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        6: [2018-05-30 23:07:50.213] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        7: [2018-05-30 23:07:50.213] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        8: [2018-05-30 20:45:02.490] executeForCursorWindow took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        9: [2018-05-30 20:45:02.490] prepare took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        10: [2018-05-30 20:45:02.489] executeForCursorWindow took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        11: [2018-05-30 20:45:02.489] prepare took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        12: [2018-05-30 20:45:02.489] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        13: [2018-05-30 20:44:30.049] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        14: [2018-05-30 20:44:30.049] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        15: [2018-05-30 20:44:30.049] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        16: [2018-05-30 20:32:12.048] executeForCursorWindow took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        17: [2018-05-30 20:32:12.048] prepare took 0ms - succeeded, sql="SELECT time, message FROM log ORDER BY rowid"
+        18: [2018-05-30 20:32:12.047] executeForCursorWindow took 0ms - succeeded, sql="SELECT count(*) FROM files"
+        19: [2018-05-30 20:32:12.047] prepare took 0ms - succeeded, sql="SELECT count(*) FROM files"
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.providers.downloads/databases/downloads.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:15:59.826] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+        1: [2018-05-30 23:15:59.818] prepare took 0ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+        2: [2018-05-30 23:15:57.488] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, _data AS local_filename, mediaprovider_uri, destination, title, description, uri, status, hint, mimetype AS media_type, total_bytes AS total_size, lastmod AS last_modified_timestamp, current_bytes AS bytes_so_far, allow_write, errorMsg, notificationpackage, 'placeholder' AS local_uri, 'placeholder' AS reason, entity, file_create_time, downloading_current_speed, download_surplus_time, xl_accelerate_speed, downloaded_time, xl_vip_status, xl_vip_cdn_url, xl_task_open_mark, download_task_thumbnail, apk_package_name, download_file_hash, download_apk_install_way, download_extra FROM downloads WHERE ((status='190' OR status='192' OR status='193' OR status='194' OR status='195' OR status='196' OR status='198' OR status='200' OR (status>='400' AND status<'600')) AND deleted != '1') ORDER BY lastmod DESC"
+        3: [2018-05-30 23:15:57.483] executeForCursorWindow took 1ms - succeeded, sql="SELECT _id, _data AS local_filename, mediaprovider_uri, destination, title, description, uri, status, hint, mimetype AS media_type, total_bytes AS total_size, lastmod AS last_modified_timestamp, current_bytes AS bytes_so_far, allow_write, errorMsg, notificationpackage, 'placeholder' AS local_uri, 'placeholder' AS reason, entity, file_create_time, downloading_current_speed, download_surplus_time, xl_accelerate_speed, downloaded_time, xl_vip_status, xl_vip_cdn_url, xl_task_open_mark, download_task_thumbnail, apk_package_name, download_file_hash, download_apk_install_way, download_extra FROM downloads WHERE ((status='190' OR status='192' OR status='193' OR status='194' OR status='195' OR status='196' OR status='198' OR status='200' OR (status>='400' AND status<'600')) AND deleted != '1') ORDER BY lastmod DESC"
+        4: [2018-05-30 23:15:57.482] prepare took 0ms - succeeded, sql="SELECT _id, _data AS local_filename, mediaprovider_uri, destination, title, description, uri, status, hint, mimetype AS media_type, total_bytes AS total_size, lastmod AS last_modified_timestamp, current_bytes AS bytes_so_far, allow_write, errorMsg, notificationpackage, 'placeholder' AS local_uri, 'placeholder' AS reason, entity, file_create_time, downloading_current_speed, download_surplus_time, xl_accelerate_speed, downloaded_time, xl_vip_status, xl_vip_cdn_url, xl_task_open_mark, download_task_thumbnail, apk_package_name, download_file_hash, download_apk_install_way, download_extra FROM downloads WHERE ((status='190' OR status='192' OR status='193' OR status='194' OR status='195' OR status='196' OR status='198' OR status='200' OR (status>='400' AND status<'600')) AND deleted != '1') ORDER BY lastmod DESC"
+        5: [2018-05-30 23:15:56.439] executeForCursorWindow took 1ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+        6: [2018-05-30 23:15:56.422] prepare took 0ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+        7: [2018-05-30 23:08:24.450] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM bt_detail ORDER BY _id ASC"
+        8: [2018-05-30 23:08:24.450] prepare took 0ms - succeeded, sql="SELECT * FROM bt_detail ORDER BY _id ASC"
+        9: [2018-05-30 23:08:24.446] executeForCursorWindow took 2ms - succeeded, sql="SELECT * FROM downloads ORDER BY _id ASC"
+        10: [2018-05-30 23:08:24.445] prepare took 1ms - succeeded, sql="SELECT * FROM downloads ORDER BY _id ASC"
+        11: [2018-05-30 23:07:50.214] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        12: [2018-05-30 23:07:50.214] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        13: [2018-05-30 23:07:50.214] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        14: [2018-05-30 23:05:53.586] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+        15: [2018-05-30 23:05:53.582] prepare took 0ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+        16: [2018-05-30 23:05:38.673] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, _data AS local_filename, mediaprovider_uri, destination, title, description, uri, status, hint, mimetype AS media_type, total_bytes AS total_size, lastmod AS last_modified_timestamp, current_bytes AS bytes_so_far, allow_write, errorMsg, notificationpackage, 'placeholder' AS local_uri, 'placeholder' AS reason, entity, file_create_time, downloading_current_speed, download_surplus_time, xl_accelerate_speed, downloaded_time, xl_vip_status, xl_vip_cdn_url, xl_task_open_mark, download_task_thumbnail, apk_package_name, download_file_hash, download_apk_install_way, download_extra FROM downloads WHERE ((status='190' OR status='192' OR status='193' OR status='194' OR status='195' OR status='196' OR status='198' OR status='200' OR (status>='400' AND status<'600')) AND deleted != '1') ORDER BY lastmod DESC"
+        17: [2018-05-30 23:05:38.667] executeForCursorWindow took 1ms - succeeded, sql="SELECT _id, _data AS local_filename, mediaprovider_uri, destination, title, description, uri, status, hint, mimetype AS media_type, total_bytes AS total_size, lastmod AS last_modified_timestamp, current_bytes AS bytes_so_far, allow_write, errorMsg, notificationpackage, 'placeholder' AS local_uri, 'placeholder' AS reason, entity, file_create_time, downloading_current_speed, download_surplus_time, xl_accelerate_speed, downloaded_time, xl_vip_status, xl_vip_cdn_url, xl_task_open_mark, download_task_thumbnail, apk_package_name, download_file_hash, download_apk_install_way, download_extra FROM downloads WHERE ((status='190' OR status='192' OR status='193' OR status='194' OR status='195' OR status='196' OR status='198' OR status='200' OR (status>='400' AND status<'600')) AND deleted != '1') ORDER BY lastmod DESC"
+        18: [2018-05-30 23:05:38.664] prepare took 1ms - succeeded, sql="SELECT _id, _data AS local_filename, mediaprovider_uri, destination, title, description, uri, status, hint, mimetype AS media_type, total_bytes AS total_size, lastmod AS last_modified_timestamp, current_bytes AS bytes_so_far, allow_write, errorMsg, notificationpackage, 'placeholder' AS local_uri, 'placeholder' AS reason, entity, file_create_time, downloading_current_speed, download_surplus_time, xl_accelerate_speed, downloaded_time, xl_vip_status, xl_vip_cdn_url, xl_task_open_mark, download_task_thumbnail, apk_package_name, download_file_hash, download_apk_install_way, download_extra FROM downloads WHERE ((status='190' OR status='192' OR status='193' OR status='194' OR status='195' OR status='196' OR status='198' OR status='200' OR (status>='400' AND status<'600')) AND deleted != '1') ORDER BY lastmod DESC"
+        19: [2018-05-30 23:05:37.519] executeForCursorWindow took 1ms - succeeded, sql="SELECT _id, _data, download_apk_install_way FROM downloads WHERE (apk_package_name=?) ORDER BY _id DESC"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 27081 [com.android.documentsui] **
+
+Connection pool for /data/user/0/com.android.documentsui/databases/recents.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:11.073] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM resume"
+        1: [2018-05-30 23:17:11.073] prepare took 0ms - succeeded, sql="SELECT * FROM resume"
+        2: [2018-05-30 23:17:11.072] executeForCursorWindow took 1ms - succeeded, sql="SELECT authority FROM state GROUP BY authority"
+        3: [2018-05-30 23:17:11.072] prepare took 0ms - succeeded, sql="SELECT authority FROM state GROUP BY authority"
+        4: [2018-05-30 23:17:11.071] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM recent"
+        5: [2018-05-30 23:17:11.070] prepare took 1ms - succeeded, sql="SELECT * FROM recent"
+        6: [2018-05-30 23:17:11.069] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        7: [2018-05-30 23:17:11.069] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        8: [2018-05-30 23:17:11.068] executeForString took 0ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        9: [2018-05-30 23:17:11.067] execute took 1ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        10: [2018-05-30 23:17:11.067] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        11: [2018-05-30 23:17:11.067] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        12: [2018-05-30 23:17:11.067] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        13: [2018-05-30 23:17:11.067] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        14: [2018-05-30 23:17:11.067] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        15: [2018-05-30 23:17:11.066] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        16: [2018-05-30 23:17:11.065] executeForString took 1ms - succeeded, sql="PRAGMA journal_mode"
+        17: [2018-05-30 23:17:11.064] executeForLong took 1ms - succeeded, sql="PRAGMA foreign_keys"
+        18: [2018-05-30 23:17:11.064] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 18571 [com.miui.analytics] **
+
+Connection pool for /data/user/0/com.miui.analytics/databases/requests.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:50.691] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:50.691] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:50.686] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 21:12:24.826] executeForCursorWindow took 0ms - succeeded, sql="select * from request"
+        4: [2018-05-30 21:12:24.825] prepare took 0ms - succeeded, sql="select * from request"
+        5: [2018-05-30 21:12:24.825] executeForCursorWindow took 0ms - succeeded, sql="select * from request"
+        6: [2018-05-30 21:12:24.824] prepare took 0ms - succeeded, sql="select * from request"
+        7: [2018-05-30 21:12:24.822] executeForChangedRowCount took 0ms - succeeded, sql="delete from request where send_count > 4"
+        8: [2018-05-30 21:12:24.822] prepare took 0ms - succeeded, sql="delete from request where send_count > 4"
+        9: [2018-05-30 21:12:24.821] executeForLong took 1ms - succeeded, sql="PRAGMA user_version;"
+        10: [2018-05-30 21:12:24.821] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        11: [2018-05-30 21:12:24.820] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        12: [2018-05-30 21:12:24.820] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        13: [2018-05-30 21:12:24.820] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        14: [2018-05-30 21:12:24.820] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        15: [2018-05-30 21:12:24.820] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        16: [2018-05-30 21:12:24.819] executeForLong took 1ms - succeeded, sql="PRAGMA journal_size_limit"
+        17: [2018-05-30 21:12:24.819] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        18: [2018-05-30 21:12:24.819] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        19: [2018-05-30 21:12:24.819] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.analytics/databases/analyticsv2.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:12:25.913] executeForCursorWindow took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        1: [2018-05-30 23:12:25.912] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        2: [2018-05-30 23:07:50.692] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        3: [2018-05-30 23:07:50.691] executeForLong took 1ms - succeeded, sql="PRAGMA page_size;"
+        4: [2018-05-30 23:07:50.691] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        5: [2018-05-30 23:02:25.809] executeForCursorWindow took 1ms - succeeded, sql="select count(*) from analyticsv2"
+        6: [2018-05-30 23:02:25.808] prepare took 1ms - succeeded, sql="select count(*) from analyticsv2"
+        7: [2018-05-30 22:52:25.705] executeForCursorWindow took 1ms - succeeded, sql="select count(*) from analyticsv2"
+        8: [2018-05-30 22:52:25.705] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        9: [2018-05-30 22:42:25.601] executeForCursorWindow took 1ms - succeeded, sql="select count(*) from analyticsv2"
+        10: [2018-05-30 22:42:25.600] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        11: [2018-05-30 22:32:25.496] executeForCursorWindow took 1ms - succeeded, sql="select count(*) from analyticsv2"
+        12: [2018-05-30 22:32:25.496] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        13: [2018-05-30 22:22:25.411] executeForCursorWindow took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        14: [2018-05-30 22:22:25.410] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        15: [2018-05-30 22:12:25.392] executeForCursorWindow took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        16: [2018-05-30 22:12:25.391] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        17: [2018-05-30 22:02:25.322] executeForCursorWindow took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        18: [2018-05-30 22:02:25.321] prepare took 0ms - succeeded, sql="select count(*) from analyticsv2"
+        19: [2018-05-30 21:52:25.218] executeForCursorWindow took 0ms - succeeded, sql="select count(*) from analyticsv2"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.analytics/databases/analytics.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:20.892] execute took 12ms - succeeded, sql="COMMIT;"
+        1: [2018-05-30 23:17:20.892] executeForLastInsertedRowId took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        2: [2018-05-30 23:17:20.892] prepare took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        3: [2018-05-30 23:17:20.892] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        4: [2018-05-30 23:17:10.672] execute took 17ms - succeeded, sql="COMMIT;"
+        5: [2018-05-30 23:17:10.671] executeForLastInsertedRowId took 1ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        6: [2018-05-30 23:17:10.671] prepare took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        7: [2018-05-30 23:17:10.671] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        8: [2018-05-30 23:16:01.785] execute took 5ms - succeeded, sql="COMMIT;"
+        9: [2018-05-30 23:16:01.785] executeForLastInsertedRowId took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        10: [2018-05-30 23:16:01.785] prepare took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        11: [2018-05-30 23:16:01.784] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        12: [2018-05-30 23:15:59.981] execute took 22ms - succeeded, sql="COMMIT;"
+        13: [2018-05-30 23:15:59.980] executeForLastInsertedRowId took 1ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        14: [2018-05-30 23:15:59.980] prepare took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        15: [2018-05-30 23:15:59.980] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        16: [2018-05-30 23:15:59.290] execute took 12ms - succeeded, sql="COMMIT;"
+        17: [2018-05-30 23:15:59.289] executeForLastInsertedRowId took 1ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        18: [2018-05-30 23:15:59.289] prepare took 0ms - succeeded, sql="insert into analytics values(null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        19: [2018-05-30 23:15:59.289] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.analytics/databases/guid.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:07:50.694] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:50.694] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:50.692] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 21:18:24.980] execute took 0ms - succeeded, sql="ROLLBACK;"
+        4: [2018-05-30 21:18:24.980] executeForCursorWindow took 0ms - succeeded, sql="SELECT _app_id, guid, create_time FROM guid WHERE _app_id = ?"
+        5: [2018-05-30 21:18:24.979] prepare took 0ms - succeeded, sql="SELECT _app_id, guid, create_time FROM guid WHERE _app_id = ?"
+        6: [2018-05-30 21:18:24.978] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        7: [2018-05-30 21:18:24.972] execute took 0ms - succeeded, sql="ROLLBACK;"
+        8: [2018-05-30 21:18:24.972] executeForCursorWindow took 0ms - succeeded, sql="SELECT _app_id, guid, create_time FROM guid WHERE _app_id = ?"
+        9: [2018-05-30 21:18:24.971] prepare took 0ms - succeeded, sql="SELECT _app_id, guid, create_time FROM guid WHERE _app_id = ?"
+        10: [2018-05-30 21:18:24.970] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        11: [2018-05-30 21:18:24.970] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        12: [2018-05-30 21:18:24.970] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        13: [2018-05-30 21:18:24.968] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        14: [2018-05-30 21:18:24.968] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        15: [2018-05-30 21:18:24.967] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        16: [2018-05-30 21:18:24.967] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        17: [2018-05-30 21:18:24.967] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        18: [2018-05-30 21:18:24.967] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        19: [2018-05-30 21:18:24.967] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.analytics/databases/hybrid.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:50.694] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:50.694] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:50.694] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 22:11:49.051] executeForCursorWindow took 0ms - succeeded, sql="select * from hybrid where ts >= 1527552000000 and ts <= 1527638399999"
+        4: [2018-05-30 22:11:49.050] prepare took 1ms - succeeded, sql="select * from hybrid where ts >= 1527552000000 and ts <= 1527638399999"
+        5: [2018-05-30 22:11:44.937] executeForCursorWindow took 0ms - succeeded, sql="select * from hybrid where ts >= 1527552000000 and ts <= 1527638399999"
+        6: [2018-05-30 22:11:44.937] prepare took 0ms - succeeded, sql="select * from hybrid where ts >= 1527552000000 and ts <= 1527638399999"
+        7: [2018-05-30 22:11:44.936] executeForLong took 1ms - succeeded, sql="PRAGMA user_version;"
+        8: [2018-05-30 22:11:44.936] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        9: [2018-05-30 22:11:44.932] executeForString took 0ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        10: [2018-05-30 22:11:44.932] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        11: [2018-05-30 22:11:44.931] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        12: [2018-05-30 22:11:44.931] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        13: [2018-05-30 22:11:44.931] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        14: [2018-05-30 22:11:44.931] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        15: [2018-05-30 22:11:44.931] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        16: [2018-05-30 22:11:44.931] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        17: [2018-05-30 22:11:44.929] executeForString took 2ms - succeeded, sql="PRAGMA journal_mode"
+        18: [2018-05-30 22:11:44.929] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        19: [2018-05-30 22:11:44.929] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 26546 [com.miui.vsimcore] **
+
+** Database info for pid 26474 [com.xiaomi.vipaccount] **
+
+** Database info for pid 26431 [com.xiaomi.market] **
+
+Connection pool for /data/user/0/com.xiaomi.market/databases/traffic.db:
+  Open: true
+  Max connections: 4
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:16:13.521] execute took 27ms - succeeded, sql="COMMIT;"
+        1: [2018-05-30 23:16:13.521] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO data_usage_event(g,is_front_end_proxied,is_third_party_call,h,i,j,k,use_backup_ip,upload,download,time_cost,first_packet_cost,response_code,exception_name,s,t,u,v,w,is_forground,is_network_allowed,is_file_request)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        2: [2018-05-30 23:16:13.520] prepare took 1ms - succeeded, sql="REPLACE INTO data_usage_event(g,is_front_end_proxied,is_third_party_call,h,i,j,k,use_backup_ip,upload,download,time_cost,first_packet_cost,response_code,exception_name,s,t,u,v,w,is_forground,is_network_allowed,is_file_request)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        3: [2018-05-30 23:16:13.512] execute took 0ms - succeeded, sql="BEGIN IMMEDIATE;"
+        4: [2018-05-30 23:15:57.801] prepare took 0ms - succeeded, sql="PRAGMA table_info(sqlite_sequence)"
+        5: [2018-05-30 23:15:57.801] prepare took 0ms - succeeded, sql="PRAGMA table_info(data_usage_event)"
+        6: [2018-05-30 23:15:57.800] prepare took 0ms - succeeded, sql="PRAGMA table_info(android_metadata)"
+        7: [2018-05-30 23:15:57.797] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        8: [2018-05-30 23:15:57.796] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        9: [2018-05-30 23:15:57.796] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        10: [2018-05-30 23:15:57.796] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        11: [2018-05-30 23:15:57.796] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        12: [2018-05-30 23:15:57.796] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        13: [2018-05-30 23:15:57.796] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        14: [2018-05-30 23:15:57.796] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        15: [2018-05-30 23:15:57.793] executeForString took 3ms - succeeded, sql="PRAGMA journal_mode"
+        16: [2018-05-30 23:15:57.793] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        17: [2018-05-30 23:15:57.792] executeForLong took 1ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    Connection #1:
+      isPrimaryConnection: false
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:15:57.802] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(sqlite_sequence)"
+        1: [2018-05-30 23:15:57.801] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(data_usage_event)"
+        2: [2018-05-30 23:15:57.800] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(android_metadata)"
+        3: [2018-05-30 23:15:57.800] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM sqlite_master WHERE type='table' ORDER BY name"
+        4: [2018-05-30 23:15:57.799] prepare took 0ms - succeeded, sql="SELECT * FROM sqlite_master WHERE type='table' ORDER BY name"
+        5: [2018-05-30 23:15:57.799] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        6: [2018-05-30 23:15:57.798] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        7: [2018-05-30 23:15:57.798] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        8: [2018-05-30 23:15:57.798] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        9: [2018-05-30 23:15:57.798] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        10: [2018-05-30 23:15:57.798] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        11: [2018-05-30 23:15:57.798] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        12: [2018-05-30 23:15:57.798] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        13: [2018-05-30 23:15:57.797] executeForString took 1ms - succeeded, sql="PRAGMA journal_mode"
+        14: [2018-05-30 23:15:57.797] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        15: [2018-05-30 23:15:57.797] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.xiaomi.market/databases/market_2.db:
+  Open: true
+  Max connections: 4
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.845] execute took 0ms - succeeded, sql="COMMIT;"
+        1: [2018-05-30 23:17:10.844] execute took 1ms - succeeded, sql="BEGIN IMMEDIATE;"
+        2: [2018-05-30 23:16:01.817] execute took 2ms - succeeded, sql="COMMIT;"
+        3: [2018-05-30 23:16:01.817] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO app_active_stat(packageName,active_ref,activeTime,apkHash,channel,install_ref,installer,isUpdate,versionCode,versionName)VALUES(?,?,?,?,?,?,?,?,?,?)"
+        4: [2018-05-30 23:16:01.817] prepare took 0ms - succeeded, sql="REPLACE INTO app_active_stat(packageName,active_ref,activeTime,apkHash,channel,install_ref,installer,isUpdate,versionCode,versionName)VALUES(?,?,?,?,?,?,?,?,?,?)"
+        5: [2018-05-30 23:16:01.816] execute took 1ms - succeeded, sql="BEGIN IMMEDIATE;"
+        6: [2018-05-30 23:16:01.814] execute took 2ms - succeeded, sql="COMMIT;"
+        7: [2018-05-30 23:16:01.814] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO local_app_md5(package_name,last_update_time,md5,miui_level,mSize,source_dir,version_code)VALUES(?,?,?,?,?,?,?)"
+        8: [2018-05-30 23:16:01.814] prepare took 0ms - succeeded, sql="REPLACE INTO local_app_md5(package_name,last_update_time,md5,miui_level,mSize,source_dir,version_code)VALUES(?,?,?,?,?,?,?)"
+        9: [2018-05-30 23:16:01.813] execute took 0ms - succeeded, sql="BEGIN IMMEDIATE;"
+        10: [2018-05-30 23:15:59.958] execute took 2ms - succeeded, sql="COMMIT;"
+        11: [2018-05-30 23:15:59.958] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO local_app_md5(package_name,last_update_time,md5,miui_level,mSize,source_dir,version_code)VALUES(?,?,?,?,?,?,?)"
+        12: [2018-05-30 23:15:59.957] prepare took 0ms - succeeded, sql="REPLACE INTO local_app_md5(package_name,last_update_time,md5,miui_level,mSize,source_dir,version_code)VALUES(?,?,?,?,?,?,?)"
+        13: [2018-05-30 23:15:59.957] execute took 0ms - succeeded, sql="BEGIN IMMEDIATE;"
+        14: [2018-05-30 23:15:58.378] execute took 10ms - succeeded, sql="COMMIT;"
+        15: [2018-05-30 23:15:58.373] executeForLastInsertedRowId took 5ms - succeeded, sql="REPLACE INTO local_app_md5(package_name,last_update_time,md5,miui_level,mSize,source_dir,version_code)VALUES(?,?,?,?,?,?,?)"
+        16: [2018-05-30 23:15:58.373] prepare took 0ms - succeeded, sql="REPLACE INTO local_app_md5(package_name,last_update_time,md5,miui_level,mSize,source_dir,version_code)VALUES(?,?,?,?,?,?,?)"
+        17: [2018-05-30 23:15:58.372] execute took 1ms - succeeded, sql="BEGIN IMMEDIATE;"
+        18: [2018-05-30 23:15:57.791] prepare took 0ms - succeeded, sql="PRAGMA table_info(sqlite_sequence)"
+        19: [2018-05-30 23:15:57.791] prepare took 0ms - succeeded, sql="PRAGMA table_info(pending_update)"
+  Available non-primary connections:
+    Connection #1:
+      isPrimaryConnection: false
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:16:01.786] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app_active_stat WHERE packageName=?;"
+        1: [2018-05-30 23:16:01.785] prepare took 0ms - succeeded, sql="SELECT * FROM app_active_stat WHERE packageName=?;"
+        2: [2018-05-30 23:15:59.947] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        3: [2018-05-30 23:15:59.946] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        4: [2018-05-30 23:15:59.945] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        5: [2018-05-30 23:15:59.945] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        6: [2018-05-30 23:15:59.943] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        7: [2018-05-30 23:15:59.943] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        8: [2018-05-30 23:15:59.942] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        9: [2018-05-30 23:15:59.942] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        10: [2018-05-30 23:15:59.940] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        11: [2018-05-30 23:15:59.940] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        12: [2018-05-30 23:15:59.938] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        13: [2018-05-30 23:15:59.938] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        14: [2018-05-30 23:15:59.937] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        15: [2018-05-30 23:15:59.937] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        16: [2018-05-30 23:15:59.935] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        17: [2018-05-30 23:15:59.935] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        18: [2018-05-30 23:15:59.934] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+        19: [2018-05-30 23:15:59.933] prepare took 0ms - succeeded, sql="SELECT * FROM app WHERE app_id=?;"
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 26498 [com.xiaomi.vipaccount:log] **
+
+** Database info for pid 27038 [com.android.keychain] **
+
+** Database info for pid 26404 [com.xiaomi.gamecenter] **
+
+Connection pool for /data/user/0/com.xiaomi.gamecenter/databases/report2.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.789] execute took 7ms - succeeded, sql="COMMIT;"
+        1: [2018-05-30 23:17:10.788] executeForLastInsertedRowId took 1ms - succeeded, sql="INSERT INTO REPORT_DATA ('_id','METHOD','PARAM') VALUES (?,?,?)"
+        2: [2018-05-30 23:17:10.787] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        3: [2018-05-30 23:16:00.737] execute took 6ms - succeeded, sql="COMMIT;"
+        4: [2018-05-30 23:16:00.737] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT INTO REPORT_DATA ('_id','METHOD','PARAM') VALUES (?,?,?)"
+        5: [2018-05-30 23:16:00.736] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        6: [2018-05-30 23:16:00.627] execute took 11ms - succeeded, sql="COMMIT;"
+        7: [2018-05-30 23:16:00.627] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT INTO REPORT_DATA ('_id','METHOD','PARAM') VALUES (?,?,?)"
+        8: [2018-05-30 23:16:00.626] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        9: [2018-05-30 23:16:00.038] execute took 5ms - succeeded, sql="COMMIT;"
+        10: [2018-05-30 23:16:00.037] executeForLastInsertedRowId took 1ms - succeeded, sql="INSERT INTO REPORT_DATA ('_id','METHOD','PARAM') VALUES (?,?,?)"
+        11: [2018-05-30 23:16:00.037] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        12: [2018-05-30 23:16:00.037] prepare took 0ms - succeeded, sql="INSERT INTO REPORT_DATA ('_id','METHOD','PARAM') VALUES (?,?,?)"
+        13: [2018-05-30 23:15:57.283] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        14: [2018-05-30 23:15:57.283] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        15: [2018-05-30 23:15:57.282] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        16: [2018-05-30 23:15:57.282] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        17: [2018-05-30 23:15:57.282] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        18: [2018-05-30 23:15:57.282] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        19: [2018-05-30 23:15:57.282] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.xiaomi.gamecenter/databases/gamecenter.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.797] executeForCursorWindow took 1ms - succeeded, sql="SELECT game_id, app_id, package_name, data, cdn FROM game WHERE package_name=?"
+        1: [2018-05-30 23:17:10.797] prepare took 0ms - succeeded, sql="SELECT game_id, app_id, package_name, data, cdn FROM game WHERE package_name=?"
+        2: [2018-05-30 23:17:10.781] executeForChangedRowCount took 16ms - succeeded, sql="DELETE FROM local_app_cache WHERE pkg_name=?"
+        3: [2018-05-30 23:17:10.781] prepare took 0ms - succeeded, sql="DELETE FROM local_app_cache WHERE pkg_name=?"
+        4: [2018-05-30 23:17:10.779] executeForCursorWindow took 1ms - succeeded, sql="SELECT game_id, app_id, package_name, data, cdn FROM game WHERE package_name=?"
+        5: [2018-05-30 23:17:10.773] prepare took 5ms - succeeded, sql="SELECT game_id, app_id, package_name, data, cdn FROM game WHERE package_name=?"
+        6: [2018-05-30 23:17:10.769] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM local_game WHERE package_name='com.mm.lobster.mortgage'"
+        7: [2018-05-30 23:17:10.769] prepare took 0ms - succeeded, sql="DELETE FROM local_game WHERE package_name='com.mm.lobster.mortgage'"
+        8: [2018-05-30 23:16:00.004] executeForCursorWindow took 0ms - succeeded, sql="SELECT pkg_name, display_name, version_name, signature, system_flag, version_code, apk_hash, update_time FROM local_app_cache WHERE pkg_name=?"
+        9: [2018-05-30 23:16:00.003] prepare took 0ms - succeeded, sql="SELECT pkg_name, display_name, version_name, signature, system_flag, version_code, apk_hash, update_time FROM local_app_cache WHERE pkg_name=?"
+        10: [2018-05-30 23:15:59.653] execute took 11ms - succeeded, sql="COMMIT;"
+        11: [2018-05-30 23:15:59.652] executeForChangedRowCount took 1ms - succeeded, sql="insert into local_app_cache(pkg_name,display_name,version_name,signature,system_flag,version_code,apk_hash,update_time)values(?,?,?,?,?,?,?,?);"
+        12: [2018-05-30 23:15:59.652] prepare took 0ms - succeeded, sql="insert into local_app_cache(pkg_name,display_name,version_name,signature,system_flag,version_code,apk_hash,update_time)values(?,?,?,?,?,?,?,?);"
+        13: [2018-05-30 23:15:59.652] executeForChangedRowCount took 0ms - succeeded, sql="delete from local_app_cache where pkg_name=?;"
+        14: [2018-05-30 23:15:59.652] prepare took 0ms - succeeded, sql="delete from local_app_cache where pkg_name=?;"
+        15: [2018-05-30 23:15:59.647] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        16: [2018-05-30 23:15:59.602] executeForCursorWindow took 0ms - succeeded, sql="SELECT pkg_name, display_name, version_name, signature, system_flag, version_code, apk_hash, update_time FROM local_app_cache WHERE pkg_name=?"
+        17: [2018-05-30 23:15:59.601] prepare took 0ms - succeeded, sql="SELECT pkg_name, display_name, version_name, signature, system_flag, version_code, apk_hash, update_time FROM local_app_cache WHERE pkg_name=?"
+        18: [2018-05-30 23:15:59.596] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM local_app_cache WHERE pkg_name in ()"
+        19: [2018-05-30 23:15:59.596] prepare took 0ms - succeeded, sql="DELETE FROM local_app_cache WHERE pkg_name in ()"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 26388 [com.xiaomi.providers.appindex] **
+
+Connection pool for /data/user/0/com.xiaomi.providers.appindex/databases/appindex.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.744] executeForChangedRowCount took 4ms - succeeded, sql="DELETE FROM functions WHERE package= ?"
+        1: [2018-05-30 23:17:10.744] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package= ?"
+        2: [2018-05-30 23:15:59.902] execute took 0ms - succeeded, sql="COMMIT;"
+        3: [2018-05-30 23:15:59.902] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        4: [2018-05-30 23:15:59.902] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        5: [2018-05-30 23:15:59.901] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        6: [2018-05-30 23:15:59.863] prepare took 0ms - succeeded, sql="INSERT INTO functions ('_id', 'search_id', 'name', 'pinyin', 'keywords', 'operation_keywords', 'description', 'summary', 'intent_action', 'intent_data', 'package', 'dest_package', 'dest_class', 'icon', 'path', 'fragment', 'app_name', 'launch_count', 'last_resume_time', 'is_settings', 'additional_settings') VALUES (?, ?, ?, ?, ?, ?, ?, COALESCE(?, ''), ?, ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, 0), COALESCE(?, 0), COALESCE(?, 0), COALESCE(?, 0));"
+        7: [2018-05-30 23:15:59.862] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        8: [2018-05-30 23:15:59.861] prepare took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        9: [2018-05-30 23:15:59.441] executeForChangedRowCount took 3ms - succeeded, sql="DELETE FROM functions WHERE package= ?"
+        10: [2018-05-30 23:15:59.441] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package= ?"
+        11: [2018-05-30 23:15:57.073] execute took 0ms - succeeded, sql="COMMIT;"
+        12: [2018-05-30 23:15:57.071] executeForChangedRowCount took 2ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        13: [2018-05-30 23:15:57.071] prepare took 0ms - succeeded, sql="DELETE FROM functions WHERE package="com.mm.lobster.mortgage""
+        14: [2018-05-30 23:15:57.070] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        15: [2018-05-30 23:15:57.024] prepare took 1ms - succeeded, sql="INSERT INTO functions ('_id', 'search_id', 'name', 'pinyin', 'keywords', 'operation_keywords', 'description', 'summary', 'intent_action', 'intent_data', 'package', 'dest_package', 'dest_class', 'icon', 'path', 'fragment', 'app_name', 'launch_count', 'last_resume_time', 'is_settings', 'additional_settings') VALUES (?, ?, ?, ?, ?, ?, ?, COALESCE(?, ''), ?, ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), ?, COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, ''), COALESCE(?, 0), COALESCE(?, 0), COALESCE(?, 0), COALESCE(?, 0));"
+        16: [2018-05-30 23:15:57.017] executeForCursorWindow took 2ms - succeeded, sql="PRAGMA table_info(functions)"
+        17: [2018-05-30 23:15:57.017] prepare took 0ms - succeeded, sql="PRAGMA table_info(functions)"
+        18: [2018-05-30 23:15:57.001] executeForChangedRowCount took 0ms - succeeded, sql="CREATE INDEX IF NOT EXISTS data_idx ON data (package, unique_id, group_id);"
+        19: [2018-05-30 23:15:57.001] prepare took 0ms - succeeded, sql="CREATE INDEX IF NOT EXISTS data_idx ON data (package, unique_id, group_id);"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 14682 [com.miui.securitycenter.remote] **
+
+Connection pool for /data/user/0/com.miui.securitycenter/databases/AntiSpam:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:53.095] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:53.095] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:53.088] executeForLong took 7ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:32.859] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:32.858] executeForLong took 1ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:32.818] executeForLong took 40ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:40.984] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:40.984] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:40.977] executeForLong took 7ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:50.007] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:50.006] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:50.000] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:06.760] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:06.760] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:06.756] executeForLong took 4ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:01.350] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:01.350] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:01.343] executeForLong took 7ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:12:54.539] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:12:54.539] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.securitycenter/databases/manual_list:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:53.097] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:53.096] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:53.095] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:32.861] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:32.860] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:32.859] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:40.985] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:40.985] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:40.984] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:50.008] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:50.008] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:50.007] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:06.762] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:06.761] executeForLong took 1ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:06.760] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:01.352] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:01.352] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:01.351] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:12:54.541] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:12:54.541] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.securitycenter/databases/power_auto_task.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:23.495] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        1: [2018-05-30 23:08:23.494] prepare took 0ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        2: [2018-05-30 23:07:53.098] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        3: [2018-05-30 23:07:53.098] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        4: [2018-05-30 23:07:53.097] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        5: [2018-05-30 20:45:01.579] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        6: [2018-05-30 20:45:01.578] prepare took 1ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        7: [2018-05-30 20:44:32.861] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        8: [2018-05-30 20:44:32.861] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        9: [2018-05-30 20:44:32.861] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        10: [2018-05-30 20:32:10.939] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        11: [2018-05-30 20:32:10.938] prepare took 0ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        12: [2018-05-30 20:31:40.987] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 20:31:40.987] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 20:31:40.985] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 19:54:18.827] executeForCursorWindow took 1ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        16: [2018-05-30 19:54:18.827] prepare took 0ms - succeeded, sql="SELECT _id, enabled, name, condition, operation, repeat_type, task_started, restore_operation, restore_level FROM autotasks"
+        17: [2018-05-30 19:53:50.010] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        18: [2018-05-30 19:53:50.010] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        19: [2018-05-30 19:53:50.008] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.securitycenter/databases/month_report.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:07:53.100] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:53.100] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:53.098] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:32.863] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:32.863] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:32.861] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:40.989] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:40.989] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:40.987] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:50.012] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:50.011] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:50.010] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:06.765] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:06.765] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:06.763] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:01.355] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:01.355] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:01.354] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:12:54.543] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:12:54.542] executeForLong took 1ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 18665 [com.miui.systemAdSolution] **
+
+** Database info for pid 26340 [android.process.mediaUI] **
+
+** Database info for pid 18831 [com.miui.personalassistant] **
+
+** Database info for pid 19863 [com.lbe.security.miui] **
+
+Connection pool for /data/user/0/com.lbe.security.miui/databases/miui_ngen.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.621] executeForLastInsertedRowId took 38ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,_id,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        1: [2018-05-30 23:17:10.621] prepare took 0ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,_id,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        2: [2018-05-30 23:17:10.619] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM active WHERE pkgName = ?"
+        3: [2018-05-30 23:17:10.612] prepare took 0ms - succeeded, sql="SELECT * FROM active WHERE pkgName = ?"
+        4: [2018-05-30 23:17:10.600] executeForChangedRowCount took 12ms - succeeded, sql="DELETE FROM miui_permission_apply_detail_info WHERE pkgName ='com.mm.lobster.mortgage'"
+        5: [2018-05-30 23:17:10.599] prepare took 1ms - succeeded, sql="DELETE FROM miui_permission_apply_detail_info WHERE pkgName ='com.mm.lobster.mortgage'"
+        6: [2018-05-30 23:15:59.260] executeForLastInsertedRowId took 36ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,_id,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        7: [2018-05-30 23:15:59.260] prepare took 0ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,_id,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        8: [2018-05-30 23:15:59.259] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM active WHERE pkgName = ?"
+        9: [2018-05-30 23:15:59.257] prepare took 0ms - succeeded, sql="SELECT * FROM active WHERE pkgName = ?"
+        10: [2018-05-30 23:15:56.187] executeForLastInsertedRowId took 9ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        11: [2018-05-30 23:15:56.187] prepare took 0ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        12: [2018-05-30 23:15:56.105] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM active WHERE pkgName = ?"
+        13: [2018-05-30 23:15:56.104] prepare took 0ms - succeeded, sql="SELECT * FROM active WHERE pkgName = ?"
+        14: [2018-05-30 23:07:54.974] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        15: [2018-05-30 23:07:54.973] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        16: [2018-05-30 23:07:54.973] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        17: [2018-05-30 23:06:39.986] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM miui_permission_apply_detail_info WHERE pkgName ='com.tbstbs.xiacai'"
+        18: [2018-05-30 23:06:39.986] prepare took 0ms - succeeded, sql="DELETE FROM miui_permission_apply_detail_info WHERE pkgName ='com.tbstbs.xiacai'"
+        19: [2018-05-30 23:06:39.941] executeForLastInsertedRowId took 45ms - succeeded, sql="INSERT OR REPLACE  INTO active(present,lastConfigured,userAccept,installTime,forcedBits,uninstallTime,userPrompt,permDesc,suggestReject,userReject,pkgName,pruneAfterDelete,suggestPrompt,suggestAccept,_id,suggestBlock,permMask,lastUpdated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.lbe.security.miui/files/static_cache.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:15:56.161] executeForCursorWindow took 25ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        1: [2018-05-30 23:15:56.160] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        2: [2018-05-30 23:15:56.115] executeForCursorWindow took 45ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        3: [2018-05-30 23:15:56.106] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        4: [2018-05-30 23:07:54.974] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        5: [2018-05-30 23:07:54.974] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        6: [2018-05-30 23:07:54.974] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        7: [2018-05-30 23:05:37.188] executeForCursorWindow took 25ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        8: [2018-05-30 23:05:37.188] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        9: [2018-05-30 23:05:37.152] executeForCursorWindow took 35ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        10: [2018-05-30 23:05:37.152] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        11: [2018-05-30 21:58:01.571] executeForCursorWindow took 23ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        12: [2018-05-30 21:58:01.571] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        13: [2018-05-30 21:58:01.511] executeForCursorWindow took 60ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        14: [2018-05-30 21:58:01.511] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        15: [2018-05-30 21:34:18.875] executeForCursorWindow took 27ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        16: [2018-05-30 21:34:18.875] prepare took 0ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        17: [2018-05-30 21:34:18.830] executeForCursorWindow took 44ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        18: [2018-05-30 21:34:18.829] prepare took 1ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+        19: [2018-05-30 21:27:54.821] executeForCursorWindow took 28ms - succeeded, sql="SELECT * FROM cached WHERE pkgname = ? AND minVersionCode <= ? AND maxVersionCode >= ?"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.lbe.security.miui/databases/wake_path.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.640] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM StartActivityRuleList"
+        1: [2018-05-30 23:17:10.640] prepare took 0ms - succeeded, sql="SELECT * FROM StartActivityRuleList"
+        2: [2018-05-30 23:17:10.625] executeForCursorWindow took 0ms - succeeded, sql="SELECT pkgName FROM WakePathWhiteList WHERE userSettings != 2"
+        3: [2018-05-30 23:17:10.625] prepare took 0ms - succeeded, sql="SELECT pkgName FROM WakePathWhiteList WHERE userSettings != 2"
+        4: [2018-05-30 23:17:10.624] executeForChangedRowCount took 1ms - succeeded, sql="DELETE FROM WakePathRejectedDetailInfo WHERE callerPkgName='com.mm.lobster.mortgage' OR calleePkgName='com.mm.lobster.mortgage'"
+        5: [2018-05-30 23:17:10.624] prepare took 0ms - succeeded, sql="DELETE FROM WakePathRejectedDetailInfo WHERE callerPkgName='com.mm.lobster.mortgage' OR calleePkgName='com.mm.lobster.mortgage'"
+        6: [2018-05-30 23:17:10.624] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM StartActivityRuleList WHERE callerPkgName = 'com.mm.lobster.mortgage' OR calleePkgName = 'com.mm.lobster.mortgage'"
+        7: [2018-05-30 23:17:10.623] prepare took 1ms - succeeded, sql="DELETE FROM StartActivityRuleList WHERE callerPkgName = 'com.mm.lobster.mortgage' OR calleePkgName = 'com.mm.lobster.mortgage'"
+        8: [2018-05-30 23:17:10.623] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM WakePathWhiteList WHERE PkgName = 'com.mm.lobster.mortgage'"
+        9: [2018-05-30 23:17:10.591] prepare took 32ms - succeeded, sql="DELETE FROM WakePathWhiteList WHERE PkgName = 'com.mm.lobster.mortgage'"
+        10: [2018-05-30 23:07:54.974] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        11: [2018-05-30 23:07:54.974] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        12: [2018-05-30 23:07:54.974] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        13: [2018-05-30 23:06:39.991] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM StartActivityRuleList"
+        14: [2018-05-30 23:06:39.991] prepare took 0ms - succeeded, sql="SELECT * FROM StartActivityRuleList"
+        15: [2018-05-30 23:06:39.990] executeForCursorWindow took 0ms - succeeded, sql="SELECT pkgName FROM WakePathWhiteList WHERE userSettings != 2"
+        16: [2018-05-30 23:06:39.989] prepare took 1ms - succeeded, sql="SELECT pkgName FROM WakePathWhiteList WHERE userSettings != 2"
+        17: [2018-05-30 23:06:39.984] executeForChangedRowCount took 5ms - succeeded, sql="DELETE FROM WakePathRejectedDetailInfo WHERE callerPkgName='com.tbstbs.xiacai' OR calleePkgName='com.tbstbs.xiacai'"
+        18: [2018-05-30 23:06:39.983] prepare took 1ms - succeeded, sql="DELETE FROM WakePathRejectedDetailInfo WHERE callerPkgName='com.tbstbs.xiacai' OR calleePkgName='com.tbstbs.xiacai'"
+        19: [2018-05-30 23:06:39.974] executeForChangedRowCount took 9ms - succeeded, sql="DELETE FROM StartActivityRuleList WHERE callerPkgName = 'com.tbstbs.xiacai' OR calleePkgName = 'com.tbstbs.xiacai'"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 27012 [com.miui.cloudservice:pushservice] **
+
+** Database info for pid 21362 [com.jeejen.family.miui] **
+
+Connection pool for /data/user/0/com.jeejen.family.miui/databases/contact_crop_photo.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:56.249] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:56.248] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:56.243] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 21:30:01.190] executeForChangedRowCount took 1ms - succeeded, sql="create table if not exists crop_photo(contact_id integer,photo BLOB)"
+        4: [2018-05-30 21:30:01.190] prepare took 0ms - succeeded, sql="create table if not exists crop_photo(contact_id integer,photo BLOB)"
+        5: [2018-05-30 21:30:01.190] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        6: [2018-05-30 21:30:01.190] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        7: [2018-05-30 21:30:01.189] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        8: [2018-05-30 21:30:01.189] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        9: [2018-05-30 21:30:01.188] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        10: [2018-05-30 21:30:01.188] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        11: [2018-05-30 21:30:01.188] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        12: [2018-05-30 21:30:01.188] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        13: [2018-05-30 21:30:01.188] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        14: [2018-05-30 21:30:01.188] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        15: [2018-05-30 21:30:01.186] executeForString took 2ms - succeeded, sql="PRAGMA journal_mode"
+        16: [2018-05-30 21:30:01.186] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        17: [2018-05-30 21:30:01.186] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.jeejen.family.miui/databases/call.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:56.250] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:56.250] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:56.249] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 21:30:01.226] executeForCursorWindow took 0ms - succeeded, sql="SELECT MAX(_id) FROM calls"
+        4: [2018-05-30 21:30:01.225] prepare took 0ms - succeeded, sql="SELECT MAX(_id) FROM calls"
+        5: [2018-05-30 21:30:01.225] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        6: [2018-05-30 21:30:01.224] prepare took 1ms - succeeded, sql="PRAGMA user_version;"
+        7: [2018-05-30 21:30:01.223] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        8: [2018-05-30 21:30:01.222] execute took 1ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        9: [2018-05-30 21:30:01.222] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        10: [2018-05-30 21:30:01.222] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        11: [2018-05-30 21:30:01.222] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        12: [2018-05-30 21:30:01.222] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        13: [2018-05-30 21:30:01.222] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        14: [2018-05-30 21:30:01.222] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        15: [2018-05-30 21:30:01.217] executeForString took 5ms - succeeded, sql="PRAGMA journal_mode"
+        16: [2018-05-30 21:30:01.217] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        17: [2018-05-30 21:30:01.217] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.jeejen.family.miui/databases/launcher.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:07:56.252] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:07:56.252] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:07:56.250] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 21:30:01.179] executeForLong took 1ms - succeeded, sql="PRAGMA user_version;"
+        4: [2018-05-30 21:30:01.179] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        5: [2018-05-30 21:30:01.172] executeForString took 1ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        6: [2018-05-30 21:30:01.172] execute took 0ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        7: [2018-05-30 21:30:01.172] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        8: [2018-05-30 21:30:01.172] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        9: [2018-05-30 21:30:01.172] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        10: [2018-05-30 21:30:01.171] executeForLong took 1ms - succeeded, sql="PRAGMA journal_size_limit"
+        11: [2018-05-30 21:30:01.171] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        12: [2018-05-30 21:30:01.171] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        13: [2018-05-30 21:30:01.167] executeForString took 4ms - succeeded, sql="PRAGMA journal_mode"
+        14: [2018-05-30 21:30:01.166] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        15: [2018-05-30 21:30:01.166] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 26909 [com.xiaomi.bluetooth] **
+
+Connection pool for /data/user/0/com.xiaomi.bluetooth/databases/miuible.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:00.619] executeForCursorWindow took 1ms - succeeded, sql="SELECT DISTINCT device FROM settings WHERE (value NOT NULL AND value != 0 AND value != '' )"
+        1: [2018-05-30 23:17:00.618] prepare took 0ms - succeeded, sql="SELECT DISTINCT device FROM settings WHERE (value NOT NULL AND value != 0 AND value != '' )"
+        2: [2018-05-30 23:17:00.618] executeForLong took 0ms - succeeded, sql="PRAGMA user_version;"
+        3: [2018-05-30 23:17:00.618] prepare took 0ms - succeeded, sql="PRAGMA user_version;"
+        4: [2018-05-30 23:17:00.617] executeForString took 0ms - succeeded, sql="SELECT locale FROM android_metadata UNION SELECT NULL ORDER BY locale DESC LIMIT 1"
+        5: [2018-05-30 23:17:00.616] execute took 1ms - succeeded, sql="CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)"
+        6: [2018-05-30 23:17:00.616] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint=100"
+        7: [2018-05-30 23:17:00.616] executeForLong took 0ms - succeeded, sql="PRAGMA wal_autocheckpoint"
+        8: [2018-05-30 23:17:00.616] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit=524288"
+        9: [2018-05-30 23:17:00.616] executeForLong took 0ms - succeeded, sql="PRAGMA journal_size_limit"
+        10: [2018-05-30 23:17:00.616] executeForString took 0ms - succeeded, sql="PRAGMA synchronous"
+        11: [2018-05-30 23:17:00.615] executeForString took 0ms - succeeded, sql="PRAGMA journal_mode=PERSIST"
+        12: [2018-05-30 23:17:00.613] executeForString took 2ms - succeeded, sql="PRAGMA journal_mode"
+        13: [2018-05-30 23:17:00.612] executeForLong took 0ms - succeeded, sql="PRAGMA foreign_keys"
+        14: [2018-05-30 23:17:00.612] executeForLong took 0ms - succeeded, sql="PRAGMA page_size"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 19571 [com.qualcomm.qti.accesscache] **
+
+** Database info for pid 19353 [com.android.smspush] **
+
+** Database info for pid 18791 [com.miui.autotestutils] **
+
+** Database info for pid 22591 [com.android.browser] **
+
+** Database info for pid 20561 [com.miui.core] **
+
+** Database info for pid 20044 [com.miui.powerkeeper:service] **
+
+Connection pool for :memory::
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.615] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM appActiveTable WHERE uid = 10480"
+        1: [2018-05-30 23:17:10.615] prepare took 0ms - succeeded, sql="DELETE FROM appActiveTable WHERE uid = 10480"
+        2: [2018-05-30 23:17:10.615] executeForCursorWindow took 0ms - succeeded, sql="SELECT uid FROM appActiveTable WHERE uid = 10480"
+        3: [2018-05-30 23:17:10.614] prepare took 0ms - succeeded, sql="SELECT uid FROM appActiveTable WHERE uid = 10480"
+        4: [2018-05-30 23:17:09.061] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT OR REPLACE  INTO appActiveTable(property,uid,active) VALUES (?,?,?)"
+        5: [2018-05-30 23:17:09.061] prepare took 0ms - succeeded, sql="INSERT OR REPLACE  INTO appActiveTable(property,uid,active) VALUES (?,?,?)"
+        6: [2018-05-30 23:08:00.244] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 23:08:00.244] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 23:08:00.244] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 23:06:39.925] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM appActiveTable WHERE uid = 10479"
+        10: [2018-05-30 23:06:39.925] prepare took 0ms - succeeded, sql="DELETE FROM appActiveTable WHERE uid = 10479"
+        11: [2018-05-30 23:06:39.924] executeForCursorWindow took 0ms - succeeded, sql="SELECT uid FROM appActiveTable WHERE uid = 10479"
+        12: [2018-05-30 23:06:39.923] prepare took 1ms - succeeded, sql="SELECT uid FROM appActiveTable WHERE uid = 10479"
+        13: [2018-05-30 23:06:38.295] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT OR REPLACE  INTO appActiveTable(property,uid,active) VALUES (?,?,?)"
+        14: [2018-05-30 23:06:38.295] prepare took 0ms - succeeded, sql="INSERT OR REPLACE  INTO appActiveTable(property,uid,active) VALUES (?,?,?)"
+        15: [2018-05-30 22:00:33.103] executeForChangedRowCount took 0ms - succeeded, sql="DELETE FROM appActiveTable WHERE uid = 10478"
+        16: [2018-05-30 22:00:33.103] prepare took 0ms - succeeded, sql="DELETE FROM appActiveTable WHERE uid = 10478"
+        17: [2018-05-30 22:00:33.103] executeForCursorWindow took 0ms - succeeded, sql="SELECT uid FROM appActiveTable WHERE uid = 10478"
+        18: [2018-05-30 22:00:33.102] prepare took 1ms - succeeded, sql="SELECT uid FROM appActiveTable WHERE uid = 10478"
+        19: [2018-05-30 22:00:31.536] executeForLastInsertedRowId took 0ms - succeeded, sql="INSERT OR REPLACE  INTO appActiveTable(property,uid,active) VALUES (?,?,?)"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.powerkeeper/databases/user_configure.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:10.674] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        1: [2018-05-30 23:17:10.672] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        2: [2018-05-30 23:17:10.667] prepare took 0ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        3: [2018-05-30 23:17:10.667] prepare took 0ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        4: [2018-05-30 23:17:10.614] executeForChangedRowCount took 50ms - succeeded, sql="DELETE FROM userTable WHERE userId = ? AND pkgName = ?"
+        5: [2018-05-30 23:17:10.614] prepare took 0ms - succeeded, sql="DELETE FROM userTable WHERE userId = ? AND pkgName = ?"
+        6: [2018-05-30 23:17:10.613] executeForCursorWindow took 0ms - succeeded, sql="SELECT _id FROM userTable WHERE userId = ? AND pkgName = ?"
+        7: [2018-05-30 23:17:10.612] prepare took 0ms - succeeded, sql="SELECT _id FROM userTable WHERE userId = ? AND pkgName = ?"
+        8: [2018-05-30 23:15:56.284] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        9: [2018-05-30 23:15:56.283] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        10: [2018-05-30 23:15:56.195] prepare took 0ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        11: [2018-05-30 23:15:56.194] prepare took 1ms - succeeded, sql="SELECT * FROM userTable WHERE (_id = 6473)"
+        12: [2018-05-30 23:15:56.130] executeForLastInsertedRowId took 60ms - succeeded, sql="INSERT OR REPLACE  INTO userTable(bgControl,lastConfigured,userId,pkgName) VALUES (?,?,?,?)"
+        13: [2018-05-30 23:15:56.130] prepare took 0ms - succeeded, sql="INSERT OR REPLACE  INTO userTable(bgControl,lastConfigured,userId,pkgName) VALUES (?,?,?,?)"
+        14: [2018-05-30 23:08:24.200] executeForCursorWindow took 1ms - succeeded, sql="SELECT DISTINCT value FROM misc WHERE name = ? AND userId = ?"
+        15: [2018-05-30 23:08:24.200] prepare took 0ms - succeeded, sql="SELECT DISTINCT value FROM misc WHERE name = ? AND userId = ?"
+        16: [2018-05-30 23:08:24.200] executeForCursorWindow took 0ms - succeeded, sql="SELECT DISTINCT value FROM misc WHERE name = ? AND userId = ?"
+        17: [2018-05-30 23:08:24.200] prepare took 0ms - succeeded, sql="SELECT DISTINCT value FROM misc WHERE name = ? AND userId = ?"
+        18: [2018-05-30 23:08:24.199] executeForCursorWindow took 0ms - succeeded, sql="SELECT DISTINCT value FROM misc WHERE name = ? AND userId = ?"
+        19: [2018-05-30 23:08:24.199] prepare took 0ms - succeeded, sql="SELECT DISTINCT value FROM misc WHERE name = ? AND userId = ?"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.powerkeeper/databases/cloud_configure.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:15:56.291] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.mm.lobster.mortgage')"
+        1: [2018-05-30 23:15:56.290] prepare took 0ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.mm.lobster.mortgage')"
+        2: [2018-05-30 23:15:56.285] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        3: [2018-05-30 23:15:56.285] prepare took 0ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        4: [2018-05-30 23:08:24.060] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        5: [2018-05-30 23:08:24.060] prepare took 0ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        6: [2018-05-30 23:08:00.245] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 23:08:00.245] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 23:08:00.245] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 23:05:37.306] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.tbstbs.xiacai')"
+        10: [2018-05-30 23:05:37.296] prepare took 0ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.tbstbs.xiacai')"
+        11: [2018-05-30 23:05:37.203] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        12: [2018-05-30 23:05:37.203] prepare took 0ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        13: [2018-05-30 21:58:01.678] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.yuyoogame.ameng.puzzle3.sub1')"
+        14: [2018-05-30 21:58:01.677] prepare took 0ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.yuyoogame.ameng.puzzle3.sub1')"
+        15: [2018-05-30 21:58:01.672] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        16: [2018-05-30 21:58:01.671] prepare took 0ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+        17: [2018-05-30 21:34:19.013] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.eoffcn.mobile')"
+        18: [2018-05-30 21:34:19.011] prepare took 0ms - succeeded, sql="SELECT * FROM cloudAppTable WHERE (pkgName = 'com.eoffcn.mobile')"
+        19: [2018-05-30 21:34:19.007] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM GlobalFeatureTable"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 20018 [com.sohu.inputmethod.sogou.xiaomi] **
+
+Connection pool for /data/user/0/com.sohu.inputmethod.sogou.xiaomi/databases/pri_wxop_tencent_analysis.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:00.719] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:00.719] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:00.714] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:39.376] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:39.376] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:39.371] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:48.553] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:48.553] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:48.550] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:56.496] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:56.495] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:56.486] executeForLong took 9ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:13.585] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:13.585] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:13.580] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:08.129] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:08.129] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:08.124] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:01.355] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:01.354] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.sohu.inputmethod.sogou.xiaomi/databases/wxop_tencent_analysis.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:08:00.722] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:00.722] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:00.720] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:39.378] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:39.378] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:39.376] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:48.556] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:48.556] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:48.554] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:56.498] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:56.498] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:56.496] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:13.588] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:13.588] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:13.585] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:08.132] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:08.132] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:08.130] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:01.356] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:01.356] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 17052 [com.qti.service.colorservice] **
+
+** Database info for pid 2631 [com.android.phone] **
+
+Connection pool for /data/user/0/com.android.providers.telephony/databases/HbpcdLookup.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:01.273] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:01.272] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:01.267] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:39.933] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:39.932] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:39.927] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:49.111] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:49.111] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:49.106] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:53:57.062] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:53:57.062] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:53:57.057] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:14.128] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:14.128] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:14.123] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:08.669] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:08.669] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:08.664] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:01.888] executeForCursorWindow took 1ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:01.888] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.providers.telephony/databases/telephony.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:24.246] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM siminfo"
+        1: [2018-05-30 23:08:24.245] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo"
+        2: [2018-05-30 23:08:24.243] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM siminfo WHERE (sim_id>=0)"
+        3: [2018-05-30 23:08:24.243] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo WHERE (sim_id>=0)"
+        4: [2018-05-30 23:08:24.243] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo WHERE ((sim_id>=0))"
+        5: [2018-05-30 23:08:01.273] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        6: [2018-05-30 23:08:01.273] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        7: [2018-05-30 23:08:01.273] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        8: [2018-05-30 23:07:47.993] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM siminfo"
+        9: [2018-05-30 23:07:47.993] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo"
+        10: [2018-05-30 23:07:47.988] executeForCursorWindow took 4ms - succeeded, sql="SELECT * FROM siminfo WHERE (sim_id>=0)"
+        11: [2018-05-30 23:07:47.988] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo WHERE (sim_id>=0)"
+        12: [2018-05-30 23:07:47.987] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo WHERE ((sim_id>=0))"
+        13: [2018-05-30 20:45:02.267] executeForCursorWindow took 0ms - succeeded, sql="SELECT * FROM siminfo"
+        14: [2018-05-30 20:45:02.266] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo"
+        15: [2018-05-30 20:45:02.263] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM siminfo WHERE (sim_id>=0)"
+        16: [2018-05-30 20:45:02.262] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo WHERE (sim_id>=0)"
+        17: [2018-05-30 20:45:02.262] prepare took 0ms - succeeded, sql="SELECT * FROM siminfo WHERE ((sim_id>=0))"
+        18: [2018-05-30 20:44:39.933] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 20:44:39.933] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.android.providers.telephony/databases/mmssms.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:17:14.876] executeForCursorWindow took 1ms - succeeded, sql="SELECT transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM (SELECT DISTINCT date AS normalized_date, 'sms' AS transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, NULL AS sub, NULL AS sub_cs, date, date_sent, read, NULL AS m_type, NULL AS msg_box, NULL AS d_rpt, NULL AS rr, NULL AS err_type, locked, NULL AS ct_l, NULL AS m_size, NULL AS exp, timed, NULL AS date_ms_part, mx_status, NULL AS need_download, NULL AS snippet, NULL AS preview_type, NULL AS preview_data_ts, sim_id, NULL AS st, block_type, NULL AS mx_type, NULL AS mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM sms WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is NULL))) AND (deleted=0)) AND ((type != 3))) UNION SELECT DISTINCT date * 1000 + date_ms_part AS normalized_date, 'mms' AS transport_type, pdu._id, thread_id, NULL AS address, NULL AS body, date, date_sent, read, NULL AS type, NULL AS status, locked, NULL AS error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, NULL AS fake_cell_type, NULL AS url_risky_type, NULL AS creator, favorite_date FROM pdu LEFT JOIN pending_msgs ON pdu._id = pending_msgs.msg_id WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is NULL))) AND (deleted=0)) AND ((msg_box != 3 AND (m_type = 128 OR m_type = 132 OR m_type = 130)))) ORDER BY normalized_date DESC) GROUP BY thread_id,normalized_date,timed ORDER BY normalized_date DESC"
+        1: [2018-05-30 23:17:14.871] prepare took 4ms - succeeded, sql="SELECT transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM (SELECT DISTINCT date AS normalized_date, 'sms' AS transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, NULL AS sub, NULL AS sub_cs, date, date_sent, read, NULL AS m_type, NULL AS msg_box, NULL AS d_rpt, NULL AS rr, NULL AS err_type, locked, NULL AS ct_l, NULL AS m_size, NULL AS exp, timed, NULL AS date_ms_part, mx_status, NULL AS need_download, NULL AS snippet, NULL AS preview_type, NULL AS preview_data_ts, sim_id, NULL AS st, block_type, NULL AS mx_type, NULL AS mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM sms WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is NULL))) AND (deleted=0)) AND ((type != 3))) UNION SELECT DISTINCT date * 1000 + date_ms_part AS normalized_date, 'mms' AS transport_type, pdu._id, thread_id, NULL AS address, NULL AS body, date, date_sent, read, NULL AS type, NULL AS status, locked, NULL AS error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, NULL AS fake_cell_type, NULL AS url_risky_type, NULL AS creator, favorite_date FROM pdu LEFT JOIN pending_msgs ON pdu._id = pending_msgs.msg_id WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is NULL))) AND (deleted=0)) AND ((msg_box != 3 AND (m_type = 128 OR m_type = 132 OR m_type = 130)))) ORDER BY normalized_date DESC) GROUP BY thread_id,normalized_date,timed ORDER BY normalized_date DESC"
+        2: [2018-05-30 23:17:14.861] executeForCursorWindow took 1ms - succeeded, sql="SELECT transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM (SELECT DISTINCT date AS normalized_date, 'sms' AS transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, NULL AS sub, NULL AS sub_cs, date, date_sent, read, NULL AS m_type, NULL AS msg_box, NULL AS d_rpt, NULL AS rr, NULL AS err_type, locked, NULL AS ct_l, NULL AS m_size, NULL AS exp, timed, NULL AS date_ms_part, mx_status, NULL AS need_download, NULL AS snippet, NULL AS preview_type, NULL AS preview_data_ts, sim_id, NULL AS st, block_type, NULL AS mx_type, NULL AS mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM sms WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is not NULL))) AND (deleted=0)) AND ((type != 3))) UNION SELECT DISTINCT date * 1000 + date_ms_part AS normalized_date, 'mms' AS transport_type, pdu._id, thread_id, NULL AS address, NULL AS body, date, date_sent, read, NULL AS type, NULL AS status, locked, NULL AS error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, NULL AS fake_cell_type, NULL AS url_risky_type, NULL AS creator, favorite_date FROM pdu LEFT JOIN pending_msgs ON pdu._id = pending_msgs.msg_id WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is not NULL))) AND (deleted=0)) AND ((msg_box != 3 AND (m_type = 128 OR m_type = 132 OR m_type = 130)))) ORDER BY normalized_date DESC) GROUP BY thread_id,normalized_date,timed ORDER BY normalized_date DESC"
+        3: [2018-05-30 23:17:14.855] prepare took 5ms - succeeded, sql="SELECT transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM (SELECT DISTINCT date AS normalized_date, 'sms' AS transport_type, _id, thread_id, address, body, date, date_sent, read, type, status, locked, error_code, timed, mx_status, block_type, NULL AS sub, NULL AS sub_cs, date, date_sent, read, NULL AS m_type, NULL AS msg_box, NULL AS d_rpt, NULL AS rr, NULL AS err_type, locked, NULL AS ct_l, NULL AS m_size, NULL AS exp, timed, NULL AS date_ms_part, mx_status, NULL AS need_download, NULL AS snippet, NULL AS preview_type, NULL AS preview_data_ts, sim_id, NULL AS st, block_type, NULL AS mx_type, NULL AS mx_extension, fake_cell_type, url_risky_type, creator, favorite_date FROM sms WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is not NULL))) AND (deleted=0)) AND ((type != 3))) UNION SELECT DISTINCT date * 1000 + date_ms_part AS normalized_date, 'mms' AS transport_type, pdu._id, thread_id, NULL AS address, NULL AS body, date, date_sent, read, NULL AS type, NULL AS status, locked, NULL AS error_code, timed, mx_status, block_type, sub, sub_cs, date, date_sent, read, m_type, msg_box, d_rpt, rr, err_type, locked, ct_l, m_size, exp, timed, date_ms_part, mx_status, need_download, snippet, preview_type, preview_data_ts, sim_id, st, block_type, mx_type, mx_extension, NULL AS fake_cell_type, NULL AS url_risky_type, NULL AS creator, favorite_date FROM pdu LEFT JOIN pending_msgs ON pdu._id = pending_msgs.msg_id WHERE ((((timed > 0 AND normalized_date < 1527693431551) AND (thread_id IN (select _id from threads where private_addr_ids is not NULL))) AND (deleted=0)) AND ((msg_box != 3 AND (m_type = 128 OR m_type = 132 OR m_type = 130)))) ORDER BY normalized_date DESC) GROUP BY thread_id,normalized_date,timed ORDER BY normalized_date DESC"
+        4: [2018-05-30 23:17:14.838] executeForCursorWindow took 1ms - succeeded, sql="SELECT (date*1000+date_ms_part) AS date_full FROM pdu WHERE (msg_box=2) AND ((timed > 0) AND (deleted = 0)) ORDER BY date_full ASC"
+        5: [2018-05-30 23:17:14.837] prepare took 0ms - succeeded, sql="SELECT (date*1000+date_ms_part) AS date_full FROM pdu WHERE (msg_box=2) AND ((timed > 0) AND (deleted = 0)) ORDER BY date_full ASC"
+        6: [2018-05-30 23:17:14.829] executeForCursorWindow took 0ms - succeeded, sql="SELECT date FROM sms WHERE (type=2) AND ((timed > 0) AND (deleted=0)) ORDER BY date ASC"
+        7: [2018-05-30 23:17:14.828] execute took 0ms - succeeded, sql="COMMIT;"
+        8: [2018-05-30 23:17:14.827] prepare took 0ms - succeeded, sql="SELECT date FROM sms WHERE (type=2) AND ((timed > 0) AND (deleted=0)) ORDER BY date ASC"
+        9: [2018-05-30 23:17:14.826] execute took 1ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        10: [2018-05-30 23:17:14.630] executeForCursorWindow took 2ms - succeeded, sql="SELECT * FROM pdu WHERE (((mx_status=16 OR mx_status=1) AND (out_time>0) AND (mx_id>0) AND (mx_type>=0)) AND (deleted = 0)) ORDER BY out_time"
+        11: [2018-05-30 23:17:14.627] prepare took 1ms - succeeded, sql="SELECT * FROM pdu WHERE (((mx_status=16 OR mx_status=1) AND (out_time>0) AND (mx_id>0) AND (mx_type>=0)) AND (deleted = 0)) ORDER BY out_time"
+        12: [2018-05-30 23:17:14.613] executeForCursorWindow took 1ms - succeeded, sql="SELECT * FROM sms WHERE (((mx_status=16 or mx_status=1 or mx_status=196609) and (out_time>0) and (mx_id>0)) AND (deleted=0)) ORDER BY out_time"
+        13: [2018-05-30 23:17:14.612] execute took 0ms - succeeded, sql="COMMIT;"
+        14: [2018-05-30 23:17:14.610] prepare took 0ms - succeeded, sql="SELECT * FROM sms WHERE (((mx_status=16 or mx_status=1 or mx_status=196609) and (out_time>0) and (mx_id>0)) AND (deleted=0)) ORDER BY out_time"
+        15: [2018-05-30 23:17:14.610] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+        16: [2018-05-30 23:17:11.988] executeForCursorWindow took 1ms - succeeded, sql="SELECT address, body FROM sms WHERE (type=1) AND ((1=1)) AND (deleted=0) GROUP BY (address) ORDER BY date DESC"
+        17: [2018-05-30 23:17:11.988] execute took 0ms - succeeded, sql="COMMIT;"
+        18: [2018-05-30 23:17:11.986] prepare took 0ms - succeeded, sql="SELECT address, body FROM sms WHERE (type=1) AND ((1=1)) AND (deleted=0) GROUP BY (address) ORDER BY date DESC"
+        19: [2018-05-30 23:17:11.986] execute took 0ms - succeeded, sql="BEGIN EXCLUSIVE;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 2610 [com.qualcomm.qti.tetherservice] **
+
+** Database info for pid 2586 [com.quicinc.wbcserviceapp] **
+
+** Database info for pid 2568 [com.mi.AutoTest] **
+
+** Database info for pid 2551 [com.qualcomm.qti.carrierconfigure] **
+
+** Database info for pid 2530 [com.qualcomm.qti.loadcarrier] **
+
+** Database info for pid 2517 [com.xiaomi.finddevice] **
+
+** Database info for pid 2503 [com.fingerprints.serviceext] **
+
+** Database info for pid 2487 [com.qti.dpmserviceapp] **
+
+** Database info for pid 2475 [com.qualcomm.qti.notificationservice] **
+
+** Database info for pid 2461 [com.quicinc.cne.CNEService] **
+
+** Database info for pid 2448 [com.miui.contentcatcher] **
+
+** Database info for pid 2362 [com.miui.daemon] **
+
+Connection pool for /data/user/0/com.miui.daemon/databases/mqsas.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:17:05.960] executeForChangedRowCount took 87ms - succeeded, sql="UPDATE  je SET ts=? WHERE _id=?"
+        1: [2018-05-30 23:17:05.960] prepare took 0ms - succeeded, sql="UPDATE  je SET ts=? WHERE _id=?"
+        2: [2018-05-30 23:17:05.957] executeForCursorWindow took 2ms - succeeded, sql="SELECT * FROM je WHERE prn=? and isuploaded=? ORDER BY ts DESC"
+        3: [2018-05-30 23:17:05.957] prepare took 0ms - succeeded, sql="SELECT * FROM je WHERE prn=? and isuploaded=? ORDER BY ts DESC"
+        4: [2018-05-30 23:16:08.055] execute took 16ms - succeeded, sql="COMMIT;"
+        5: [2018-05-30 23:16:08.055] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        6: [2018-05-30 23:16:08.053] executeForLastInsertedRowId took 2ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        7: [2018-05-30 23:16:08.053] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        8: [2018-05-30 23:16:08.053] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        9: [2018-05-30 23:16:08.053] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        10: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 1ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        11: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        12: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        13: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        14: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        15: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        16: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        17: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        18: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+        19: [2018-05-30 23:16:08.052] executeForLastInsertedRowId took 0ms - succeeded, sql="REPLACE INTO killprocess(_id,kill_count,policy,process_name,wrong_kill_count)VALUES(?,?,?,?,?)"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.miui.daemon/databases/perfturbo.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:04.254] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:04.254] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:04.248] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:42.815] executeForCursorWindow took 1ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:42.815] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:42.810] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:52.015] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:52.015] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:52.009] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:54:00.155] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:54:00.155] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:54:00.149] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:17.117] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:17.117] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:17.114] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:11.575] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:11.575] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:11.569] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:04.751] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:04.751] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 1931 [com.miui.whetstone] **
+
+Connection pool for /data/user/0/com.miui.whetstone/databases/whetstone.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:04.714] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:04.714] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:04.708] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:43.231] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:43.231] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:43.226] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:52.405] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:52.405] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:52.402] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:54:00.564] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:54:00.563] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:54:00.558] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:17.581] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:17.581] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:17.575] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:11.999] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:11.998] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:11.993] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:05.136] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:05.136] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+Connection pool for /data/user/0/com.xiaomi.joyose/databases/SmartP.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:04.716] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:04.716] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:04.714] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:43.233] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:43.232] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:43.231] executeForLong took 1ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:52.408] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:52.408] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:52.406] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:54:00.566] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:54:00.566] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:54:00.564] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:17.584] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:17.584] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:17.581] executeForLong took 3ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:12.001] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:12.001] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:11.999] executeForLong took 2ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:05.137] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:05.137] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 1914 [com.xiaomi.xmsf] **
+
+Connection pool for /data/user/0/com.xiaomi.xmsf/databases/traffic.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: false
+      Most recently executed operations:
+        0: [2018-05-30 23:08:05.029] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:05.028] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:05.022] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 20:44:43.506] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        4: [2018-05-30 20:44:43.505] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        5: [2018-05-30 20:44:43.500] executeForLong took 5ms - succeeded, sql="PRAGMA page_count;"
+        6: [2018-05-30 20:31:52.683] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        7: [2018-05-30 20:31:52.682] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        8: [2018-05-30 20:31:52.676] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        9: [2018-05-30 19:54:00.849] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        10: [2018-05-30 19:54:00.849] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        11: [2018-05-30 19:54:00.843] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        12: [2018-05-30 19:01:17.879] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        13: [2018-05-30 19:01:17.879] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        14: [2018-05-30 19:01:17.873] executeForLong took 6ms - succeeded, sql="PRAGMA page_count;"
+        15: [2018-05-30 17:32:12.310] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        16: [2018-05-30 17:32:12.310] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+        17: [2018-05-30 17:32:12.303] executeForLong took 7ms - succeeded, sql="PRAGMA page_count;"
+        18: [2018-05-30 16:13:05.398] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        19: [2018-05-30 16:13:05.398] executeForLong took 0ms - succeeded, sql="PRAGMA page_size;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 1803 [com.android.systemui] **
+
+Connection pool for /data/user/0/com.android.systemui/databases/systemui.db:
+  Open: true
+  Max connections: 1
+  Available primary connection:
+    Connection #0:
+      isPrimaryConnection: true
+      onlyAllowReadOnlyOperations: true
+      Most recently executed operations:
+        0: [2018-05-30 23:08:05.518] executeForCursorWindow took 0ms - succeeded, sql="PRAGMA database_list;"
+        1: [2018-05-30 23:08:05.517] executeForLong took 1ms - succeeded, sql="PRAGMA page_size;"
+        2: [2018-05-30 23:08:05.517] executeForLong took 0ms - succeeded, sql="PRAGMA page_count;"
+        3: [2018-05-30 23:05:58.832] executeForCursorWindow took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.tbstbs.xiacai' and date  between 20180430 and 20180530"
+        4: [2018-05-30 23:05:58.831] prepare took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.tbstbs.xiacai' and date  between 20180430 and 20180530"
+        5: [2018-05-30 21:58:30.018] executeForCursorWindow took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.yuyoogame.ameng.puzzle3.sub1' and date  between 20180430 and 20180530"
+        6: [2018-05-30 21:58:30.016] prepare took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.yuyoogame.ameng.puzzle3.sub1' and date  between 20180430 and 20180530"
+        7: [2018-05-30 21:56:36.080] executeForCursorWindow took 10ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.miui.cloudservice' and date  between 20180430 and 20180530"
+        8: [2018-05-30 21:56:36.073] prepare took 2ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.miui.cloudservice' and date  between 20180430 and 20180530"
+        9: [2018-05-30 21:28:50.331] executeForCursorWindow took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='oneapp.onechain.androidapp' and date  between 20180430 and 20180530"
+        10: [2018-05-30 21:28:50.330] prepare took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='oneapp.onechain.androidapp' and date  between 20180430 and 20180530"
+        11: [2018-05-30 21:11:31.179] executeForCursorWindow took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.clover.imuseum' and date  between 20180430 and 20180530"
+        12: [2018-05-30 21:11:31.177] prepare took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.clover.imuseum' and date  between 20180430 and 20180530"
+        13: [2018-05-30 21:08:18.134] executeForCursorWindow took 2ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.poushengcommunity' and date  between 20180430 and 20180530"
+        14: [2018-05-30 21:08:18.133] prepare took 1ms - succeeded, sql="select * from notification_sort WHERE package_name  ='com.poushengcommunity' and date  between 20180430 and 20180530"
+        15: [2018-05-30 21:07:15.026] executeForCursorWindow took 3ms - succeeded, sql="select sum(show_count) from notification_sort WHERE date  between 20180430 and 20180530"
+        16: [2018-05-30 21:07:15.026] prepare took 0ms - succeeded, sql="select sum(show_count) from notification_sort WHERE date  between 20180430 and 20180530"
+        17: [2018-05-30 21:07:15.023] executeForCursorWindow took 2ms - succeeded, sql="select sum(click_count) from notification_sort WHERE date  between 20180430 and 20180530"
+        18: [2018-05-30 21:07:15.023] prepare took 0ms - succeeded, sql="select sum(click_count) from notification_sort WHERE date  between 20180430 and 20180530"
+        19: [2018-05-30 21:07:15.022] execute took 0ms - succeeded, sql="COMMIT;"
+  Available non-primary connections:
+    <none>
+  Acquired connections:
+    <none>
+  Connection waiters:
+    <none>
+
+** Database info for pid 1342 [system] **

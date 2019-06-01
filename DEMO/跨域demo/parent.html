@@ -1,0 +1,87 @@
+<!doctype html>
+	<head>
+		<style>
+			body{
+				margin: 0;
+			}
+		</style>		
+	</head>
+	<body>
+
+	<!-- src="https://statictest.pbwear.com/nt-web-pos/index.html"  -->
+	<!-- http://localhost:8081/ -->
+	<iframe 
+		src="http://localhost:8080/index.html"
+		id="ifrm"
+		style="width:100%;">
+	</iframe>
+
+	<img 
+		id="hidden" 
+		onclick="close_iframe()" 
+		style="width: 20px;cursor: hand; position: absolute; z-index: 1" 
+		src="close.png"/>
+	</body>	
+	<script type="text/javascript">
+			var order_data = {
+			"shop_code": "001" ,
+			"price": 100,
+			"order_info":[
+							{
+								"price": 50, 
+								"goods_name": "\u725b\u4ed4\u88e4", 
+								"goods_id": "F0HA8160256C",
+								"quantity": 1.0
+							}, {
+								"price": 50, 
+								"goods_name": "POLO\u6064", 
+								"goods_id": "F0DB82715A0D",
+								"quantity": 1.0
+							}
+						],
+			"out_trade_no": "123",
+			"origin_out_trade_no":"222",
+			"token": "COMMCRED|1a5bb4a6-c9b6-4f94-a31a-1c12cebc783e"
+		};
+		order_data = JSON.stringify(order_data); //json转成字符串
+		// order_data = base64(order_data);//字符串base64编码
+		// order_data = urlencode(order_data);//对参数进行url转义
+
+		if (window.addEventListener) {  // all browsers except IE before version 9
+			window.addEventListener("message", receiveMessageValue, false);
+		} else {
+			if (window.attachEvent) {   // IE before version 9
+				window.attachEvent("onmessage", receiveMessageValue);     // Internet Explorer from version 8
+			}
+		}
+		
+		function receiveMessageValue(event) {
+			if (window.postMessage) {
+				 var obj = event.data;
+				 if (obj.method == 'req') {
+					 document.getElementById('ifrm').contentWindow.postMessage("{method:'res',value: '"+order_data+"'}", "*");
+				 } else {
+					 // We received the response via postMessage as a string. This works
+					 // for all browsers that support postMessage, including IE8/9.
+					 var str = eval('(' + obj + ')');
+					 if (str.method && str.method == 'req') {
+						//  token
+						document.getElementById('ifrm').contentWindow.postMessage("{method:'res',value: '"+order_data+"'}", "*");
+					 }
+				 }
+			} else {
+				alert('postMessage not supported');
+			}
+		}
+
+		function close_iframe(){
+			document.getElementById('ifrm').style.visibility='hidden';
+			document.getElementById('hidden').style.visibility='hidden';
+		}
+		document.getElementById('ifrm').style.visibility='visible';
+	
+		document.getElementById('ifrm').style.height = document.documentElement.clientHeight+"px";
+		document.getElementById('hidden').style.left = document.documentElement.clientWidth/2 + 190;
+		document.getElementById('hidden').style.top = document.documentElement.clientHeight/2 - 130;
+	</script>
+</html> 

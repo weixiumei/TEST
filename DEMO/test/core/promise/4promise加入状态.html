@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Promise</title>
+  <script src="./jquery.min.js"></script>
+  <script>
+  function Promise(fn){
+    var callbacks = []
+    var state = 'pending'
+    this.then = function(onFulfilled){
+      if(state == 'pending'){
+        callbacks.push(onFulfilled)
+        // 解决链式then
+        return this;
+      }
+      onFulfilled(value)
+      return this;
+    }
+    function resolve(value){
+      // resolve执行时，会将状态设置为fulfilled，在此之后调用then添加的新回调，都会立即执行。
+      state = 'fullfilled'
+      setTimeout(() => {
+        // 加入状态（pending、fulfilled、rejected），解决异步调用完每个回调都被执行了
+        callbacks.forEach((callback) => {
+          callback(value)
+        })
+      }, 0)
+    }
+    fn(resolve)
+  }
+  let promise = new Promise((resolve, reject)=>{
+    $.ajax({
+      url: 'promise.json',
+      dataType: 'json',
+      success(data){
+        if(data.aa==1){
+          resolve(data)
+        }else{
+          reject(data)
+        }
+      }
+    })
+  })
+
+  promise.then((data) => {
+    console.log(data)
+  }).then((data) => {
+    console.log(data)
+  })
+
+  </script>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

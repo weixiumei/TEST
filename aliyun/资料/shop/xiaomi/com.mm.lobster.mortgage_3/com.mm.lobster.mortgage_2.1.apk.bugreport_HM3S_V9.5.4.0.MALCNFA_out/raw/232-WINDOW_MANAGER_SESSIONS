@@ -1,0 +1,9 @@
+  Session Session{53753d1 19269:1000}:
+    mNumWindow=1 mClientDead=false mSurfaceSession=android.view.SurfaceSession@eade7bc
+  Session Session{8fa488a 20018:u0a10101}:
+    mNumWindow=1 mClientDead=false mSurfaceSession=android.view.SurfaceSession@583fa70
+  Session Session{ae5b1f4 1342:1000}:
+    mNumWindow=20 mClientDead=false mSurfaceSession=android.view.SurfaceSession@e0c07c4
+  Session Session{d58425d 1803:1000}:
+    mNumWindow=5 mClientDead=false mSurfaceSession=android.view.SurfaceSession@b1536ad
+

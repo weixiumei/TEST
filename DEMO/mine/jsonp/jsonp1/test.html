@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>模拟跨域</title>
+</head>
+<body>
+<iframe src="http://baidu.com"></iframe>
+<script>
+    window.frames[0].onload = function () {
+        alert("1");
+    }
+</script>
+</body>
+</html>

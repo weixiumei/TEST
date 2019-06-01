@@ -1,0 +1,22 @@
+  Recent tasks:
+  * Recent #0: TaskRecord{97d5776 #3447 I=android/com.android.internal.app.ResolverActivity U=0 sz=1}
+    userId=0 effectiveUid=1000 mCallingUid=0 mCallingPackage=null
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10800000 cmp=android/com.android.internal.app.ResolverActivity}
+    realActivity=android/com.android.internal.app.ResolverActivity
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[ActivityRecord{a4adbcd u0 android/com.android.internal.app.ResolverActivity t3447}]
+    askedCompatMode=false inRecents=true isAvailable=true
+    lastThumbnail=null lastThumbnailFile=/data/system/recent_images/3447_task_thumbnail.png
+    stackId=144
+    hasBeenVisible=true mResizeable=false firstActiveTime=1527693429028 lastActiveTime=1527693429028 (inactive for 62s)
+  * Recent #1: TaskRecord{3152091 #921 A=com.xiaomi.gamecenter U=0 sz=0}
+    userId=0 effectiveUid=u0a67 mCallingUid=u0a24 mCallingPackage=com.xiaomi.gamecenter.sdk.service
+    affinity=com.xiaomi.gamecenter
+    intent={act=android.intent.action.VIEW dat=migamecenter://sdkad?channel=sdk flg=0x10800000 pkg=com.xiaomi.gamecenter cmp=com.xiaomi.gamecenter/.ui.SDKAdActivity}
+    realActivity=com.xiaomi.gamecenter/.ui.SDKAdActivity
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[]
+    askedCompatMode=false inRecents=true isAvailable=true
+    lastThumbnail=null lastThumbnailFile=/data/system/recent_images/921_task_thumbnail.png
+    hasBeenVisible=true mResizeable=false firstActiveTime=1527585897364 lastActiveTime=1527585897364 (inactive for 107593s)
+

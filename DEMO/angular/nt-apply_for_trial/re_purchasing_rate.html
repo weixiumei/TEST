@@ -1,0 +1,196 @@
+<!--  head：页面的</head>之前代码 -->
+<!DOCTYPE html>
+<html ng-app="NtSF" ng-cloak="" class="ng-cloak">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <!-- common.css不可变 -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- ** 注：根据项目的实际情况 添加或删除引入的css文件 ** -->
+    <!--
+    <link rel="stylesheet" type="text/css" href="assets/css/autocomplete.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datarangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ng-table.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    -->
+    
+</head>
+<body>
+<!-- re_purchasing_rate.html -->
+<body ng-controller="rePurchasingRate">
+    <!-- 会员复购率分析 -->
+    <div class="div_class">
+        <div class="condition rePurchasingRate">
+            <p>会员复购率分析 </p>
+            <label class="condition_year">
+                日期 <select 
+                    class="select_ele" 
+                    ng-model="search_condition.time_code" 
+                    ng-options="m.id as m.value for m in year_list">
+                </select>
+            </label>
+            <div class="shop_code">
+                <label ng-repeat="val in shop_list track by $index">
+                    <input 
+                        type="radio" 
+                        ng-value="val.shop_code" 
+                        ng-model="search_condition.shop_code">
+                        {{val.shop_name}}
+                </label>
+                <input type="text" placeHolder="指定店仓(编号)" ng-disabled="search_condition.shop_code=='all'" ng-model="shop_code_input" class="shop_code_input"/>
+
+            </div>
+            <button class="" ng-click="getRepeatShoppingRate()" ng-disabled="button_disable_class=='button_disable'" ng-class="button_disable_class">{{button_disable_class=='button_disable'?'搜索...':'搜索'}}</button>
+        </div>
+        <div class="charts_re_purchasing_rate_div">
+            <div class="swich">
+                <div class="swich1" ng-class="{swich_select:search_condition.calculate_type=='by_member'}" ng-click="getRepeatShoppingRate('by_member')">按会员计算</div>
+                <div class="swich2" ng-class="{swich_select:search_condition.calculate_type=='by_order'}" ng-click="getRepeatShoppingRate('by_order')">按交易计算</div>
+                <img class="re_purchase_help_img" ng-show="!search_condition.help_show" ng-mouseover="search_condition.help_show=true" src="assets/images/help_off.png">
+                <img class="re_purchase_help_img" ng-show="search_condition.help_show" ng-mouseleave="search_condition.help_show=false" src="assets/images/help_on.png">
+                <div class="re_purchase_help_div" ng-class="{hidden:!search_condition.help_show}">
+                    <div>
+                        <div>按会员计算：以每个会员为独立单位重复购买产品的次数<div class="re_purchase_help">例：有10个会员购买了产品，6个产生了重复购买，则复购率为60%</div></div>
+                        
+                        <div>按交易计算：重复购买交易次数与总交易次数的比值<div class="re_purchase_help">例：某月共交易100笔订单，其中的20个人是二次购买，且这20人中又有10个人做了三次购买，则重复购买次数为30次，复购率为30%</div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="charts_re_purchasing_rate" ng-style="{height:charts_height.height}"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- 会员销售额分析 -->
+    <div class="div_class">
+        <div class="title">会员销售额分析
+            <img class="mem_sale_help_img" ng-show="!search_condition.mem_sale_help_show" ng-mouseover="search_condition.mem_sale_help_show=true" src="assets/images/help_off.png">
+            <img class="mem_sale_help_img" ng-show="search_condition.mem_sale_help_show" ng-mouseleave="search_condition.mem_sale_help_show=false" src="assets/images/help_on.png">
+
+            <div class="mem_sale_help_div" ng-class="{hidden:!search_condition.mem_sale_help_show}">
+                <div>
+                    <div>查询时间内，会员的消费金额占销售总额的百分比</div>
+                </div>
+            </div>
+        </div>
+        <div class="condition">
+            <label class="condition_year">
+                日期 <input type="date" ng-model="sale_data.start_date"> 至 
+                <input type="date" class="end_date" ng-model="sale_data.end_date">
+
+                <button class="" ng-click="search2()" ng-disabled="button_disable_class2=='button_disable'" ng-class="button_disable_class2">{{button_disable_class2=='button_disable'?'搜索...':'搜索'}}</button>
+            </label>
+        </div><br>
+        <div class="block_div">
+            <div class="block">
+                <img src="assets/images/sales_volume.png">
+                <div class="amount">{{sale_out_data.total_amount}}</div>
+                <div class="amount_string">销售额（元）</div>
+            </div>
+            <div class="block">
+                <img src="assets/images/coupon.png">
+                <div class="amount">{{sale_out_data.member_total_amount}}</div>
+                <div class="amount_string">会员销售额（元）</div>
+            </div>
+            <div class="block">
+                <img src="assets/images/proportion.png">
+                <div class="amount">{{sale_out_data.member_money_percent*100|number:2}}%</div>
+                <div class="amount_string">会员销售占比</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- script：引入 js 文件 -->
+        <!-- ** 注：根据项目的实际情况 添加或删除引入的js文件 ** -->
+
+	<script src="assets/lib/jquery.min.js"></script>
+	<script src="assets/lib/bootstrap.min.js"></script>
+	 
+	<script src="assets/lib/echarts.min.js"></script>
+	<script src="assets/lib/angular-1.4.8.min.js"></script>
+	<script src="assets/lib/angular-resource.js"></script>
+	<script src="assets/lib/angular-route.js"></script>
+	<script src="assets/api/api.config.js"></script>
+	<script src="assets/api/api.js"></script>
+	
+    <script type="text/javascript">
+    	// piwik
+        document.title = '申请试用';
+    </script>
+
+  </body>
+</html>
+
+    <script type="text/javascript">
+    	// piwik
+        // document.title = '首页';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+    <script>
+    // var site_id = getUrlParameter('site_id');
+    // var _paq = _paq || [];
+
+    // _paq.push(['enableLinkTracking', true]);
+    // (function() {
+    //     try {
+    //         // var site_id = false;
+            
+    //         if(site_id == '' || site_id == false){
+    //             return
+    //         }
+    //         var u = "//a.nexttao.com";
+            
+    //         if(u == "" || u == "false" || u == false){
+    //             return
+    //         }
+    //         _paq.push(['setTrackerUrl', u+'piwik.php']);
+    //         _paq.push(['setSiteId', site_id]);
+    //         _paq.push(['setDocumentTitle', document.title]);
+           
+    //         _paq.push(['trackPageView']);
+    //         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    //         g.type='text/javascript'; 
+    //         g.async=true; 
+    //         g.defer=true;
+    //         g.src=u+'piwik.js';
+    //         s.parentNode.insertBefore(g,s);
+    //     }catch (e){
+    //         console.log(e);
+    //     }
+    // })();
+  </script>
+
+  <div id="bg"></div>
+
+  <div class="data_content" style="display: none">
+    <div class="loading"></div>
+    <!-- loading -->
+    <div class="loader loader--style1" title="0">
+      <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+      <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+      <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+        C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml"
+          attributeName="transform"
+          type="rotate"
+          from="0 20 20"
+          to="360 20 20"
+          dur="0.5s"
+          repeatCount="indefinite"/>
+        </path>
+      </svg>
+      <p>加载中...</p>
+    </div>  
+  </div>
+
+  </body>
+</html>

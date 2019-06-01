@@ -1,0 +1,1330 @@
+SERVICE com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService e15a1b9 pid=14682
+  Client:
+    nothing to dump
+
+SERVICE com.xiaomi.metoknlp/.location.MetokGeocodeService 38a649a pid=22202
+  Client:
+    nothing to dump
+
+SERVICE com.miui.cloudservice/.push.MicloudPushService 141ed87 pid=18414
+  Client:
+    nothing to dump
+
+SERVICE com.android.bluetooth/.map.BluetoothMapService 24e767e pid=3630
+  Client:
+    nothing to dump
+
+SERVICE com.android.phone/.TelephonyDebugService 3e04883 pid=2631
+  Client:
+    NetworkMode: NMFilterVirtualSim
+    SubscriptionManager:
+    mListeners=[{miui.telephony.DefaultSimManager}{com.android.phone.utils.SimCardStatMonitor}]
+    mInsertedSubscriptionInfos=null
+    PhoneFactory:
+    GSMPhone extends:
+    PhoneBase: subId=2147483643
+     mPhoneId=0
+     mCi=com.android.internal.telephony.RIL@94ca645
+     mDnsCheckDisabled=false
+     mDcTracker=Handler (com.qti.internal.telephony.dataconnection.QtiDcTracker) {ed7348}
+     mDoesRilSendMultipleCallRing=false
+     mCallRingContinueToken=0
+     mCallRingDelay=3000
+     mIsTheCurrentActivePhone=true
+     mIsVoiceCapable=true
+     mIccRecords=null
+     mUiccApplication=null
+     mSmsStorageMonitor=Handler (com.android.internal.telephony.SmsStorageMonitor) {fea35e1}
+     mSmsUsageMonitor=com.android.internal.telephony.SmsUsageMonitor@29af06
+     mLooper=Looper (main, tid 1) {9b789c7}
+     mContext=com.android.phone.PhoneGlobals@60a7bf4
+     mNotifier=com.android.internal.telephony.DefaultPhoneNotifier@6f34f1d
+     mSimulatedRadioControl=null
+     mUnitTestMode=false
+     isDnsCheckDisabled()=false
+     getUnitTestMode()=false
+     getState()=IDLE
+     getIccSerialNumber()=null
+     getIccRecordsLoaded()=false
+     getMessageWaitingIndicator()=false
+     getCallForwardingIndicator()=false
+     isInEmergencyCall()=false
+     isInEcm()=false
+     getPhoneName()=GSM
+     getPhoneType()=1
+     getVoiceMessageCount()=0
+     getActiveApnTypes()=[Ljava.lang.String;@fb6c648
+     isDataConnectivityPossible()=false
+     needsOtaServiceProvisioning=false
+    ++++++++++++++++++++++++++++++++
+    DcTracker extends:
+    DcTrackerBase:
+     RADIO_TESTS=false
+     mInternalDataEnabled=true
+     mUserDataEnabled=true
+     sPolicyDataEnabed=true
+     mDataEnabled:
+      mDataEnabled[0]=true
+      mDataEnabled[1]=false
+      mDataEnabled[2]=false
+      mDataEnabled[3]=false
+      mDataEnabled[4]=false
+      mDataEnabled[5]=false
+      mDataEnabled[6]=false
+      mDataEnabled[7]=false
+      mDataEnabled[8]=false
+      mDataEnabled[9]=false
+     mEnabledCount=1
+     mRequestedApnType=default
+     mPhone=GSM
+     mActivity=NONE
+     mState=IDLE
+     mTxPkts=0
+     mRxPkts=0
+     mNetStatPollPeriod=0
+     mNetStatPollEnabled=false
+     mDataStallTxRxSum={txSum=0 rxSum=0}
+     mDataStallAlarmTag=27054
+     mDataStallDetectionEanbled=true
+     mSentSinceLastRecv=0
+     mNoRecvPollCount=0
+     mResolver=android.app.ContextImpl$ApplicationContentResolver@598fb63
+     mIsWifiConnected=false
+     mReconnectIntent=null
+     mAutoAttachOnCreation=false
+     mIsScreenOn=true
+     mUniqueIdGenerator=0
+     ***************************************
+    Dcc:
+     total records=1
+     rec[0]: time=05-29 10:36:23.218 processed=DccDefaultState org=DccDefaultState dest=<null> what=EVENT_RIL_CONNECTED
+    curState=DccDefaultState
+     mPhone=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {8d64b80}
+     mDcListAll=[]
+     mDcListActiveByCid={}
+     ***************************************
+     mDataConnections: count=0
+     ***************************************
+     mApnToDataConnectonId size=0
+     ***************************************
+     mApnContexts size=8
+    {mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=cbs mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=fota mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=ims mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+     ***************************************
+     mActiveApn=null
+     mAllApnSettings size=0
+     mPreferredApn=null
+     mIsPsRestricted=false
+     mIsDisposed=false
+     mIntentReceiver=com.android.internal.telephony.dataconnection.DcTrackerBase$2@8321d2e
+     mDataRoamingSettingObserver=com.android.internal.telephony.dataconnection.DcTrackerBase$DataRoamingSettingObserver@4d6360
+     mReregisterOnReconnectFailure=false
+     canSetPreferApn=false
+     mApnObserver=com.android.internal.telephony.dataconnection.DcTracker$ApnChangeObserver@17ac019
+     getOverallState=IDLE
+     mDataConnectionAsyncChannels=%s
+    {}
+     mAttached=false
+    ++++++++++++++++++++++++++++++++
+    GsmServiceStateTracker extends:
+    ServiceStateTracker:
+     mSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=true IsDataRoamingFromRegistration=false
+     mNewSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+     mCellInfo=CellInfoGsm:{mRegistered=NO mTimeStampType=unknown mTimeStamp=9223372036854775807ns CellIdentityGsm:{ mMcc=2147483647 mMnc=2147483647} CellSignalStrengthGsm: ss=2147483647 ber=2147483647}
+     mRestrictedState=Restricted State CS: none PS:false
+     mPollingContext=[I@73c005c
+     mDesiredPowerState=true
+     mDontPollSignalStrength=false
+     mPendingRadioPowerOffAfterDataOff=false
+     mPendingRadioPowerOffAfterDataOffTag=0
+     mPhone=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {8d64b80}
+     mSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=true IsDataRoamingFromRegistration=false
+     mNewSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+     mCellLoc=GsmCellLocation:[...]
+     mNewCellLoc=GsmCellLocation:[...]
+     mPreferredNetworkType=0
+     mMaxDataCalls=20
+     mNewMaxDataCalls=20
+     mReasonDataDenied=-1
+     mNewReasonDataDenied=-1
+     mGsmRoaming=false
+     mDataRoaming=false
+     mEmergencyOnly=true
+     mNeedFixZoneAfterNitz=false
+     mZoneOffset=0
+     mZoneDst=false
+     mZoneTime=0
+     mGotCountryCode=false
+     mNitzUpdatedTime=false
+     mSavedTimeZone=null
+     mSavedTime=0
+     mSavedAtTime=0
+     mStartedGprsRegCheck=false
+     mReportedGprsNoReg=false
+     mNotification=null
+     mWakeLock=WakeLock{895eabf held=false, refCount=0}
+     mCurSpn=
+     mCurDataSpn=
+     mCurShowSpn=false
+     mCurPlmn=åªè½æ¨æç´§æ¥å¼æçµè¯
+     mCurShowPlmn=true
+    ++++++++++++++++++++++++++++++++
+    GsmCallTracker extends:
+    CallTracker:
+     mPendingOperations=0
+     mNeedsPoll=false
+     mLastRelevantPoll=null
+    mConnections: length=19
+      mConnections[0]=null
+      mConnections[1]=null
+      mConnections[2]=null
+      mConnections[3]=null
+      mConnections[4]=null
+      mConnections[5]=null
+      mConnections[6]=null
+      mConnections[7]=null
+      mConnections[8]=null
+      mConnections[9]=null
+      mConnections[10]=null
+      mConnections[11]=null
+      mConnections[12]=null
+      mConnections[13]=null
+      mConnections[14]=null
+      mConnections[15]=null
+      mConnections[16]=null
+      mConnections[17]=null
+      mConnections[18]=null
+     mVoiceCallEndedRegistrants=android.os.RegistrantList@415558c
+     mVoiceCallStartedRegistrants=android.os.RegistrantList@36e44d5
+     mDroppedDuringPoll: size=0
+     mRingingCall=IDLE
+     mForegroundCall=IDLE
+     mBackgroundCall=IDLE
+     mPendingMO=null
+     mHangupPendingMO=false
+     mPhone=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {8d64b80}
+     mDesiredMute=false
+     mState=IDLE
+    ++++++++++++++++++++++++++++++++
+    RIL: com.android.internal.telephony.RIL@94ca645
+     mSocket=android.net.LocalSocket@aa64ea impl:android.net.LocalSocketImpl@a4873db fd:FileDescriptor[32]
+     mSenderThread=Thread[RILSender0,5,main]
+     mSender=Handler (com.android.internal.telephony.RIL$RILSender) {a883e78}
+     mReceiverThread=Thread[RILReceiver0,5,main]
+     mReceiver=com.android.internal.telephony.RIL$RILReceiver@7db5951
+     mWakeLock=WakeLock{341e5b6 held=false, refCount=0}
+     mWakeLockTimeout=60000
+     mWakeLockCount=0
+     mRequestList count=0
+     mLastNITZTimeInfo=null
+     mTestingEmergencyCall=false
+    ++++++++++++++++++++++++++++++++
+     mCT=Handler (com.android.internal.telephony.gsm.GsmCallTracker) {7d072b7}
+     mSST=Handler (com.qti.internal.telephony.gsm.QtiGsmServiceStateTracker) {73eca24}
+     mPendingMMIs=[]
+     mSimPhoneBookIntManager=com.android.internal.telephony.gsm.SimPhoneBookInterfaceManager@32b398d
+     mSubInfo=com.android.internal.telephony.PhoneSubInfo@4fea742
+     mVmNumber=null
+    ++++++++++++++++++++++++++++++++
+    IccCardProxy: Handler (com.android.internal.telephony.uicc.IccCardProxy) {66f8353}
+     mContext=com.android.phone.PhoneGlobals@60a7bf4
+     mCi=com.android.internal.telephony.RIL@94ca645
+     mAbsentRegistrants: size=0
+     mPinLockedRegistrants: size=0
+     mNetworkLockedRegistrants: size=1
+      mNetworkLockedRegistrants[0]=Handler (com.android.phone.PhoneGlobals$3) {cb06490}
+     mCurrentAppType=1
+     mUiccController=Handler (com.android.internal.telephony.uicc.UiccController) {d1ee189}
+     mUiccCard=com.android.internal.telephony.uicc.UiccCard@7d3f58e
+     mUiccApplication=null
+     mIccRecords=null
+     mCdmaSSM=Handler (com.android.internal.telephony.cdma.CdmaSubscriptionSourceManager) {3e501af}
+     mRadioOn=true
+     mQuietMode=false
+     mInitialized=true
+     mExternalState=ABSENT
+    ++++++++++++++++++++++++++++++++
+    GSMPhone extends:
+    PhoneBase: subId=2147483644
+     mPhoneId=1
+     mCi=com.android.internal.telephony.RIL@b1176d9
+     mDnsCheckDisabled=false
+     mDcTracker=Handler (com.qti.internal.telephony.dataconnection.QtiDcTracker) {b5f39bc}
+     mDoesRilSendMultipleCallRing=false
+     mCallRingContinueToken=0
+     mCallRingDelay=3000
+     mIsTheCurrentActivePhone=true
+     mIsVoiceCapable=true
+     mIccRecords=null
+     mUiccApplication=null
+     mSmsStorageMonitor=Handler (com.android.internal.telephony.SmsStorageMonitor) {e8b0d45}
+     mSmsUsageMonitor=com.android.internal.telephony.SmsUsageMonitor@79ddc9a
+     mLooper=Looper (main, tid 1) {9b789c7}
+     mContext=com.android.phone.PhoneGlobals@60a7bf4
+     mNotifier=com.android.internal.telephony.DefaultPhoneNotifier@6f34f1d
+     mSimulatedRadioControl=null
+     mUnitTestMode=false
+     isDnsCheckDisabled()=false
+     getUnitTestMode()=false
+     getState()=IDLE
+     getIccSerialNumber()=null
+     getIccRecordsLoaded()=false
+     getMessageWaitingIndicator()=false
+     getCallForwardingIndicator()=false
+     isInEmergencyCall()=false
+     isInEcm()=false
+     getPhoneName()=GSM
+     getPhoneType()=1
+     getVoiceMessageCount()=0
+     getActiveApnTypes()=[Ljava.lang.String;@4ec8ce1
+     isDataConnectivityPossible()=false
+     needsOtaServiceProvisioning=false
+    ++++++++++++++++++++++++++++++++
+    DcTracker extends:
+    DcTrackerBase:
+     RADIO_TESTS=false
+     mInternalDataEnabled=true
+     mUserDataEnabled=true
+     sPolicyDataEnabed=true
+     mDataEnabled:
+      mDataEnabled[0]=true
+      mDataEnabled[1]=false
+      mDataEnabled[2]=false
+      mDataEnabled[3]=false
+      mDataEnabled[4]=false
+      mDataEnabled[5]=false
+      mDataEnabled[6]=false
+      mDataEnabled[7]=false
+      mDataEnabled[8]=false
+      mDataEnabled[9]=false
+     mEnabledCount=1
+     mRequestedApnType=default
+     mPhone=GSM
+     mActivity=NONE
+     mState=IDLE
+     mTxPkts=0
+     mRxPkts=0
+     mNetStatPollPeriod=0
+     mNetStatPollEnabled=false
+     mDataStallTxRxSum={txSum=0 rxSum=0}
+     mDataStallAlarmTag=27471
+     mDataStallDetectionEanbled=true
+     mSentSinceLastRecv=0
+     mNoRecvPollCount=0
+     mResolver=android.app.ContextImpl$ApplicationContentResolver@598fb63
+     mIsWifiConnected=false
+     mReconnectIntent=null
+     mAutoAttachOnCreation=false
+     mIsScreenOn=true
+     mUniqueIdGenerator=0
+     ***************************************
+    Dcc:
+     total records=1
+     rec[0]: time=05-29 10:36:23.620 processed=DccDefaultState org=DccDefaultState dest=<null> what=EVENT_RIL_CONNECTED
+    curState=DccDefaultState
+     mPhone=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {42c0dfe}
+     mDcListAll=[]
+     mDcListActiveByCid={}
+     ***************************************
+     mDataConnections: count=0
+     ***************************************
+     mApnToDataConnectonId size=0
+     ***************************************
+     mApnContexts size=8
+    {mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=cbs mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=fota mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+    {mApnType=ims mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+     ***************************************
+     mActiveApn=null
+     mAllApnSettings size=0
+     mPreferredApn=null
+     mIsPsRestricted=false
+     mIsDisposed=false
+     mIntentReceiver=com.android.internal.telephony.dataconnection.DcTrackerBase$2@5f29f2
+     mDataRoamingSettingObserver=com.android.internal.telephony.dataconnection.DcTrackerBase$DataRoamingSettingObserver@7c435a8
+     mReregisterOnReconnectFailure=false
+     canSetPreferApn=false
+     mApnObserver=com.android.internal.telephony.dataconnection.DcTracker$ApnChangeObserver@ed438c1
+     getOverallState=IDLE
+     mDataConnectionAsyncChannels=%s
+    {}
+     mAttached=false
+    ++++++++++++++++++++++++++++++++
+    GsmServiceStateTracker extends:
+    ServiceStateTracker:
+     mSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+     mNewSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+     mCellInfo=CellInfoGsm:{mRegistered=NO mTimeStampType=unknown mTimeStamp=9223372036854775807ns CellIdentityGsm:{ mMcc=2147483647 mMnc=2147483647} CellSignalStrengthGsm: ss=2147483647 ber=2147483647}
+     mRestrictedState=Restricted State CS: none PS:false
+     mPollingContext=[I@fed2866
+     mDesiredPowerState=true
+     mDontPollSignalStrength=false
+     mPendingRadioPowerOffAfterDataOff=false
+     mPendingRadioPowerOffAfterDataOffTag=0
+     mPhone=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {42c0dfe}
+     mSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+     mNewSS=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+     mCellLoc=GsmCellLocation:[...]
+     mNewCellLoc=GsmCellLocation:[...]
+     mPreferredNetworkType=0
+     mMaxDataCalls=20
+     mNewMaxDataCalls=20
+     mReasonDataDenied=-1
+     mNewReasonDataDenied=-1
+     mGsmRoaming=false
+     mDataRoaming=false
+     mEmergencyOnly=false
+     mNeedFixZoneAfterNitz=false
+     mZoneOffset=0
+     mZoneDst=false
+     mZoneTime=0
+     mGotCountryCode=false
+     mNitzUpdatedTime=false
+     mSavedTimeZone=null
+     mSavedTime=0
+     mSavedAtTime=0
+     mStartedGprsRegCheck=false
+     mReportedGprsNoReg=false
+     mNotification=null
+     mWakeLock=WakeLock{f2d77a7 held=false, refCount=0}
+     mCurSpn=
+     mCurDataSpn=
+     mCurShowSpn=false
+     mCurPlmn=æ æå¡
+     mCurShowPlmn=true
+    ++++++++++++++++++++++++++++++++
+    GsmCallTracker extends:
+    CallTracker:
+     mPendingOperations=0
+     mNeedsPoll=false
+     mLastRelevantPoll=null
+    mConnections: length=19
+      mConnections[0]=null
+      mConnections[1]=null
+      mConnections[2]=null
+      mConnections[3]=null
+      mConnections[4]=null
+      mConnections[5]=null
+      mConnections[6]=null
+      mConnections[7]=null
+      mConnections[8]=null
+      mConnections[9]=null
+      mConnections[10]=null
+      mConnections[11]=null
+      mConnections[12]=null
+      mConnections[13]=null
+      mConnections[14]=null
+      mConnections[15]=null
+      mConnections[16]=null
+      mConnections[17]=null
+      mConnections[18]=null
+     mVoiceCallEndedRegistrants=android.os.RegistrantList@2fb0454
+     mVoiceCallStartedRegistrants=android.os.RegistrantList@d2a9ffd
+     mDroppedDuringPoll: size=0
+     mRingingCall=IDLE
+     mForegroundCall=IDLE
+     mBackgroundCall=IDLE
+     mPendingMO=null
+     mHangupPendingMO=false
+     mPhone=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {42c0dfe}
+     mDesiredMute=false
+     mState=IDLE
+    ++++++++++++++++++++++++++++++++
+    RIL: com.android.internal.telephony.RIL@b1176d9
+     mSocket=android.net.LocalSocket@29364f2 impl:android.net.LocalSocketImpl@6afe743 fd:FileDescriptor[35]
+     mSenderThread=Thread[RILSender1,5,main]
+     mSender=Handler (com.android.internal.telephony.RIL$RILSender) {22e11c0}
+     mReceiverThread=Thread[RILReceiver1,5,main]
+     mReceiver=com.android.internal.telephony.RIL$RILReceiver@1863ef9
+     mWakeLock=WakeLock{aeede3e held=false, refCount=0}
+     mWakeLockTimeout=60000
+     mWakeLockCount=0
+     mRequestList count=0
+     mLastNITZTimeInfo=null
+     mTestingEmergencyCall=false
+    ++++++++++++++++++++++++++++++++
+     mCT=Handler (com.android.internal.telephony.gsm.GsmCallTracker) {15fb49f}
+     mSST=Handler (com.qti.internal.telephony.gsm.QtiGsmServiceStateTracker) {c289ec}
+     mPendingMMIs=[]
+     mSimPhoneBookIntManager=com.android.internal.telephony.gsm.SimPhoneBookInterfaceManager@162d1b5
+     mSubInfo=com.android.internal.telephony.PhoneSubInfo@9f6a04a
+     mVmNumber=null
+    ++++++++++++++++++++++++++++++++
+    IccCardProxy: Handler (com.android.internal.telephony.uicc.IccCardProxy) {614fbbb}
+     mContext=com.android.phone.PhoneGlobals@60a7bf4
+     mCi=com.android.internal.telephony.RIL@b1176d9
+     mAbsentRegistrants: size=0
+     mPinLockedRegistrants: size=0
+     mNetworkLockedRegistrants: size=1
+      mNetworkLockedRegistrants[0]=Handler (com.android.phone.PhoneGlobals$3) {cb06490}
+     mCurrentAppType=1
+     mUiccController=Handler (com.android.internal.telephony.uicc.UiccController) {d1ee189}
+     mUiccCard=com.android.internal.telephony.uicc.UiccCard@94458d8
+     mUiccApplication=null
+     mIccRecords=null
+     mCdmaSSM=Handler (com.android.internal.telephony.cdma.CdmaSubscriptionSourceManager) {3e501af}
+     mRadioOn=true
+     mQuietMode=false
+     mInitialized=true
+     mExternalState=ABSENT
+    ++++++++++++++++++++++++++++++++
+    DctController:
+    DcSwitchStateMachine-0:
+     total records=18
+     rec[0]: time=05-29 10:36:23.709 processed=DefaultState org=IdleState dest=<null> what=69633(0x11001)
+     rec[1]: time=05-29 10:36:24.754 processed=DefaultState org=IdleState dest=<null> what=278536(0x44008)
+     rec[2]: time=05-29 10:36:24.834 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[3]: time=05-29 10:36:25.014 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[4]: time=05-29 11:01:34.954 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[5]: time=05-29 11:03:12.691 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[6]: time=05-29 11:05:31.015 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[7]: time=05-29 17:02:14.998 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[8]: time=05-29 17:21:42.493 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[9]: time=05-29 21:30:25.444 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[10]: time=05-30 09:34:38.323 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[11]: time=05-30 09:36:10.419 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[12]: time=05-30 12:14:25.591 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[13]: time=05-30 12:16:16.176 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[14]: time=05-30 18:00:40.297 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[15]: time=05-30 18:02:45.860 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[16]: time=05-30 19:46:58.946 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[17]: time=05-30 19:49:05.395 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+    curState=IdleState
+    DcSwitchStateMachine-1:
+     total records=18
+     rec[0]: time=05-29 10:36:23.721 processed=DefaultState org=IdleState dest=<null> what=69633(0x11001)
+     rec[1]: time=05-29 10:36:24.756 processed=DefaultState org=IdleState dest=<null> what=278536(0x44008)
+     rec[2]: time=05-29 10:36:24.834 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[3]: time=05-29 10:36:25.014 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[4]: time=05-29 11:01:34.954 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[5]: time=05-29 11:03:12.691 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[6]: time=05-29 11:05:31.015 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[7]: time=05-29 17:02:14.998 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[8]: time=05-29 17:21:42.494 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[9]: time=05-29 21:30:25.445 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[10]: time=05-30 09:34:38.327 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[11]: time=05-30 09:36:10.420 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[12]: time=05-30 12:14:25.592 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[13]: time=05-30 12:16:16.176 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[14]: time=05-30 18:00:40.297 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[15]: time=05-30 18:02:45.861 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[16]: time=05-30 19:46:58.946 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+     rec[17]: time=05-30 19:49:05.396 processed=DefaultState org=IdleState dest=<null> what=278531(0x44003)
+    curState=IdleState
+    ++++++++++++++++++++++++++++++++
+    mRequestInfos[1]=[ request=NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], executedPhoneId=-1, priority=0]
+    ++++++++++++++++++++++++++++++++
+    TelephonyNetworkFactories:
+    {TelephonyNetworkFactory - ScoreFilter=50, Filter=[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&IA&RCS&XCAP&EIMS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Specifier: <2147483643>], requests=1, refCount=0}
+      {NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], score=0, requested=true}
+      Pending Requests:
+      Request History:
+        NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-29 10:36:24.755 - Dctc.requestNetwork, priority=0
+          05-29 11:01:34.944 - Cellular releasing Network for 
+          05-29 11:01:34.945 - DctController.releaseNetwork
+          05-29 11:01:34.953 - DctController.onReleaseRequest
+          05-29 17:02:14.996 - Dctc.requestNetwork, priority=0
+          05-29 17:21:42.491 - Cellular releasing Network for 
+          05-29 17:21:42.492 - DctController.releaseNetwork
+          05-29 17:21:42.492 - DctController.onReleaseRequest
+          05-29 21:30:25.443 - Dctc.requestNetwork, priority=0
+        NetworkRequest [ id=13, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-29 11:03:12.690 - Dctc.requestNetwork, priority=0
+          05-29 11:05:31.013 - Cellular releasing Network for 
+          05-29 11:05:31.014 - DctController.releaseNetwork
+          05-29 11:05:31.014 - DctController.onReleaseRequest
+        NetworkRequest [ id=289, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 09:34:38.321 - Dctc.requestNetwork, priority=0
+          05-30 09:36:10.417 - Cellular releasing Network for 
+          05-30 09:36:10.417 - DctController.releaseNetwork
+          05-30 09:36:10.419 - DctController.onReleaseRequest
+        NetworkRequest [ id=366, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 12:14:25.590 - Dctc.requestNetwork, priority=0
+          05-30 12:16:16.167 - Cellular releasing Network for 
+          05-30 12:16:16.167 - DctController.releaseNetwork
+          05-30 12:16:16.175 - DctController.onReleaseRequest
+        NetworkRequest [ id=501, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 18:00:40.293 - Dctc.requestNetwork, priority=0
+          05-30 18:02:45.858 - Cellular releasing Network for 
+          05-30 18:02:45.859 - DctController.releaseNetwork
+          05-30 18:02:45.860 - DctController.onReleaseRequest
+        NetworkRequest [ id=566, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 19:46:58.943 - Dctc.requestNetwork, priority=0
+          05-30 19:49:05.394 - Cellular releasing Network for 
+          05-30 19:49:05.395 - DctController.releaseNetwork
+          05-30 19:49:05.395 - DctController.onReleaseRequest
+    {TelephonyNetworkFactory - ScoreFilter=50, Filter=[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&IA&RCS&XCAP&EIMS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Specifier: <2147483644>], requests=1, refCount=0}
+      {NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], score=0, requested=true}
+      Pending Requests:
+        NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+      Request History:
+        NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-29 10:36:24.757 - Request not useable, pending request.
+          05-29 10:36:24.938 - Request not useable, pending request.
+          05-29 11:01:34.945 - Cellular releasing Network for 
+          05-29 11:01:34.945 - Sub Info has not been ready, remove request.
+          05-29 17:02:14.997 - Request not useable, pending request.
+          05-29 17:21:42.492 - Cellular releasing Network for 
+          05-29 17:21:42.492 - Sub Info has not been ready, remove request.
+          05-29 21:30:25.451 - Request not useable, pending request.
+        NetworkRequest [ id=13, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-29 11:03:12.691 - Request not useable, pending request.
+          05-29 11:05:31.014 - Cellular releasing Network for 
+          05-29 11:05:31.014 - Sub Info has not been ready, remove request.
+        NetworkRequest [ id=289, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 09:34:38.323 - Request not useable, pending request.
+          05-30 09:36:10.418 - Cellular releasing Network for 
+          05-30 09:36:10.418 - Sub Info has not been ready, remove request.
+        NetworkRequest [ id=366, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 12:14:25.589 - Request not useable, pending request.
+          05-30 12:16:16.168 - Cellular releasing Network for 
+          05-30 12:16:16.168 - Sub Info has not been ready, remove request.
+        NetworkRequest [ id=501, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 18:00:40.296 - Request not useable, pending request.
+          05-30 18:02:45.859 - Cellular releasing Network for 
+          05-30 18:02:45.859 - Sub Info has not been ready, remove request.
+        NetworkRequest [ id=566, legacyType=5, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+          05-30 19:46:58.945 - Request not useable, pending request.
+          05-30 19:49:05.395 - Cellular releasing Network for 
+          05-30 19:49:05.395 - Sub Info has not been ready, remove request.
+    ++++++++++++++++++++++++++++++++
+    UiccController: Handler (com.android.internal.telephony.uicc.UiccController) {d1ee189}
+     mContext=com.android.phone.PhoneGlobals@60a7bf4
+     mInstance=Handler (com.android.internal.telephony.uicc.UiccController) {d1ee189}
+     mIccChangedRegistrants: size=13
+      mIccChangedRegistrants[0]=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {8d64b80}
+      mIccChangedRegistrants[1]=Handler (com.qti.internal.telephony.gsm.QtiGsmServiceStateTracker) {73eca24}
+      mIccChangedRegistrants[2]=Handler (com.qti.internal.telephony.dataconnection.QtiDcTracker) {ed7348}
+      mIccChangedRegistrants[3]=Handler (com.android.internal.telephony.gsm.GsmSMSDispatcher) {43bd431}
+      mIccChangedRegistrants[4]=Handler (com.android.internal.telephony.uicc.IccCardProxy) {66f8353}
+      mIccChangedRegistrants[5]=Handler (com.qti.internal.telephony.gsm.QtiGSMPhone) {42c0dfe}
+      mIccChangedRegistrants[6]=Handler (com.qti.internal.telephony.gsm.QtiGsmServiceStateTracker) {c289ec}
+      mIccChangedRegistrants[7]=Handler (com.qti.internal.telephony.dataconnection.QtiDcTracker) {b5f39bc}
+      mIccChangedRegistrants[8]=Handler (com.android.internal.telephony.gsm.GsmSMSDispatcher) {7067716}
+      mIccChangedRegistrants[9]=Handler (com.android.internal.telephony.uicc.IccCardProxy) {614fbbb}
+      mIccChangedRegistrants[10]=Handler (com.qti.internal.telephony.UiccCardProvisioner) {70d9897}
+      mIccChangedRegistrants[11]=Handler (miui.telephony.DefaultSimManager$1) {1122a84}
+      mIccChangedRegistrants[12]=Handler (com.android.phone.MiuiSimHotSwapManager) {3c8826d}
+
+     mUiccCards: size=2
+      mUiccCards[0]=com.android.internal.telephony.uicc.UiccCard@7d3f58e
+    UiccCard:
+     mCi=com.android.internal.telephony.RIL@94ca645
+     mLastRadioState=RADIO_ON
+     mCatService=null
+     mAbsentRegistrants: size=1
+      mAbsentRegistrants[0]=Handler (com.android.internal.telephony.uicc.IccCardProxy) {66f8353}
+     mCardState=CARDSTATE_ABSENT
+     mUniversalPinState=PINSTATE_UNKNOWN
+     mGsmUmtsSubscriptionAppIndex=-1
+     mCdmaSubscriptionAppIndex=-1
+     mImsSubscriptionAppIndex=-1
+     mImsSubscriptionAppIndex=-1
+     mUiccApplications: length=8
+      mUiccApplications[0]=null
+      mUiccApplications[1]=null
+      mUiccApplications[2]=null
+      mUiccApplications[3]=null
+      mUiccApplications[4]=null
+      mUiccApplications[5]=null
+      mUiccApplications[6]=null
+      mUiccApplications[7]=null
+
+     mCarrierPrivilegeRules: null
+     mCarrierPrivilegeRegistrants: size=0
+    mLocalLog:
+      mUiccCards[1]=com.android.internal.telephony.uicc.UiccCard@94458d8
+    UiccCard:
+     mCi=com.android.internal.telephony.RIL@b1176d9
+     mLastRadioState=RADIO_ON
+     mCatService=null
+     mAbsentRegistrants: size=1
+      mAbsentRegistrants[0]=Handler (com.android.internal.telephony.uicc.IccCardProxy) {614fbbb}
+     mCardState=CARDSTATE_ABSENT
+     mUniversalPinState=PINSTATE_UNKNOWN
+     mGsmUmtsSubscriptionAppIndex=-1
+     mCdmaSubscriptionAppIndex=-1
+     mImsSubscriptionAppIndex=-1
+     mImsSubscriptionAppIndex=-1
+     mUiccApplications: length=8
+      mUiccApplications[0]=null
+      mUiccApplications[1]=null
+      mUiccApplications[2]=null
+      mUiccApplications[3]=null
+      mUiccApplications[4]=null
+      mUiccApplications[5]=null
+      mUiccApplications[6]=null
+      mUiccApplications[7]=null
+
+     mCarrierPrivilegeRules: null
+     mCarrierPrivilegeRegistrants: size=0
+    mLocalLog:
+    mCardLogs: 
+    ++++++++++++++++++++++++++++++++
+    SubscriptionController:
+     defaultSubId=2147483643
+     defaultDataSubId=-1
+     defaultVoiceSubId=2147483643
+     defaultSmsSubId=-1
+     defaultDataPhoneId=-1
+     defaultVoicePhoneId=0
+     defaultSmsPhoneId=-1
+    ++++++++++++++++++++++++++++++++
+     ActiveSubInfoList: is null
+     ActiveSubInfoList in the DB: null
+    ++++++++++++++++++++++++++++++++
+     AllSubInfoList: is null
+    ++++++++++++++++++++++++++++++++
+    0: 05-30 18:23:29 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    1: 05-30 18:25:10 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    2: 05-30 18:25:10 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    3: 05-30 18:25:10 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    4: 05-30 18:25:10 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    5: 05-30 18:25:10 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    6: 05-30 18:25:10 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    7: 05-30 18:25:11 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    8: 05-30 18:25:11 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    9: 05-30 18:25:11 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    10: 05-30 18:25:11 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    11: 05-30 18:25:14 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    12: 05-30 18:25:14 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    13: 05-30 18:25:17 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    14: 05-30 18:25:17 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    15: 05-30 18:25:17 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    16: 05-30 18:25:17 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    17: 05-30 18:25:17 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    18: 05-30 18:25:17 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    19: 05-30 18:25:19 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    20: 05-30 18:25:19 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    21: 05-30 18:25:21 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    22: 05-30 18:25:21 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    23: 05-30 18:25:43 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    24: 05-30 18:25:43 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    25: 05-30 18:25:45 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    26: 05-30 18:25:45 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    27: 05-30 18:25:47 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    28: 05-30 18:25:47 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    29: 05-30 18:25:49 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    30: 05-30 18:25:49 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    31: 05-30 18:25:50 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    32: 05-30 18:25:50 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    33: 05-30 18:25:52 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    34: 05-30 18:25:52 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    35: 05-30 18:25:54 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    36: 05-30 18:25:54 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    37: 05-30 18:25:56 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    38: 05-30 18:25:56 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    39: 05-30 18:25:59 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    40: 05-30 18:25:59 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    41: 05-30 18:26:01 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    42: 05-30 18:26:01 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    43: 05-30 18:26:04 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    44: 05-30 18:26:04 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    45: 05-30 18:26:04 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    46: 05-30 18:26:04 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    47: 05-30 18:26:06 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    48: 05-30 18:26:06 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    49: 05-30 18:26:06 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    50: 05-30 18:26:09 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    51: 05-30 18:26:09 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    52: 05-30 18:26:11 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    53: 05-30 18:26:11 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    54: 05-30 18:26:14 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    55: 05-30 18:26:14 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    56: 05-30 18:26:21 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    57: 05-30 18:26:21 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    58: 05-30 18:26:24 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    59: 05-30 18:26:24 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    60: 05-30 18:26:26 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    61: 05-30 18:26:26 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    62: 05-30 18:26:29 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    63: 05-30 18:26:29 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    64: 05-30 18:26:30 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    65: 05-30 18:26:30 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    66: 05-30 18:26:40 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    67: 05-30 18:26:40 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    68: 05-30 18:26:43 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    69: 05-30 18:26:43 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    70: 05-30 18:26:46 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    71: 05-30 18:26:46 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    72: 05-30 18:26:48 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    73: 05-30 18:26:48 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    74: 05-30 18:26:50 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    75: 05-30 18:26:50 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    76: 05-30 18:26:56 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    77: 05-30 18:26:56 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    78: 05-30 18:26:58 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    79: 05-30 18:26:58 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    80: 05-30 18:27:02 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    81: 05-30 18:27:02 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    82: 05-30 18:27:04 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    83: 05-30 18:27:04 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    84: 05-30 18:27:08 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    85: 05-30 18:27:08 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    86: 05-30 18:27:11 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    87: 05-30 18:27:11 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    88: 05-30 18:27:13 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    89: 05-30 18:27:13 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    90: 05-30 18:27:23 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    91: 05-30 18:27:23 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    92: 05-30 18:27:26 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    93: 05-30 18:27:26 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    94: 05-30 18:27:28 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    95: 05-30 18:27:28 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    96: 05-30 18:27:30 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    97: 05-30 18:27:30 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    98: 05-30 18:27:31 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    99: 05-30 18:27:31 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    100: 05-30 18:27:32 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    101: 05-30 18:27:32 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    102: 05-30 18:27:32 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    103: 05-30 18:27:32 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    104: 05-30 18:27:32 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    105: 05-30 18:27:32 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    106: 05-30 18:28:42 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    107: 05-30 18:28:42 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    108: 05-30 18:28:42 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    109: 05-30 18:28:43 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    110: 05-30 18:28:43 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    111: 05-30 18:28:43 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    112: 05-30 18:28:43 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    113: 05-30 18:28:43 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    114: 05-30 18:36:06 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    115: 05-30 18:46:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    116: 05-30 18:53:17 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    117: 05-30 18:53:17 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    118: 05-30 18:53:17 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    119: 05-30 18:53:28 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    120: 05-30 18:55:19 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    121: 05-30 18:55:19 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    122: 05-30 18:55:19 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    123: 05-30 18:56:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    124: 05-30 18:58:14 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    125: 05-30 18:58:16 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    126: 05-30 18:58:17 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    127: 05-30 18:58:17 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    128: 05-30 18:58:17 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    129: 05-30 18:58:17 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    130: 05-30 18:58:17 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    131: 05-30 18:58:17 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    132: 05-30 18:58:17 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    133: 05-30 18:58:18 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    134: 05-30 18:58:18 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    135: 05-30 18:58:19 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    136: 05-30 18:58:20 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    137: 05-30 18:58:20 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    138: 05-30 18:58:22 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    139: 05-30 18:58:23 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    140: 05-30 18:58:23 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    141: 05-30 18:58:23 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    142: 05-30 18:58:23 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    143: 05-30 18:58:23 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    144: 05-30 18:58:45 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    145: 05-30 18:58:45 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    146: 05-30 18:58:45 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    147: 05-30 18:58:45 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    148: 05-30 18:58:50 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    149: 05-30 18:58:50 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    150: 05-30 18:58:50 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    151: 05-30 18:58:50 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    152: 05-30 18:58:52 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    153: 05-30 18:58:55 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    154: 05-30 18:58:55 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    155: 05-30 18:58:55 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    156: 05-30 18:58:55 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    157: 05-30 18:58:56 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    158: 05-30 18:58:58 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    159: 05-30 18:58:58 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    160: 05-30 18:58:58 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    161: 05-30 18:58:58 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    162: 05-30 18:59:03 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    163: 05-30 18:59:24 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    164: 05-30 18:59:24 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    165: 05-30 18:59:24 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    166: 05-30 18:59:24 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    167: 05-30 18:59:31 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    168: 05-30 18:59:31 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    169: 05-30 18:59:31 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    170: 05-30 18:59:31 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    171: 05-30 18:59:31 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    172: 05-30 18:59:33 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    173: 05-30 18:59:33 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    174: 05-30 18:59:33 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    175: 05-30 18:59:33 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    176: 05-30 18:59:34 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    177: 05-30 18:59:47 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    178: 05-30 18:59:47 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    179: 05-30 18:59:47 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    180: 05-30 18:59:47 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    181: 05-30 19:05:22 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    182: 05-30 19:05:26 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    183: 05-30 19:05:27 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    184: 05-30 19:05:27 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    185: 05-30 19:05:27 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    186: 05-30 19:05:27 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    187: 05-30 19:05:28 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    188: 05-30 19:05:40 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    189: 05-30 19:05:53 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    190: 05-30 19:05:55 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    191: 05-30 19:06:02 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    192: 05-30 19:06:03 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    193: 05-30 19:06:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    194: 05-30 19:06:09 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    195: 05-30 19:06:13 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    196: 05-30 19:06:24 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    197: 05-30 19:06:35 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    198: 05-30 19:06:45 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    199: 05-30 19:06:55 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    200: 05-30 19:07:06 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    201: 05-30 19:07:17 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    202: 05-30 19:07:27 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    203: 05-30 19:07:37 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    204: 05-30 19:09:21 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    205: 05-30 19:09:21 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    206: 05-30 19:09:21 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    207: 05-30 19:09:21 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    208: 05-30 19:10:46 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    209: 05-30 19:10:46 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    210: 05-30 19:10:46 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    211: 05-30 19:11:43 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    212: 05-30 19:14:01 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    213: 05-30 19:14:54 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    214: 05-30 19:14:54 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    215: 05-30 19:14:54 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    216: 05-30 19:14:54 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    217: 05-30 19:14:54 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    218: 05-30 19:14:54 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    219: 05-30 19:14:54 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    220: 05-30 19:14:54 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    221: 05-30 19:16:06 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    222: 05-30 19:20:32 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    223: 05-30 19:20:32 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    224: 05-30 19:26:06 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    225: 05-30 19:30:47 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    226: 05-30 19:30:48 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    227: 05-30 19:31:23 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    228: 05-30 19:32:26 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    229: 05-30 19:33:17 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    230: 05-30 19:36:06 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    231: 05-30 19:37:21 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    232: 05-30 19:46:06 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    233: 05-30 19:46:58 pid=2631 tid=2631 [getPhoneId]- invalid subId return=-1
+    234: 05-30 19:46:58 pid=2631 tid=2631 [getPhoneId]- invalid subId return=-1
+    235: 05-30 19:49:05 pid=2631 tid=2631 [getPhoneId]- invalid subId return=-1
+    236: 05-30 19:49:05 pid=2631 tid=2631 [getPhoneId]- invalid subId return=-1
+    237: 05-30 19:50:18 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    238: 05-30 19:52:36 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    239: 05-30 19:55:19 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    240: 05-30 19:55:20 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    241: 05-30 19:55:51 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    242: 05-30 19:56:06 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    243: 05-30 20:01:49 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    244: 05-30 20:02:00 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    245: 05-30 20:06:06 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    246: 05-30 20:07:52 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    247: 05-30 20:15:51 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    248: 05-30 20:15:52 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    249: 05-30 20:15:52 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    250: 05-30 20:15:53 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    251: 05-30 20:15:53 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    252: 05-30 20:15:53 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    253: 05-30 20:15:53 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    254: 05-30 20:15:53 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    255: 05-30 20:15:53 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    256: 05-30 20:15:53 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    257: 05-30 20:15:53 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    258: 05-30 20:15:53 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    259: 05-30 20:15:54 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    260: 05-30 20:15:54 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    261: 05-30 20:15:54 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    262: 05-30 20:15:54 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    263: 05-30 20:15:54 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    264: 05-30 20:15:54 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    265: 05-30 20:15:54 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    266: 05-30 20:15:54 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    267: 05-30 20:15:54 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    268: 05-30 20:15:54 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    269: 05-30 20:15:55 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    270: 05-30 20:16:06 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    271: 05-30 20:16:23 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    272: 05-30 20:16:23 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    273: 05-30 20:16:24 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    274: 05-30 20:16:24 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    275: 05-30 20:16:26 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    276: 05-30 20:16:26 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    277: 05-30 20:16:27 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    278: 05-30 20:16:27 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    279: 05-30 20:16:34 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    280: 05-30 20:16:34 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    281: 05-30 20:16:35 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    282: 05-30 20:16:35 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    283: 05-30 20:16:36 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    284: 05-30 20:16:36 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    285: 05-30 20:16:38 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    286: 05-30 20:16:38 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    287: 05-30 20:16:40 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    288: 05-30 20:16:40 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    289: 05-30 20:16:41 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    290: 05-30 20:16:41 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    291: 05-30 20:16:42 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    292: 05-30 20:16:42 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    293: 05-30 20:16:43 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    294: 05-30 20:16:43 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    295: 05-30 20:16:57 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    296: 05-30 20:17:02 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    297: 05-30 20:17:02 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    298: 05-30 20:17:11 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    299: 05-30 20:17:11 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    300: 05-30 20:17:21 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    301: 05-30 20:17:21 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    302: 05-30 20:17:23 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    303: 05-30 20:17:23 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    304: 05-30 20:17:25 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    305: 05-30 20:17:25 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    306: 05-30 20:17:26 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    307: 05-30 20:17:26 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    308: 05-30 20:17:27 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    309: 05-30 20:17:28 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    310: 05-30 20:17:31 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    311: 05-30 20:17:31 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    312: 05-30 20:17:33 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    313: 05-30 20:17:33 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    314: 05-30 20:17:35 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    315: 05-30 20:17:35 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    316: 05-30 20:17:35 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    317: 05-30 20:17:36 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    318: 05-30 20:17:36 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    319: 05-30 20:17:36 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    320: 05-30 20:17:49 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    321: 05-30 20:17:50 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    322: 05-30 20:17:50 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    323: 05-30 20:17:51 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    324: 05-30 20:17:51 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    325: 05-30 20:17:51 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    326: 05-30 20:17:52 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    327: 05-30 20:17:52 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    328: 05-30 20:17:55 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    329: 05-30 20:17:55 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    330: 05-30 20:17:59 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    331: 05-30 20:17:59 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    332: 05-30 20:18:00 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    333: 05-30 20:18:01 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    334: 05-30 20:18:03 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    335: 05-30 20:18:04 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    336: 05-30 20:18:57 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    337: 05-30 20:19:08 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    338: 05-30 20:19:44 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    339: 05-30 20:26:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    340: 05-30 20:33:16 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    341: 05-30 20:36:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    342: 05-30 20:41:09 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    343: 05-30 20:41:09 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    344: 05-30 20:41:09 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    345: 05-30 20:41:09 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    346: 05-30 20:41:39 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    347: 05-30 20:41:39 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    348: 05-30 20:41:39 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    349: 05-30 20:41:39 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    350: 05-30 20:41:56 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    351: 05-30 20:41:56 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    352: 05-30 20:41:56 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    353: 05-30 20:41:56 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    354: 05-30 20:42:02 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    355: 05-30 20:42:02 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    356: 05-30 20:42:02 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    357: 05-30 20:42:02 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    358: 05-30 20:42:20 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    359: 05-30 20:42:20 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    360: 05-30 20:42:20 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    361: 05-30 20:42:20 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    362: 05-30 20:42:21 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    363: 05-30 20:42:22 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    364: 05-30 20:42:22 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    365: 05-30 20:42:22 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    366: 05-30 20:42:31 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    367: 05-30 20:42:31 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    368: 05-30 20:42:31 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    369: 05-30 20:42:31 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    370: 05-30 20:42:31 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    371: 05-30 20:42:31 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    372: 05-30 20:42:33 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    373: 05-30 20:42:33 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    374: 05-30 20:42:43 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    375: 05-30 20:42:43 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    376: 05-30 20:42:43 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    377: 05-30 20:42:43 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    378: 05-30 20:42:44 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    379: 05-30 20:42:44 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    380: 05-30 20:42:44 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    381: 05-30 20:42:44 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    382: 05-30 20:42:51 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    383: 05-30 20:42:51 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    384: 05-30 20:42:51 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    385: 05-30 20:42:51 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    386: 05-30 20:43:06 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    387: 05-30 20:43:06 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    388: 05-30 20:43:06 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    389: 05-30 20:43:06 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    390: 05-30 20:43:15 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    391: 05-30 20:43:15 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    392: 05-30 20:43:15 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    393: 05-30 20:43:16 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    394: 05-30 20:43:23 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    395: 05-30 20:46:04 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    396: 05-30 20:46:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    397: 05-30 20:48:49 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    398: 05-30 20:51:35 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    399: 05-30 20:52:40 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    400: 05-30 20:55:04 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    401: 05-30 20:55:23 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    402: 05-30 20:56:06 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    403: 05-30 20:58:09 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    404: 05-30 20:58:14 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    405: 05-30 20:58:15 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    406: 05-30 20:58:15 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    407: 05-30 20:58:15 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    408: 05-30 20:58:15 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    409: 05-30 20:58:25 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    410: 05-30 20:58:45 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    411: 05-30 20:59:05 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    412: 05-30 20:59:25 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    413: 05-30 20:59:45 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    414: 05-30 21:00:05 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    415: 05-30 21:00:23 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    416: 05-30 21:00:23 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    417: 05-30 21:00:23 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    418: 05-30 21:00:23 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    419: 05-30 21:00:23 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    420: 05-30 21:00:54 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    421: 05-30 21:03:40 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    422: 05-30 21:06:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    423: 05-30 21:06:26 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    424: 05-30 21:08:18 pid=2631 tid=3035 [getPhoneId]- invalid subId return=-1
+    425: 05-30 21:09:12 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    426: 05-30 21:11:31 pid=2631 tid=24688 [getPhoneId]- invalid subId return=-1
+    427: 05-30 21:11:31 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    428: 05-30 21:11:31 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    429: 05-30 21:11:34 pid=2631 tid=30441 [getPhoneId]- invalid subId return=-1
+    430: 05-30 21:11:34 pid=2631 tid=3061 [getPhoneId]- invalid subId return=-1
+    431: 05-30 21:11:58 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    432: 05-30 21:12:01 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    433: 05-30 21:12:30 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    434: 05-30 21:12:42 pid=2631 tid=3199 [getPhoneId]- invalid subId return=-1
+    435: 05-30 21:12:52 pid=2631 tid=2650 [getPhoneId]- invalid subId return=-1
+    436: 05-30 21:14:44 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    437: 05-30 21:16:06 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    438: 05-30 21:17:30 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    439: 05-30 21:20:15 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    440: 05-30 21:23:01 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    441: 05-30 21:25:46 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    442: 05-30 21:26:06 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    443: 05-30 21:28:32 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    444: 05-30 21:30:01 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    445: 05-30 21:31:18 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    446: 05-30 21:34:03 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    447: 05-30 21:36:06 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    448: 05-30 21:36:49 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    449: 05-30 21:39:35 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    450: 05-30 21:42:20 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    451: 05-30 21:45:06 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    452: 05-30 21:46:06 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    453: 05-30 21:47:52 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    454: 05-30 21:50:37 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    455: 05-30 21:53:23 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    456: 05-30 21:56:06 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    457: 05-30 21:56:08 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    458: 05-30 21:56:35 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    459: 05-30 21:58:54 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    460: 05-30 22:01:40 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    461: 05-30 22:04:25 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    462: 05-30 22:06:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    463: 05-30 22:07:11 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    464: 05-30 22:09:56 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    465: 05-30 22:12:42 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    466: 05-30 22:15:28 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    467: 05-30 22:16:06 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    468: 05-30 22:18:13 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    469: 05-30 22:20:59 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    470: 05-30 22:23:44 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    471: 05-30 22:26:06 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    472: 05-30 22:26:30 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    473: 05-30 22:29:15 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    474: 05-30 22:32:01 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    475: 05-30 22:34:46 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    476: 05-30 22:36:06 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    477: 05-30 22:37:23 pid=2631 tid=2670 [getPhoneId]- invalid subId return=-1
+    478: 05-30 22:37:32 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    479: 05-30 22:40:17 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    480: 05-30 22:43:03 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    481: 05-30 22:45:48 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    482: 05-30 22:46:06 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    483: 05-30 22:48:34 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    484: 05-30 22:51:19 pid=2631 tid=3035 [getPhoneId] asked for default subId=2147483643
+    485: 05-30 22:54:05 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    486: 05-30 22:56:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    487: 05-30 22:56:50 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    488: 05-30 22:59:36 pid=2631 tid=3061 [getPhoneId] asked for default subId=2147483643
+    489: 05-30 23:02:21 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    490: 05-30 23:05:07 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    491: 05-30 23:05:58 pid=2631 tid=3199 [getPhoneId] asked for default subId=2147483643
+    492: 05-30 23:06:06 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    493: 05-30 23:07:52 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    494: 05-30 23:10:38 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    495: 05-30 23:13:23 pid=2631 tid=30441 [getPhoneId] asked for default subId=2147483643
+    496: 05-30 23:16:02 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    497: 05-30 23:16:06 pid=2631 tid=2650 [getPhoneId] asked for default subId=2147483643
+    498: 05-30 23:16:09 pid=2631 tid=2670 [getPhoneId] asked for default subId=2147483643
+    499: 05-30 23:17:09 pid=2631 tid=24688 [getPhoneId] asked for default subId=2147483643
+    ++++++++++++++++++++++++++++++++
+    ++++++++++++++++++++++++++++++++
+    SubscriptionInfoUpdater:
+    CarrierServiceBindHelper:
+    Carrier app binding for phone 0
+      connection: null
+      bindCount: 0
+      lastBindStartMillis: 0
+      unbindCount: 0
+      lastUnbindMillis: 0
+
+    Carrier app binding for phone 1
+      connection: null
+      bindCount: 0
+      lastBindStartMillis: 0
+      unbindCount: 0
+      lastUnbindMillis: 0
+
+    ++++++++++++++++++++++++++++++++
+    MiuiTelephony:
+    ImeiMeidSource:  deviceId=xxxxxxxxxxxx811 smallDeviceId=xxxxxxxxxxxx803 slot0 imei=xxxxxxxxxxxx803 mReadImeiException=null meid=xxxxxxxxxxx740 mReadMeidException=null slot1 imei=xxxxxxxxxxxx811 mReadImeiException=null meid= mReadMeidException=null
+    DefaultSimManager: PREFERRED_NETWORK_MODE init=20 current=20 mIsUsePreferred=false mPreferredDataSlot=-1 isUsePreferred=false preferredDataSlot=-1
+    Phone[0]:
+    MiuiIccPhoneBookInterfaceManager: 
+     mHasPbr=-1
+     mAdnCache=null
+    Phone[1]:
+    MiuiIccPhoneBookInterfaceManager: 
+     mHasPbr=-1
+     mAdnCache=null
+    ++++++++++++++++++++++++++++++++
+    PhoneInterfaceManager.getCellLocation
+      05-30 20:43:15.961 - callingUid = 10467 callingPid = 9092 callingPackage = com.stg.rouge.activity
+      05-30 20:43:16.033 - callingUid = 10467 callingPid = 9092 callingPackage = com.stg.rouge.activity
+      05-30 20:55:04.918 - callingUid = 10469 callingPid = 11926 callingPackage = com.xmiles.vipgift.all
+      05-30 20:58:14.958 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:15.282 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:15.287 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:15.312 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:15.330 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:25.277 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:45.273 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:05.275 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:25.277 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:45.279 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 21:00:05.280 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 21:00:23.284 - callingUid = 10470 callingPid = 14221 callingPackage = com.yunxun.moxian
+      05-30 21:00:23.398 - callingUid = 10470 callingPid = 14221 callingPackage = com.yunxun.moxian
+      05-30 21:00:23.401 - callingUid = 10470 callingPid = 14221 callingPackage = com.yunxun.moxian
+      05-30 21:00:23.423 - callingUid = 10470 callingPid = 14221 callingPackage = com.yunxun.moxian
+      05-30 21:00:23.438 - callingUid = 10470 callingPid = 14221 callingPackage = com.yunxun.moxian
+      05-30 21:08:18.017 - callingUid = 10473 callingPid = 17012 callingPackage = com.poushengcommunity
+      05-30 21:11:31.092 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:11:31.104 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:11:31.109 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:11:34.244 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:11:34.272 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:01.694 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:30.219 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:42.545 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:52.673 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 22:37:23.272 - callingUid = 10037 callingPid = 18571 callingPackage = com.miui.analytics
+    PhoneInterfaceManager.getAllCellInfo
+      05-30 20:17:36.843 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:49.718 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:50.040 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:50.696 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:51.113 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:51.407 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:51.664 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:52.221 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:52.488 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:55.557 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:55.820 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:59.268 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:17:59.562 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:18:00.826 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:18:01.136 - callingUid = 10461 callingPid = 31382 callingPackage = com.longpackage.guessfootball
+      05-30 20:58:14.961 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:25.281 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:45.276 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:05.277 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:25.278 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:45.282 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 21:00:05.282 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 21:00:23.286 - callingUid = 10470 callingPid = 14221 callingPackage = com.yunxun.moxian
+      05-30 21:08:18.021 - callingUid = 10473 callingPid = 17012 callingPackage = com.poushengcommunity
+      05-30 21:11:31.096 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:01.699 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:30.224 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:42.549 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:52.675 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 22:37:23.301 - callingUid = 10037 callingPid = 18571 callingPackage = com.miui.analytics
+    PhoneInterfaceManager.getNeighboringCellInfo
+      05-30 19:06:45.196 - callingUid = 10440 callingPid = 3857 callingPackage = com.example.shadow.heartrecreation
+      05-30 19:06:55.693 - callingUid = 10440 callingPid = 3857 callingPackage = com.example.shadow.heartrecreation
+      05-30 19:07:06.964 - callingUid = 10440 callingPid = 3857 callingPackage = com.example.shadow.heartrecreation
+      05-30 19:07:17.064 - callingUid = 10440 callingPid = 3857 callingPackage = com.example.shadow.heartrecreation
+      05-30 19:07:27.225 - callingUid = 10440 callingPid = 3857 callingPackage = com.example.shadow.heartrecreation
+      05-30 19:07:37.713 - callingUid = 10440 callingPid = 3857 callingPackage = com.example.shadow.heartrecreation
+      05-30 19:14:54.929 - callingUid = 10443 callingPid = 7517 callingPackage = com.e2oto.customer
+      05-30 20:41:09.439 - callingUid = 10467 callingPid = 8089 callingPackage = com.stg.rouge.activity
+      05-30 20:41:39.864 - callingUid = 10467 callingPid = 8326 callingPackage = com.stg.rouge.activity
+      05-30 20:41:56.495 - callingUid = 10467 callingPid = 8427 callingPackage = com.stg.rouge.activity
+      05-30 20:42:02.624 - callingUid = 10467 callingPid = 8488 callingPackage = com.stg.rouge.activity
+      05-30 20:42:20.488 - callingUid = 10467 callingPid = 8598 callingPackage = com.stg.rouge.activity
+      05-30 20:42:22.016 - callingUid = 10467 callingPid = 8638 callingPackage = com.stg.rouge.activity
+      05-30 20:42:31.821 - callingUid = 10467 callingPid = 8707 callingPackage = com.stg.rouge.activity
+      05-30 20:42:31.959 - callingUid = 10467 callingPid = 8707 callingPackage = com.stg.rouge.activity
+      05-30 20:42:43.171 - callingUid = 10467 callingPid = 8834 callingPackage = com.stg.rouge.activity
+      05-30 20:42:44.537 - callingUid = 10467 callingPid = 8876 callingPackage = com.stg.rouge.activity
+      05-30 20:42:51.852 - callingUid = 10467 callingPid = 8958 callingPackage = com.stg.rouge.activity
+      05-30 20:43:06.399 - callingUid = 10467 callingPid = 9041 callingPackage = com.stg.rouge.activity
+      05-30 20:43:15.929 - callingUid = 10467 callingPid = 9092 callingPackage = com.stg.rouge.activity
+      05-30 20:58:25.297 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:58:45.302 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:05.302 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:25.288 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 20:59:45.293 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 21:00:05.291 - callingUid = 10470 callingPid = 13706 callingPackage = com.yunxun.moxian
+      05-30 21:12:01.710 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:30.250 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:42.565 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+      05-30 21:12:52.689 - callingUid = 10474 callingPid = 18134 callingPackage = com.clover.imuseum
+
+SERVICE com.lbe.security.miui/com.lbe.security.service.SecurityService 3a2d62b pid=19863
+  Client:
+    nothing to dump
+
+SERVICE com.android.bluetooth/.opp.BluetoothOppService ea3f9a pid=3630
+  Client:
+    nothing to dump
+
+SERVICE com.android.bluetooth/.pan.PanService 1401039 pid=3630
+  Client:
+    nothing to dump
+[dumpsys: 1.980s elapsed]
+
+========================================================
+== Running Application Providers
+========================================================

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script>
+    
+    </script>
+    <style>
+    .box{
+      display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+      display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+      display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+      display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+      display: -ms-flexbox;   /* 混合版本语法: IE 10 */   
+    }
+    .box1{
+      background: #d5d5d5;
+      width: 100px;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+    .box1 div{
+      border: 1px solid;
+      background: red;
+      width: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>

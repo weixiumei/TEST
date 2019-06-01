@@ -1,0 +1,2 @@
+events: sockets_tagged=676 sockets_untagged=567 counter_set_changes=5169 delete_cmds=376 iface_events=16 match_calls=921697 match_calls_prepost=285386 match_found_sk=577381 match_found_sk_in_ct=35130 match_found_no_sk_in_ct=23800 match_no_sk=40891 match_no_sk_file=48700
+

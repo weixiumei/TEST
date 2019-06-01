@@ -1,0 +1,34 @@
+Active interfaces:
+Active UID interfaces:
+Dev stats:
+  Pending bytes: 1654625
+  History since boot:
+  ident=[{type=WIFI, subType=COMBINED, networkId="MIUIAUTO-APP"}] uid=-1 set=ALL tag=0x0
+    NetworkStatsHistory: bucketDuration=3600
+      st=1527562800 rb=24322253 rp=39424 tb=6361237 tp=32638 op=0
+      st=1527566400 rb=3019095 rp=13338 tb=1558837 tp=9596 op=0
+      st=1527570000 rb=1440198 rp=13303 tb=478591 tp=5424 op=0
+      st=1527573600 rb=1940838 rp=19546 tb=880537 tp=10276 op=0
+      st=1527577200 rb=1686650 rp=14222 tb=889340 tp=9709 op=0
+      st=1527580800 rb=1337470 rp=12108 tb=625276 tp=7372 op=0
+      st=1527584400 rb=6655696 rp=18609 tb=4364731 tp=15516 op=0
+      st=1527588000 rb=11670242 rp=30995 tb=3818809 tp=23503 op=0
+      st=1527591600 rb=1951553 rp=16805 tb=790619 tp=8931 op=0
+      st=1527595200 rb=2012476 rp=21448 tb=826984 tp=9073 op=0
+      st=1527598800 rb=904623 rp=9075 tb=486712 tp=5366 op=0
+Xt stats:
+  Pending bytes: 675546
+  History since boot:
+  ident=[{type=WIFI, subType=COMBINED, networkId="MIUIAUTO-APP"}] uid=-1 set=ALL tag=0x0
+    NetworkStatsHistory: bucketDuration=3600
+      st=1527562800 rb=24067677 rp=30415 tb=5927032 tp=32629 op=0
+      st=1527566400 rb=2848605 rp=7296 tb=1435925 tp=9394 op=0
+      st=1527570000 rb=1181201 rp=4097 tb=419170 tp=5337 op=0
+      st=1527573600 rb=1545649 rp=5509 tb=852804 tp=10800 op=0
+      st=1527577200 rb=1401200 rp=4096 tb=878688 tp=10701 op=0
+      st=1527580800 rb=1090623 rp=3323 tb=692746 tp=8610 op=0
+      st=1527584400 rb=6489694 rp=12781 tb=4163486 tp=15357 op=0
+      st=1527588000 rb=11348224 rp=19613 tb=3582080 tp=24452 op=0
+      st=1527591600 rb=1639262 rp=5689 tb=784147 tp=9645 op=0
+      st=1527595200 rb=1581885 rp=6118 tb=768896 tp=9315 op=0
+      st=1527598800 rb=733723 rp=3010 tb=446319 tp=5561 op=0

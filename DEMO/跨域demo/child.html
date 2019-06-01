@@ -1,0 +1,43 @@
+<script>
+
+     if (window.addEventListener) {  // all browsers except IE before version 9
+         window.addEventListener("message", receiveMessageValue, false);
+     } else {
+         if (window.attachEvent) {   // IE before version 9
+             window.attachEvent("onmessage", receiveMessageValue);     // Internet Explorer from version 8
+         }
+     }
+
+        
+    function receiveMessageValue(event) {
+        if (window.postMessage) {
+             var obj = event.data;
+             if (obj.method == 'res') {
+             	alert(obj.value);
+             } else {
+                 // We received the response via postMessage as a string. This works
+                 // for all browsers that support postMessage, including IE8/9.
+                 var str = eval('(' + obj + ')');
+                 if (str.method && str.method == 'res') {
+             		document.getElementById('result').innerHTML = str.value;
+
+                 }
+             }
+        } else {
+            alert('postMessage not supported');
+        }
+    }
+
+
+
+</script>
+
+
+<button id="req">give me para</button>
+<div id="result"></div>
+<script type="text/javascript">
+	var _parent = parent;
+	document.getElementById('req').onclick = function(){
+		_parent.postMessage("{method: 'req'}", "*");
+	}
+</script>

@@ -1,0 +1,5 @@
+ACCESSIBILITY MANAGER (dumpsys accessibility)
+
+User state[attributes:{id=0, currentUser=true, accessibilityEnabled=true, touchExplorationEnabled=false, displayMagnificationEnabled=false}
+           services:{Service[label=ä¿¡æ¯å©æ, feedbackType[FEEDBACK_GENERIC], capabilities=1, eventTypes=[TYPE_WINDOW_STATE_CHANGED, TYPE_NOTIFICATION_STATE_CHANGED], notificationTimeout=100]}]
+

@@ -1,0 +1,15 @@
+mLocationMode=0
+mScreenOn=true
+mPolicyFile=/data/system/locationpolicy.xml
+mRestrictBackground=false
+mLocationPolicies size=1
+mLocationRules size=1
+mUidPolicies size=1
+uid=10062, [REJECT_ALL_BACKGROUNDREJECT_HIGH_POWER_BACKGROUNDREJECT_NON_PASSIVE_BACKGROUND]
+mUidRules size=1
+uid=10062, [REJECT_ALLREJECT_HIGH_POWERREJECT_NON_PASSIVE]
+mUidInNavigation size =0
+miui gps provider info:
+            on: false
+    stationary: false
+  mHasLocation: false

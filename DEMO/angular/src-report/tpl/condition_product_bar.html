@@ -1,0 +1,35 @@
+<!-- 商品编码/条形码 搜索 -->
+<div class="condition_div">
+  <li>
+      <div class="item-content item-search-box">
+        	<div class="item-select">
+  	        <select>
+  	          <option value="product_code" tkey="product_code"></option>
+  	          <option value="code" tkey="bar_code"></option>
+  	        </select>
+        	</div>
+        	<div class="item-input">
+  	        <input type="text" class="item-input1" placeholder="搜索" placeholder-key="searchs" name="name_code" class="">
+        	</div>
+      </div>
+  </li>
+</div>
+<script>
+  jQuery(document).ready(function($){
+    $('.condition_div li').appendTo($('#condition_ul'));
+
+    // 条件从缓存获取
+    if(!!localStorage[form_id + '_product_code']){
+      $('.item-input1').val(localStorage[form_id + '_product_code']);
+      $('.item-search-box .item-select select option[value="product_code"]').attr('selected','selected');
+      $('.item-search-box .item-select select option[value="product_code"]').click();
+      $('.item-search-box .item-select select option[value="code"]').removeAttr('selected');
+    }
+    if(!!localStorage[form_id + '_code']){
+      $('.item-input1').val(localStorage[form_id + '_code']);
+      $('.item-search-box .item-select select option[value="code"]').attr('selected','selected');
+      $('.item-search-box .item-select select option[value="code"]').click();
+      $('.item-search-box .item-select select option[value="product_code"]').removeAttr('selected');
+    }
+  })
+</script>

@@ -1,0 +1,121 @@
+<!-- 汇总 -->
+<div class="condition_div">
+	<li>
+	    <div class="item-content item-relative">
+	        <label><span tkey="skidding_sum"></span>:</label>
+	        <div class="item-input">
+	          <!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+	          <input type="text" placeholder="请选择需汇总统计项目" placeholder-key="brand_desc" class="btn-panel relative-value" data-rel="panel-reason" readonly="" data-value="storage1" value="">
+	        </div>
+	    </div>
+	</li>
+</div>
+
+<!-- panel 汇总 -->
+<div class="panel panel-right panel-cover" id='panel-reason'>
+  <header>
+    <a href="#" class="close-panel back"></a>  
+    <span tkey="sum"></span>
+    <a href="#" class="close-panel confirm confirm_1" tkey="sure"></a>
+  </header> 
+  <!-- Click on link with "close-panel" class will close panel -->
+  <div class="list-block">
+  	<p class="small">* <span tkey="desc_sum"></span></p>
+  	<ul>
+      <!-- Single chekbox item -->
+      <li tkey="loading"></li>
+  	</ul>
+  </div>
+</div>
+<script>
+	jQuery(document).ready(function($){
+		$('.condition_div li').appendTo($('#condition_ul'));
+	})
+
+	var xhr;
+	// init 汇总
+	if(xhr){
+        xhr.abort();
+    }
+    xhr = $.ajax({
+        url: form_id == 'form8'
+             ? (API_URL_PREFIX+API_URL['operation_receipts_group_level'])
+                 : (API_URL_PREFIX+API_URL['shop_inventory_view_list']),
+        data: JSON.stringify({}),
+        type: 'POST',
+        dataType : "json",
+        contentType: "application/json",
+        success:  function(data){
+            if(data.code != 0){
+                _error_handle(data);
+                return;
+            }
+            data = data.data;
+            var str = '';
+            var checked_reason = '';
+            var view_types = form_id + '_view_types';
+
+            for(i=0;i<data.data.length;i++){
+                var name = data.data[i]['type_name'];
+                var code = data.data[i]['type_code'];
+                if(!!localStorage[view_types]){
+                    checked_reason = (localStorage[view_types].split(',').indexOf(code+'') != -1) ? 'checked' : '';
+                }
+
+                str += '<li><label class="lb" for="reason'+i+'">\
+                  '+ name +'\
+                      <span class="checkbox">\
+                        <span class="input-radio '+ checked_reason +'">\
+                          <input type="radio" name="reason" id="reason'+i+'" value="'+ code +'" data-label="'+ name +'" />\
+                          <span class="inner"></span>\
+                        </span>\
+                      </span></label>\
+                    </li>';
+            }
+            $('#panel-reason ul').html(str);
+            $(document).on("click", "#panel-reason .close-panel.confirm_1", function() {
+                var s = '';
+                if($(this).parents('.panel').find('input[type=radio]').size() == $(this).parents('.panel').find('input[type=radio]:checked').size()){
+                    s = '全部汇总类型';
+                }else{
+                    $(this).parents('.panel').find('input[type=radio]:checked').each(function(){
+                        if(s != ''){
+                            s += ',';
+                        }
+                        s +=  $(this).attr('data-label');
+                    });
+                }
+                $('input[data-value="storage1"]').val(s);
+                // sessionStorage.setItem('reason1',s);
+                $('.filter_reason').html(s);
+            });
+            // 默认选中
+            $('#panel-reason ul li:first-child .input-radio input').click();
+            $('#panel-reason input[value="code"]').click();
+            
+            $('#panel-reason .close-panel.confirm_1').click();
+            // 汇总条件从缓存获取
+            var filter_reason = form_id + '_filter_reason';
+            if(!!localStorage[filter_reason]){
+                $('.filter_reason').html(localStorage[filter_reason]);
+                $('input[data-value="storage1"]').val(localStorage[filter_reason]);
+                $("#panel-reason ul li .input-radio [value='"+localStorage[view_types]+"']").click();
+            }else{
+                // 默认选中
+                $('#panel-reason ul li:first-child .input-radio input').click();
+                $('#panel-reason input[value="code"]').click();
+            }
+        },
+        error:    function(data){
+            console.log('error'); 
+            _error_handle(data);  
+        },
+        complete: function(){
+            console.log('complete');
+        },
+        beforeSend : function(request){
+            request.setRequestHeader("token", token);
+        }
+    })
+
+</script>

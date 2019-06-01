@@ -1,0 +1,193 @@
+<!--  head：页面的</head>之前代码 -->
+<!-- data_echarts -->
+<!DOCTYPE html>
+<html ng-app="NtSF" ng-cloak="" class="ng-cloak">
+<head>
+    <meta charset="UTF-8">
+    <title>data insight</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="project.js"></script>
+</head>
+<body class="" ng-controller="dataEchartsContrl">
+	<div class="container-fluid">
+		<div class="row back">
+			<img src="assets/images/back1.png">
+			<div>返回列表</div>
+		</div>
+		<div class="row">
+		  	<div class="col-md-6"><div class="title_data">浅色中码夏装的购买人群</div></div>
+		  	<div class="col-md-6">
+		  		<div class="download right-block">
+		  			下载数据包
+		  			<img ng-src="assets/images/download.png"> </div>
+		  	</div>
+		</div>
+	    
+	    <!-- pies -->
+	    <div class="pies_div">
+	    	<div class="row border-top">
+		    	<div class="col-md-4">
+		    		<div class="yugu">
+			    		<span class="yugu_text">预估人数</span>  
+			    		<span class="renshu color_1">{{channel_data.estimate}}</span>
+		    		</div>
+		    	</div>
+		    	<div class="col-md-2">
+		    		<div id="pies1"></div>
+		    		<div class="pie_text">{{channel_data.channel[0].rate}}%&nbsp;&nbsp;
+		    			<span>{{channel_data.channel[0].people_num}}</span>
+		    		</div> 
+		    	</div>
+		    	<div class="col-md-2">
+		    		<div id="pies2"></div>
+		    		<div class="pie_text">{{channel_data.channel[1].rate}}%&nbsp;&nbsp;
+		    			<span>{{channel_data.channel[1].people_num}}</span>
+		    		</div> 
+		    	</div>
+		    	<div class="col-md-2">
+		    		<div id="pies3"></div>
+		    		<div class="pie_text">{{channel_data.channel[2].rate}}%&nbsp;&nbsp;
+		    			<span>{{channel_data.channel[2].people_num}}</span>
+		    		</div> 
+		    	</div>
+		    	<div class="col-md-2">
+		    		<div id="pies4"></div>
+		    		<div class="pie_text">{{channel_data.channel[3].rate}}%&nbsp;&nbsp;
+		    			<span>{{channel_data.channel[3].people_num}}</span>
+		    		</div> 
+		    	</div>
+		    </div>
+
+		    <!-- <div class="row pie_text border-bottom">
+		    	<div class="col-md-4"> <span class="yugu">预估人数</span>  <span class="renshu color_1">{{channel_data.estimate}}</span></div>
+		    	<div class="col-md-2" ng-repeat="channel in channel_data.channel">{{channel.rate}}%&nbsp;&nbsp;<span> {{channel.people_num}}</span></div>
+		    </div> -->
+	    </div>
+
+	    <!-- <div class="row"></div> -->
+	    <!--  -->
+	    <div class="row content border-top">
+	    	<!-- 地区分布 col-md-4-->
+	    	<div class="col-md-4 border-right border-bottom area_echarts_height">
+	    		<h2>地区分布</h2>
+	    		<div id="area_echarts"></div>
+	    	</div>
+
+	    	<!-- col-md-8 -->
+	    	<div class="col-md-8">
+	    		<div class="row">
+	    			<!-- 会员标签 -->
+	    			<div class="col-md-6">
+	    				<h2>会员标签</h2> 
+	    				<div class="label_div">
+	    					<img src="assets/images/label1.png">
+	    					<ul ng-repeat="labels in label_data">
+	    						<li ng-repeat="label in labels">{{label}}</li>
+	    						<!-- <li>忠实用户</li>
+	    						<li>娱乐休闲</li>
+	    						<li>服饰鞋帽</li>
+	    						<li>偏爱休闲</li>
+	    						<li>高收入</li>
+	    						<li>搭配达人</li>
+	    						<li>白领</li> -->
+	    					</ul>
+	    					<!-- <ul>
+	    						<li>时尚</li>
+	    						<li>忠实用户</li>
+	    						<li>娱乐休闲</li>
+	    						<li>服饰鞋帽</li>
+	    						<li>偏爱休闲</li>
+	    					</ul> -->
+	    				</div>
+	    			</div>
+	    			<!-- 会员状态 -->
+	    			<div class="col-md-6 border-left border-right echarts_height">
+	    				<h2>会员状态</h2> 
+	    				<div id="echarts2"></div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<!-- 客单价分布 -->
+	    			<div class="col-md-6 border-top border-bottom">
+	    				<h2>客单价分布</h2> 
+	    				<div id="echarts3"></div>
+	    			</div>
+	    			<!-- 消费频次 -->
+	    			<div class="col-md-6 border">
+	    				<h2>消费频次</h2> 
+	    				<div id="echarts4"></div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+    <!-- script：引入 js 文件 -->
+    
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/common.js"></script>
+<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+<script src="assets/js/angular-1.4.8.min.js"></script>
+<script src="assets/js/angular-resource.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/api/api.config.js"></script>
+<script src="assets/api/api.js"></script>
+<script>
+	
+</script>
+    <script type="text/javascript">
+        // piwik
+        document.title = '数据包查看';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+    <script>
+      var _paq = _paq || [];
+
+      _paq.push(['enableLinkTracking', true]);
+      (function() {
+          try {
+              var storage, SiteId, UserId;
+              if(!!window.sessionStorage){
+                  storage = window.sessionStorage;
+                  SiteId = getUrlParameter('SiteId') || storage.getItem("SiteId") || P_SiteId;
+                  UserId = getUrlParameter('UserId') || storage.getItem("UserId") || '';
+              }else{
+                  SiteId = getUrlParameter('SiteId') || P_SiteId;
+                  UserId = getUrlParameter('UserId') || '';
+              }
+
+              if(!!window.sessionStorage){
+                  storage = window.sessionStorage;
+                  storage.setItem("SiteId", SiteId);
+                  storage.setItem("UserId", UserId) ;
+              }
+              // 如果SiteId是false,则不发送Piwik数据
+              if(SiteId == '' || SiteId == false){
+                  return
+              }
+              var u="http://a.nexttao.com/";
+              // 当url为空不发送
+              if(u == "" || u == "false" || u == false){
+                  return
+              }
+              if(!!UserId){
+                  _paq.push(['setUserId', UserId]);
+              }
+              _paq.push(['setTrackerUrl', u+'piwik.php']);
+              _paq.push(['setSiteId', SiteId]);
+              _paq.push(['setCustomVariable',"5","AppVersion",P_CV.AppVersion,'page']);
+              _paq.push(['trackPageView']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          }catch (e){
+              console.log(e);
+          }
+      })();
+    </script>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+  </body>
+</html>

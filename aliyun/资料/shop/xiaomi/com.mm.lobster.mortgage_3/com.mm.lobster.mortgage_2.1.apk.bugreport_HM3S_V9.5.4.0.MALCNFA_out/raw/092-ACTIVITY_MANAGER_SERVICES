@@ -1,0 +1,2107 @@
+  User 0 active services:
+  * ServiceRecord{ff328da u0 com.android.bluetooth/.hid.HidService}
+    intent={act=android.bluetooth.IBluetoothInputDevice cmp=com.android.bluetooth/.hid.HidService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m46s997ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s599ms restartTime=-1d12h41m22s599ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{cb916eb}:
+      intent={act=android.bluetooth.IBluetoothInputDevice cmp=com.android.bluetooth/.hid.HidService}
+      binder=android.os.BinderProxy@48c8c48
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{a45dae1 ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{20e195a u0 com.android.bluetooth/.hid.HidService:@b574505}
+    All Connections:
+      ConnectionRecord{20e195a u0 com.android.bluetooth/.hid.HidService:@b574505}
+
+  * ServiceRecord{f8fe1b8 u0 org.codeaurora.ims/.ImsService}
+    intent={cmp=org.codeaurora.ims/.ImsService}
+    packageName=org.codeaurora.ims
+    processName=com.android.phone
+    baseDir=/system/vendor/app/ims/ims.apk
+    dataDir=/data/user/0/org.codeaurora.ims
+    app=ProcessRecord{f4ef949 2631:com.android.phone/1001}
+    createTime=-1d12h41m39s347ms startingBgTimeout=--
+    lastActivity=-1d12h41m39s347ms restartTime=-1d12h41m39s347ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{53305c0 u0 com.sohu.inputmethod.sogou.xiaomi/.SogouIME}
+    intent={act=android.view.InputMethod cmp=com.sohu.inputmethod.sogou.xiaomi/.SogouIME}
+    packageName=com.sohu.inputmethod.sogou.xiaomi
+    processName=com.sohu.inputmethod.sogou.xiaomi
+    permission=android.permission.BIND_INPUT_METHOD
+    baseDir=/system/app/SogouInput/SogouInput.apk
+    dataDir=/data/user/0/com.sohu.inputmethod.sogou.xiaomi
+    app=ProcessRecord{e60fa33 20018:com.sohu.inputmethod.sogou.xiaomi/u0a101}
+    createTime=-12h36m40s130ms startingBgTimeout=--
+    lastActivity=-12h36m40s40ms restartTime=-12h36m40s40ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{fc23ef8 CREATE}:
+      intent={act=android.view.InputMethod cmp=com.sohu.inputmethod.sogou.xiaomi/.SogouIME}
+      binder=android.os.BinderProxy@b48fd1
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{d591a36 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{6843fd u0 CR FGS LACT com.sohu.inputmethod.sogou.xiaomi/.SogouIME:@3d8b854}
+          ConnectionRecord{59ebc66 u0 CR !FG UI !VIS com.sohu.inputmethod.sogou.xiaomi/.SogouIME:@4bf9cc1}
+    All Connections:
+      ConnectionRecord{6843fd u0 CR FGS LACT com.sohu.inputmethod.sogou.xiaomi/.SogouIME:@3d8b854}
+      ConnectionRecord{59ebc66 u0 CR !FG UI !VIS com.sohu.inputmethod.sogou.xiaomi/.SogouIME:@4bf9cc1}
+
+  * ServiceRecord{cc6b91b u0 com.android.providers.downloads/.remote.service.DebugLogService}
+    intent={act=com.android.providers.downloads.remote.service.IDebugLogService pkg=com.android.providers.downloads}
+    packageName=com.android.providers.downloads
+    processName=android.process.media
+    baseDir=/system/priv-app/DownloadProvider/DownloadProvider.apk
+    dataDir=/data/user/0/com.android.providers.downloads
+    app=ProcessRecord{712dad7 16473:android.process.media/u0a9}
+    createTime=-2m13s855ms startingBgTimeout=--
+    lastActivity=-2m13s855ms restartTime=-2m13s855ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{968168f CREATE}:
+      intent={act=com.android.providers.downloads.remote.service.IDebugLogService pkg=com.android.providers.downloads}
+      binder=android.os.BinderProxy@9cb5d1c
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{19d5d25 ProcessRecord{fc35a96 26340:android.process.mediaUI/u0a9}}
+        Per-process Connections:
+          ConnectionRecord{14d772a u0 CR com.android.providers.downloads/.remote.service.DebugLogService:@5c53815}
+    All Connections:
+      ConnectionRecord{14d772a u0 CR com.android.providers.downloads/.remote.service.DebugLogService:@5c53815}
+
+  * ServiceRecord{e5db1ee u0 com.miui.autotestutils/.UninstallService}
+    intent={act=com.miui.autotestutils.UninstallService}
+    packageName=com.miui.autotestutils
+    processName=com.miui.autotestutils
+    baseDir=/data/app/com.miui.autotestutils-1/base.apk
+    dataDir=/data/user/0/com.miui.autotestutils
+    app=ProcessRecord{e594ab2 18791:com.miui.autotestutils/1000}
+    createTime=-1d12h32m33s677ms startingBgTimeout=--
+    lastActivity=-9m34s395ms restartTime=-2h5m6s447ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=390
+    restartCount=0 restartDelay=-- nextRestartTime=-2h5m6s515ms crashCount=0
+
+  * ServiceRecord{e1b4aac u0 com.xiaomi.metoknlp/.MetokClService}
+    intent={cmp=com.xiaomi.metoknlp/.MetokClService}
+    packageName=com.xiaomi.metoknlp
+    processName=com.xiaomi.metoknlp
+    baseDir=/system/app/MetokNLP/MetokNLP.apk
+    dataDir=/data/user/0/com.xiaomi.metoknlp
+    app=ProcessRecord{93b05d3 22202:com.xiaomi.metoknlp/u0a56}
+    createTime=-1d12h41m29s176ms startingBgTimeout=--
+    lastActivity=-12h33m12s440ms restartTime=-12h33m27s714ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=7
+    restartCount=0 restartDelay=-- nextRestartTime=-12h33m27s784ms crashCount=0
+
+  * ServiceRecord{4f3af2f u0 com.jeejen.family.miui/com.jeejen.home.launcher.services.LauncherService}
+    intent={cmp=com.jeejen.family.miui/com.jeejen.home.launcher.services.LauncherService}
+    packageName=com.jeejen.family.miui
+    processName=com.jeejen.family.miui:monitor
+    baseDir=/system/app/jjhome/jjhome.apk
+    dataDir=/data/user/0/com.jeejen.family.miui
+    app=ProcessRecord{1249e63 27324:com.jeejen.family.miui:monitor/u0a104}
+    createTime=-1d12h41m13s949ms startingBgTimeout=-6h28m27s568ms
+    lastActivity=-463ms restartTime=-463ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=86
+    executeNesting=2 executeFg=false executingStart=-459ms
+    restartCount=0 restartDelay=-- nextRestartTime=-662ms crashCount=0
+    Delivered Starts:
+    #0 id=86 dur=-459ms dc=1
+      intent=null
+
+  * ServiceRecord{e38cade u0 com.qualcomm.location/.LocationService}
+    intent={act=com.qualcomm.location.LocationService cmp=com.qualcomm.location/.LocationService}
+    packageName=com.qualcomm.location
+    processName=system
+    baseDir=/system/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+    dataDir=/data/user/0/com.qualcomm.location
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m43s565ms startingBgTimeout=--
+    lastActivity=-1d12h41m20s555ms restartTime=-1d12h41m43s563ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{90c5f4d u0 com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService}
+    intent={cmp=com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService}
+    packageName=com.miui.powerkeeper
+    processName=com.miui.powerkeeper:service
+    baseDir=/system/app/PowerKeeper/PowerKeeper.apk
+    dataDir=/data/user/0/com.miui.powerkeeper
+    app=ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}
+    createTime=-12h36m38s365ms startingBgTimeout=--
+    lastActivity=-12h36m38s364ms restartTime=-12h36m38s364ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{e19f510 CREATE}:
+      intent={cmp=com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService}
+      binder=android.os.BinderProxy@4186809
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{e0d3a0e ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}}
+        Per-process Connections:
+          ConnectionRecord{e79eee4 u0 CR com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService:@ba23277}
+    All Connections:
+      ConnectionRecord{e79eee4 u0 CR com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService:@ba23277}
+
+  * ServiceRecord{7f5386d u0 com.qualcomm.qti.modemtestmode/.MbnSystemService}
+    intent={cmp=com.qualcomm.qti.modemtestmode/.MbnSystemService}
+    packageName=com.qualcomm.qti.modemtestmode
+    processName=com.qualcomm.qti.modemtestmode
+    baseDir=/system/app/ModemTestMode/ModemTestMode.apk
+    dataDir=/data/user/0/com.qualcomm.qti.modemtestmode
+    app=ProcessRecord{f73280 27232:com.qualcomm.qti.modemtestmode/1000}
+    createTime=-1d12h41m17s854ms startingBgTimeout=-1d12h41m2s852ms
+    lastActivity=-40s573ms restartTime=-40s573ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=68
+    restartCount=0 restartDelay=-- nextRestartTime=-40s663ms crashCount=0
+
+  * ServiceRecord{ccf1b5b u0 com.android.bluetooth/.btservice.AdapterService}
+    intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m48s119ms startingBgTimeout=--
+    lastActivity=-1d12h41m24s108ms restartTime=-1d12h41m24s108ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{141d5ea CREATE}:
+      intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
+      binder=android.os.BinderProxy@53190db
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{49f9778 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{b6797c5 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8055e3c}
+    All Connections:
+      ConnectionRecord{b6797c5 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8055e3c}
+
+  * ServiceRecord{e7ad38d u0 com.qualcomm.location/.izat.IzatService}
+    intent={act=com.qualcomm.location.izat.IzatService cmp=com.qualcomm.location/.izat.IzatService}
+    packageName=com.qualcomm.location
+    processName=system
+    permission=android.permission.ACCESS_FINE_LOCATION
+    baseDir=/system/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+    dataDir=/data/user/0/com.qualcomm.location
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m43s519ms startingBgTimeout=--
+    lastActivity=-1d12h41m20s553ms restartTime=-1d12h41m43s519ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{85080ea u0 com.android.systemui/.ImageWallpaper}
+    intent={act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    permission=android.permission.BIND_WALLPAPER
+    baseDir=/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk
+    dataDir=/data/user/0/com.android.systemui
+    app=ProcessRecord{8de787c 1803:com.android.systemui/1000}
+    createTime=-1d12h41m45s113ms startingBgTimeout=--
+    lastActivity=-1d12h41m45s110ms restartTime=-1d12h41m45s110ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{6ea3e51 CREATE}:
+      intent={act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper}
+      binder=android.os.BinderProxy@45f66b6
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{4ae5fb7 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{fab50d5 u0 CR FGSA UI com.android.systemui/.ImageWallpaper:@e2f118c}
+    All Connections:
+      ConnectionRecord{fab50d5 u0 CR FGSA UI com.android.systemui/.ImageWallpaper:@e2f118c}
+
+  * ServiceRecord{69c83b6 u0 com.qualcomm.qti.autoregistration/.RegistrationService}
+    intent={cmp=com.qualcomm.qti.autoregistration/.RegistrationService}
+    packageName=com.qualcomm.qti.autoregistration
+    processName=com.qualcomm.qti.autoregistration
+    baseDir=/system/app/AutoRegistration/AutoRegistration.apk
+    dataDir=/data/user/0/com.qualcomm.qti.autoregistration
+    app=ProcessRecord{2001efa 27267:com.qualcomm.qti.autoregistration/1001}
+    createTime=-1d12h41m20s107ms startingBgTimeout=-1d12h41m5s106ms
+    lastActivity=-10s579ms restartTime=-10s579ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=68
+    restartCount=0 restartDelay=-- nextRestartTime=-10s663ms crashCount=0
+
+  * ServiceRecord{cbf485c u0 com.android.bluetooth/.hid.HidDevService}
+    intent={cmp=com.android.bluetooth/.hid.HidDevService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m22s524ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s524ms restartTime=-1d12h41m22s524ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{2500c27 u0 com.miui.securitycenter/com.miui.antivirus.service.GuardService}
+    intent={act=action_register_foreground_notification cmp=com.miui.securitycenter/com.miui.antivirus.service.GuardService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s698ms startingBgTimeout=--
+    lastActivity=-1d2h11m37s854ms restartTime=-1d2h11m38s818ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=10
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h4m20s887ms crashCount=0
+
+  * ServiceRecord{b4ba21d u0 com.qualcomm.qti.tetherservice/.TetherService}
+    intent={cmp=com.qualcomm.qti.tetherservice/.TetherService}
+    packageName=com.qualcomm.qti.tetherservice
+    processName=com.qualcomm.qti.tetherservice
+    baseDir=/system/priv-app/QtiTetherService/QtiTetherService.apk
+    dataDir=/data/user/0/com.qualcomm.qti.tetherservice
+    app=ProcessRecord{4c36e8d 2610:com.qualcomm.qti.tetherservice/1000}
+    createTime=-1d12h41m44s266ms startingBgTimeout=--
+    lastActivity=-1d12h41m44s265ms restartTime=-1d12h41m44s265ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{a3bc921 u0 com.android.statementservice/.DirectStatementService}
+    intent={act=com.android.statementservice.service.CHECK_ALL_ACTION cmp=com.android.statementservice/.DirectStatementService}
+    packageName=com.android.statementservice
+    processName=com.android.statementservice
+    baseDir=/system/priv-app/StatementService/StatementService.apk
+    dataDir=/data/user/0/com.android.statementservice
+    app=null
+    createTime=-1d8h38m37s795ms startingBgTimeout=--
+    lastActivity=-2h4m26s468ms restartTime=-2h4m26s468ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=64
+    restartCount=1 restartDelay=-1d12h40m55s505ms nextRestartTime=+9s338ms crashCount=0
+
+  * ServiceRecord{7c44a1f u0 com.xiaomi.xmsf/.sync.SyncNotificationService}
+    intent={cmp=com.xiaomi.xmsf/.sync.SyncNotificationService}
+    packageName=com.xiaomi.xmsf
+    processName=com.xiaomi.xmsf
+    baseDir=/system/app/XiaomiServiceFramework/XiaomiServiceFramework.apk
+    dataDir=/data/user/0/com.xiaomi.xmsf
+    app=ProcessRecord{55e4ba3 1914:com.xiaomi.xmsf/u0a94}
+    createTime=-1d12h41m46s547ms startingBgTimeout=--
+    lastActivity=-1d12h41m46s544ms restartTime=-1d12h41m46s547ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{261a7ba u0 com.miui.powerkeeper/.powerchecker.PowerCheckerService}
+    intent={cmp=com.miui.powerkeeper/.powerchecker.PowerCheckerService}
+    packageName=com.miui.powerkeeper
+    processName=com.miui.powerkeeper:service
+    baseDir=/system/app/PowerKeeper/PowerKeeper.apk
+    dataDir=/data/user/0/com.miui.powerkeeper
+    app=ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}
+    createTime=-1d12h41m45s830ms startingBgTimeout=--
+    lastActivity=-12h36m38s357ms restartTime=-12h36m38s886ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=11
+    restartCount=0 restartDelay=-- nextRestartTime=-12h33m47s785ms crashCount=0
+    Bindings:
+    * IntentBindRecord{f33842 CREATE}:
+      intent={cmp=com.miui.powerkeeper/.powerchecker.PowerCheckerService}
+      binder=android.os.BinderProxy@5d67bc5
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{566e91a ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}}
+        Per-process Connections:
+          ConnectionRecord{3fd7f13 u0 CR com.miui.powerkeeper/.powerchecker.PowerCheckerService:@1dc3a02}
+    All Connections:
+      ConnectionRecord{3fd7f13 u0 CR com.miui.powerkeeper/.powerchecker.PowerCheckerService:@1dc3a02}
+
+  * ServiceRecord{7e76de u0 com.dsi.ant.server/.AntService}
+    intent={act=com.dsi.ant.server.IAntHal}
+    packageName=com.dsi.ant.server
+    processName=system
+    permission=com.dsi.ant.permission.ANTRADIO
+    baseDir=/system/app/AntHalService/AntHalService.apk
+    dataDir=/data/user/0/com.dsi.ant.server
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m20s329ms startingBgTimeout=--
+    lastActivity=-1d12h41m20s328ms restartTime=-1d12h41m20s328ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{afc69af u0 com.qualcomm.location/.izatserviceprovider.service.UnifiedLocationService}
+    intent={act=com.android.location.service.FusedLocationProvider pkg=com.qualcomm.location}
+    packageName=com.qualcomm.location
+    processName=system
+    permission=android.permission.WRITE_SECURE_SETTINGS
+    baseDir=/system/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+    dataDir=/data/user/0/com.qualcomm.location
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m34s538ms startingBgTimeout=--
+    lastActivity=-1d12h41m34s537ms restartTime=-1d12h41m34s537ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{8856689 CREATE}:
+      intent={act=com.android.location.service.FusedLocationProvider pkg=com.qualcomm.location}
+      binder=com.android.location.provider.LocationProviderBase$Service@d00968e
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{6f38eaf ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{887fd8e u0 CR !FG !VIS com.qualcomm.location/.izatserviceprovider.service.UnifiedLocationService:@f7e0989}
+    All Connections:
+      ConnectionRecord{887fd8e u0 CR !FG !VIS com.qualcomm.location/.izatserviceprovider.service.UnifiedLocationService:@f7e0989}
+
+  * ServiceRecord{4e59692 u0 com.miui.whetstone/.net.MiuiDnsService}
+    intent={act=android.intent.action.MAIN cmp=com.miui.whetstone/.net.MiuiDnsService}
+    packageName=com.miui.whetstone
+    processName=com.miui.whetstone
+    baseDir=/system/app/Whetstone/Whetstone.apk
+    dataDir=/data/user/0/com.miui.whetstone
+    app=ProcessRecord{97f013c 1931:com.miui.whetstone/1000}
+    createTime=-1d12h41m46s65ms startingBgTimeout=--
+    lastActivity=-1d12h41m46s65ms restartTime=-1d12h41m46s65ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{58742bc}:
+      intent={act=android.intent.action.MAIN cmp=com.miui.whetstone/.net.MiuiDnsService}
+      binder=null
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{a54e245 ProcessRecord{97f013c 1931:com.miui.whetstone/1000}}
+        Per-process Connections:
+          ConnectionRecord{efeac60 u0 com.miui.whetstone/.net.MiuiDnsService:@8dc863}
+    All Connections:
+      ConnectionRecord{efeac60 u0 com.miui.whetstone/.net.MiuiDnsService:@8dc863}
+
+  * ServiceRecord{dc9aded u0 com.android.bluetooth/.gatt.GattService}
+    intent={cmp=com.android.bluetooth/.gatt.GattService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m23s489ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s683ms restartTime=-1d12h41m23s489ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{9738d9a CREATE}:
+      intent={act=android.bluetooth.IBluetoothGatt cmp=com.android.bluetooth/.gatt.GattService}
+      binder=android.os.BinderProxy@a7466cb
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{6e3cea8 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{8c0fdce u0 CR IMP com.android.bluetooth/.gatt.GattService:@8055e3c}
+    All Connections:
+      ConnectionRecord{8c0fdce u0 CR IMP com.android.bluetooth/.gatt.GattService:@8055e3c}
+
+  * ServiceRecord{7cddd3d u0 com.android.bluetooth/.hdp.HealthService}
+    intent={cmp=com.android.bluetooth/.hdp.HealthService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m22s586ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s585ms restartTime=-1d12h41m22s585ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{bfa0195 u0 com.qualcomm.qti.carrierconfigure/.SetTargetSlotService}
+    intent={cmp=com.qualcomm.qti.carrierconfigure/.SetTargetSlotService}
+    packageName=com.qualcomm.qti.carrierconfigure
+    processName=com.qualcomm.qti.carrierconfigure
+    baseDir=/system/app/CarrierConfigure/CarrierConfigure.apk
+    dataDir=/data/user/0/com.qualcomm.qti.carrierconfigure
+    app=ProcessRecord{42c42aa 2551:com.qualcomm.qti.carrierconfigure/1000}
+    createTime=-1d12h41m44s190ms startingBgTimeout=--
+    lastActivity=-1d12h41m44s190ms restartTime=-1d12h41m44s190ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{4c9dfa7 u0 com.android.keyguard/.KeyguardService}
+    intent={cmp=com.android.keyguard/.KeyguardService}
+    packageName=com.android.keyguard
+    processName=com.android.systemui
+    baseDir=/system/priv-app/MiuiKeyguard/MiuiKeyguard.apk
+    dataDir=/data/user/0/com.android.keyguard
+    app=ProcessRecord{8de787c 1803:com.android.systemui/1000}
+    createTime=-1d12h41m34s386ms startingBgTimeout=--
+    lastActivity=-1d12h41m34s386ms restartTime=-1d12h41m34s386ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{5e65dc1 CREATE}:
+      intent={cmp=com.android.keyguard/.KeyguardService}
+      binder=android.os.BinderProxy@7ece966
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{9e0a4a7 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{21a3066 u0 CR com.android.keyguard/.KeyguardService:@8f060c1}
+    All Connections:
+      ConnectionRecord{21a3066 u0 CR com.android.keyguard/.KeyguardService:@8f060c1}
+
+  * ServiceRecord{76bd001 u0 com.miui.systemAdSolution/.splashscreen.SplashScreenService}
+    intent={cmp=com.miui.systemAdSolution/.splashscreen.SplashScreenService}
+    packageName=com.miui.systemAdSolution
+    processName=com.miui.systemAdSolution
+    baseDir=/system/app/SystemAdSolution/SystemAdSolution.apk
+    dataDir=/data/user/0/com.miui.systemAdSolution
+    app=ProcessRecord{50d206e 18665:com.miui.systemAdSolution/u0a84}
+    createTime=-1d12h39m22s609ms startingBgTimeout=--
+    lastActivity=-2h5m25s436ms restartTime=-2h5m25s436ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-2h5m25s436ms crashCount=0
+    Bindings:
+    * IntentBindRecord{6fb2d54 CREATE}:
+      intent={cmp=com.miui.systemAdSolution/.splashscreen.SplashScreenService}
+      binder=android.os.BinderProxy@28d5ffe
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{14e35f2 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{12c436 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{3c7592 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{6d6cc5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{aaa1e8 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{b56112 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{df3860 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{136d876 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{13d4454 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{1770539 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{1771713 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{1a1ab85 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{2516025 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{2a71567 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{32a4008 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{3660c6a u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{37cd3b4 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{385bf00 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{3f122d2 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{4e56148 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{5805a6e u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{59df6c2 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{5deab1c u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{5fe1ece u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{6503e90 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{6825c7f u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{73b7abe u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{7b83f99 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{839adaf u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{8d70192 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{8d77e70 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{a131779 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{a1644f4 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{a702f0c u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{b775a63 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{bc0b799 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{bca8475 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{c075ad3 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{c367a30 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{c3b5b8b u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{d3710f0 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{d643945 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{deafab5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{e2b4af1 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{f6206c0 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+          ConnectionRecord{fe721c5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    All Connections:
+      ConnectionRecord{aaa1e8 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{2a71567 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{385bf00 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{37cd3b4 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{4e56148 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{1771713 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{13d4454 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{5deab1c u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{c367a30 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{e2b4af1 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{a702f0c u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{5fe1ece u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{5805a6e u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{8d70192 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{deafab5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{73b7abe u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{f6206c0 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{b775a63 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{d3710f0 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{839adaf u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{a1644f4 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{3f122d2 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{d643945 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{fe721c5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{c3b5b8b u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{6503e90 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{3660c6a u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{6d6cc5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{bc0b799 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{bca8475 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{136d876 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{8d77e70 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{2516025 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{7b83f99 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{12c436 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{df3860 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{b56112 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{59df6c2 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{6825c7f u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{1770539 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{32a4008 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{3c7592 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{c075ad3 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{1a1ab85 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+      ConnectionRecord{a131779 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+
+  * ServiceRecord{f38d756 u0 com.android.bluetooth/.sap.SapService}
+    intent={cmp=com.android.bluetooth/.sap.SapService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m22s535ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s535ms restartTime=-1d12h41m22s535ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{f38ac29 u0 org.simalliance.openmobileapi.service/.SmartcardService}
+    intent={cmp=org.simalliance.openmobileapi.service/.SmartcardService}
+    packageName=org.simalliance.openmobileapi.service
+    processName=org.simalliance.openmobileapi.service:remote
+    permission=org.simalliance.openmobileapi.SMARTCARD
+    baseDir=/system/vendor/app/SmartcardService/SmartcardService.apk
+    dataDir=/data/user/0/org.simalliance.openmobileapi.service
+    app=ProcessRecord{2d98cab 27208:org.simalliance.openmobileapi.service:remote/1000}
+    createTime=-1d12h41m14s701ms startingBgTimeout=-1d12h40m59s687ms
+    lastActivity=-50s554ms restartTime=-50s554ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=18
+    restartCount=0 restartDelay=-- nextRestartTime=-50s665ms crashCount=0
+
+  * ServiceRecord{6042aa5 u0 com.miui.securitycenter/com.miui.networkassistant.vpn.miui.MiuiVpnManageService}
+    intent={cmp=com.miui.securitycenter/com.miui.networkassistant.vpn.miui.MiuiVpnManageService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s602ms startingBgTimeout=--
+    lastActivity=-1d2h11m37s710ms restartTime=-1d2h11m38s823ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=7
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h4m40s889ms crashCount=0
+
+  * ServiceRecord{fadd27 u0 com.miui.whetstone/.WhetstoneFakeService}
+    intent={cmp=com.miui.whetstone/.WhetstoneFakeService}
+    packageName=com.miui.whetstone
+    processName=com.miui.whetstone
+    baseDir=/system/app/Whetstone/Whetstone.apk
+    dataDir=/data/user/0/com.miui.whetstone
+    app=ProcessRecord{97f013c 1931:com.miui.whetstone/1000}
+    createTime=-1d12h41m46s665ms startingBgTimeout=--
+    lastActivity=-1d12h41m45s755ms restartTime=-1d12h41m46s665ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{6f707df u0 com.android.bluetooth/.avrcp.AvrcpControllerService}
+    intent={cmp=com.android.bluetooth/.avrcp.AvrcpControllerService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    permission=android.permission.ACCESS_BLUETOOTH_AVRCP_CT_DATA
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m22s558ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s558ms restartTime=-1d12h41m22s558ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{21007dc u0 com.miui.analytics/.AnalyticsService}
+    intent={cmp=com.miui.analytics/.AnalyticsService}
+    packageName=com.miui.analytics
+    processName=com.miui.analytics
+    baseDir=/data/app/com.miui.analytics-1/base.apk
+    dataDir=/data/user/0/com.miui.analytics
+    app=ProcessRecord{5af38c4 18571:com.miui.analytics/u0a37}
+    createTime=-1d12h41m45s924ms startingBgTimeout=--
+    lastActivity=-2h5m26s348ms restartTime=-2h5m46s433ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-2h5m36s518ms crashCount=0
+    Bindings:
+    * IntentBindRecord{87cac0 CREATE}:
+      intent={cmp=com.miui.analytics/.AnalyticsService}
+      binder=android.os.BinderProxy@5e5735f
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{fab819f ProcessRecord{1881289 2362:com.miui.daemon/1000}}
+        Per-process Connections:
+          ConnectionRecord{c841aaf u0 CR com.miui.analytics/.AnalyticsService:@b8bd28e}
+      * Client AppBindRecord{65341ac ProcessRecord{50d206e 18665:com.miui.systemAdSolution/u0a84}}
+        Per-process Connections:
+          ConnectionRecord{d5c8f9c u0 CR com.miui.analytics/.AnalyticsService:@98c830f}
+      * Client AppBindRecord{1cbe6b5 ProcessRecord{97f013c 1931:com.miui.whetstone/1000}}
+        Per-process Connections:
+          ConnectionRecord{ca02f79 u0 CR com.miui.analytics/.AnalyticsService:@faf7440}
+          ConnectionRecord{dc1fc26 u0 CR com.miui.analytics/.AnalyticsService:@7ed0381}
+    All Connections:
+      ConnectionRecord{dc1fc26 u0 CR com.miui.analytics/.AnalyticsService:@7ed0381}
+      ConnectionRecord{d5c8f9c u0 CR com.miui.analytics/.AnalyticsService:@98c830f}
+      ConnectionRecord{c841aaf u0 CR com.miui.analytics/.AnalyticsService:@b8bd28e}
+      ConnectionRecord{ca02f79 u0 CR com.miui.analytics/.AnalyticsService:@faf7440}
+
+  * ServiceRecord{38f1c45 u0 com.android.bluetooth/.pbap.BluetoothPbapService}
+    intent={act=android.bluetooth.IBluetoothPbap cmp=com.android.bluetooth/.pbap.BluetoothPbapService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m46s987ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s392ms restartTime=-1d12h41m22s392ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{91a914a}:
+      intent={act=android.bluetooth.IBluetoothPbap cmp=com.android.bluetooth/.pbap.BluetoothPbapService}
+      binder=android.os.BinderProxy@1d098bb
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{ffc31d8 ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{5723d03 u0 com.android.bluetooth/.pbap.BluetoothPbapService:@1b679b2}
+          ConnectionRecord{6be24bc u0 com.android.bluetooth/.pbap.BluetoothPbapService:@1b679b2}
+    All Connections:
+      ConnectionRecord{5723d03 u0 com.android.bluetooth/.pbap.BluetoothPbapService:@1b679b2}
+      ConnectionRecord{6be24bc u0 com.android.bluetooth/.pbap.BluetoothPbapService:@1b679b2}
+
+  * ServiceRecord{cf33ed4 u0 com.miui.securitycenter/com.miui.gamebooster.service.GameBoosterService}
+    intent={cmp=com.miui.securitycenter/com.miui.gamebooster.service.GameBoosterService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    permission=com.miui.securitycenter.permission.ACCESS_SECURITY_CENTER_PROVIDER
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s696ms startingBgTimeout=--
+    lastActivity=-1d2h11m37s847ms restartTime=-1d2h11m38s827ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=7
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h5m20s892ms crashCount=0
+
+  * ServiceRecord{f70e285 u0 com.android.bluetooth/.a2dp.A2dpService}
+    intent={act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m45s378ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s609ms restartTime=-1d12h41m22s609ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{aa13931}:
+      intent={act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService}
+      binder=android.os.BinderProxy@2f87816
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{f660597 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{393d232 u0 com.android.bluetooth/.a2dp.A2dpService:@9df7a3d}
+      * Client AppBindRecord{dee9384 ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{a46ee33 u0 com.android.bluetooth/.a2dp.A2dpService:@3f771a2}
+    All Connections:
+      ConnectionRecord{a46ee33 u0 com.android.bluetooth/.a2dp.A2dpService:@3f771a2}
+      ConnectionRecord{393d232 u0 com.android.bluetooth/.a2dp.A2dpService:@9df7a3d}
+
+  * ServiceRecord{647411a u0 com.qualcomm.qti.accesscache/.CarrierAccessCacheService}
+    intent={act=com.qualcomm.qti.accesscache.ICarrierAccessCacheService pkg=com.qualcomm.qti.accesscache}
+    packageName=com.qualcomm.qti.accesscache
+    processName=com.qualcomm.qti.accesscache
+    baseDir=/system/app/CarrierCacheService/CarrierCacheService.apk
+    dataDir=/data/user/0/com.qualcomm.qti.accesscache
+    app=ProcessRecord{67d8e75 19571:com.qualcomm.qti.accesscache/u0a40}
+    createTime=-1d12h41m44s181ms startingBgTimeout=--
+    lastActivity=-2h3m46s465ms restartTime=-2h3m46s465ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-2h3m46s518ms crashCount=0
+    Bindings:
+    * IntentBindRecord{fbffa2 CREATE}:
+      intent={act=com.qualcomm.qti.accesscache.ICarrierAccessCacheService pkg=com.qualcomm.qti.accesscache}
+      binder=android.os.BinderProxy@85b7e0a
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{b8363f0 ProcessRecord{42c42aa 2551:com.qualcomm.qti.carrierconfigure/1000}}
+        Per-process Connections:
+          ConnectionRecord{db1b238 u0 CR com.qualcomm.qti.accesscache/.CarrierAccessCacheService:@ca45e9b}
+    All Connections:
+      ConnectionRecord{db1b238 u0 CR com.qualcomm.qti.accesscache/.CarrierAccessCacheService:@ca45e9b}
+
+  * ServiceRecord{8154670 u0 com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService}
+    intent={cmp=com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService}
+    packageName=com.qualcomm.qcrilmsgtunnel
+    processName=com.qualcomm.qcrilmsgtunnel
+    permission=com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL
+    baseDir=/system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+    dataDir=/data/user/0/com.qualcomm.qcrilmsgtunnel
+    app=ProcessRecord{d921be6 21805:com.qualcomm.qcrilmsgtunnel/1001}
+    createTime=-1d12h41m43s226ms startingBgTimeout=-12h34m52s659ms
+    lastActivity=-40s506ms restartTime=-12h35m7s618ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=73
+    restartCount=0 restartDelay=-- nextRestartTime=-12h34m27s787ms crashCount=0
+    Bindings:
+    * IntentBindRecord{b04dd69 CREATE}:
+      intent={cmp=com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService}
+      binder=android.os.BinderProxy@7a55e7d
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{6bf2f08 ProcessRecord{f73280 27232:com.qualcomm.qti.modemtestmode/1000}}
+        Per-process Connections:
+          ConnectionRecord{2a0ccfe u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@9a3b0b9}
+      * Client AppBindRecord{52cf1c ProcessRecord{f4ef949 2631:com.android.phone/1001}}
+        Per-process Connections:
+          ConnectionRecord{277a512 u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@354c9d}
+          ConnectionRecord{684b0ee u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@d39ee69}
+          ConnectionRecord{bc39511 u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@1c11138}
+    All Connections:
+      ConnectionRecord{277a512 u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@354c9d}
+      ConnectionRecord{bc39511 u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@1c11138}
+      ConnectionRecord{2a0ccfe u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@9a3b0b9}
+      ConnectionRecord{684b0ee u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@d39ee69}
+
+  * ServiceRecord{6abf12e u0 com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService}
+    intent={cmp=com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService}
+    packageName=com.xiaomi.vipaccount
+    processName=com.xiaomi.vipaccount:log
+    baseDir=/system/app/VipAccount/VipAccount.apk
+    dataDir=/data/user/0/com.xiaomi.vipaccount
+    app=ProcessRecord{7eba6a1 26498:com.xiaomi.vipaccount:log/u0a89}
+    createTime=-2m12s745ms startingBgTimeout=--
+    lastActivity=-2m12s29ms restartTime=-2m12s29ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{da130c6 CREATE}:
+      intent={cmp=com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService}
+      binder=android.os.BinderProxy@9a24887
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{b9c33b4 ProcessRecord{fb028e2 26474:com.xiaomi.vipaccount/u0a89}}
+        Per-process Connections:
+          ConnectionRecord{eb8cf30 u0 CR com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService:@b427473}
+    All Connections:
+      ConnectionRecord{eb8cf30 u0 CR com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService:@b427473}
+
+  * ServiceRecord{914005f u0 com.qti.service.colorservice/.ColorServiceApp}
+    intent={cmp=com.qti.service.colorservice/.ColorServiceApp}
+    packageName=com.qti.service.colorservice
+    processName=com.qti.service.colorservice
+    baseDir=/system/vendor/app/colorservice/colorservice.apk
+    dataDir=/data/user/0/com.qti.service.colorservice
+    app=ProcessRecord{e56e47f 17052:com.qti.service.colorservice/1000}
+    createTime=-1d12h41m33s812ms startingBgTimeout=--
+    lastActivity=-1d2h7m57s542ms restartTime=-1d2h7m57s542ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h7m57s595ms crashCount=0
+    Bindings:
+    * IntentBindRecord{41d0a1 CREATE}:
+      intent={cmp=com.qti.service.colorservice/.ColorServiceApp}
+      binder=android.os.BinderProxy@dd82c4c
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{e3d8287 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{45a00fe u0 CR com.qti.service.colorservice/.ColorServiceApp:@e7134b9}
+    All Connections:
+      ConnectionRecord{45a00fe u0 CR com.qti.service.colorservice/.ColorServiceApp:@e7134b9}
+
+  * ServiceRecord{7c8b761 u0 com.qualcomm.svi/.SVIService}
+    intent={act=com.qualcomm.svi.intent.action.BOOT_COMPLETED cmp=com.qualcomm.svi/.SVIService}
+    packageName=com.qualcomm.svi
+    processName=com.qualcomm.display
+    baseDir=/system/vendor/app/SVIService/SVIService.apk
+    dataDir=/data/user/0/com.qualcomm.svi
+    app=ProcessRecord{a7b0bdd 27248:com.qualcomm.display/1000}
+    createTime=-1d12h41m14s430ms startingBgTimeout=-1d12h40m59s428ms
+    lastActivity=-30s573ms restartTime=-30s573ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=1
+    restartCount=0 restartDelay=-- nextRestartTime=-20s666ms crashCount=0
+
+  * ServiceRecord{88b466b u0 com.miui.securitycenter/com.miui.powercenter.provider.PowerSaveService}
+    intent={cmp=com.miui.securitycenter/com.miui.powercenter.provider.PowerSaveService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s826ms startingBgTimeout=--
+    lastActivity=-1d2h11m38s41ms restartTime=-1d2h11m38s825ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=8
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h4m50s891ms crashCount=0
+
+  * ServiceRecord{e5bd286 u0 com.qualcomm.cabl/.CABLService}
+    intent={act=com.qualcomm.cabl.intent.action.BOOT_COMPLETED cmp=com.qualcomm.cabl/.CABLService}
+    packageName=com.qualcomm.cabl
+    processName=com.qualcomm.display
+    baseDir=/system/vendor/app/CABLService/CABLService.apk
+    dataDir=/data/user/0/com.qualcomm.cabl
+    app=ProcessRecord{a7b0bdd 27248:com.qualcomm.display/1000}
+    createTime=-1d12h41m14s406ms startingBgTimeout=-1d12h40m59s404ms
+    lastActivity=-30s579ms restartTime=-30s579ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=1
+    restartCount=0 restartDelay=-- nextRestartTime=-30s666ms crashCount=0
+
+  * ServiceRecord{3a117ef u0 org.codeaurora.btmultisim/.BluetoothDsdaService}
+    intent={act=org.codeaurora.btmultisim.IBluetoothDsdaService cmp=org.codeaurora.btmultisim/.BluetoothDsdaService}
+    packageName=org.codeaurora.btmultisim
+    processName=system
+    baseDir=/system/app/btmultisim/btmultisim.apk
+    dataDir=/data/user/0/org.codeaurora.btmultisim
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m43s740ms startingBgTimeout=--
+    lastActivity=-1d12h41m43s740ms restartTime=-1d12h41m43s740ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{309d5dd CREATE}:
+      intent={act=org.codeaurora.btmultisim.IBluetoothDsdaService cmp=org.codeaurora.btmultisim/.BluetoothDsdaService}
+      binder=org.codeaurora.btmultisim.BluetoothDsdaService$3@479552
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{d65c023 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{9b57cce u0 CR org.codeaurora.btmultisim/.BluetoothDsdaService:@f80fdc9}
+    All Connections:
+      ConnectionRecord{9b57cce u0 CR org.codeaurora.btmultisim/.BluetoothDsdaService:@f80fdc9}
+
+  * ServiceRecord{7ca498c u0 com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService}
+    intent={cmp=com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService}
+    packageName=com.miui.personalassistant
+    processName=com.miui.personalassistant
+    permission=android.permission.BIND_ACCESSIBILITY_SERVICE
+    baseDir=/system/priv-app/PersonalAssistant/PersonalAssistant.apk
+    dataDir=/data/user/0/com.miui.personalassistant
+    app=ProcessRecord{9e76248 18831:com.miui.personalassistant/u0a32}
+    createTime=-60s446ms startingBgTimeout=--
+    lastActivity=-60s446ms restartTime=-60s446ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{def9352 CREATE}:
+      intent={cmp=com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService}
+      binder=android.os.BinderProxy@150e623
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{7a2d720 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{ef62ebf u0 CR FGSA com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService:@a886cde}
+    All Connections:
+      ConnectionRecord{ef62ebf u0 CR FGSA com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService:@a886cde}
+
+  * ServiceRecord{2b8c329 u0 com.xiaomi.xmsf/.push.service.StatService}
+    intent={cmp=com.xiaomi.xmsf/.push.service.StatService}
+    packageName=com.xiaomi.xmsf
+    processName=com.xiaomi.xmsf
+    baseDir=/system/app/XiaomiServiceFramework/XiaomiServiceFramework.apk
+    dataDir=/data/user/0/com.xiaomi.xmsf
+    app=ProcessRecord{55e4ba3 1914:com.xiaomi.xmsf/u0a94}
+    createTime=-1m32s751ms startingBgTimeout=--
+    lastActivity=-1m32s751ms restartTime=-1m32s751ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{a188d9 CREATE}:
+      intent={cmp=com.xiaomi.xmsf/.push.service.StatService}
+      binder=android.os.BinderProxy@d4f929e
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{dc1c17f ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{12448b0 u0 CR com.xiaomi.xmsf/.push.service.StatService:@5b1e3f3}
+    All Connections:
+      ConnectionRecord{12448b0 u0 CR com.xiaomi.xmsf/.push.service.StatService:@5b1e3f3}
+
+  * ServiceRecord{d86e1e5 u0 com.jeejen.family.miui/com.jeejen.push.DaemonService}
+    intent={act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui}
+    packageName=com.jeejen.family.miui
+    processName=com.jeejen.family.miui:pushcenter
+    baseDir=/system/app/jjhome/jjhome.apk
+    dataDir=/data/user/0/com.jeejen.family.miui
+    app=null
+    createTime=-1d12h41m14s570ms startingBgTimeout=-1h47m54s784ms
+    lastActivity=-1h48m9s470ms restartTime=-1h48m9s694ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=46
+    restartCount=1 restartDelay=-1d9h8m14s465ms nextRestartTime=+3h32m44s546ms crashCount=0
+    Pending Starts:
+    #0 id=37 dxc=5
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #1 id=38 dxc=5
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #2 id=39 dxc=4
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #3 id=40 dxc=4
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #4 id=41 dxc=3
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #5 id=42 dxc=3
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #6 id=43 dxc=2
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #7 id=44 dxc=2
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #8 id=45 dxc=1
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #9 id=46 dxc=1
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+
+  * ServiceRecord{5a5006d u0 com.android.systemui/.SystemUIService}
+    intent={cmp=com.android.systemui/.SystemUIService}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    baseDir=/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk
+    dataDir=/data/user/0/com.android.systemui
+    app=ProcessRecord{8de787c 1803:com.android.systemui/1000}
+    createTime=-1d12h41m47s568ms startingBgTimeout=--
+    lastActivity=-1d12h41m47s498ms restartTime=-1d12h41m47s498ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{4c6876b u0 com.xiaomi.xmsf/com.xiaomi.push.service.XMPushService}
+    intent={pkg=com.xiaomi.xmsf cmp=com.xiaomi.xmsf/com.xiaomi.push.service.XMPushService}
+    packageName=com.xiaomi.xmsf
+    processName=com.xiaomi.xmsf
+    baseDir=/system/app/XiaomiServiceFramework/XiaomiServiceFramework.apk
+    dataDir=/data/user/0/com.xiaomi.xmsf
+    app=ProcessRecord{55e4ba3 1914:com.xiaomi.xmsf/u0a94}
+    createTime=-1d12h41m46s936ms startingBgTimeout=--
+    lastActivity=-56s450ms restartTime=-1d12h41m46s869ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2837
+
+  * ServiceRecord{b6473c u0 android/.hardware.location.GeofenceHardwareService}
+    intent={cmp=android/.hardware.location.GeofenceHardwareService}
+    packageName=android
+    processName=system
+    permission=android.permission.LOCATION_HARDWARE
+    baseDir=/system/framework/framework-res.apk
+    dataDir=/data/system
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m44s823ms startingBgTimeout=--
+    lastActivity=-1d12h41m44s823ms restartTime=-1d12h41m44s823ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{7347caa CREATE}:
+      intent={cmp=android/.hardware.location.GeofenceHardwareService}
+      binder=android.hardware.location.GeofenceHardwareService$1@4d1109b
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{2f57c38 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{a21d52f u0 CR android/.hardware.location.GeofenceHardwareService:@b79e70e}
+    All Connections:
+      ConnectionRecord{a21d52f u0 CR android/.hardware.location.GeofenceHardwareService:@b79e70e}
+
+  * ServiceRecord{be99a10 u0 com.xiaomi.metoknlp/.location.MetokLocationService}
+    intent={act=com.android.location.service.v3.NetworkLocationProvider pkg=com.xiaomi.metoknlp}
+    packageName=com.xiaomi.metoknlp
+    processName=com.xiaomi.metoknlp
+    baseDir=/system/app/MetokNLP/MetokNLP.apk
+    dataDir=/data/user/0/com.xiaomi.metoknlp
+    app=ProcessRecord{93b05d3 22202:com.xiaomi.metoknlp/u0a56}
+    createTime=-1d12h41m44s965ms startingBgTimeout=--
+    lastActivity=-12h33m27s714ms restartTime=-12h33m27s714ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-12h33m17s789ms crashCount=0
+    Bindings:
+    * IntentBindRecord{9af2411 CREATE}:
+      intent={act=com.android.location.service.v3.NetworkLocationProvider pkg=com.xiaomi.metoknlp}
+      binder=android.os.BinderProxy@bd1eb96
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{d261b77 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{74afad8 u0 CR !FG OOM !VIS com.xiaomi.metoknlp/.location.MetokLocationService:@768e5bb}
+          ConnectionRecord{b606b53 u0 CR !FG !VIS com.xiaomi.metoknlp/.location.MetokLocationService:@5022f42}
+    All Connections:
+      ConnectionRecord{b606b53 u0 CR !FG !VIS com.xiaomi.metoknlp/.location.MetokLocationService:@5022f42}
+      ConnectionRecord{74afad8 u0 CR !FG OOM !VIS com.xiaomi.metoknlp/.location.MetokLocationService:@768e5bb}
+
+  * ServiceRecord{7c9c792 u0 com.qualcomm.location/.LBSSystemMonitorService}
+    intent={cmp=com.qualcomm.location/.LBSSystemMonitorService}
+    packageName=com.qualcomm.location
+    processName=system
+    baseDir=/system/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+    dataDir=/data/user/0/com.qualcomm.location
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m43s588ms startingBgTimeout=--
+    lastActivity=-1d12h41m20s565ms restartTime=-1d12h41m43s588ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{febb7c8 u0 com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiBleAppService}
+    intent={cmp=com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiBleAppService}
+    packageName=com.xiaomi.bluetooth
+    processName=com.xiaomi.bluetooth
+    baseDir=/system/app/MiuiBluetooth/MiuiBluetooth.apk
+    dataDir=/data/user/0/com.xiaomi.bluetooth
+    app=ProcessRecord{dfa5845 26909:com.xiaomi.bluetooth/1002}
+    createTime=-1d12h41m21s825ms startingBgTimeout=--
+    lastActivity=-1m10s609ms restartTime=-1m10s609ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=16
+    restartCount=0 restartDelay=-- nextRestartTime=-1m10s667ms crashCount=0
+
+  * ServiceRecord{b7284c6 u0 com.miui.cloudservice/com.xiaomi.push.service.XMPushService}
+    intent={cmp=com.miui.cloudservice/com.xiaomi.push.service.XMPushService}
+    packageName=com.miui.cloudservice
+    processName=com.miui.cloudservice:pushservice
+    baseDir=/system/app/CloudService/CloudService.apk
+    dataDir=/data/user/0/com.miui.cloudservice
+    app=ProcessRecord{9d77c66 27012:com.miui.cloudservice:pushservice/u0a45}
+    createTime=-1d4h30m33s823ms startingBgTimeout=-3h51m20s79ms
+    lastActivity=-60s618ms restartTime=-60s618ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=413
+    restartCount=0 restartDelay=-- nextRestartTime=-60s667ms crashCount=0
+
+  * ServiceRecord{7c6f32 u0 com.miui.autotestutils/.CheckService}
+    intent={act=com.miui.autotestutils.CheckService}
+    packageName=com.miui.autotestutils
+    processName=com.miui.autotestutils
+    baseDir=/data/app/com.miui.autotestutils-1/base.apk
+    dataDir=/data/user/0/com.miui.autotestutils
+    app=ProcessRecord{e594ab2 18791:com.miui.autotestutils/1000}
+    createTime=-1d12h35m43s533ms startingBgTimeout=--
+    lastActivity=-2m30s61ms restartTime=-2h5m6s448ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=437
+    restartCount=0 restartDelay=-- nextRestartTime=-2h4m56s520ms crashCount=0
+
+  * ServiceRecord{b442f47 u0 com.miui.core/com.miui.internal.server.CoreService}
+    intent={act=android.intent.action.MAIN cmp=com.miui.core/com.miui.internal.server.CoreService}
+    packageName=com.miui.core
+    processName=com.miui.core
+    baseDir=/system/app/miui/miui.apk
+    dataDir=/data/user/0/com.miui.core
+    app=ProcessRecord{a2d3317 20561:com.miui.core/u0a103}
+    createTime=-1d12h41m46s889ms startingBgTimeout=-12h35m54s837ms
+    lastActivity=-56s336ms restartTime=-12h36m9s772ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=4290
+    restartCount=0 restartDelay=-- nextRestartTime=-12h32m47s789ms crashCount=0
+    Bindings:
+    * IntentBindRecord{450f04d}:
+      intent={act=com.miui.internal.action.BIND_SERVICE pkg=com.miui.core}
+      binder=android.os.BinderProxy@599f304
+      requested=true received=true hasBound=false doRebind=false
+
+  * ServiceRecord{c92ad85 u0 com.android.server.telecom/.components.BluetoothPhoneService}
+    intent={cmp=com.android.server.telecom/.components.BluetoothPhoneService}
+    packageName=com.android.server.telecom
+    processName=system
+    baseDir=/system/priv-app/Telecom/Telecom.apk
+    dataDir=/data/user/0/com.android.server.telecom
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m43s733ms startingBgTimeout=--
+    lastActivity=-1d12h41m43s733ms restartTime=-1d12h41m43s733ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{456f813}:
+      intent={act=android.bluetooth.IBluetoothHeadsetPhone cmp=com.android.server.telecom/.components.BluetoothPhoneService}
+      binder=com.android.server.telecom.BluetoothPhoneServiceImpl$1@a4f9a50
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{ec94449 ProcessRecord{397010b 3630:com.android.bluetooth/1002}}
+        Per-process Connections:
+          ConnectionRecord{2622201 u0 com.android.server.telecom/.components.BluetoothPhoneService:@31efbe8}
+    All Connections:
+      ConnectionRecord{2622201 u0 com.android.server.telecom/.components.BluetoothPhoneService:@31efbe8}
+
+  * ServiceRecord{d3ecf24 u0 com.miui.daemon/.performance.SysoptService}
+    intent={cmp=com.miui.daemon/.performance.SysoptService}
+    packageName=com.miui.daemon
+    processName=com.miui.daemon
+    permission=android.permission.BIND_JOB_SERVICE
+    baseDir=/system/app/MiuiDaemon/MiuiDaemon.apk
+    dataDir=/data/user/0/com.miui.daemon
+    app=ProcessRecord{1881289 2362:com.miui.daemon/1000}
+    createTime=-1d12h41m42s741ms startingBgTimeout=--
+    lastActivity=-1d12h41m42s741ms restartTime=-1d12h41m42s741ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{7f6814e CREATE}:
+      intent={cmp=com.miui.daemon/.performance.SysoptService}
+      binder=android.os.BinderProxy@faf026f
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{11c0b7c ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{7696bb7 u0 CR com.miui.daemon/.performance.SysoptService:@82f22b6}
+    All Connections:
+      ConnectionRecord{7696bb7 u0 CR com.miui.daemon/.performance.SysoptService:@82f22b6}
+
+  * ServiceRecord{4f6ecfc u0 com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener}
+    intent={act=android.service.notification.NotificationListenerService cmp=com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener}
+    packageName=com.xiaomi.xmsf
+    processName=com.xiaomi.xmsf
+    permission=android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+    baseDir=/system/app/XiaomiServiceFramework/XiaomiServiceFramework.apk
+    dataDir=/data/user/0/com.xiaomi.xmsf
+    app=ProcessRecord{55e4ba3 1914:com.xiaomi.xmsf/u0a94}
+    createTime=-1d12h41m45s394ms startingBgTimeout=--
+    lastActivity=-1d12h41m45s393ms restartTime=-1d12h41m45s393ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{258dc05 CREATE}:
+      intent={act=android.service.notification.NotificationListenerService cmp=com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener}
+      binder=android.os.BinderProxy@3bd645a
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{3d3568b ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{78a79ef u0 CR FGS com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener:@3bf26ce}
+    All Connections:
+      ConnectionRecord{78a79ef u0 CR FGS com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener:@3bf26ce}
+
+  * ServiceRecord{d04174b u0 com.xiaomi.joyose/.stepsprovider.StepsService}
+    intent={cmp=com.xiaomi.joyose/.stepsprovider.StepsService}
+    packageName=com.xiaomi.joyose
+    processName=com.miui.whetstone
+    baseDir=/system/app/Joyose/Joyose.apk
+    dataDir=/data/user/0/com.xiaomi.joyose
+    app=ProcessRecord{97f013c 1931:com.miui.whetstone/1000}
+    createTime=-1d12h41m46s705ms startingBgTimeout=--
+    lastActivity=-1d12h41m18s638ms restartTime=-1d12h41m46s705ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{fdc6368 CREATE}:
+      intent={cmp=com.xiaomi.joyose/.stepsprovider.StepsService}
+      binder=android.os.BinderProxy@1903381
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{dd6c26 ProcessRecord{97f013c 1931:com.miui.whetstone/1000}}
+        Per-process Connections:
+          ConnectionRecord{fa9b01a u0 CR com.xiaomi.joyose/.stepsprovider.StepsService:@ddbfec5}
+    All Connections:
+      ConnectionRecord{fa9b01a u0 CR com.xiaomi.joyose/.stepsprovider.StepsService:@ddbfec5}
+
+  * ServiceRecord{c93851d u0 com.qti.dpmserviceapp/.DpmServiceApp}
+    intent={cmp=com.qti.dpmserviceapp/.DpmServiceApp}
+    packageName=com.qti.dpmserviceapp
+    processName=com.qti.dpmserviceapp
+    baseDir=/system/priv-app/dpmserviceapp/dpmserviceapp.apk
+    dataDir=/data/user/0/com.qti.dpmserviceapp
+    app=ProcessRecord{9ed067 2487:com.qti.dpmserviceapp/1000}
+    createTime=-1d12h41m20s406ms startingBgTimeout=--
+    lastActivity=-1d12h41m20s406ms restartTime=-1d12h41m20s406ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{934a9d5 u0 com.miui.securitycenter/.memory.MemoryCheckService}
+    intent={act=miui.intent.action.MEMORY_CHECK_SERVICE pkg=com.miui.securitycenter}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    permission=miui.permission.MEMORY_CHECK
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m46s23ms startingBgTimeout=--
+    lastActivity=-1d2h8m42s310ms restartTime=-1d2h11m38s835ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h5m0s893ms crashCount=0
+    Bindings:
+    * IntentBindRecord{dc84e14 CREATE}:
+      intent={act=miui.intent.action.MEMORY_CHECK_SERVICE pkg=com.miui.securitycenter}
+      binder=android.os.BinderProxy@62db8e4
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{425614d ProcessRecord{1881289 2362:com.miui.daemon/1000}}
+        Per-process Connections:
+          ConnectionRecord{b454267 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@12e6626}
+      * Client AppBindRecord{ebe0c03 ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{6d121f6 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{73fbf9b u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{8922538 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{982d5bd u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{9a899f7 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{9e56782 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{cc2de93 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{ee11911 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+          ConnectionRecord{f67ff38 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    All Connections:
+      ConnectionRecord{b454267 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@12e6626}
+      ConnectionRecord{982d5bd u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{73fbf9b u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{f67ff38 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{8922538 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{ee11911 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{6d121f6 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{9a899f7 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{9e56782 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+      ConnectionRecord{cc2de93 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+
+  * ServiceRecord{8079c57 u0 com.xiaomi.metoknlp/.geofencing.GeoFencingService}
+    intent={cmp=com.xiaomi.metoknlp/.geofencing.GeoFencingService}
+    packageName=com.xiaomi.metoknlp
+    processName=com.xiaomi.metoknlp
+    baseDir=/system/app/MetokNLP/MetokNLP.apk
+    dataDir=/data/user/0/com.xiaomi.metoknlp
+    app=ProcessRecord{93b05d3 22202:com.xiaomi.metoknlp/u0a56}
+    createTime=-1d12h41m29s170ms startingBgTimeout=--
+    lastActivity=-4h19m54s235ms restartTime=-12h33m27s714ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=7
+    restartCount=0 restartDelay=-- nextRestartTime=-12h33m7s790ms crashCount=0
+    Bindings:
+    * IntentBindRecord{45da300}:
+      intent={act=com.xiaomi.metoknlp.GeoFencingService pkg=com.xiaomi.metoknlp}
+      binder=android.os.BinderProxy@ee0c286
+      requested=true received=true hasBound=false doRebind=false
+
+  * ServiceRecord{c75319e u0 com.android.stk/.StkAppService}
+    intent={cmp=com.android.stk/.StkAppService}
+    packageName=com.android.stk
+    processName=com.android.phone
+    baseDir=/system/app/Stk/Stk.apk
+    dataDir=/data/user/0/com.android.stk
+    app=ProcessRecord{f4ef949 2631:com.android.phone/1001}
+    createTime=-1d12h41m16s256ms startingBgTimeout=--
+    lastActivity=-1d12h41m16s256ms restartTime=-1d12h41m16s256ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{28eedfa u0 com.qualcomm.qti.notificationservice/.BootService}
+    intent={cmp=com.qualcomm.qti.notificationservice/.BootService}
+    packageName=com.qualcomm.qti.notificationservice
+    processName=com.qualcomm.qti.notificationservice
+    baseDir=/system/app/NotificationService/NotificationService.apk
+    dataDir=/data/user/0/com.qualcomm.qti.notificationservice
+    app=ProcessRecord{be63780 2475:com.qualcomm.qti.notificationservice/1000}
+    createTime=-1d12h41m17s577ms startingBgTimeout=--
+    lastActivity=-1d12h41m17s577ms restartTime=-1d12h41m17s577ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{f936100 u0 com.miui.analytics/.internal.WakeupService}
+    intent={cmp=com.miui.analytics/.internal.WakeupService}
+    packageName=com.miui.analytics
+    processName=com.miui.analytics
+    baseDir=/data/app/com.miui.analytics-1/base.apk
+    dataDir=/data/user/0/com.miui.analytics
+    app=ProcessRecord{5af38c4 18571:com.miui.analytics/u0a37}
+    createTime=-1d12h41m45s367ms startingBgTimeout=--
+    lastActivity=-40m47s939ms restartTime=-2h5m46s440ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=139
+    restartCount=0 restartDelay=-- nextRestartTime=-2h5m46s521ms crashCount=0
+
+  * ServiceRecord{b011852 u0 com.miui.powerkeeper/.WakelockManagerService}
+    intent={cmp=com.miui.powerkeeper/.WakelockManagerService}
+    packageName=com.miui.powerkeeper
+    processName=com.miui.powerkeeper:service
+    baseDir=/system/app/PowerKeeper/PowerKeeper.apk
+    dataDir=/data/user/0/com.miui.powerkeeper
+    app=ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}
+    createTime=-12h36m38s595ms startingBgTimeout=--
+    lastActivity=-12h36m38s595ms restartTime=-12h36m38s595ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{3afe0ed CREATE}:
+      intent={cmp=com.miui.powerkeeper/.WakelockManagerService}
+      binder=android.os.BinderProxy@cb92b22
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{447e9b3 ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}}
+        Per-process Connections:
+          ConnectionRecord{47b84dd u0 CR com.miui.powerkeeper/.WakelockManagerService:@ddef0b4}
+    All Connections:
+      ConnectionRecord{47b84dd u0 CR com.miui.powerkeeper/.WakelockManagerService:@ddef0b4}
+
+  * ServiceRecord{97d4482 u0 com.android.server.telecom/.components.TelecomService}
+    intent={act=com.android.ITelecomService cmp=com.android.server.telecom/.components.TelecomService}
+    packageName=com.android.server.telecom
+    processName=system
+    baseDir=/system/priv-app/Telecom/Telecom.apk
+    dataDir=/data/user/0/com.android.server.telecom
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m45s400ms startingBgTimeout=--
+    lastActivity=-1d12h41m45s400ms restartTime=-1d12h41m45s400ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{3374bac CREATE}:
+      intent={act=com.android.ITelecomService cmp=com.android.server.telecom/.components.TelecomService}
+      binder=com.android.server.telecom.TelecomServiceImpl$1@aa1d075
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{3e7980a ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{6b903cd u0 CR IMP FGS com.android.server.telecom/.components.TelecomService:@f185564}
+    All Connections:
+      ConnectionRecord{6b903cd u0 CR IMP FGS com.android.server.telecom/.components.TelecomService:@f185564}
+
+  * ServiceRecord{2d504ef u0 com.android.bluetooth/.hfp.HeadsetService}
+    intent={act=android.bluetooth.IBluetoothHeadset cmp=com.android.bluetooth/.hfp.HeadsetService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m45s393ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s644ms restartTime=-1d12h41m22s644ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{96f2ad6}:
+      intent={act=android.bluetooth.IBluetoothHeadset cmp=com.android.bluetooth/.hfp.HeadsetService}
+      binder=android.os.BinderProxy@ae6a157
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{9a56444 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{b9a96a u0 com.android.bluetooth/.hfp.HeadsetService:@dd5cb55}
+          ConnectionRecord{72ae1da u0 com.android.bluetooth/.hfp.HeadsetService:@3fdf85}
+          ConnectionRecord{da901b4 u0 com.android.bluetooth/.hfp.HeadsetService:@7c98e87}
+          ConnectionRecord{e5100f7 u0 com.android.bluetooth/.hfp.HeadsetService:@2cec4f6}
+      * Client AppBindRecord{90992d ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{6daaaa1 u0 com.android.bluetooth/.hfp.HeadsetService:@7b7c308}
+      * Client AppBindRecord{20b1e62 ProcessRecord{f4ef949 2631:com.android.phone/1001}}
+        Per-process Connections:
+          ConnectionRecord{28f81ad u0 com.android.bluetooth/.hfp.HeadsetService:@7249ec4}
+    All Connections:
+      ConnectionRecord{72ae1da u0 com.android.bluetooth/.hfp.HeadsetService:@3fdf85}
+      ConnectionRecord{e5100f7 u0 com.android.bluetooth/.hfp.HeadsetService:@2cec4f6}
+      ConnectionRecord{28f81ad u0 com.android.bluetooth/.hfp.HeadsetService:@7249ec4}
+      ConnectionRecord{6daaaa1 u0 com.android.bluetooth/.hfp.HeadsetService:@7b7c308}
+      ConnectionRecord{da901b4 u0 com.android.bluetooth/.hfp.HeadsetService:@7c98e87}
+      ConnectionRecord{b9a96a u0 com.android.bluetooth/.hfp.HeadsetService:@dd5cb55}
+
+  * ServiceRecord{9e9d99b u0 com.qti.qualcomm.datastatusnotification/.DataStatusNotificationService}
+    intent={cmp=com.qti.qualcomm.datastatusnotification/.DataStatusNotificationService}
+    packageName=com.qti.qualcomm.datastatusnotification
+    processName=com.android.phone
+    baseDir=/system/app/datastatusnotification/datastatusnotification.apk
+    dataDir=/data/user/0/com.qti.qualcomm.datastatusnotification
+    app=ProcessRecord{f4ef949 2631:com.android.phone/1001}
+    createTime=-1d12h41m15s576ms startingBgTimeout=--
+    lastActivity=-1d12h41m15s576ms restartTime=-1d12h41m15s576ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{d13268e u0 com.miui.powerkeeper/.PowerKeeperBackgroundService}
+    intent={act=android.intent.action.MAIN cmp=com.miui.powerkeeper/.PowerKeeperBackgroundService}
+    packageName=com.miui.powerkeeper
+    processName=com.miui.powerkeeper:service
+    baseDir=/system/app/PowerKeeper/PowerKeeper.apk
+    dataDir=/data/user/0/com.miui.powerkeeper
+    app=ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}
+    createTime=-1d12h41m46s61ms startingBgTimeout=--
+    lastActivity=-1m36s880ms restartTime=-12h36m38s895ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=450
+    restartCount=0 restartDelay=-- nextRestartTime=-12h33m57s790ms crashCount=0
+    Bindings:
+    * IntentBindRecord{3c9fbf3}:
+      intent={act=android.intent.action.MAIN cmp=com.miui.powerkeeper/.PowerKeeperBackgroundService}
+      binder=android.os.BinderProxy@f453b70
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{1369ee9 ProcessRecord{97f013c 1931:com.miui.whetstone/1000}}
+        Per-process Connections:
+          ConnectionRecord{6450b16 u0 com.miui.powerkeeper/.PowerKeeperBackgroundService:@dc83831}
+    All Connections:
+      ConnectionRecord{6450b16 u0 com.miui.powerkeeper/.PowerKeeperBackgroundService:@dc83831}
+
+  * ServiceRecord{f1847bd u0 com.jeejen.family.miui/com.jeejen.message.center.DaemonService}
+    intent={act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui}
+    packageName=com.jeejen.family.miui
+    processName=com.jeejen.family.miui:msgcenter
+    baseDir=/system/app/jjhome/jjhome.apk
+    dataDir=/data/user/0/com.jeejen.family.miui
+    app=null
+    createTime=-1d12h41m15s80ms startingBgTimeout=-1d12h41m0s79ms
+    lastActivity=-1h48m10s241ms restartTime=-1h48m10s471ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=24
+    restartCount=1 restartDelay=-1d9h8m1s359ms nextRestartTime=+3h33m3s432ms crashCount=0
+    Pending Starts:
+    #0 id=20 dxc=5
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #1 id=21 dxc=4
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #2 id=22 dxc=3
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #3 id=23 dxc=2
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #4 id=24 dxc=1
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+
+  * ServiceRecord{16f76c2 u0 com.android.smspush/.WapPushManager}
+    intent={act=com.android.internal.telephony.IWapPushManager cmp=com.android.smspush/.WapPushManager}
+    packageName=com.android.smspush
+    processName=com.android.smspush
+    permission=com.android.smspush.WAPPUSH_MANAGER_BIND
+    baseDir=/system/app/WAPPushManager/WAPPushManager.apk
+    dataDir=/data/user/0/com.android.smspush
+    app=ProcessRecord{d806ddc 19353:com.android.smspush/u0a87}
+    createTime=-1d12h41m43s356ms startingBgTimeout=--
+    lastActivity=-2h4m16s435ms restartTime=-2h4m16s435ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-2h4m16s521ms crashCount=0
+    Bindings:
+    * IntentBindRecord{c7e644f CREATE}:
+      intent={act=com.android.internal.telephony.IWapPushManager cmp=com.android.smspush/.WapPushManager}
+      binder=android.os.BinderProxy@54ffee5
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{408c0e5 ProcessRecord{f4ef949 2631:com.android.phone/1001}}
+        Per-process Connections:
+          ConnectionRecord{21e132b u0 CR com.android.smspush/.WapPushManager:@200af7a}
+          ConnectionRecord{3d55a6e u0 CR com.android.smspush/.WapPushManager:@7254de9}
+          ConnectionRecord{79a214f u0 CR com.android.smspush/.WapPushManager:@cf14fae}
+          ConnectionRecord{f683f6f u0 CR com.android.smspush/.WapPushManager:@c0a924e}
+    All Connections:
+      ConnectionRecord{21e132b u0 CR com.android.smspush/.WapPushManager:@200af7a}
+      ConnectionRecord{3d55a6e u0 CR com.android.smspush/.WapPushManager:@7254de9}
+      ConnectionRecord{f683f6f u0 CR com.android.smspush/.WapPushManager:@c0a924e}
+      ConnectionRecord{79a214f u0 CR com.android.smspush/.WapPushManager:@cf14fae}
+
+  * ServiceRecord{36090e5 u0 com.miui.securitycenter/.service.RemoteService}
+    intent={cmp=com.miui.securitycenter/.service.RemoteService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s839ms startingBgTimeout=--
+    lastActivity=-1d2h11m38s59ms restartTime=-1d2h11m38s825ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=7
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h4m30s893ms crashCount=0
+
+  * ServiceRecord{a78d198 u0 com.qualcomm.qti.modemtestmode/.MbnTestService}
+    intent={cmp=com.qualcomm.qti.modemtestmode/.MbnTestService}
+    packageName=com.qualcomm.qti.modemtestmode
+    processName=com.android.phone
+    baseDir=/system/app/ModemTestMode/ModemTestMode.apk
+    dataDir=/data/user/0/com.qualcomm.qti.modemtestmode
+    app=ProcessRecord{f4ef949 2631:com.android.phone/1001}
+    createTime=-40s501ms startingBgTimeout=--
+    lastActivity=-40s500ms restartTime=-40s500ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{bae454c CREATE}:
+      intent={cmp=com.qualcomm.qti.modemtestmode/.MbnTestService}
+      binder=android.os.BinderProxy@718d995
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{61e3aaa ProcessRecord{f73280 27232:com.qualcomm.qti.modemtestmode/1000}}
+        Per-process Connections:
+          ConnectionRecord{d60df7b u0 CR com.qualcomm.qti.modemtestmode/.MbnTestService:@ab8bb0a}
+    All Connections:
+      ConnectionRecord{d60df7b u0 CR com.qualcomm.qti.modemtestmode/.MbnTestService:@ab8bb0a}
+
+  * ServiceRecord{864995c u0 android/com.android.internal.backup.LocalTransportService}
+    intent={act=android.backup.TRANSPORT_HOST cmp=android/com.android.internal.backup.LocalTransportService}
+    packageName=android
+    processName=system
+    permission=android.permission.CONFIRM_FULL_BACKUP
+    baseDir=/system/framework/framework-res.apk
+    dataDir=/data/system
+    app=ProcessRecord{572e82f 1342:system/1000}
+    createTime=-1d12h41m45s128ms startingBgTimeout=--
+    lastActivity=-1d12h41m45s128ms restartTime=-1d12h41m45s128ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{e098661 CREATE}:
+      intent={act=android.backup.TRANSPORT_HOST cmp=android/com.android.internal.backup.LocalTransportService}
+      binder=android.app.backup.BackupTransport$TransportImpl@51c1152
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{105f586 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{6b9bcf u0 CR android/com.android.internal.backup.LocalTransportService:@98a242e}
+    All Connections:
+      ConnectionRecord{6b9bcf u0 CR android/com.android.internal.backup.LocalTransportService:@98a242e}
+
+  * ServiceRecord{d2ac50a u0 com.miui.systemAdSolution/.changeSkin.ChangeSkinService}
+    intent={act=miui.intent.action.ad.CHANGE_SKIN pkg=com.miui.systemAdSolution}
+    packageName=com.miui.systemAdSolution
+    processName=com.miui.systemAdSolution
+    baseDir=/system/app/SystemAdSolution/SystemAdSolution.apk
+    dataDir=/data/user/0/com.miui.systemAdSolution
+    app=ProcessRecord{50d206e 18665:com.miui.systemAdSolution/u0a84}
+    createTime=-1d7h19m27s800ms startingBgTimeout=--
+    lastActivity=-2h5m26s448ms restartTime=-2h5m26s448ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=43
+    restartCount=0 restartDelay=-- nextRestartTime=-2h5m26s522ms crashCount=0
+    Bindings:
+    * IntentBindRecord{8d32df3 CREATE}:
+      intent={act=miui.intent.action.ad.CHANGE_SKIN pkg=com.miui.systemAdSolution}
+      binder=android.os.BinderProxy@f86a461
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{169d481 ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}}
+        Per-process Connections:
+          ConnectionRecord{1c516a7 u0 CR com.miui.systemAdSolution/.changeSkin.ChangeSkinService:@bb3e366}
+    All Connections:
+      ConnectionRecord{1c516a7 u0 CR com.miui.systemAdSolution/.changeSkin.ChangeSkinService:@bb3e366}
+
+  * ServiceRecord{9e2a2c u0 com.xiaomi.joyose/.smartop.SmartOpService}
+    intent={act=android.intent.action.MAIN cmp=com.xiaomi.joyose/.smartop.SmartOpService}
+    packageName=com.xiaomi.joyose
+    processName=com.miui.whetstone
+    baseDir=/system/app/Joyose/Joyose.apk
+    dataDir=/data/user/0/com.xiaomi.joyose
+    app=ProcessRecord{97f013c 1931:com.miui.whetstone/1000}
+    createTime=-1d12h41m46s101ms startingBgTimeout=--
+    lastActivity=-1d12h41m46s101ms restartTime=-1d12h41m46s101ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{1bbe412}:
+      intent={act=android.intent.action.MAIN cmp=com.xiaomi.joyose/.smartop.SmartOpService}
+      binder=null
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{469c7e3 ProcessRecord{97f013c 1931:com.miui.whetstone/1000}}
+        Per-process Connections:
+          ConnectionRecord{1f1da8a u0 com.xiaomi.joyose/.smartop.SmartOpService:@e398cf5}
+    All Connections:
+      ConnectionRecord{1f1da8a u0 com.xiaomi.joyose/.smartop.SmartOpService:@e398cf5}
+
+  * ServiceRecord{1a8df7e u0 com.miui.powerkeeper/.statemachine.PowerStateMachineService}
+    intent={act=disable_machine cmp=com.miui.powerkeeper/.statemachine.PowerStateMachineService}
+    packageName=com.miui.powerkeeper
+    processName=com.miui.powerkeeper:service
+    baseDir=/system/app/PowerKeeper/PowerKeeper.apk
+    dataDir=/data/user/0/com.miui.powerkeeper
+    app=ProcessRecord{675d987 20044:com.miui.powerkeeper:service/1000}
+    createTime=-1d12h41m45s262ms startingBgTimeout=--
+    lastActivity=-12h36m38s466ms restartTime=-12h36m38s891ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=11
+    restartCount=0 restartDelay=-- nextRestartTime=-12h33m37s791ms crashCount=0
+
+  * ServiceRecord{941b4b2 u0 com.miui.securitycenter/com.miui.networkassistant.service.FirewallService}
+    intent={cmp=com.miui.securitycenter/com.miui.networkassistant.service.FirewallService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s913ms startingBgTimeout=--
+    lastActivity=-1d2h11m37s743ms restartTime=-1d2h11m38s829ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=7
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h5m10s895ms crashCount=0
+    Bindings:
+    * IntentBindRecord{88375e0 CREATE}:
+      intent={cmp=com.miui.securitycenter/com.miui.networkassistant.service.FirewallService}
+      binder=android.os.BinderProxy@594f926
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{dbbd967 ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}}
+        Per-process Connections:
+          ConnectionRecord{e55cb18 u0 CR com.miui.securitycenter/com.miui.networkassistant.service.FirewallService:@a17cefb}
+    All Connections:
+      ConnectionRecord{e55cb18 u0 CR com.miui.securitycenter/com.miui.networkassistant.service.FirewallService:@a17cefb}
+
+  * ServiceRecord{6792a6d u0 com.miui.daemon/.performance.MiuiPerfService}
+    intent={cmp=com.miui.daemon/.performance.MiuiPerfService}
+    packageName=com.miui.daemon
+    processName=com.miui.daemon
+    baseDir=/system/app/MiuiDaemon/MiuiDaemon.apk
+    dataDir=/data/user/0/com.miui.daemon
+    app=ProcessRecord{1881289 2362:com.miui.daemon/1000}
+    createTime=-1d12h41m34s252ms startingBgTimeout=--
+    lastActivity=-1d12h41m34s251ms restartTime=-1d12h41m34s251ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{4e6ff3f CREATE}:
+      intent={cmp=com.miui.daemon/.performance.MiuiPerfService}
+      binder=android.os.BinderProxy@1da100c
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{4ad55 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{2fc7284 u0 CR com.miui.daemon/.performance.MiuiPerfService:@940097}
+    All Connections:
+      ConnectionRecord{2fc7284 u0 CR com.miui.daemon/.performance.MiuiPerfService:@940097}
+
+  * ServiceRecord{e15a1b9 u0 com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService}
+    intent={cmp=com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService}
+    packageName=com.miui.securitycenter
+    processName=com.miui.securitycenter.remote
+    baseDir=/system/priv-app/SecurityCenter/SecurityCenter.apk
+    dataDir=/data/user/0/com.miui.securitycenter
+    app=ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}
+    createTime=-1d12h41m45s910ms startingBgTimeout=--
+    lastActivity=-2m16s411ms restartTime=-1d2h11m38s832ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=8
+    restartCount=0 restartDelay=-- nextRestartTime=-1d2h5m30s896ms crashCount=0
+    Bindings:
+    * IntentBindRecord{38be36a CREATE}:
+      intent={cmp=com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService}
+      binder=android.os.BinderProxy@1e32314
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{7de37bd ProcessRecord{3fb88a 14682:com.miui.securitycenter.remote/1000}}
+        Per-process Connections:
+          ConnectionRecord{668d356 u0 CR com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService:@af8f971}
+    All Connections:
+      ConnectionRecord{668d356 u0 CR com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService:@af8f971}
+
+  * ServiceRecord{38a649a u0 com.xiaomi.metoknlp/.location.MetokGeocodeService}
+    intent={act=com.android.location.service.GeocodeProvider pkg=com.xiaomi.metoknlp}
+    packageName=com.xiaomi.metoknlp
+    processName=com.xiaomi.metoknlp
+    baseDir=/system/app/MetokNLP/MetokNLP.apk
+    dataDir=/data/user/0/com.xiaomi.metoknlp
+    app=ProcessRecord{93b05d3 22202:com.xiaomi.metoknlp/u0a56}
+    createTime=-1d12h41m34s538ms startingBgTimeout=--
+    lastActivity=-12h33m27s713ms restartTime=-12h33m27s713ms createdFromFg=false
+    restartCount=0 restartDelay=-- nextRestartTime=-12h32m57s791ms crashCount=0
+    Bindings:
+    * IntentBindRecord{eafc9d1 CREATE}:
+      intent={act=com.android.location.service.GeocodeProvider pkg=com.xiaomi.metoknlp}
+      binder=android.os.BinderProxy@7e8fc7a
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{19f9737 ProcessRecord{572e82f 1342:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{bb4b545 u0 CR !FG !VIS com.xiaomi.metoknlp/.location.MetokGeocodeService:@20681bc}
+    All Connections:
+      ConnectionRecord{bb4b545 u0 CR !FG !VIS com.xiaomi.metoknlp/.location.MetokGeocodeService:@20681bc}
+
+  * ServiceRecord{141ed87 u0 com.miui.cloudservice/.push.MicloudPushService}
+    intent={act=com.miui.cloudservice.open_channel_5_oncreate_app pkg=com.miui.cloudservice cmp=com.miui.cloudservice/.push.MicloudPushService}
+    packageName=com.miui.cloudservice
+    processName=com.miui.cloudservice
+    baseDir=/system/app/CloudService/CloudService.apk
+    dataDir=/data/user/0/com.miui.cloudservice
+    app=ProcessRecord{cdb74b4 18414:com.miui.cloudservice/u0a45}
+    createTime=-2h6m5s576ms startingBgTimeout=-2h5m50s572ms
+    lastActivity=-59s227ms restartTime=-2h6m5s576ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=28
+
+  * ServiceRecord{24e767e u0 com.android.bluetooth/.map.BluetoothMapService}
+    intent={act=android.bluetooth.IBluetoothMap cmp=com.android.bluetooth/.map.BluetoothMapService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m46s994ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s571ms restartTime=-1d12h41m22s571ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{c9054a4}:
+      intent={act=android.bluetooth.IBluetoothMap cmp=com.android.bluetooth/.map.BluetoothMapService}
+      binder=android.os.BinderProxy@e16320d
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{5c175c2 ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{3cb5b14 u0 com.android.bluetooth/.map.BluetoothMapService:@1c1f167}
+    All Connections:
+      ConnectionRecord{3cb5b14 u0 com.android.bluetooth/.map.BluetoothMapService:@1c1f167}
+
+  * ServiceRecord{3e04883 u0 com.android.phone/.TelephonyDebugService}
+    intent={cmp=com.android.phone/.TelephonyDebugService}
+    packageName=com.android.phone
+    processName=com.android.phone
+    baseDir=/system/priv-app/TeleService/TeleService.apk
+    dataDir=/data/user/0/com.android.phone
+    app=ProcessRecord{f4ef949 2631:com.android.phone/1001}
+    createTime=-1d12h41m42s897ms startingBgTimeout=--
+    lastActivity=-1d12h41m42s897ms restartTime=-1d12h41m42s897ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{3a2d62b u0 com.lbe.security.miui/com.lbe.security.service.SecurityService}
+    intent={act=com.miui.permission.Action.SecurityService pkg=com.lbe.security.miui}
+    packageName=com.lbe.security.miui
+    processName=com.lbe.security.miui
+    permission=android.permission.INSTALL_PACKAGES
+    baseDir=/system/priv-app/AuthManager/AuthManager.apk
+    dataDir=/data/user/0/com.lbe.security.miui
+    app=ProcessRecord{c378d1c 19863:com.lbe.security.miui/u0a1}
+    createTime=-1d12h41m45s677ms startingBgTimeout=--
+    lastActivity=-12h36m44s344ms restartTime=-12h36m44s606ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=23
+    restartCount=0 restartDelay=-- nextRestartTime=-12h34m27s792ms crashCount=0
+
+  * ServiceRecord{ea3f9a u0 com.android.bluetooth/.opp.BluetoothOppService}
+    intent={cmp=com.android.bluetooth/.opp.BluetoothOppService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    permission=android.permission.ACCESS_BLUETOOTH_SHARE
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m22s389ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s388ms restartTime=-1d12h41m22s388ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{1401039 u0 com.android.bluetooth/.pan.PanService}
+    intent={act=android.bluetooth.IBluetoothPan cmp=com.android.bluetooth/.pan.PanService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/system/app/Bluetooth/Bluetooth.apk
+    dataDir=/data/user/0/com.android.bluetooth
+    app=ProcessRecord{397010b 3630:com.android.bluetooth/1002}
+    createTime=-1d12h41m47s0ms startingBgTimeout=--
+    lastActivity=-1d12h41m22s578ms restartTime=-1d12h41m22s578ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{b4c6fd3}:
+      intent={act=android.bluetooth.IBluetoothPan cmp=com.android.bluetooth/.pan.PanService}
+      binder=android.os.BinderProxy@9d01710
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{b00e209 ProcessRecord{8de787c 1803:com.android.systemui/1000}}
+        Per-process Connections:
+          ConnectionRecord{68c2c81 u0 com.android.bluetooth/.pan.PanService:@5d8a068}
+    All Connections:
+      ConnectionRecord{68c2c81 u0 com.android.bluetooth/.pan.PanService:@5d8a068}
+
+  * ServiceRecord{de75bed u0 com.android.providers.downloads/.remote.service.DownloadSettingsProviderService}
+    intent={act=com.android.providers.downloads.settings.service pkg=com.android.providers.downloads}
+    packageName=com.android.providers.downloads
+    processName=android.process.media
+    baseDir=/system/priv-app/DownloadProvider/DownloadProvider.apk
+    dataDir=/data/user/0/com.android.providers.downloads
+    app=ProcessRecord{712dad7 16473:android.process.media/u0a9}
+    createTime=-2m14s493ms startingBgTimeout=--
+    lastActivity=-2m14s493ms restartTime=-2m14s493ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{a3af69b CREATE}:
+      intent={act=com.android.providers.downloads.settings.service pkg=com.android.providers.downloads}
+      binder=android.os.BinderProxy@9206a38
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{27a7a11 ProcessRecord{fc35a96 26340:android.process.mediaUI/u0a9}}
+        Per-process Connections:
+          ConnectionRecord{e667a04 u0 CR com.android.providers.downloads/.remote.service.DownloadSettingsProviderService:@1cb7617}
+    All Connections:
+      ConnectionRecord{e667a04 u0 CR com.android.providers.downloads/.remote.service.DownloadSettingsProviderService:@1cb7617}
+
+  Restarting services:
+  * Restarting ServiceRecord{d86e1e5 u0 com.jeejen.family.miui/com.jeejen.push.DaemonService}
+    intent={act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui}
+    packageName=com.jeejen.family.miui
+    processName=com.jeejen.family.miui:pushcenter
+    baseDir=/system/app/jjhome/jjhome.apk
+    dataDir=/data/user/0/com.jeejen.family.miui
+    app=null
+    createTime=-1d12h41m14s574ms startingBgTimeout=-1h47m54s788ms
+    lastActivity=-1h48m9s474ms restartTime=-1h48m9s698ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=46
+    restartCount=1 restartDelay=-1d9h8m14s469ms nextRestartTime=+3h32m44s542ms crashCount=0
+    Pending Starts:
+    #0 id=37 dxc=5
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #1 id=38 dxc=5
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #2 id=39 dxc=4
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #3 id=40 dxc=4
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #4 id=41 dxc=3
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #5 id=42 dxc=3
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #6 id=43 dxc=2
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #7 id=44 dxc=2
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #8 id=45 dxc=1
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+    #9 id=46 dxc=1
+      intent=Intent { act=com.jeejen.android.ACTION_PUSH_CENTER_DAEMON_SERVICE pkg=com.jeejen.family.miui }
+  * Restarting ServiceRecord{f1847bd u0 com.jeejen.family.miui/com.jeejen.message.center.DaemonService}
+    intent={act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui}
+    packageName=com.jeejen.family.miui
+    processName=com.jeejen.family.miui:msgcenter
+    baseDir=/system/app/jjhome/jjhome.apk
+    dataDir=/data/user/0/com.jeejen.family.miui
+    app=null
+    createTime=-1d12h41m15s82ms startingBgTimeout=-1d12h41m0s81ms
+    lastActivity=-1h48m10s243ms restartTime=-1h48m10s473ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=24
+    restartCount=1 restartDelay=-1d9h8m1s361ms nextRestartTime=+3h33m3s430ms crashCount=0
+    Pending Starts:
+    #0 id=20 dxc=5
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #1 id=21 dxc=4
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #2 id=22 dxc=3
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #3 id=23 dxc=2
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+    #4 id=24 dxc=1
+      intent=Intent { act=com.jeejen.message.center.ACTION_START_DAEMONSERVICE pkg=com.jeejen.family.miui }
+  * Restarting ServiceRecord{a3bc921 u0 com.android.statementservice/.DirectStatementService}
+    intent={act=com.android.statementservice.service.CHECK_ALL_ACTION cmp=com.android.statementservice/.DirectStatementService}
+    packageName=com.android.statementservice
+    processName=com.android.statementservice
+    baseDir=/system/priv-app/StatementService/StatementService.apk
+    dataDir=/data/user/0/com.android.statementservice
+    app=null
+    createTime=-1d8h38m37s802ms startingBgTimeout=--
+    lastActivity=-2h4m26s475ms restartTime=-2h4m26s475ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=64
+    restartCount=1 restartDelay=-1d12h40m55s512ms nextRestartTime=+9s331ms crashCount=0
+
+  Connection bindings to services:
+  * ConnectionRecord{277a512 u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@354c9d}
+    binding=AppBindRecord{52cf1c com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:com.android.phone}
+    conn=android.os.BinderProxy@354c9d flags=0x1
+  * ConnectionRecord{72ae1da u0 com.android.bluetooth/.hfp.HeadsetService:@3fdf85}
+    binding=AppBindRecord{9a56444 com.android.bluetooth/.hfp.HeadsetService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3fdf85 flags=0x0
+  * ConnectionRecord{efeac60 u0 com.miui.whetstone/.net.MiuiDnsService:@8dc863}
+    binding=AppBindRecord{a54e245 com.miui.whetstone/.net.MiuiDnsService:com.miui.whetstone}
+    conn=android.os.BinderProxy@8dc863 flags=0x0
+  * ConnectionRecord{2fc7284 u0 CR com.miui.daemon/.performance.MiuiPerfService:@940097}
+    binding=AppBindRecord{4ad55 com.miui.daemon/.performance.MiuiPerfService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@940097 flags=0x1
+  * ConnectionRecord{7c6141d u0 com.miui.sysbase/.MetokClService:@10934f4}
+    binding=AppBindRecord{ae4362f com.miui.sysbase/.MetokClService:com.miui.whetstone}
+    conn=android.os.BinderProxy@10934f4 flags=0x0
+  * ConnectionRecord{b454267 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@12e6626}
+    binding=AppBindRecord{425614d com.miui.securitycenter/.memory.MemoryCheckService:com.miui.daemon}
+    conn=android.os.BinderProxy@12e6626 flags=0x1
+  * ConnectionRecord{5723d03 u0 com.android.bluetooth/.pbap.BluetoothPbapService:@1b679b2}
+    binding=AppBindRecord{ffc31d8 com.android.bluetooth/.pbap.BluetoothPbapService:com.android.systemui}
+    conn=android.os.BinderProxy@1b679b2 flags=0x0
+  * ConnectionRecord{6be24bc u0 com.android.bluetooth/.pbap.BluetoothPbapService:@1b679b2}
+    binding=AppBindRecord{ffc31d8 com.android.bluetooth/.pbap.BluetoothPbapService:com.android.systemui}
+    conn=android.os.BinderProxy@1b679b2 flags=0x0
+  * ConnectionRecord{bc39511 u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@1c11138}
+    binding=AppBindRecord{52cf1c com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:com.android.phone}
+    conn=android.os.BinderProxy@1c11138 flags=0x1
+  * ConnectionRecord{3cb5b14 u0 com.android.bluetooth/.map.BluetoothMapService:@1c1f167}
+    binding=AppBindRecord{5c175c2 com.android.bluetooth/.map.BluetoothMapService:com.android.systemui}
+    conn=android.os.BinderProxy@1c1f167 flags=0x0
+  * ConnectionRecord{e667a04 u0 CR com.android.providers.downloads/.remote.service.DownloadSettingsProviderService:@1cb7617}
+    binding=AppBindRecord{27a7a11 com.android.providers.downloads/.remote.service.DownloadSettingsProviderService:android.process.mediaUI}
+    conn=android.os.BinderProxy@1cb7617 flags=0x1
+  * ConnectionRecord{3fd7f13 u0 CR com.miui.powerkeeper/.powerchecker.PowerCheckerService:@1dc3a02}
+    binding=AppBindRecord{566e91a com.miui.powerkeeper/.powerchecker.PowerCheckerService:com.miui.powerkeeper:service}
+    conn=android.os.BinderProxy@1dc3a02 flags=0x1
+  * ConnectionRecord{21e132b u0 CR com.android.smspush/.WapPushManager:@200af7a}
+    binding=AppBindRecord{408c0e5 com.android.smspush/.WapPushManager:com.android.phone}
+    conn=android.os.BinderProxy@200af7a flags=0x1
+  * ConnectionRecord{bb4b545 u0 CR !FG !VIS com.xiaomi.metoknlp/.location.MetokGeocodeService:@20681bc}
+    binding=AppBindRecord{19f9737 com.xiaomi.metoknlp/.location.MetokGeocodeService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@20681bc flags=0x40000005
+  * ConnectionRecord{e5100f7 u0 com.android.bluetooth/.hfp.HeadsetService:@2cec4f6}
+    binding=AppBindRecord{9a56444 com.android.bluetooth/.hfp.HeadsetService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@2cec4f6 flags=0x0
+  * ConnectionRecord{982d5bd u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{73fbf9b u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{f67ff38 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{8922538 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{ee11911 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{6d121f6 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{9a899f7 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{9e56782 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{cc2de93 u0 CR com.miui.securitycenter/.memory.MemoryCheckService:@2df7914}
+    binding=AppBindRecord{ebe0c03 com.miui.securitycenter/.memory.MemoryCheckService:com.android.systemui}
+    conn=android.os.BinderProxy@2df7914 flags=0x1
+  * ConnectionRecord{aaa1e8 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{2a71567 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{385bf00 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{37cd3b4 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{4e56148 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{1771713 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{13d4454 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{5deab1c u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{c367a30 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{e2b4af1 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{a702f0c u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{5fe1ece u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{5805a6e u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{8d70192 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{deafab5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{73b7abe u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{f6206c0 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{b775a63 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{d3710f0 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{839adaf u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{a1644f4 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{3f122d2 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{d643945 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{fe721c5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{c3b5b8b u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{6503e90 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{3660c6a u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{6d6cc5 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{bc0b799 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{bca8475 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{136d876 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{8d77e70 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{2516025 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{7b83f99 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{12c436 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{df3860 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{b56112 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{59df6c2 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{6825c7f u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{1770539 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{32a4008 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{3c7592 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{c075ad3 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{1a1ab85 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{a131779 u0 CR !FG com.miui.systemAdSolution/.splashscreen.SplashScreenService:@3117f0b}
+    binding=AppBindRecord{14e35f2 com.miui.systemAdSolution/.splashscreen.SplashScreenService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3117f0b flags=0x5
+  * ConnectionRecord{2622201 u0 com.android.server.telecom/.components.BluetoothPhoneService:@31efbe8}
+    binding=AppBindRecord{ec94449 com.android.server.telecom/.components.BluetoothPhoneService:com.android.bluetooth}
+    conn=android.os.BinderProxy@31efbe8 flags=0x0
+  * ConnectionRecord{78a79ef u0 CR FGS com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener:@3bf26ce}
+    binding=AppBindRecord{3d3568b com.xiaomi.xmsf/.push.service.notificationcollection.NotificationListener:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3bf26ce flags=0x4000001
+  * ConnectionRecord{6843fd u0 CR FGS LACT com.sohu.inputmethod.sogou.xiaomi/.SogouIME:@3d8b854}
+    binding=AppBindRecord{d591a36 com.sohu.inputmethod.sogou.xiaomi/.SogouIME:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@3d8b854 flags=0xc000001
+  * ConnectionRecord{a46ee33 u0 com.android.bluetooth/.a2dp.A2dpService:@3f771a2}
+    binding=AppBindRecord{dee9384 com.android.bluetooth/.a2dp.A2dpService:com.android.systemui}
+    conn=android.os.BinderProxy@3f771a2 flags=0x0
+  * ConnectionRecord{59ebc66 u0 CR !FG UI !VIS com.sohu.inputmethod.sogou.xiaomi/.SogouIME:@4bf9cc1}
+    binding=AppBindRecord{d591a36 com.sohu.inputmethod.sogou.xiaomi/.SogouIME:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@4bf9cc1 flags=0x60000005
+  * ConnectionRecord{b606b53 u0 CR !FG !VIS com.xiaomi.metoknlp/.location.MetokLocationService:@5022f42}
+    binding=AppBindRecord{d261b77 com.xiaomi.metoknlp/.location.MetokLocationService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@5022f42 flags=0x40000005
+  * ConnectionRecord{12448b0 u0 CR com.xiaomi.xmsf/.push.service.StatService:@5b1e3f3}
+    binding=AppBindRecord{dc1c17f com.xiaomi.xmsf/.push.service.StatService:com.android.systemui}
+    conn=android.os.BinderProxy@5b1e3f3 flags=0x1
+  * ConnectionRecord{14d772a u0 CR com.android.providers.downloads/.remote.service.DebugLogService:@5c53815}
+    binding=AppBindRecord{19d5d25 com.android.providers.downloads/.remote.service.DebugLogService:android.process.mediaUI}
+    conn=android.os.BinderProxy@5c53815 flags=0x1
+  * ConnectionRecord{68c2c81 u0 com.android.bluetooth/.pan.PanService:@5d8a068}
+    binding=AppBindRecord{b00e209 com.android.bluetooth/.pan.PanService:com.android.systemui}
+    conn=android.os.BinderProxy@5d8a068 flags=0x0
+  * ConnectionRecord{28f81ad u0 com.android.bluetooth/.hfp.HeadsetService:@7249ec4}
+    binding=AppBindRecord{20b1e62 com.android.bluetooth/.hfp.HeadsetService:com.android.phone}
+    conn=android.os.BinderProxy@7249ec4 flags=0x0
+  * ConnectionRecord{3d55a6e u0 CR com.android.smspush/.WapPushManager:@7254de9}
+    binding=AppBindRecord{408c0e5 com.android.smspush/.WapPushManager:com.android.phone}
+    conn=android.os.BinderProxy@7254de9 flags=0x1
+  * ConnectionRecord{74afad8 u0 CR !FG OOM !VIS com.xiaomi.metoknlp/.location.MetokLocationService:@768e5bb}
+    binding=AppBindRecord{d261b77 com.xiaomi.metoknlp/.location.MetokLocationService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@768e5bb flags=0x40000015
+  * ConnectionRecord{6daaaa1 u0 com.android.bluetooth/.hfp.HeadsetService:@7b7c308}
+    binding=AppBindRecord{90992d com.android.bluetooth/.hfp.HeadsetService:com.android.systemui}
+    conn=android.os.BinderProxy@7b7c308 flags=0x0
+  * ConnectionRecord{da901b4 u0 com.android.bluetooth/.hfp.HeadsetService:@7c98e87}
+    binding=AppBindRecord{9a56444 com.android.bluetooth/.hfp.HeadsetService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@7c98e87 flags=0x0
+  * ConnectionRecord{dc1fc26 u0 CR com.miui.analytics/.AnalyticsService:@7ed0381}
+    binding=AppBindRecord{1cbe6b5 com.miui.analytics/.AnalyticsService:com.miui.whetstone}
+    conn=android.os.BinderProxy@7ed0381 flags=0x1
+  * ConnectionRecord{b6797c5 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8055e3c}
+    binding=AppBindRecord{49f9778 com.android.bluetooth/.btservice.AdapterService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8055e3c flags=0x41
+  * ConnectionRecord{8c0fdce u0 CR IMP com.android.bluetooth/.gatt.GattService:@8055e3c}
+    binding=AppBindRecord{6e3cea8 com.android.bluetooth/.gatt.GattService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8055e3c flags=0x41
+  * ConnectionRecord{7696bb7 u0 CR com.miui.daemon/.performance.SysoptService:@82f22b6}
+    binding=AppBindRecord{11c0b7c com.miui.daemon/.performance.SysoptService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@82f22b6 flags=0x1
+  * ConnectionRecord{21a3066 u0 CR com.android.keyguard/.KeyguardService:@8f060c1}
+    binding=AppBindRecord{9e0a4a7 com.android.keyguard/.KeyguardService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8f060c1 flags=0x1
+  * ConnectionRecord{6b9bcf u0 CR android/com.android.internal.backup.LocalTransportService:@98a242e}
+    binding=AppBindRecord{105f586 android/com.android.internal.backup.LocalTransportService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@98a242e flags=0x1
+  * ConnectionRecord{d5c8f9c u0 CR com.miui.analytics/.AnalyticsService:@98c830f}
+    binding=AppBindRecord{65341ac com.miui.analytics/.AnalyticsService:com.miui.systemAdSolution}
+    conn=android.os.BinderProxy@98c830f flags=0x1
+  * ConnectionRecord{2a0ccfe u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@9a3b0b9}
+    binding=AppBindRecord{6bf2f08 com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:com.qualcomm.qti.modemtestmode}
+    conn=android.os.BinderProxy@9a3b0b9 flags=0x1
+  * ConnectionRecord{393d232 u0 com.android.bluetooth/.a2dp.A2dpService:@9df7a3d}
+    binding=AppBindRecord{f660597 com.android.bluetooth/.a2dp.A2dpService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@9df7a3d flags=0x0
+  * ConnectionRecord{e55cb18 u0 CR com.miui.securitycenter/com.miui.networkassistant.service.FirewallService:@a17cefb}
+    binding=AppBindRecord{dbbd967 com.miui.securitycenter/com.miui.networkassistant.service.FirewallService:com.miui.securitycenter.remote}
+    conn=android.os.BinderProxy@a17cefb flags=0x1
+  * ConnectionRecord{ef62ebf u0 CR FGSA com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService:@a886cde}
+    binding=AppBindRecord{7a2d720 com.miui.personalassistant/.services.quickstart.QuickStartAccessibilityService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@a886cde flags=0x2000001
+  * ConnectionRecord{d60df7b u0 CR com.qualcomm.qti.modemtestmode/.MbnTestService:@ab8bb0a}
+    binding=AppBindRecord{61e3aaa com.qualcomm.qti.modemtestmode/.MbnTestService:com.qualcomm.qti.modemtestmode}
+    conn=android.os.BinderProxy@ab8bb0a flags=0x1
+  * ConnectionRecord{668d356 u0 CR com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService:@af8f971}
+    binding=AppBindRecord{7de37bd com.miui.securitycenter/com.miui.networkassistant.service.tm.TrafficManageService:com.miui.securitycenter.remote}
+    conn=android.os.BinderProxy@af8f971 flags=0x1
+  * ConnectionRecord{eb8cf30 u0 CR com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService:@b427473}
+    binding=AppBindRecord{b9c33b4 com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService:com.xiaomi.vipaccount}
+    conn=android.os.BinderProxy@b427473 flags=0x1
+  * ConnectionRecord{20e195a u0 com.android.bluetooth/.hid.HidService:@b574505}
+    binding=AppBindRecord{a45dae1 com.android.bluetooth/.hid.HidService:com.android.systemui}
+    conn=android.os.BinderProxy@b574505 flags=0x0
+  * ConnectionRecord{a21d52f u0 CR android/.hardware.location.GeofenceHardwareService:@b79e70e}
+    binding=AppBindRecord{2f57c38 android/.hardware.location.GeofenceHardwareService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@b79e70e flags=0x1
+  * ConnectionRecord{c841aaf u0 CR com.miui.analytics/.AnalyticsService:@b8bd28e}
+    binding=AppBindRecord{fab819f com.miui.analytics/.AnalyticsService:com.miui.daemon}
+    conn=android.os.BinderProxy@b8bd28e flags=0x1
+  * ConnectionRecord{e79eee4 u0 CR com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService:@ba23277}
+    binding=AppBindRecord{e0d3a0e com.miui.powerkeeper/.feedbackcontrol.FeedbackControlService:com.miui.powerkeeper:service}
+    conn=android.os.BinderProxy@ba23277 flags=0x1
+  * ConnectionRecord{1c516a7 u0 CR com.miui.systemAdSolution/.changeSkin.ChangeSkinService:@bb3e366}
+    binding=AppBindRecord{169d481 com.miui.systemAdSolution/.changeSkin.ChangeSkinService:com.miui.securitycenter.remote}
+    conn=android.os.BinderProxy@bb3e366 flags=0x1
+  * ConnectionRecord{f683f6f u0 CR com.android.smspush/.WapPushManager:@c0a924e}
+    binding=AppBindRecord{408c0e5 com.android.smspush/.WapPushManager:com.android.phone}
+    conn=android.os.BinderProxy@c0a924e flags=0x1
+  * ConnectionRecord{db1b238 u0 CR com.qualcomm.qti.accesscache/.CarrierAccessCacheService:@ca45e9b}
+    binding=AppBindRecord{b8363f0 com.qualcomm.qti.accesscache/.CarrierAccessCacheService:com.qualcomm.qti.carrierconfigure}
+    conn=android.os.BinderProxy@ca45e9b flags=0x1
+  * ConnectionRecord{79a214f u0 CR com.android.smspush/.WapPushManager:@cf14fae}
+    binding=AppBindRecord{408c0e5 com.android.smspush/.WapPushManager:com.android.phone}
+    conn=android.os.BinderProxy@cf14fae flags=0x1
+  * ConnectionRecord{684b0ee u0 CR com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:@d39ee69}
+    binding=AppBindRecord{52cf1c com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService:com.android.phone}
+    conn=android.os.BinderProxy@d39ee69 flags=0x1
+  * ConnectionRecord{6450b16 u0 com.miui.powerkeeper/.PowerKeeperBackgroundService:@dc83831}
+    binding=AppBindRecord{1369ee9 com.miui.powerkeeper/.PowerKeeperBackgroundService:com.miui.whetstone}
+    conn=android.os.BinderProxy@dc83831 flags=0x0
+  * ConnectionRecord{b9a96a u0 com.android.bluetooth/.hfp.HeadsetService:@dd5cb55}
+    binding=AppBindRecord{9a56444 com.android.bluetooth/.hfp.HeadsetService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@dd5cb55 flags=0x0
+  * ConnectionRecord{fa9b01a u0 CR com.xiaomi.joyose/.stepsprovider.StepsService:@ddbfec5}
+    binding=AppBindRecord{dd6c26 com.xiaomi.joyose/.stepsprovider.StepsService:com.miui.whetstone}
+    conn=android.os.BinderProxy@ddbfec5 flags=0x1
+  * ConnectionRecord{47b84dd u0 CR com.miui.powerkeeper/.WakelockManagerService:@ddef0b4}
+    binding=AppBindRecord{447e9b3 com.miui.powerkeeper/.WakelockManagerService:com.miui.powerkeeper:service}
+    conn=android.os.BinderProxy@ddef0b4 flags=0x1
+  * ConnectionRecord{fab50d5 u0 CR FGSA UI com.android.systemui/.ImageWallpaper:@e2f118c}
+    binding=AppBindRecord{4ae5fb7 com.android.systemui/.ImageWallpaper:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@e2f118c flags=0x22000001
+  * ConnectionRecord{1f1da8a u0 com.xiaomi.joyose/.smartop.SmartOpService:@e398cf5}
+    binding=AppBindRecord{469c7e3 com.xiaomi.joyose/.smartop.SmartOpService:com.miui.whetstone}
+    conn=android.os.BinderProxy@e398cf5 flags=0x0
+  * ConnectionRecord{45a00fe u0 CR com.qti.service.colorservice/.ColorServiceApp:@e7134b9}
+    binding=AppBindRecord{e3d8287 com.qti.service.colorservice/.ColorServiceApp:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@e7134b9 flags=0x1
+  * ConnectionRecord{6b903cd u0 CR IMP FGS com.android.server.telecom/.components.TelecomService:@f185564}
+    binding=AppBindRecord{3e7980a com.android.server.telecom/.components.TelecomService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@f185564 flags=0x4000041
+  * ConnectionRecord{887fd8e u0 CR !FG !VIS com.qualcomm.location/.izatserviceprovider.service.UnifiedLocationService:@f7e0989}
+    binding=AppBindRecord{6f38eaf com.qualcomm.location/.izatserviceprovider.service.UnifiedLocationService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@f7e0989 flags=0x40000005
+  * ConnectionRecord{9b57cce u0 CR org.codeaurora.btmultisim/.BluetoothDsdaService:@f80fdc9}
+    binding=AppBindRecord{d65c023 org.codeaurora.btmultisim/.BluetoothDsdaService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@f80fdc9 flags=0x1
+  * ConnectionRecord{ca02f79 u0 CR com.miui.analytics/.AnalyticsService:@faf7440}
+    binding=AppBindRecord{1cbe6b5 com.miui.analytics/.AnalyticsService:com.miui.whetstone}
+    conn=android.os.BinderProxy@faf7440 flags=0x1
+  MIUI ADD :  LPSH dump start : 
+  LowPriorityList services : 
+  Blacklist : 
+  Whitelist : 
+  LPSH dump END !!!
+

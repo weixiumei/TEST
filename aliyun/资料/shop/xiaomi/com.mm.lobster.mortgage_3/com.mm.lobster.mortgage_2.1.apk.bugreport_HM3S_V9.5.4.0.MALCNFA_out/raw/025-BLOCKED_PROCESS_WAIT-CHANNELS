@@ -1,0 +1,2129 @@
+1       /init                            SyS_epoll_wait
+2                                        kthreadd
+3                                        __kthread_parkme
+7                                        rcu_gp_kthread
+8                                        rcu_gp_kthread
+9                                        rcu_gp_kthread
+10                                       __kthread_parkme
+11                                       __kthread_parkme
+12                                       __kthread_parkme
+15                                       smpboot_thread_fn
+16                                       smpboot_thread_fn
+19                                       smpboot_thread_fn
+20                                       smpboot_thread_fn
+23                                       smpboot_thread_fn
+24                                       smpboot_thread_fn
+26                                       worker_thread
+27                                       smpboot_thread_fn
+28                                       smpboot_thread_fn
+30                                       worker_thread
+31                                       smpboot_thread_fn
+32                                       smpboot_thread_fn
+34                                       worker_thread
+35                                       smpboot_thread_fn
+36                                       smpboot_thread_fn
+38                                       worker_thread
+39                                       rescuer_thread
+40                                       rescuer_thread
+41                                       rescuer_thread
+42                                       rescuer_thread
+43                                       rescuer_thread
+44                                       rescuer_thread
+45                                       rescuer_thread
+46                                       rescuer_thread
+47                                       rescuer_thread
+48                                       rescuer_thread
+49                                       msm_mpm_work_fn
+51                                       watchdog_kthread
+52                                       irq_thread
+53                                       rescuer_thread
+55                                       rescuer_thread
+68                                       rescuer_thread
+69                                       rescuer_thread
+70                                       rescuer_thread
+71                                       rescuer_thread
+72                                       rescuer_thread
+73                                       ion_heap_deferred_free
+74                                       irq_thread
+75                                       irq_thread
+76                                       irq_thread
+77                                       irq_thread
+78                                       irq_thread
+79                                       irq_thread
+80                                       irq_thread
+81                                       irq_thread
+82                                       irq_thread
+83                                       irq_thread
+84                                       irq_thread
+85                                       irq_thread
+86                                       irq_thread
+87                                       irq_thread
+88                                       irq_thread
+89                                       irq_thread
+90                                       irq_thread
+91                                       irq_thread
+92                                       irq_thread
+93                                       irq_thread
+94                                       irq_thread
+95                                       irq_thread
+96                                       irq_thread
+97                                       rescuer_thread
+98                                       rescuer_thread
+100                                      rescuer_thread
+101                                      irq_thread
+102                                      irq_thread
+125                                      rescuer_thread
+126                                      kswapd
+127                                      fsnotify_mark_destroy
+128                                      ecryptfs_threadfn
+129                                      rescuer_thread
+151                                      rescuer_thread
+152                                      rescuer_thread
+153                                      worker_thread
+154                                      rescuer_thread
+155                                      dsi_event_thread
+156                                      rescuer_thread
+157                                      rescuer_thread
+158                                      rescuer_thread
+159                                      rescuer_thread
+160                                      rescuer_thread
+161                                      rescuer_thread
+162                                      rescuer_thread
+163                                      add_hwgenerator_randomness
+166                                      rescuer_thread
+167                                      rescuer_thread
+168                                      rescuer_thread
+169                                      rescuer_thread
+170                                      rescuer_thread
+171                                      rescuer_thread
+172                                      rescuer_thread
+173                                      rescuer_thread
+174                                      rescuer_thread
+175                                      rescuer_thread
+176                                      rescuer_thread
+177                                      rescuer_thread
+178                                      rescuer_thread
+179                                      rescuer_thread
+180                                      rescuer_thread
+181                                      rescuer_thread
+182                                      rescuer_thread
+183                                      rescuer_thread
+184                                      rescuer_thread
+185                                      rescuer_thread
+186                                      rescuer_thread
+187                                      rescuer_thread
+188                                      rescuer_thread
+189                                      rescuer_thread
+190                                      rescuer_thread
+191                                      rescuer_thread
+192                                      rescuer_thread
+193                                      rescuer_thread
+194                                      rescuer_thread
+195                                      rescuer_thread
+196                                      rescuer_thread
+197                                      rescuer_thread
+198                                      rescuer_thread
+199                                      rescuer_thread
+200                                      rescuer_thread
+201                                      rescuer_thread
+202                                      rescuer_thread
+203                                      rescuer_thread
+204                                      rescuer_thread
+205                                      rescuer_thread
+206                                      rescuer_thread
+207                                      rescuer_thread
+208                                      rescuer_thread
+209                                      rescuer_thread
+210                                      rescuer_thread
+211                                      rescuer_thread
+212                                      rescuer_thread
+213                                      rescuer_thread
+214                                      rescuer_thread
+215                                      rescuer_thread
+216                                      rescuer_thread
+237                                      rescuer_thread
+238                                      rescuer_thread
+239                                      rescuer_thread
+240                                      rescuer_thread
+241                                      rescuer_thread
+242                                      rescuer_thread
+243                                      rescuer_thread
+244                                      irq_thread
+245                                      rescuer_thread
+246                                      rescuer_thread
+247                                      rescuer_thread
+248                                      rescuer_thread
+252                                      rescuer_thread
+254                                      irq_thread
+255                                      sensor_sysfs_notify
+257                                      sensor_sysfs_notify
+258                                      irq_thread
+259                                      irq_thread
+260                                      irq_thread
+261                                      irq_thread
+262                                      irq_thread
+263                                      irq_thread
+264                                      irq_thread
+265                                      irq_thread
+266                                      irq_thread
+267                                      irq_thread
+268                                      irq_thread
+269                                      irq_thread
+270                                      irq_thread
+271                                      irq_thread
+272                                      irq_thread
+273                                      irq_thread
+274                                      irq_thread
+275                                      irq_thread
+276                                      irq_thread
+277                                      irq_thread
+278                                      irq_thread
+279                                      irq_thread
+280                                      sensor_sysfs_notify
+281                                      sensor_sysfs_notify
+282                                      sensor_sysfs_notify
+283                                      sensor_sysfs_notify
+284                                      sensor_sysfs_notify
+285                                      sensor_sysfs_notify
+286                                      sensor_sysfs_notify
+287                                      sensor_sysfs_notify
+288                                      sensor_sysfs_notify
+289                                      sensor_sysfs_notify
+290                                      sensor_sysfs_notify
+291                                      sensor_sysfs_notify
+292                                      sensor_sysfs_notify
+293                                      sensor_sysfs_notify
+294                                      sensor_sysfs_notify
+295                                      irq_thread
+296                                      sensor_sysfs_notify
+297                                      sensor_sysfs_notify
+298                                      rescuer_thread
+299                                      cpufreq_interactive_speedchange_task
+300                                      irq_thread
+301                                      irq_thread
+302                                      irq_thread
+303                                      irq_thread
+304                                      irq_thread
+305                                      irq_thread
+306                                      rescuer_thread
+307                                      kmemsw_chkd
+308                                      irq_thread
+309                                      irq_thread
+310                                      rescuer_thread
+311                                      rfcomm_run
+313                                      mmc_queue_thread
+314                                      irq_thread
+315                                      mmc_queue_thread
+316                                      irq_thread
+317                                      irq_thread
+330                                      rescuer_thread
+331                                      rescuer_thread
+332                                      events_notify_userspace
+333                                      rescuer_thread
+334                                      rescuer_thread
+335                                      rescuer_thread
+336                                      rescuer_thread
+338                                      do_hotplug
+339                                      do_freq_mitigation
+340                                      do_thermal_monitor
+341     /sbin/ueventd                    poll_schedule_timeout
+343                                      worker_thread
+344                                      worker_thread
+345                                      rescuer_thread
+346                                      rescuer_thread
+347                                      rescuer_thread
+348                                      rescuer_thread
+350                                      kjournald2
+351                                      rescuer_thread
+354                                      worker_thread
+356                                      worker_thread
+361                                      kjournald2
+362                                      rescuer_thread
+363                                      kjournald2
+364                                      rescuer_thread
+365                                      kjournald2
+366                                      rescuer_thread
+367                                      kjournald2
+368                                      rescuer_thread
+369     /system/bin/logd                 sigsuspend
+370        logd.daemon                   futex_wait_queue_me
+371        logd.reader                   poll_schedule_timeout
+372        logd.writer                   poll_schedule_timeout
+373        logd.control                  poll_schedule_timeout
+375        logd.auditd                   poll_schedule_timeout
+2029       logd.reader.per               futex_wait_queue_me
+3721       logd.reader.per               futex_wait_queue_me
+20066      logd.reader.per               futex_wait_queue_me
+374                                      kauditd_thread
+376     /system/bin/vold                 hrtimer_nanosleep
+386        vold                          poll_schedule_timeout
+395        vold                          poll_schedule_timeout
+396        vold                          poll_schedule_timeout
+391                                      rescuer_thread
+394                                      rescuer_thread
+399                                      irq_thread
+400                                      irq_thread
+402                                      irq_thread
+403                                      irq_thread
+404                                      irq_thread
+405                                      irq_thread
+406                                      irq_thread
+438     /sbin/healthd                    SyS_epoll_wait
+439     /system/bin/lmkd                 SyS_epoll_wait
+440     /system/bin/servicemanager       binder_thread_read
+441     /system/bin/surfaceflinger       SyS_epoll_wait
+498        Binder:441_1                  binder_thread_read
+499        DispSync                      futex_wait_queue_me
+504        Binder:441_2                  binder_thread_read
+600        POSIX timer 0                 do_sigtimedwait
+601        EventThread                   futex_wait_queue_me
+603        SDM_EventThread               poll_schedule_timeout
+604        surfaceflinger                diagchar_read
+605        HWC_UeventThrea               poll_schedule_timeout
+606        EventControl                  futex_wait_queue_me
+1450       Binder:441_3                  binder_thread_read
+1451       Binder:441_4                  binder_thread_read
+5409       Binder:441_5                  binder_thread_read
+444     /system/bin/rmt_storage          poll_schedule_timeout
+1015       rmt_storage                   futex_wait_queue_me
+1016       rmt_storage                   futex_wait_queue_me
+1017       rmt_storage                   futex_wait_queue_me
+1018       rmt_storage                   futex_wait_queue_me
+450     /system/bin/qseecomd             do_wait
+451     /system/bin/pm-service           do_sigtimedwait
+474        POSIX timer 0                 do_sigtimedwait
+476        pm-service                    poll_schedule_timeout
+478        Binder:451_1                  binder_thread_read
+482        Binder:451_2                  binder_thread_read
+966        Binder:451_3                  binder_thread_read
+967        Binder:451_4                  binder_thread_read
+454     /system/bin/gx_fpd               binder_thread_read
+612        gx_fpd                        __skb_recv_datagram
+613        gx_fpd                        futex_wait_queue_me
+615        gx_fpd                        futex_wait_queue_me
+616        Binder:454_1                  binder_thread_read
+462     /system/vendor/bin/mm-pp-dpps    poll_schedule_timeout
+491     /system/bin/sensors.qcom         poll_schedule_timeout
+510        sensors.qcom                  diagchar_read
+511        sensors.qcom                  do_sigtimedwait
+512        sensors.qcom                  poll_schedule_timeout
+517        sensors.qcom                  poll_schedule_timeout
+518        sensors.qcom                  futex_wait_queue_me
+519        sensors.qcom                  poll_schedule_timeout
+530        sensors.qcom                  poll_schedule_timeout
+532        sensors.qcom                  poll_schedule_timeout
+533        sensors.qcom                  poll_schedule_timeout
+535        sensors.qcom                  poll_schedule_timeout
+617        sensors.qcom                  futex_wait_queue_me
+618        sensors.qcom                  poll_schedule_timeout
+619        sensors.qcom                  poll_schedule_timeout
+620        sensors.qcom                  futex_wait_queue_me
+622        sensors.qcom                  poll_schedule_timeout
+1621       sensors.qcom                  poll_schedule_timeout
+1625       sensors.qcom                  poll_schedule_timeout
+1627       sensors.qcom                  poll_schedule_timeout
+1629       sensors.qcom                  poll_schedule_timeout
+1631       sensors.qcom                  poll_schedule_timeout
+1633       sensors.qcom                  poll_schedule_timeout
+1635       sensors.qcom                  poll_schedule_timeout
+1637       sensors.qcom                  poll_schedule_timeout
+1639       sensors.qcom                  poll_schedule_timeout
+1641       sensors.qcom                  poll_schedule_timeout
+1643       sensors.qcom                  poll_schedule_timeout
+1645       sensors.qcom                  poll_schedule_timeout
+1647       sensors.qcom                  poll_schedule_timeout
+1649       sensors.qcom                  poll_schedule_timeout
+1651       sensors.qcom                  poll_schedule_timeout
+1653       sensors.qcom                  poll_schedule_timeout
+1655       sensors.qcom                  poll_schedule_timeout
+1657       sensors.qcom                  poll_schedule_timeout
+1659       sensors.qcom                  poll_schedule_timeout
+1661       sensors.qcom                  poll_schedule_timeout
+1663       sensors.qcom                  poll_schedule_timeout
+1665       sensors.qcom                  poll_schedule_timeout
+1667       sensors.qcom                  poll_schedule_timeout
+1669       sensors.qcom                  poll_schedule_timeout
+1671       sensors.qcom                  poll_schedule_timeout
+1673       sensors.qcom                  poll_schedule_timeout
+1675       sensors.qcom                  poll_schedule_timeout
+1677       sensors.qcom                  poll_schedule_timeout
+2232       sensors.qcom                  poll_schedule_timeout
+2437       sensors.qcom                  poll_schedule_timeout
+3572       sensors.qcom                  poll_schedule_timeout
+495     /system/bin/qseecomd             sigsuspend
+497        qseecomd                      qseecom_receive_req
+500        qseecomd                      qseecom_receive_req
+501        qseecomd                      __skb_recv_datagram
+502        qseecomd                      qseecom_receive_req
+505        qseecomd                      qseecom_receive_req
+506        qseecomd                      qseecom_receive_req
+507        qseecomd                      qseecom_receive_req
+508        qseecomd                      qseecom_receive_req
+514        qseecomd                      qseecom_receive_req
+599                                      irq_thread
+602                                      __mdss_fb_display_thread
+611                                      irq_thread
+614     /system/bin/fingerprintd         binder_thread_read
+1723       fingerprintd                  futex_wait_queue_me
+623                                      rescuer_thread
+624                                      rescuer_thread
+632                                      kjournald2
+633                                      rescuer_thread
+635     /sbin/adbd                       poll_schedule_timeout
+636        adbd                          futex_wait_queue_me
+637        adbd                          
+638        adbd                          ffs_epfile_io
+27202      adbd                          do_wait
+642     /system/bin/netd                 binder_thread_read
+735        netd                          poll_schedule_timeout
+1486       netd                          poll_schedule_timeout
+1487       netd                          poll_schedule_timeout
+1488       netd                          poll_schedule_timeout
+1489       netd                          poll_schedule_timeout
+1490       netd                          poll_schedule_timeout
+1491       netd                          poll_schedule_timeout
+1492       netd                          poll_schedule_timeout
+1493       Binder:642_1                  binder_thread_read
+1494       Binder:642_2                  poll_schedule_timeout
+1495       Binder:642_3                  binder_thread_read
+1862       Binder:642_4                  binder_thread_read
+1870       Binder:642_5                  binder_thread_read
+1929       Binder:642_6                  binder_thread_read
+2268       Binder:642_7                  binder_thread_read
+12686      Binder:642_8                  binder_thread_read
+14084      Binder:642_9                  binder_thread_read
+18779      Binder:642_A                  binder_thread_read
+21332      Binder:642_B                  binder_thread_read
+25459      Binder:642_C                  binder_thread_read
+29079      Binder:642_D                  binder_thread_read
+5558       Binder:642_E                  binder_thread_read
+10534      Binder:642_F                  binder_thread_read
+13535      Binder:642_10                 binder_thread_read
+13537      Binder:642_11                 binder_thread_read
+643     /system/bin/debuggerd            __skb_recv_datagram
+644     /system/bin/debuggerd64          __skb_recv_datagram
+645     /system/bin/rild                 hrtimer_nanosleep
+927        rild                          poll_schedule_timeout
+930        rild                          diagchar_read
+938        Binder:645_1                  binder_thread_read
+940        rild                          __skb_recv_datagram
+942        rild                          poll_schedule_timeout
+946        Binder:645_2                  binder_thread_read
+959        rild                          inotify_read
+960        rild                          poll_schedule_timeout
+961        rild                          __skb_recv_datagram
+962        rild                          __skb_recv_datagram
+963        rild                          __skb_recv_datagram
+964        rild                          futex_wait_queue_me
+965        rild                          poll_schedule_timeout
+1139       rild                          poll_schedule_timeout
+1140       rild                          poll_schedule_timeout
+1142       rild                          poll_schedule_timeout
+1143       rild                          poll_schedule_timeout
+1144       rild                          poll_schedule_timeout
+1145       rild                          poll_schedule_timeout
+1146       rild                          poll_schedule_timeout
+1151       rild                          poll_schedule_timeout
+1152       rild                          poll_schedule_timeout
+1153       rild                          poll_schedule_timeout
+1154       rild                          poll_schedule_timeout
+1157       rild                          unix_stream_recvmsg
+1158       rild                          poll_schedule_timeout
+1173       rild                          poll_schedule_timeout
+1174       rild                          poll_schedule_timeout
+1177       rild                          poll_schedule_timeout
+1179       rild                          poll_schedule_timeout
+1181       rild                          poll_schedule_timeout
+1182       rild                          poll_schedule_timeout
+1185       rild                          futex_wait_queue_me
+1186       rild                          poll_schedule_timeout
+1187       rild                          futex_wait_queue_me
+1188       rild                          poll_schedule_timeout
+1189       rild                          poll_schedule_timeout
+1191       rild                          poll_schedule_timeout
+1192       rild                          poll_schedule_timeout
+1194       rild                          poll_schedule_timeout
+1195       rild                          futex_wait_queue_me
+1196       rild                          poll_schedule_timeout
+1198       rild                          unix_stream_recvmsg
+646     /system/bin/drmserver            binder_thread_read
+969        Binder:646_1                  binder_thread_read
+647     /system/bin/mediaserver          binder_thread_read
+1595       ApmTone                       futex_wait_queue_me
+1596       ApmAudio                      futex_wait_queue_me
+1597       ApmOutput                     futex_wait_queue_me
+1598       mediaserver                   diagchar_read
+1599       mediaserver                   __skb_recv_datagram
+1600       FastMixer                     futex_wait_queue_me
+1601       AudioOut_2                    futex_wait_queue_me
+1602       FastMixer                     futex_wait_queue_me
+1603       AudioOut_4                    futex_wait_queue_me
+1604       AudioOut_6                    futex_wait_queue_me
+1605       FastMixer                     futex_wait_queue_me
+1606       AudioOut_8                    futex_wait_queue_me
+1612       soundTrigger cb               futex_wait_queue_me
+1614       Binder:647_1                  binder_thread_read
+1714       Binder:647_2                  binder_thread_read
+1715       Binder:647_3                  binder_thread_read
+2738       Binder:647_4                  binder_thread_read
+2849       NuPlayerDriver                futex_wait_queue_me
+2856       Binder:647_5                  binder_thread_read
+2857       generic                       futex_wait_queue_me
+2860       NuPlayerRendere               futex_wait_queue_me
+2861       NPDecoder                     futex_wait_queue_me
+2862       NPDecoder-CL                  futex_wait_queue_me
+2863       .vorbis.decoder               futex_wait_queue_me
+2864       OMXCallbackDisp               futex_wait_queue_me
+17559      Binder:647_6                  binder_thread_read
+17560      Binder:647_7                  binder_thread_read
+17561      Binder:647_8                  binder_thread_read
+648     /system/bin/installd             unix_stream_recvmsg
+650     /system/bin/keystore             binder_thread_read
+651     /system/bin/qcom-system-daemon   poll_schedule_timeout
+721        qcom-system-dae               diagchar_read
+653     /system/bin/cnd                  SyS_epoll_wait
+707        cnd                           diagchar_read
+980        cnd                           poll_schedule_timeout
+1259       cnd                           poll_schedule_timeout
+1260       cnd                           poll_schedule_timeout
+654     /system/bin/tftp_server          poll_schedule_timeout
+655     /system/bin/ptt_socket_app       poll_schedule_timeout
+700        ptt_socket_app                diagchar_read
+656     /system/bin/cnss_diag            __skb_recv_datagram
+680        cnss_diag                     diagchar_read
+658     /system/vendor/bin/thermal-engine sigsuspend
+712        thermal-engine                futex_wait_queue_me
+713        thermal-engine                futex_wait_queue_me
+716        thermal-engine                poll_schedule_timeout
+717        thermal-engine                diagchar_read
+734        thermal-engine                futex_wait_queue_me
+738        thermal-engine                poll_schedule_timeout
+739        thermal-engine                futex_wait_queue_me
+742        thermal-engine                poll_schedule_timeout
+743        thermal-engine                futex_wait_queue_me
+744        thermal-engine                poll_schedule_timeout
+745        thermal-engine                futex_wait_queue_me
+747        thermal-engine                poll_schedule_timeout
+748        thermal-engine                futex_wait_queue_me
+751        thermal-engine                poll_schedule_timeout
+752        thermal-engine                futex_wait_queue_me
+755        thermal-engine                poll_schedule_timeout
+756        thermal-engine                futex_wait_queue_me
+759        thermal-engine                poll_schedule_timeout
+760        thermal-engine                futex_wait_queue_me
+761        thermal-engine                poll_schedule_timeout
+762        thermal-engine                futex_wait_queue_me
+764        thermal-engine                futex_wait_queue_me
+766        thermal-engine                futex_wait_queue_me
+767        thermal-engine                futex_wait_queue_me
+768        thermal-engine                hrtimer_nanosleep
+769        thermal-engine                poll_schedule_timeout
+770        thermal-engine                futex_wait_queue_me
+771        thermal-engine                poll_schedule_timeout
+772        thermal-engine                futex_wait_queue_me
+773        thermal-engine                poll_schedule_timeout
+774        thermal-engine                futex_wait_queue_me
+776        thermal-engine                poll_schedule_timeout
+777        thermal-engine                futex_wait_queue_me
+829        thermal-engine                futex_wait_queue_me
+830        thermal-engine                poll_schedule_timeout
+831        thermal-engine                futex_wait_queue_me
+832        thermal-engine                futex_wait_queue_me
+833        thermal-engine                futex_wait_queue_me
+835        POSIX timer 0                 do_sigtimedwait
+836        POSIX timer 1                 do_sigtimedwait
+837        POSIX timer 2                 do_sigtimedwait
+839        POSIX timer 3                 do_sigtimedwait
+840        POSIX timer 4                 do_sigtimedwait
+1213       thermal-engine                poll_schedule_timeout
+659     /system/bin/wcnss_service        wcnss_wlan_read
+731        wcnss_service                 diagchar_read
+1224       wcnss_service                 poll_schedule_timeout
+661     /system/bin/adsprpcd             poll_schedule_timeout
+757        adsprpcd                      poll_schedule_timeout
+765        adsprpcd                      fastrpc_internal_invoke
+662     /system/bin/hvdcp_opti           SyS_epoll_wait
+663     zygote64                         poll_schedule_timeout
+27268      ReferenceQueueD               futex_wait_queue_me
+27269      FinalizerDaemon               futex_wait_queue_me
+27270      FinalizerWatchd               futex_wait_queue_me
+27271      HeapTaskDaemon                futex_wait_queue_me
+664     zygote                           poll_schedule_timeout
+26968      ReferenceQueueD               futex_wait_queue_me
+26969      FinalizerDaemon               futex_wait_queue_me
+26970      FinalizerWatchd               futex_wait_queue_me
+26971      HeapTaskDaemon                futex_wait_queue_me
+665     /system/xbin/shelld              binder_thread_read
+936        Binder:665_1                  binder_thread_read
+6154       Binder:665_2                  binder_thread_read
+666     /bin/otad                        __skb_recv_datagram
+698        otad                          inotify_read
+667     /system/bin/fdpp                 binder_thread_read
+746        Binder:667_1                  binder_thread_read
+2922       Binder:667_3                  binder_thread_read
+668     /system/xbin/mqsasd              binder_thread_read
+737        Binder:668_1                  binder_thread_read
+18346      Binder:668_2                  binder_thread_read
+12556      Binder:668_3                  binder_thread_read
+7787       Binder:668_4                  binder_thread_read
+672     /system/bin/gatekeeperd          binder_thread_read
+673     /system/bin/dpmd                 unix_stream_recvmsg
+758        dpmd                          diagchar_read
+675     /system/bin/cnss-daemon          __skb_recv_datagram
+718        cnss-daemon                   futex_wait_queue_me
+726        cnss-daemon                   poll_schedule_timeout
+728        cnss-daemon                   diagchar_read
+676     /system/bin/loc_launcher         sigsuspend
+704        loc_launcher                  poll_schedule_timeout
+679     /system/vendor/bin/qseeproxydaemon binder_thread_read
+876        Binder:679_1                  binder_thread_read
+681     /system/bin/mm-qcamera-daemon    poll_schedule_timeout
+1089       CAM_imgTh                     futex_wait_queue_me
+1090       CAM_imgTh                     futex_wait_queue_me
+1091       CAM_imgTh                     futex_wait_queue_me
+1092       CAM_imgTh                     futex_wait_queue_me
+1093       CAM_imgTh                     futex_wait_queue_me
+1094       CAM_imgTh                     futex_wait_queue_me
+1095       CAM_imgTh                     futex_wait_queue_me
+1096       CAM_imgTh                     futex_wait_queue_me
+1097       CAM_imgTh                     futex_wait_queue_me
+1098       CAM_imgTh                     futex_wait_queue_me
+1099       CAM_imgTh                     futex_wait_queue_me
+1100       CAM_imgTh                     futex_wait_queue_me
+1101       CAM_imgTh                     futex_wait_queue_me
+1102       CAM_imgTh                     futex_wait_queue_me
+1103       CAM_imgTh                     futex_wait_queue_me
+1104       CAM_imgTh                     futex_wait_queue_me
+1105       CAM_imgTh                     futex_wait_queue_me
+1106       CAM_imgTh                     futex_wait_queue_me
+1107       CAM_imgTh                     futex_wait_queue_me
+1108       CAM_imgTh                     futex_wait_queue_me
+1112       mm-qcamera-daem               futex_wait_queue_me
+1113       mm-qcamera-daem               futex_wait_queue_me
+1114       mm-qcamera-daem               futex_wait_queue_me
+1115       mm-qcamera-daem               futex_wait_queue_me
+1120       cp_thread                     futex_wait_queue_me
+1121       cp_thread                     futex_wait_queue_me
+1122       cp_thread                     futex_wait_queue_me
+1123       cp_thread                     futex_wait_queue_me
+1130       cp_thread                     futex_wait_queue_me
+1131       cp_thread                     futex_wait_queue_me
+1132       cp_thread                     futex_wait_queue_me
+1133       cp_thread                     futex_wait_queue_me
+1147       cp_thread                     futex_wait_queue_me
+1148       cp_thread                     futex_wait_queue_me
+1149       cp_thread                     futex_wait_queue_me
+1150       cp_thread                     futex_wait_queue_me
+1161       cp_thread                     futex_wait_queue_me
+1162       cp_thread                     futex_wait_queue_me
+1163       cp_thread                     futex_wait_queue_me
+1164       cp_thread                     futex_wait_queue_me
+1169       cp_thread                     futex_wait_queue_me
+1170       cp_thread                     futex_wait_queue_me
+1171       cp_thread                     futex_wait_queue_me
+1172       cp_thread                     futex_wait_queue_me
+1175       POSIX timer 0                 do_sigtimedwait
+3099       CAM_gyro_sens                 hrtimer_nanosleep
+683     /system/bin/time_daemon          futex_wait_queue_me
+740        time_daemon                   futex_wait_queue_me
+741        time_daemon                   futex_wait_queue_me
+749        time_daemon                   __skb_recv_datagram
+750        time_daemon                   poll_schedule_timeout
+754        time_daemon                   diagchar_read
+1020       time_daemon                   poll_schedule_timeout
+684     /system/bin/audiod               binder_thread_read
+803        Binder:684_1                  binder_thread_read
+804        AudioDaemon                   poll_schedule_timeout
+685     /system/vendor/bin/mdtpd         binder_thread_read
+788        mdtpd                         qseecom_receive_req
+789        mdtpd                         pipe_wait
+790        mdtpd                         do_sigtimedwait
+791        mdtpd                         do_sigtimedwait
+792        mdtpd                         futex_wait_queue_me
+793        mdtpd                         futex_wait_queue_me
+795        Binder:685_1                  binder_thread_read
+796        mdtpd                         diagchar_read
+1250       mdtpd                         poll_schedule_timeout
+1251       mdtpd                         poll_schedule_timeout
+686     /system/bin/mtd                  binder_thread_read
+924        Binder:686_1                  binder_thread_read
+4017       Binder:686_2                  binder_thread_read
+4018       Binder:686_3                  binder_thread_read
+12233      Binder:686_4                  binder_thread_read
+12234      Binder:686_5                  binder_thread_read
+12235      Binder:686_6                  binder_thread_read
+12236      Binder:686_7                  binder_thread_read
+12237      Binder:686_8                  binder_thread_read
+12238      Binder:686_9                  binder_thread_read
+687     /system/bin/vsimd                binder_thread_read
+1003       Binder:687_1                  binder_thread_read
+688     /system/bin/mlipayd              binder_thread_read
+864        Binder:688_1                  binder_thread_read
+720     lowi-server                      futex_wait_queue_me
+852        lowi-server                   diagchar_read
+854        lowi-server                   poll_schedule_timeout
+855        lowi-server                   unix_stream_recvmsg
+856        lowi-server                   futex_wait_queue_me
+1756       lowi-server                   poll_schedule_timeout
+1757       lowi-server                   poll_schedule_timeout
+722     xtwifi-inet-agent                futex_wait_queue_me
+817        xtwifi-inet-age               futex_wait_queue_me
+818        xtwifi-inet-age               futex_wait_queue_me
+819        xtwifi-inet-age               futex_wait_queue_me
+820        xtwifi-inet-age               futex_wait_queue_me
+821        xtwifi-inet-age               futex_wait_queue_me
+822        xtwifi-inet-age               unix_stream_recvmsg
+823        xtwifi-inet-age               futex_wait_queue_me
+824        xtwifi-inet-age               unix_stream_recvmsg
+825        xtwifi-inet-age               futex_wait_queue_me
+826        xtwifi-inet-age               unix_stream_recvmsg
+827        xtwifi-inet-age               futex_wait_queue_me
+828        xtwifi-inet-age               unix_stream_recvmsg
+834        xtwifi-inet-age               futex_wait_queue_me
+838        xtwifi-inet-age               unix_stream_recvmsg
+841        xtwifi-inet-age               futex_wait_queue_me
+724     xtwifi-client                    futex_wait_queue_me
+887        fdal-loc-api                  futex_wait_queue_me
+889        fdal-loc-api                  poll_schedule_timeout
+892        xtwifi-client                 unix_stream_recvmsg
+893        xtwifi-client                 futex_wait_queue_me
+894        xtwifi-client                 unix_stream_recvmsg
+895        xtwifi-client                 futex_wait_queue_me
+896        xtwifi-client                 unix_stream_recvmsg
+897        xtwifi-client                 futex_wait_queue_me
+898        xtwifi-client                 unix_stream_recvmsg
+899        xtwifi-client                 futex_wait_queue_me
+1005       LocTimerPollTas               SyS_epoll_wait
+1006       LocTimerMsgTask               futex_wait_queue_me
+2949       fdal-loc-api                  poll_schedule_timeout
+725     slim_daemon                      poll_schedule_timeout
+865        Binder:725_1                  binder_thread_read
+866        NDK                           SyS_epoll_wait
+867        slim_daemon                   poll_schedule_timeout
+869        Loc_hal_worker                futex_wait_queue_me
+870        slim_daemon                   poll_schedule_timeout
+871        slim_daemon                   futex_wait_queue_me
+872        Loc_hal_worker                poll_schedule_timeout
+873        Loc_hal_worker                diagchar_read
+875        Binder:725_2                  binder_thread_read
+1042       Loc_hal_worker                poll_schedule_timeout
+732     /system/bin/imsqmidaemon         poll_schedule_timeout
+798        imsqmidaemon                  diagchar_read
+1276       imsqmidaemon                  poll_schedule_timeout
+1278       imsqmidaemon                  poll_schedule_timeout
+763     /system/bin/dpmd                 SyS_epoll_wait
+775     /system/bin/msm_irqbalance       poll_schedule_timeout
+778     /system/bin/qmuxd                poll_schedule_timeout
+846        qmuxd                         diagchar_read
+851        qmuxd                         poll_schedule_timeout
+806     /system/bin/imsdatadaemon        poll_schedule_timeout
+858        imsdatadaemon                 diagchar_read
+810     /system/bin/rild                 hrtimer_nanosleep
+928        rild                          poll_schedule_timeout
+931        rild                          diagchar_read
+937        Binder:810_1                  binder_thread_read
+939        rild                          __skb_recv_datagram
+941        rild                          poll_schedule_timeout
+943        Binder:810_2                  binder_thread_read
+950        rild                          inotify_read
+951        rild                          poll_schedule_timeout
+952        rild                          __skb_recv_datagram
+953        rild                          __skb_recv_datagram
+954        rild                          __skb_recv_datagram
+955        rild                          futex_wait_queue_me
+956        rild                          poll_schedule_timeout
+1205       rild                          poll_schedule_timeout
+1206       rild                          poll_schedule_timeout
+1207       rild                          poll_schedule_timeout
+1208       rild                          poll_schedule_timeout
+1209       rild                          poll_schedule_timeout
+1210       rild                          poll_schedule_timeout
+1211       rild                          poll_schedule_timeout
+1216       rild                          poll_schedule_timeout
+1217       rild                          poll_schedule_timeout
+1218       rild                          poll_schedule_timeout
+1220       rild                          __skb_recv_datagram
+1221       rild                          poll_schedule_timeout
+1227       rild                          poll_schedule_timeout
+1228       rild                          poll_schedule_timeout
+1229       rild                          poll_schedule_timeout
+1230       rild                          poll_schedule_timeout
+1231       rild                          poll_schedule_timeout
+1233       rild                          futex_wait_queue_me
+1234       rild                          poll_schedule_timeout
+1235       rild                          futex_wait_queue_me
+1236       rild                          poll_schedule_timeout
+1237       rild                          poll_schedule_timeout
+1240       rild                          poll_schedule_timeout
+1241       rild                          poll_schedule_timeout
+1242       rild                          poll_schedule_timeout
+1244       rild                          futex_wait_queue_me
+1245       rild                          poll_schedule_timeout
+1246       rild                          unix_stream_recvmsg
+816     /system/vendor/bin/qti           poll_schedule_timeout
+853        qti                           diagchar_read
+1700       qti                           futex_wait_queue_me
+1701       qti                           poll_schedule_timeout
+1702       qti                           poll_schedule_timeout
+860     /system/bin/netmgrd              __skb_recv_datagram
+901        netmgrd                       diagchar_read
+906        netmgrd                       poll_schedule_timeout
+907        netmgrd                       poll_schedule_timeout
+908        netmgrd                       poll_schedule_timeout
+909        netmgrd                       inotify_read
+1010       netmgrd                       futex_wait_queue_me
+1011       netmgrd                       futex_wait_queue_me
+1012       netmgrd                       poll_schedule_timeout
+1135       netmgrd                       poll_schedule_timeout
+1396       netmgrd                       poll_schedule_timeout
+1398       netmgrd                       poll_schedule_timeout
+1399       netmgrd                       poll_schedule_timeout
+1400       netmgrd                       poll_schedule_timeout
+1502       netmgrd                       poll_schedule_timeout
+1503       netmgrd                       poll_schedule_timeout
+1504       netmgrd                       poll_schedule_timeout
+1505       netmgrd                       poll_schedule_timeout
+1514       netmgrd                       poll_schedule_timeout
+1515       netmgrd                       poll_schedule_timeout
+1516       netmgrd                       poll_schedule_timeout
+1517       netmgrd                       poll_schedule_timeout
+1526       netmgrd                       poll_schedule_timeout
+1527       netmgrd                       poll_schedule_timeout
+1528       netmgrd                       poll_schedule_timeout
+1529       netmgrd                       poll_schedule_timeout
+1538       netmgrd                       poll_schedule_timeout
+1539       netmgrd                       poll_schedule_timeout
+1540       netmgrd                       poll_schedule_timeout
+1541       netmgrd                       poll_schedule_timeout
+1550       netmgrd                       poll_schedule_timeout
+1551       netmgrd                       poll_schedule_timeout
+1552       netmgrd                       poll_schedule_timeout
+1553       netmgrd                       poll_schedule_timeout
+1562       netmgrd                       poll_schedule_timeout
+1563       netmgrd                       poll_schedule_timeout
+1564       netmgrd                       poll_schedule_timeout
+1565       netmgrd                       poll_schedule_timeout
+1580       netmgrd                       poll_schedule_timeout
+1581       netmgrd                       poll_schedule_timeout
+1582       netmgrd                       poll_schedule_timeout
+1583       netmgrd                       poll_schedule_timeout
+1013                                     rescuer_thread
+1014                                     rescuer_thread
+1117    /system/bin/ims_rtp_daemon       __skb_recv_datagram
+1271       ims_rtp_daemon                diagchar_read
+1272       ims_rtp_daemon                futex_wait_queue_me
+1273       ims_rtp_daemon                poll_schedule_timeout
+1274       ims_rtp_daemon                poll_schedule_timeout
+1118    /system/bin/imscmservice         binder_thread_read
+1306       Binder:1118_1                 binder_thread_read
+1292                                     rescuer_thread
+1304                                     rescuer_thread
+1342    system_server                    SyS_epoll_wait
+1347       Signal Catcher                do_sigtimedwait
+1348       ReferenceQueueD               futex_wait_queue_me
+1349       FinalizerDaemon               futex_wait_queue_me
+1350       FinalizerWatchd               futex_wait_queue_me
+1351       HeapTaskDaemon                futex_wait_queue_me
+1378       Binder:1342_1                 binder_thread_read
+1380       Binder:1342_2                 binder_thread_read
+1386       FileObserver                  inotify_read
+1410       android.bg                    SyS_epoll_wait
+1411       ActivityManager               SyS_epoll_wait
+1412       android.ui                    SyS_epoll_wait
+1413       ActivityManager               SyS_epoll_wait
+1419       batterystats-sy               SyS_epoll_wait
+1440       android.fg                    SyS_epoll_wait
+1441       android.io                    SyS_epoll_wait
+1442       android.display               SyS_epoll_wait
+1443       CpuTracker                    futex_wait_queue_me
+1445       PowerManagerSer               SyS_epoll_wait
+1447       system_server                 pm_get_wakeup_count
+1448       BatteryStats_wa               futex_wait_queue_me
+1461       PackageManager                SyS_epoll_wait
+1613       PackageInstalle               SyS_epoll_wait
+1616       CameraService_p               SyS_epoll_wait
+1617       system_server                 poll_schedule_timeout
+1618       system_server                 futex_wait_queue_me
+1620       system_server                 futex_wait_queue_me
+1622       system_server                 futex_wait_queue_me
+1624       system_server                 futex_wait_queue_me
+1626       system_server                 futex_wait_queue_me
+1628       system_server                 futex_wait_queue_me
+1630       system_server                 futex_wait_queue_me
+1632       system_server                 futex_wait_queue_me
+1634       system_server                 futex_wait_queue_me
+1636       system_server                 futex_wait_queue_me
+1638       system_server                 futex_wait_queue_me
+1640       system_server                 futex_wait_queue_me
+1642       system_server                 futex_wait_queue_me
+1644       system_server                 futex_wait_queue_me
+1646       system_server                 futex_wait_queue_me
+1648       system_server                 futex_wait_queue_me
+1650       system_server                 futex_wait_queue_me
+1652       system_server                 futex_wait_queue_me
+1654       system_server                 futex_wait_queue_me
+1656       system_server                 futex_wait_queue_me
+1658       system_server                 futex_wait_queue_me
+1660       system_server                 futex_wait_queue_me
+1662       system_server                 futex_wait_queue_me
+1664       system_server                 futex_wait_queue_me
+1666       system_server                 futex_wait_queue_me
+1668       system_server                 futex_wait_queue_me
+1670       system_server                 futex_wait_queue_me
+1672       system_server                 futex_wait_queue_me
+1674       system_server                 futex_wait_queue_me
+1676       system_server                 futex_wait_queue_me
+1679       system_server                 futex_wait_queue_me
+1680       SensorEventAckR               SyS_epoll_wait
+1681       SensorService                 futex_wait_queue_me
+1682       AlarmManager                  SyS_epoll_wait
+1683       InputDispatcher               SyS_epoll_wait
+1684       InputReader                   SyS_epoll_wait
+1685       MountService                  SyS_epoll_wait
+1686       VoldConnector                 unix_stream_recvmsg
+1687       CryptdConnector               unix_stream_recvmsg
+1690       NetdConnector                 unix_stream_recvmsg
+1691       NetworkStats                  SyS_epoll_wait
+1692       NetworkPolicy                 SyS_epoll_wait
+1693       NetworkPolicyFa               SyS_epoll_wait
+1695       MiuiNetworkPoli               SyS_epoll_wait
+1696       WifiP2pService                SyS_epoll_wait
+1698       WifiStateMachin               SyS_epoll_wait
+1699       WifiService                   SyS_epoll_wait
+1703       ConnectivitySer               SyS_epoll_wait
+1704       Tethering                     SyS_epoll_wait
+1705       roid.pacmanager               SyS_epoll_wait
+1706       NsdService                    SyS_epoll_wait
+1707       mDnsConnector                 unix_stream_recvmsg
+1708       ranker                        SyS_epoll_wait
+1709       notification-sq               SyS_epoll_wait
+1710       miui.bg                       SyS_epoll_wait
+1711       LocationPolicy                SyS_epoll_wait
+1712       WifiManager                   SyS_epoll_wait
+1713       AudioService                  SyS_epoll_wait
+1716       UEventObserver                poll_schedule_timeout
+1717       SecurityWriteHa               SyS_epoll_wait
+1718       SecurityManager               SyS_epoll_wait
+1720       MiuiBackup                    SyS_epoll_wait
+1721       PowerKeeperPoli               SyS_epoll_wait
+1722       miui.fg                       SyS_epoll_wait
+1725       WifiWatchdogSta               SyS_epoll_wait
+1726       WifiScanningSer               SyS_epoll_wait
+1727       WifiRttService                SyS_epoll_wait
+1728       EthernetService               SyS_epoll_wait
+1729       backup                        SyS_epoll_wait
+1738       PhotonicModulat               futex_wait_queue_me
+1739       LazyTaskWriterT               futex_wait_queue_me
+1740       UsbService host               inotify_read
+1742       Thread-80                     __skb_recv_datagram
+1760       Thread-81                     poll_schedule_timeout
+1799       Binder:1342_3                 binder_thread_read
+1866       Binder:1342_4                 binder_thread_read
+1874       WifiMonitor                   poll_schedule_timeout
+1877       SyncHandler-0                 SyS_epoll_wait
+1895       WifiScanner                   SyS_epoll_wait
+1913       Binder:1342_5                 binder_thread_read
+1924       Binder:1342_6                 binder_thread_read
+1925       Binder:1342_7                 binder_thread_read
+1995       Binder:1342_8                 binder_thread_read
+2277       watchdog                      futex_wait_queue_me
+2279       SoundPool                     futex_wait_queue_me
+2280       SoundPoolThread               futex_wait_queue_me
+2287       Binder:1342_9                 binder_thread_read
+2289       Binder:1342_A                 binder_thread_read
+2290       Binder:1342_B                 binder_thread_read
+2291       Binder:1342_C                 binder_thread_read
+2326       Binder:1342_D                 binder_thread_read
+2422       FLP Service Cal               futex_wait_queue_me
+2425       system_server                 poll_schedule_timeout
+2426       system_server                 diagchar_read
+2428       system_server                 poll_schedule_timeout
+2430       FLP Service Cal               poll_schedule_timeout
+2435       system_server                 futex_wait_queue_me
+2438       NetworkTimeUpda               SyS_epoll_wait
+2507       Binder:1342_E                 binder_thread_read
+2520       Binder:1342_F                 binder_thread_read
+2531       Binder:1342_10                binder_thread_read
+2561       Binder:1342_11                binder_thread_read
+2563       Binder:1342_12                binder_thread_read
+2583       Binder:1342_13                binder_thread_read
+2589       Binder:1342_14                binder_thread_read
+2615       Binder:1342_15                binder_thread_read
+2621       Binder:1342_16                binder_thread_read
+2645       Binder:1342_17                binder_thread_read
+2652       Binder:1342_18                binder_thread_read
+2675       Binder:1342_19                binder_thread_read
+2695       Binder:1342_1A                binder_thread_read
+2755       WifiScanningSer               unix_stream_recvmsg
+2774       MissedCallNotif               SyS_epoll_wait
+2777       AsyncTask #1                  futex_wait_queue_me
+2817       AsyncQueryWorke               SyS_epoll_wait
+2825       AsyncTask #2                  futex_wait_queue_me
+2914       IzatServiceBase               SyS_epoll_wait
+2924       GNPProxy                      SyS_epoll_wait
+2930       IzatServiceBase               unix_stream_recvmsg
+2931       IzatServiceBase               futex_wait_queue_me
+2939       IzatServiceBase               futex_wait_queue_me
+2940       IzatServiceBase               futex_wait_queue_me
+2942       FLP Service Cal               SyS_epoll_wait
+2943       FLP Service Cal               futex_wait_queue_me
+3147       LBSSystemMonito               SyS_epoll_wait
+3155       loc_eng_dmn_con               pipe_wait
+3169       FLP Service Cal               futex_wait_queue_me
+3170       FLP Service Cal               poll_schedule_timeout
+3171       FLP Service Cal               futex_wait_queue_me
+3172       FLP Service Cal               poll_schedule_timeout
+3173       FLP Service Cal               poll_schedule_timeout
+3209       AsyncTask #3                  futex_wait_queue_me
+3521       AsyncTask #4                  futex_wait_queue_me
+3558       MiuiActivityCon               SyS_epoll_wait
+3625       UsbDebuggingMan               unix_stream_recvmsg
+3654       AsyncTask #5                  futex_wait_queue_me
+3703       pool-2-thread-1               futex_wait_queue_me
+4629       AsyncTask #6                  futex_wait_queue_me
+4676       AsyncTask #7                  futex_wait_queue_me
+4855       pool-1-thread-1               futex_wait_queue_me
+5241       AsyncTask #8                  futex_wait_queue_me
+5337       android.display               futex_wait_queue_me
+5424       ScreenshotUtils               SyS_epoll_wait
+5954       AsyncTask #9                  futex_wait_queue_me
+8273       Binder:1342_1B                binder_thread_read
+10124      DhcpClient                    SyS_epoll_wait
+10465      Okio Watchdog                 futex_wait_queue_me
+14927      Binder:1342_1C                binder_thread_read
+15367      Binder:1342_1D                binder_thread_read
+15369      Binder:1342_1E                futex_wait_queue_me
+17298      Binder:1342_1F                binder_thread_read
+26067      Binder:1342_20                binder_thread_read
+27422      RenderThread                  SyS_epoll_wait
+28243      SyncHandler-1                 SyS_epoll_wait
+3164       Timer-1                       futex_wait_queue_me
+29267      AudioTrack                    futex_wait_queue_me
+22285      AudioTrack                    futex_wait_queue_me
+1731                                     VosWDThread
+1733                                     VosMCThread
+1734                                     VosTXThread
+1735                                     VosRXThread
+1737                                     wlan_logging_thread
+1741    /system/bin/sdcard               inotify_read
+1743       sdcard                        fuse_dev_do_read
+1744       sdcard                        fuse_dev_do_read
+1745       sdcard                        fuse_dev_do_read
+1761    /system/bin/wpa_supplicant       poll_schedule_timeout
+1835       wpa_supplicant                diagchar_read
+1837       wpa_supplicant                poll_schedule_timeout
+1838       wpa_supplicant                poll_schedule_timeout
+1841       wpa_supplicant                poll_schedule_timeout
+1843       wpa_supplicant                poll_schedule_timeout
+1845       wpa_supplicant                poll_schedule_timeout
+1873       wpa_supplicant                poll_schedule_timeout
+1875       wpa_supplicant                poll_schedule_timeout
+1878       wpa_supplicant                poll_schedule_timeout
+1880       wpa_supplicant                poll_schedule_timeout
+1803    com.android.systemui             SyS_epoll_wait
+1807       Signal Catcher                do_sigtimedwait
+1808       ReferenceQueueD               futex_wait_queue_me
+1809       FinalizerDaemon               futex_wait_queue_me
+1810       FinalizerWatchd               futex_wait_queue_me
+1811       HeapTaskDaemon                futex_wait_queue_me
+1813       Binder:1803_1                 binder_thread_read
+1814       Binder:1803_2                 binder_thread_read
+1817       FileObserver                  inotify_read
+1882       local_job_dispa               SyS_epoll_wait
+1885       ToggleManager                 SyS_epoll_wait
+1886       WifiManager                   SyS_epoll_wait
+1896       tworkController               SyS_epoll_wait
+1898       PhoneStatusBar                SyS_epoll_wait
+1989       pool-4-thread-1               futex_wait_queue_me
+1994       ConnectivityMan               SyS_epoll_wait
+2003       pool-5-thread-1               futex_wait_queue_me
+2054       QSTileHost                    SyS_epoll_wait
+2059       AsyncTask #1                  futex_wait_queue_me
+2060       AsyncTask #2                  futex_wait_queue_me
+2080       TaskManagerView               SyS_epoll_wait
+2088       RenderThread                  SyS_epoll_wait
+2164       PowerUI                       SyS_epoll_wait
+2185       torch                         SyS_epoll_wait
+2195       PhoneStatusBar/               SyS_epoll_wait
+2213       PhoneStatusBar/               SyS_epoll_wait
+2215       AsyncQueryWorke               SyS_epoll_wait
+2743       AsyncTask #3                  futex_wait_queue_me
+2859       AsyncTask #4                  futex_wait_queue_me
+2868       AsyncTask #5                  futex_wait_queue_me
+2870       AsyncTask #6                  futex_wait_queue_me
+2879       AsyncTask #7                  futex_wait_queue_me
+2946       AsyncTask #8                  futex_wait_queue_me
+3135       AsyncTask #9                  futex_wait_queue_me
+3156       thread_shared_p               SyS_epoll_wait
+3159       Binder:1803_3                 binder_thread_read
+3215       remote_job_disp               SyS_epoll_wait
+3577       keyguard-work-t               SyS_epoll_wait
+3580       local_job_dispa               SyS_epoll_wait
+3582       pool-6-thread-1               futex_wait_queue_me
+3584       SoundPool                     futex_wait_queue_me
+3585       SoundPoolThread               futex_wait_queue_me
+5504       ScreenshotLoadT               SyS_epoll_wait
+5505       pool-2-thread-1               futex_wait_queue_me
+6651       Binder:1803_4                 binder_thread_read
+7908       Binder:1803_5                 binder_thread_read
+10203      pool-3-thread-1               futex_wait_queue_me
+11512      Binder:1803_6                 binder_thread_read
+15443      RenderThread                  futex_wait_queue_me
+15444      RenderThread                  futex_wait_queue_me
+15445      RenderThread                  futex_wait_queue_me
+15446      RenderThread                  futex_wait_queue_me
+15447      RenderThread                  futex_wait_queue_me
+15448      RenderThread                  futex_wait_queue_me
+15449      RenderThread                  futex_wait_queue_me
+15450      RenderThread                  unix_stream_recvmsg
+11738      ndroid.systemui               futex_wait_queue_me
+10002      Binder:1803_7                 binder_thread_read
+24575      Binder:1803_8                 binder_thread_read
+1914    com.xiaomi.xmsf                  SyS_epoll_wait
+1917       Signal Catcher                do_sigtimedwait
+1922       ReferenceQueueD               futex_wait_queue_me
+1923       FinalizerDaemon               futex_wait_queue_me
+1927       FinalizerWatchd               futex_wait_queue_me
+1928       HeapTaskDaemon                futex_wait_queue_me
+1930       Binder:1914_1                 binder_thread_read
+1937       Binder:1914_2                 binder_thread_read
+1940       FileObserver                  inotify_read
+2004       local_job_dispa               SyS_epoll_wait
+2021       pool-2-thread-1               futex_wait_queue_me
+2047       Connection Cont               futex_wait_queue_me
+3226       remote_job_disp               SyS_epoll_wait
+10196      Binder:1914_3                 binder_thread_read
+10464      Okio Watchdog                 futex_wait_queue_me
+10579      pool-3-thread-1               futex_wait_queue_me
+10582      pool-1-thread-1               futex_wait_queue_me
+10810      PackageProcesso               futex_wait_queue_me
+11932      pool-3-thread-2               futex_wait_queue_me
+29613      Binder:1914_4                 binder_thread_read
+19521      pool-5-thread-1               futex_wait_queue_me
+1931    com.miui.whetstone               SyS_epoll_wait
+1936       Signal Catcher                do_sigtimedwait
+1946       ReferenceQueueD               futex_wait_queue_me
+1947       FinalizerDaemon               futex_wait_queue_me
+1948       FinalizerWatchd               futex_wait_queue_me
+1949       HeapTaskDaemon                futex_wait_queue_me
+1953       Binder:1931_1                 binder_thread_read
+1958       Binder:1931_2                 binder_thread_read
+1962       FileObserver                  inotify_read
+2026       EventReader                   __skb_recv_datagram
+2032       WtPackageManage               SyS_epoll_wait
+2096       Timer-0                       futex_wait_queue_me
+2109       android.bg                    SyS_epoll_wait
+2115       Thread-49                     futex_wait_queue_me
+2116       MemCheckStateMa               SyS_epoll_wait
+2165       wifi_disconnect               SyS_epoll_wait
+2168       IMECheckManager               SyS_epoll_wait
+2174       memAnalysticThr               SyS_epoll_wait
+2176       api-sdkmgr                    SyS_epoll_wait
+2186       pool-2-thread-1               futex_wait_queue_me
+2202       Binder:1931_3                 binder_thread_read
+2203       Binder:1931_4                 binder_thread_read
+2240       api-sdkmgr                    SyS_epoll_wait
+2242       pool-4-thread-1               futex_wait_queue_me
+2260       wifi_control                  SyS_epoll_wait
+2261       sport_collect                 SyS_epoll_wait
+2262       joyoseCollectTh               SyS_epoll_wait
+2339       pool-5-thread-1               futex_wait_queue_me
+2349       Binder:1931_5                 binder_thread_read
+12072      AsyncTask #1                  futex_wait_queue_me
+12195      Okio Watchdog                 futex_wait_queue_me
+7350       Binder:1931_6                 binder_thread_read
+2362    com.miui.daemon                  SyS_epoll_wait
+2370       Signal Catcher                do_sigtimedwait
+2371       ReferenceQueueD               futex_wait_queue_me
+2372       FinalizerDaemon               futex_wait_queue_me
+2373       FinalizerWatchd               futex_wait_queue_me
+2374       HeapTaskDaemon                futex_wait_queue_me
+2375       Binder:2362_1                 binder_thread_read
+2380       Binder:2362_2                 binder_thread_read
+2387       FileObserver                  inotify_read
+2762       MQSActionExecut               SyS_epoll_wait
+2769       MQSEventManager               SyS_epoll_wait
+2782       WcnsEventManage               SyS_epoll_wait
+2789       TelephonyEventH               SyS_epoll_wait
+2803       BluetoothEventH               SyS_epoll_wait
+2812       AsyncTask #1                  futex_wait_queue_me
+3089       android.bg                    SyS_epoll_wait
+3093       api-sdkmgr                    SyS_epoll_wait
+3097       pool-3-thread-1               futex_wait_queue_me
+3129       pool-4-thread-1               futex_wait_queue_me
+3575       .ProcessManager               futex_wait_queue_me
+3583       HandlerThread                 SyS_epoll_wait
+5800       Binder:2362_3                 binder_thread_read
+10248      Thread-123                    futex_wait_queue_me
+10249      Thread-124                    futex_wait_queue_me
+10251      Thread-125                    futex_wait_queue_me
+10252      Thread-126                    futex_wait_queue_me
+10253      Thread-127                    futex_wait_queue_me
+22554      WifiManager                   SyS_epoll_wait
+32239      Binder:2362_4                 binder_thread_read
+2448    com.miui.contentcatcher          SyS_epoll_wait
+2453       Signal Catcher                do_sigtimedwait
+2454       ReferenceQueueD               futex_wait_queue_me
+2455       FinalizerDaemon               futex_wait_queue_me
+2456       FinalizerWatchd               futex_wait_queue_me
+2457       HeapTaskDaemon                futex_wait_queue_me
+2458       Binder:2448_1                 binder_thread_read
+2462       Binder:2448_2                 binder_thread_read
+2469       FileObserver                  inotify_read
+11110      AsyncTask #1                  futex_wait_queue_me
+11117      Thread-107                    futex_wait_queue_me
+11118      Thread-108                    futex_wait_queue_me
+11119      Thread-109                    futex_wait_queue_me
+11120      Thread-110                    futex_wait_queue_me
+11121      Thread-111                    futex_wait_queue_me
+11461      Okio Watchdog                 futex_wait_queue_me
+11466      pool-1-thread-1               futex_wait_queue_me
+11325      AsyncTask #2                  futex_wait_queue_me
+11326      Thread-119                    futex_wait_queue_me
+11327      Thread-120                    futex_wait_queue_me
+11328      Thread-121                    futex_wait_queue_me
+11329      Thread-122                    futex_wait_queue_me
+11330      Thread-123                    futex_wait_queue_me
+31987      AsyncTask #3                  futex_wait_queue_me
+31989      Thread-126                    futex_wait_queue_me
+31990      Thread-127                    futex_wait_queue_me
+31991      Thread-128                    futex_wait_queue_me
+31992      Thread-129                    futex_wait_queue_me
+31993      Thread-130                    futex_wait_queue_me
+2461    com.quicinc.cne.CNEService       SyS_epoll_wait
+2466       Signal Catcher                do_sigtimedwait
+2468       ReferenceQueueD               futex_wait_queue_me
+2470       FinalizerDaemon               futex_wait_queue_me
+2472       FinalizerWatchd               futex_wait_queue_me
+2473       HeapTaskDaemon                futex_wait_queue_me
+2474       Binder:2461_1                 binder_thread_read
+2479       Binder:2461_2                 binder_thread_read
+2493       FileObserver                  inotify_read
+2732       cneservice_thre               SyS_epoll_wait
+2740       CNESender                     SyS_epoll_wait
+2746       WifiManager                   SyS_epoll_wait
+2760       CNEReceiver                   unix_stream_recvmsg
+2783       ConnectivityMan               SyS_epoll_wait
+20938      Binder:2461_3                 binder_thread_read
+2475    com.qualcomm.qti.notificationservice SyS_epoll_wait
+2481       Signal Catcher                do_sigtimedwait
+2482       ReferenceQueueD               futex_wait_queue_me
+2483       FinalizerDaemon               futex_wait_queue_me
+2484       FinalizerWatchd               futex_wait_queue_me
+2485       HeapTaskDaemon                futex_wait_queue_me
+2486       Binder:2475_1                 binder_thread_read
+2492       Binder:2475_2                 binder_thread_read
+2501       FileObserver                  inotify_read
+2487    com.qti.dpmserviceapp            SyS_epoll_wait
+2495       Signal Catcher                do_sigtimedwait
+2496       ReferenceQueueD               futex_wait_queue_me
+2498       FinalizerDaemon               futex_wait_queue_me
+2499       FinalizerWatchd               futex_wait_queue_me
+2500       HeapTaskDaemon                futex_wait_queue_me
+2509       Binder:2487_1                 binder_thread_read
+2511       Binder:2487_2                 binder_thread_read
+2524       FileObserver                  inotify_read
+2734       Binder:2487_3                 binder_thread_read
+4082       DPMSender                     SyS_epoll_wait
+4083       WifiManager                   SyS_epoll_wait
+4084       DPMReceiver                   unix_stream_recvmsg
+2503    com.fingerprints.serviceext      SyS_epoll_wait
+2510       Signal Catcher                do_sigtimedwait
+2512       ReferenceQueueD               futex_wait_queue_me
+2513       FinalizerDaemon               futex_wait_queue_me
+2514       FinalizerWatchd               futex_wait_queue_me
+2515       HeapTaskDaemon                futex_wait_queue_me
+2519       Binder:2503_1                 binder_thread_read
+2529       Binder:2503_2                 binder_thread_read
+2544       FileObserver                  inotify_read
+2517    com.xiaomi.finddevice            SyS_epoll_wait
+2526       Signal Catcher                do_sigtimedwait
+2527       ReferenceQueueD               futex_wait_queue_me
+2528       FinalizerDaemon               futex_wait_queue_me
+2532       FinalizerWatchd               futex_wait_queue_me
+2533       HeapTaskDaemon                futex_wait_queue_me
+2535       Binder:2517_1                 binder_thread_read
+2538       Binder:2517_2                 binder_thread_read
+2549       FileObserver                  inotify_read
+3100       QueueTaskManage               futex_wait_queue_me
+3461       AsyncTask #1                  futex_wait_queue_me
+3488       AsyncTask #2                  futex_wait_queue_me
+3882       AsyncTask #3                  futex_wait_queue_me
+3883       QueueTaskManage               futex_wait_queue_me
+3890       MTService Guard               futex_wait_queue_me
+3891       QueueTaskManage               futex_wait_queue_me
+3905       pool-3-thread-1               futex_wait_queue_me
+3910       QueueTaskManage               futex_wait_queue_me
+3913       QueueTaskManage               futex_wait_queue_me
+3933       QueueTaskManage               futex_wait_queue_me
+3934       pool-4-thread-1               futex_wait_queue_me
+3958       rAccountTracker               SyS_epoll_wait
+10214      pool-2-thread-1               futex_wait_queue_me
+10596      Binder:2517_3                 binder_thread_read
+11006      Find device exe               futex_wait_queue_me
+11464      Okio Watchdog                 futex_wait_queue_me
+12154      Find device exe               futex_wait_queue_me
+12173      Find device exe               futex_wait_queue_me
+12183      Find device exe               futex_wait_queue_me
+12221      Find device exe               futex_wait_queue_me
+12224      Find device exe               futex_wait_queue_me
+12228      Find device exe               futex_wait_queue_me
+12229      Binder:2517_4                 binder_thread_read
+12230      Find device exe               futex_wait_queue_me
+12231      Binder:2517_5                 binder_thread_read
+12232      Find device exe               futex_wait_queue_me
+2530    com.qualcomm.qti.loadcarrier     SyS_epoll_wait
+2534       Signal Catcher                do_sigtimedwait
+2536       ReferenceQueueD               futex_wait_queue_me
+2537       FinalizerDaemon               futex_wait_queue_me
+2539       FinalizerWatchd               futex_wait_queue_me
+2540       HeapTaskDaemon                futex_wait_queue_me
+2543       Binder:2530_1                 binder_thread_read
+2547       Binder:2530_2                 binder_thread_read
+2556       FileObserver                  inotify_read
+2551    com.qualcomm.qti.carrierconfigure SyS_epoll_wait
+2558       Signal Catcher                do_sigtimedwait
+2559       ReferenceQueueD               futex_wait_queue_me
+2560       FinalizerDaemon               futex_wait_queue_me
+2562       FinalizerWatchd               futex_wait_queue_me
+2565       HeapTaskDaemon                futex_wait_queue_me
+2566       Binder:2551_1                 binder_thread_read
+2567       Binder:2551_2                 binder_thread_read
+2584       FileObserver                  inotify_read
+2568    com.mi.AutoTest                  SyS_epoll_wait
+2575       Signal Catcher                do_sigtimedwait
+2576       ReferenceQueueD               futex_wait_queue_me
+2577       FinalizerDaemon               futex_wait_queue_me
+2578       FinalizerWatchd               futex_wait_queue_me
+2579       HeapTaskDaemon                futex_wait_queue_me
+2581       Binder:2568_1                 binder_thread_read
+2590       Binder:2568_2                 binder_thread_read
+2622       FileObserver                  inotify_read
+2586    com.quicinc.wbcserviceapp        SyS_epoll_wait
+2597       Signal Catcher                do_sigtimedwait
+2599       ReferenceQueueD               futex_wait_queue_me
+2600       FinalizerDaemon               futex_wait_queue_me
+2601       FinalizerWatchd               futex_wait_queue_me
+2602       HeapTaskDaemon                futex_wait_queue_me
+2604       Binder:2586_1                 binder_thread_read
+2606       Binder:2586_2                 binder_thread_read
+2626       FileObserver                  inotify_read
+2610    com.qualcomm.qti.tetherservice   SyS_epoll_wait
+2616       Signal Catcher                do_sigtimedwait
+2619       ReferenceQueueD               futex_wait_queue_me
+2620       FinalizerDaemon               futex_wait_queue_me
+2623       FinalizerWatchd               futex_wait_queue_me
+2625       HeapTaskDaemon                futex_wait_queue_me
+2627       Binder:2610_1                 binder_thread_read
+2629       Binder:2610_2                 binder_thread_read
+2658       FileObserver                  inotify_read
+2744       WifiManager                   SyS_epoll_wait
+2748       .ProcessManager               futex_wait_queue_me
+2768       Binder:2610_3                 binder_thread_read
+2785       Thread-148                    futex_wait_queue_me
+2791       Thread-148                    poll_schedule_timeout
+2792       Thread-148                    diagchar_read
+2794       Thread-148                    poll_schedule_timeout
+2631    com.android.phone                SyS_epoll_wait
+2638       Signal Catcher                do_sigtimedwait
+2641       ReferenceQueueD               futex_wait_queue_me
+2642       FinalizerDaemon               futex_wait_queue_me
+2643       FinalizerWatchd               futex_wait_queue_me
+2644       HeapTaskDaemon                futex_wait_queue_me
+2650       Binder:2631_1                 binder_thread_read
+2670       Binder:2631_2                 binder_thread_read
+2676       FileObserver                  inotify_read
+2797       pool-1-thread-1               futex_wait_queue_me
+2833       RILSender0                    SyS_epoll_wait
+2837       RILReceiver0                  unix_stream_recvmsg
+2847       RILSender1                    SyS_epoll_wait
+2850       RILReceiver1                  unix_stream_recvmsg
+2878       DcHandlerThread               SyS_epoll_wait
+2920       IccPbHandlerLoa               SyS_epoll_wait
+2921       MiuiIccPhoneBoo               SyS_epoll_wait
+2937       GsmCellBroadcas               SyS_epoll_wait
+2941       GsmInboundSmsHa               SyS_epoll_wait
+2960       CellBroadcastHa               SyS_epoll_wait
+2961       CdmaInboundSmsH               SyS_epoll_wait
+2974       CdmaServiceCate               SyS_epoll_wait
+3030       DcHandlerThread               SyS_epoll_wait
+3035       Binder:2631_3                 binder_thread_read
+3037       GsmCellBroadcas               SyS_epoll_wait
+3038       GsmInboundSmsHa               SyS_epoll_wait
+3040       CellBroadcastHa               SyS_epoll_wait
+3041       CdmaInboundSmsH               SyS_epoll_wait
+3042       CdmaServiceCate               SyS_epoll_wait
+3044       DcSwitchStateMa               SyS_epoll_wait
+3046       SyncHandler-0                 SyS_epoll_wait
+3048       DcSwitchStateMa               SyS_epoll_wait
+3060       android.bg                    SyS_epoll_wait
+3061       Binder:2631_4                 binder_thread_read
+3062       AsyncTask #1                  futex_wait_queue_me
+3071       PhoneWorkThread               SyS_epoll_wait
+3083       local_job_dispa               SyS_epoll_wait
+3090       pool-2-thread-1               futex_wait_queue_me
+3192       ervice.Executor               SyS_epoll_wait
+3193       WifiManager                   SyS_epoll_wait
+3199       Binder:2631_5                 binder_thread_read
+3440       IFMsg_Sender                  SyS_epoll_wait
+3441       IFMsg_Rxr                     unix_stream_recvmsg
+3442       ImsServiceSubRe               SyS_epoll_wait
+3447       ImsConfigImplHa               SyS_epoll_wait
+4300       Stk App Service               SyS_epoll_wait
+24688      Binder:2631_6                 binder_thread_read
+30441      Binder:2631_7                 binder_thread_read
+2634                                     worker_thread
+2682                                     worker_thread
+3630    com.android.bluetooth            SyS_epoll_wait
+3635       Signal Catcher                do_sigtimedwait
+3637       ReferenceQueueD               futex_wait_queue_me
+3638       FinalizerDaemon               futex_wait_queue_me
+3639       FinalizerWatchd               futex_wait_queue_me
+3640       HeapTaskDaemon                futex_wait_queue_me
+3644       Binder:3630_1                 binder_thread_read
+3648       FileObserver                  inotify_read
+3650       Binder:3630_2                 binder_thread_read
+3735       BluetoothAdapte               SyS_epoll_wait
+3741       bluedroid wake/               SyS_epoll_wait
+3742       stack_manager                 do_sigtimedwait
+3743       bluedroid wake/               eventfd_ctx_read
+3746       BT Service Call               SyS_epoll_wait
+3749       bonddata_handle               SyS_epoll_wait
+3753       BondStateMachin               SyS_epoll_wait
+3754       BluetoothAdvert               SyS_epoll_wait
+3757       BluetoothScanMa               SyS_epoll_wait
+3758       btsnoop_net_lis               poll_schedule_timeout
+3761       bluedroid wake/               SyS_epoll_wait
+3845       bluedroid wake/               SyS_epoll_wait
+3854       btif_sock_poll                poll_schedule_timeout
+3855       btif_sock                     SyS_epoll_wait
+3868       HeadsetStateMac               SyS_epoll_wait
+3889       BluetoothAvrcpH               SyS_epoll_wait
+3892       A2dpStateMachin               SyS_epoll_wait
+3893       media_worker                  SyS_epoll_wait
+3894       uipc-main                     poll_schedule_timeout
+3895       BluetoothHdpHan               SyS_epoll_wait
+3896       droid.bluetooth               poll_schedule_timeout
+3899       BluetoothMapHan               SyS_epoll_wait
+3900       BluetoothAvrcpH               SyS_epoll_wait
+3902       BluetoothSapHan               SyS_epoll_wait
+3903       Binder:3630_3                 binder_thread_read
+3904       SapAcceptThread               unix_stream_recvmsg
+3906       Thread-42                     __skb_recv_datagram
+3907       Thread-43                     unix_stream_recvmsg
+3908       Thread-44                     __skb_recv_datagram
+3911       BluetoothPbapHa               SyS_epoll_wait
+3914       Thread-46                     unix_stream_recvmsg
+3916       Thread-47                     __skb_recv_datagram
+3947       BtOppRfcommList               unix_stream_recvmsg
+3948       BluetoothOppL2c               __skb_recv_datagram
+30427      Binder:3630_4                 binder_thread_read
+16778      Binder:3630_5                 binder_thread_read
+16635      Binder:3630_6                 binder_thread_read
+24477      Binder:3630_7                 binder_thread_read
+26528      Binder:3630_8                 binder_thread_read
+3646    /system/bin/mcd                  binder_thread_read
+3716       klo_main                      futex_wait_queue_me
+3717       klo_reporter                  SyS_epoll_wait
+3719       native_monitor                hrtimer_nanosleep
+3720       events_monitor                __skb_recv_datagram
+3722       Binder:3646_1                 binder_thread_read
+14776      Binder:3646_2                 binder_thread_read
+3680                                     irq_thread
+3682                                     try_hotplug
+3683                                     try_hotplug
+3723    /system/vendor/bin/perfd         futex_wait_queue_me
+3728       perfd                         __skb_recv_datagram
+3730       perfd                         futex_wait_queue_me
+3731       POSIX timer 0                 do_sigtimedwait
+1361       POSIX timer 349               do_sigtimedwait
+3782                                     worker_thread
+5041                                     worker_thread
+8930                                     worker_thread
+10403                                    worker_thread
+13419                                    worker_thread
+14682   com.miui.securitycenter.remote   SyS_epoll_wait
+14687      Signal Catcher                do_sigtimedwait
+14688      ReferenceQueueD               futex_wait_queue_me
+14689      FinalizerDaemon               futex_wait_queue_me
+14690      FinalizerWatchd               futex_wait_queue_me
+14691      HeapTaskDaemon                futex_wait_queue_me
+14692      Binder:14682_1                binder_thread_read
+14694      Binder:14682_2                binder_thread_read
+14707      FileObserver                  inotify_read
+14726      AsyncTask #1                  futex_wait_queue_me
+14736      local_job_dispa               SyS_epoll_wait
+14742      remote_job_disp               SyS_epoll_wait
+14743      pool-1-thread-1               futex_wait_queue_me
+14752      AsyncTask #2                  futex_wait_queue_me
+14758      pool-4-thread-1               futex_wait_queue_me
+14777      TrafficManageSe               SyS_epoll_wait
+14778      pool-4-thread-2               futex_wait_queue_me
+14781      Binder:14682_3                binder_thread_read
+14783      WifiManager                   SyS_epoll_wait
+14789      pool-4-thread-3               futex_wait_queue_me
+14795      gamebooster_bg_               SyS_epoll_wait
+14869      AsyncTask #3                  futex_wait_queue_me
+14870      android.bg                    SyS_epoll_wait
+14871      MiuiVpnManageSe               SyS_epoll_wait
+14872      pool-4-thread-4               futex_wait_queue_me
+14873      pool-5-thread-1               futex_wait_queue_me
+14875      pool-4-thread-5               futex_wait_queue_me
+14888      pool-4-thread-6               futex_wait_queue_me
+14894      pool-3-thread-1               futex_wait_queue_me
+14897      AsyncTask #4                  futex_wait_queue_me
+15247      pool-4-thread-7               futex_wait_queue_me
+15420      AsyncTask #5                  futex_wait_queue_me
+16100      pool-4-thread-8               futex_wait_queue_me
+16176      AsyncTask #6                  futex_wait_queue_me
+16177      AsyncTask #7                  futex_wait_queue_me
+16178      AsyncTask #8                  futex_wait_queue_me
+16367      AsyncTask #9                  futex_wait_queue_me
+16663      pool-6-thread-1               futex_wait_queue_me
+17163      pool-4-thread-9               futex_wait_queue_me
+17448      pool-4-thread-1               futex_wait_queue_me
+18152      pool-2-thread-1               futex_wait_queue_me
+31389      Binder:14682_4                binder_thread_read
+16473   android.process.media            SyS_epoll_wait
+16478      Signal Catcher                do_sigtimedwait
+16479      ReferenceQueueD               futex_wait_queue_me
+16480      FinalizerDaemon               futex_wait_queue_me
+16481      FinalizerWatchd               futex_wait_queue_me
+16482      HeapTaskDaemon                futex_wait_queue_me
+16483      Binder:16473_1                binder_thread_read
+16484      Binder:16473_2                binder_thread_read
+16485      FileObserver                  inotify_read
+16488      thumbs thread                 SyS_epoll_wait
+16489      DownloadProvide               SyS_epoll_wait
+16491      DMS-WorkThread                SyS_epoll_wait
+16494      pool-2-thread-1               futex_wait_queue_me
+16497      DownloadNotific               SyS_epoll_wait
+16498      local_job_dispa               SyS_epoll_wait
+16502      pool-3-thread-1               futex_wait_queue_me
+16504      pool-1-thread-1               futex_wait_queue_me
+16507      DMS-WorkThread                SyS_epoll_wait
+16508      pool-4-thread-1               futex_wait_queue_me
+16520      DMS-WorkThread                SyS_epoll_wait
+16521      DMS-WorkThread                SyS_epoll_wait
+16524      DMS-WorkThread                futex_wait_queue_me
+16525      DMS-WorkThread                futex_wait_queue_me
+16526      DMS-WorkThread                futex_wait_queue_me
+16529      DMS-WorkThread                SyS_epoll_wait
+16531      DMS-WorkThread                SyS_epoll_wait
+16623      remote_job_disp               SyS_epoll_wait
+17083      Binder:16473_3                binder_thread_read
+17084      Binder:16473_4                binder_thread_read
+17365      custom-tpool-1                futex_wait_queue_me
+17477      custom-tpool-2                futex_wait_queue_me
+18422      custom-tpool-3                futex_wait_queue_me
+18532      custom-tpool-4                futex_wait_queue_me
+19627      custom-tpool-5                futex_wait_queue_me
+17052   com.qti.service.colorservice     SyS_epoll_wait
+17057      Signal Catcher                do_sigtimedwait
+17058      ReferenceQueueD               futex_wait_queue_me
+17059      FinalizerDaemon               futex_wait_queue_me
+17060      FinalizerWatchd               futex_wait_queue_me
+17061      HeapTaskDaemon                futex_wait_queue_me
+17062      Binder:17052_1                binder_thread_read
+17063      Binder:17052_2                binder_thread_read
+17064      FileObserver                  inotify_read
+17347                                    worker_thread
+18414   com.miui.cloudservice            SyS_epoll_wait
+18419      Signal Catcher                do_sigtimedwait
+18423      ReferenceQueueD               futex_wait_queue_me
+18424      FinalizerDaemon               futex_wait_queue_me
+18427      FinalizerWatchd               futex_wait_queue_me
+18429      HeapTaskDaemon                futex_wait_queue_me
+18430      Binder:18414_1                binder_thread_read
+18431      Binder:18414_2                binder_thread_read
+18432      FileObserver                  inotify_read
+18439      AsyncTask #1                  futex_wait_queue_me
+18440      AsyncTask #2                  futex_wait_queue_me
+18443      local_job_dispa               SyS_epoll_wait
+18445      IntentService[M               futex_wait_queue_me
+18449      pool-3-thread-1               futex_wait_queue_me
+18453      PackageProcesso               futex_wait_queue_me
+18454      pool-4-thread-1               futex_wait_queue_me
+18456      pool-5-thread-1               futex_wait_queue_me
+18510      remote_job_disp               SyS_epoll_wait
+22920      Binder:18414_3                binder_thread_read
+18571   com.miui.analytics               SyS_epoll_wait
+18576      Signal Catcher                do_sigtimedwait
+18577      ReferenceQueueD               futex_wait_queue_me
+18578      FinalizerDaemon               futex_wait_queue_me
+18579      FinalizerWatchd               futex_wait_queue_me
+18580      HeapTaskDaemon                futex_wait_queue_me
+18581      Binder:18571_1                binder_thread_read
+18582      Binder:18571_2                binder_thread_read
+18584      FileObserver                  inotify_read
+18593      AbstractDeliver               SyS_epoll_wait
+18595      pool-1-thread-5               futex_wait_queue_me
+18597      pool-1-thread-6               futex_wait_queue_me
+18600      AsyncTask #1                  futex_wait_queue_me
+20433      pool-2-thread-1               futex_wait_queue_me
+18665   com.miui.systemAdSolution        SyS_epoll_wait
+18670      Signal Catcher                do_sigtimedwait
+18671      ReferenceQueueD               futex_wait_queue_me
+18672      FinalizerDaemon               futex_wait_queue_me
+18673      FinalizerWatchd               futex_wait_queue_me
+18674      HeapTaskDaemon                futex_wait_queue_me
+18675      Binder:18665_1                binder_thread_read
+18676      Binder:18665_2                binder_thread_read
+18677      FileObserver                  inotify_read
+18682      background_task               SyS_epoll_wait
+18684      api-sdkmgr                    SyS_epoll_wait
+18688      pool-5-thread-1               futex_wait_queue_me
+18692      pool-6-thread-1               futex_wait_queue_me
+18702      pool-7-thread-1               futex_wait_queue_me
+18711      Ad-Updater                    SyS_epoll_wait
+18712      Thread-34941                  futex_wait_queue_me
+18717      pool-2-thread-1               futex_wait_queue_me
+27029      pool-1-thread-1               futex_wait_queue_me
+18791   com.miui.autotestutils           SyS_epoll_wait
+18796      Signal Catcher                do_sigtimedwait
+18797      JDWP                          unix_stream_recvmsg
+18798      ReferenceQueueD               futex_wait_queue_me
+18799      FinalizerDaemon               futex_wait_queue_me
+18800      FinalizerWatchd               futex_wait_queue_me
+18801      HeapTaskDaemon                futex_wait_queue_me
+18802      Binder:18791_1                binder_thread_read
+18803      Binder:18791_2                binder_thread_read
+18804      FileObserver                  inotify_read
+18831   com.miui.personalassistant       SyS_epoll_wait
+18836      Signal Catcher                do_sigtimedwait
+18837      ReferenceQueueD               futex_wait_queue_me
+18838      FinalizerDaemon               futex_wait_queue_me
+18839      FinalizerWatchd               futex_wait_queue_me
+18840      HeapTaskDaemon                futex_wait_queue_me
+18841      Binder:18831_1                binder_thread_read
+18842      Binder:18831_2                binder_thread_read
+18843      FileObserver                  inotify_read
+18860      local_job_dispa               SyS_epoll_wait
+18864      pool-1-thread-1               futex_wait_queue_me
+18869      Thread-5450                   futex_wait_queue_me
+18870      Thread-5451                   futex_wait_queue_me
+18871      Thread-5452                   futex_wait_queue_me
+18873      Thread-5453                   futex_wait_queue_me
+18874      Thread-5454                   futex_wait_queue_me
+18881      pool-2-thread-1               futex_wait_queue_me
+19164      remote_job_disp               SyS_epoll_wait
+19496      Binder:18831_3                binder_thread_read
+18885   com.android.quicksearchbox       SyS_epoll_wait
+18890      Signal Catcher                do_sigtimedwait
+18891      ReferenceQueueD               futex_wait_queue_me
+18892      FinalizerDaemon               futex_wait_queue_me
+18893      FinalizerWatchd               futex_wait_queue_me
+18894      HeapTaskDaemon                futex_wait_queue_me
+18895      Binder:18885_1                binder_thread_read
+18896      Binder:18885_2                binder_thread_read
+18897      FileObserver                  inotify_read
+18899      ProviderUpdater               SyS_epoll_wait
+18903      BackgroundHandl               SyS_epoll_wait
+18904      pool-2-thread-1               futex_wait_queue_me
+18905      ProviderUpdater               SyS_epoll_wait
+18906      ProviderUpdater               SyS_epoll_wait
+18923      pool-4-thread-1               futex_wait_queue_me
+19269   system:ui                        SyS_epoll_wait
+19274      Signal Catcher                do_sigtimedwait
+19276      ReferenceQueueD               futex_wait_queue_me
+19277      FinalizerDaemon               futex_wait_queue_me
+19278      FinalizerWatchd               futex_wait_queue_me
+19279      HeapTaskDaemon                futex_wait_queue_me
+19280      Binder:19269_1                binder_thread_read
+19281      Binder:19269_2                binder_thread_read
+19282      FileObserver                  inotify_read
+19284      AsyncTask #1                  futex_wait_queue_me
+19285      AsyncTask #2                  futex_wait_queue_me
+19286      AsyncTask #3                  futex_wait_queue_me
+19287      AsyncTask #4                  futex_wait_queue_me
+19288      AsyncTask #5                  futex_wait_queue_me
+19444      Binder:19269_3                binder_thread_read
+19445      AsyncTask #6                  futex_wait_queue_me
+19446      AsyncTask #7                  futex_wait_queue_me
+19447      AsyncTask #8                  futex_wait_queue_me
+19448      AsyncTask #9                  futex_wait_queue_me
+19353   com.android.smspush              SyS_epoll_wait
+19357      Signal Catcher                do_sigtimedwait
+19359      ReferenceQueueD               futex_wait_queue_me
+19360      FinalizerDaemon               futex_wait_queue_me
+19361      FinalizerWatchd               futex_wait_queue_me
+19362      HeapTaskDaemon                futex_wait_queue_me
+19363      Binder:19353_1                binder_thread_read
+19364      Binder:19353_2                binder_thread_read
+19365      FileObserver                  inotify_read
+19571   com.qualcomm.qti.accesscache     SyS_epoll_wait
+19576      Signal Catcher                do_sigtimedwait
+19577      ReferenceQueueD               futex_wait_queue_me
+19578      FinalizerDaemon               futex_wait_queue_me
+19579      FinalizerWatchd               futex_wait_queue_me
+19580      HeapTaskDaemon                futex_wait_queue_me
+19581      Binder:19571_1                binder_thread_read
+19582      Binder:19571_2                binder_thread_read
+19583      FileObserver                  inotify_read
+19863   com.lbe.security.miui            SyS_epoll_wait
+19865      Signal Catcher                do_sigtimedwait
+19867      ReferenceQueueD               futex_wait_queue_me
+19870      FinalizerDaemon               futex_wait_queue_me
+19871      FinalizerWatchd               futex_wait_queue_me
+19872      HeapTaskDaemon                futex_wait_queue_me
+19873      Binder:19863_1                binder_thread_read
+19874      Binder:19863_2                binder_thread_read
+19875      FileObserver                  inotify_read
+19880      local_job_dispa               SyS_epoll_wait
+19883      remote_job_disp               SyS_epoll_wait
+19884      AsyncTask #1                  futex_wait_queue_me
+19885      AsyncTask #2                  futex_wait_queue_me
+19887      work_permission               SyS_epoll_wait
+19888      AppOpsAdapter                 SyS_epoll_wait
+19889      AsyncTask #3                  futex_wait_queue_me
+20038      AsyncTask #4                  futex_wait_queue_me
+20491      Binder:19863_3                binder_thread_read
+20509      pool-2-thread-1               futex_wait_queue_me
+21876      AsyncTask #5                  futex_wait_queue_me
+3360       AsyncTask #6                  futex_wait_queue_me
+6748       AsyncTask #7                  futex_wait_queue_me
+19242      AsyncTask #8                  futex_wait_queue_me
+9836       AsyncTask #9                  futex_wait_queue_me
+20018   com.sohu.inputmethod.sogou.xiaomi SyS_epoll_wait
+20022      Signal Catcher                do_sigtimedwait
+20023      ReferenceQueueD               futex_wait_queue_me
+20024      FinalizerDaemon               futex_wait_queue_me
+20026      FinalizerWatchd               futex_wait_queue_me
+20027      HeapTaskDaemon                futex_wait_queue_me
+20028      Binder:20018_1                binder_thread_read
+20029      Binder:20018_2                binder_thread_read
+20031      FileObserver                  inotify_read
+20036      WifiManager                   SyS_epoll_wait
+20068      pool-1-thread-1               futex_wait_queue_me
+20097      AsyncQueryWorke               SyS_epoll_wait
+20307      RenderThread                  SyS_epoll_wait
+21933      local_job_dispa               SyS_epoll_wait
+21935      pool-4-thread-1               futex_wait_queue_me
+21947      remote_job_disp               SyS_epoll_wait
+25228      Binder:20018_3                binder_thread_read
+3198       Binder:20018_4                binder_thread_read
+4477       hwuiTask1                     futex_wait_queue_me
+30658      pool-8-thread-1               futex_wait_queue_me
+30659      .ProcessManager               futex_wait_queue_me
+30662      pool-10-thread-               futex_wait_queue_me
+30665      pool-9-thread-1               futex_wait_queue_me
+30917      pool-14-thread-               futex_wait_queue_me
+30918      pool-14-thread-               futex_wait_queue_me
+16454      Binder:20018_5                binder_thread_read
+4552       Thread-22472                  SyS_epoll_wait
+4553       pool-26-thread-               futex_wait_queue_me
+20044   com.miui.powerkeeper:service     SyS_epoll_wait
+20049      Signal Catcher                do_sigtimedwait
+20050      ReferenceQueueD               futex_wait_queue_me
+20051      FinalizerDaemon               futex_wait_queue_me
+20052      FinalizerWatchd               futex_wait_queue_me
+20053      HeapTaskDaemon                futex_wait_queue_me
+20054      Binder:20044_1                binder_thread_read
+20055      Binder:20044_2                binder_thread_read
+20056      FileObserver                  inotify_read
+20058      local_job_dispa               SyS_epoll_wait
+20061      pool-1-thread-1               futex_wait_queue_me
+20062      PowerKeeperServ               SyS_epoll_wait
+20063      PowerKeeperPack               SyS_epoll_wait
+20064      ProcessObserver               SyS_epoll_wait
+20065      NativePowerKeep               __skb_recv_datagram
+20067      PowerKeeperConf               SyS_epoll_wait
+20069      WifiManager                   SyS_epoll_wait
+20070      PowerCheckerSer               SyS_epoll_wait
+20072      NightStandbyRec               SyS_epoll_wait
+20073      PowerStateMachi               SyS_epoll_wait
+20074      android.bg                    SyS_epoll_wait
+20075      FeedbackControl               SyS_epoll_wait
+20467      Binder:20044_3                binder_thread_read
+20468      Binder:20044_4                binder_thread_read
+20490      Binder:20044_5                binder_thread_read
+20561   com.miui.core                    SyS_epoll_wait
+20565      Signal Catcher                do_sigtimedwait
+20569      ReferenceQueueD               futex_wait_queue_me
+20570      FinalizerDaemon               futex_wait_queue_me
+20571      FinalizerWatchd               futex_wait_queue_me
+20572      HeapTaskDaemon                futex_wait_queue_me
+20573      Binder:20561_1                binder_thread_read
+20577      Binder:20561_2                binder_thread_read
+20579      FileObserver                  inotify_read
+934        Binder:20561_3                binder_thread_read
+21362   com.jeejen.family.miui           SyS_epoll_wait
+21369      Signal Catcher                do_sigtimedwait
+21370      ReferenceQueueD               futex_wait_queue_me
+21371      FinalizerDaemon               futex_wait_queue_me
+21372      FinalizerWatchd               futex_wait_queue_me
+21373      HeapTaskDaemon                futex_wait_queue_me
+21374      Binder:21362_1                binder_thread_read
+21375      Binder:21362_2                binder_thread_read
+21376      FileObserver                  inotify_read
+21384      JLogger thread                futex_wait_queue_me
+21387      EventReporter t               SyS_epoll_wait
+21389      AppUpdater-Thre               SyS_epoll_wait
+21390      contact db 2 th               SyS_epoll_wait
+21391      call db 2 threa               SyS_epoll_wait
+21392      mms db 2 thread               SyS_epoll_wait
+21393      sms db 2 thread               SyS_epoll_wait
+21394      download-worker               futex_wait_queue_me
+21395      message_center                SyS_epoll_wait
+21412      miui-weather-th               SyS_epoll_wait
+21413      tts-thread                    SyS_epoll_wait
+21415      aisound-thread                SyS_epoll_wait
+21417      AudioTrack                    futex_wait_queue_me
+21424      CrashReportEngi               SyS_epoll_wait
+21425      launcher-model-               SyS_epoll_wait
+21427      Binder:21362_3                binder_thread_read
+21429      Binder:21362_4                binder_thread_read
+21432      Binder:21362_5                binder_thread_read
+21441      Binder:21362_6                binder_thread_read
+21450      Binder:21362_7                binder_thread_read
+21467      Binder:21362_8                binder_thread_read
+21805   com.qualcomm.qcrilmsgtunnel      SyS_epoll_wait
+21810      Signal Catcher                do_sigtimedwait
+21811      ReferenceQueueD               futex_wait_queue_me
+21812      FinalizerDaemon               futex_wait_queue_me
+21813      FinalizerWatchd               futex_wait_queue_me
+21814      HeapTaskDaemon                futex_wait_queue_me
+21815      Binder:21805_1                binder_thread_read
+21816      Binder:21805_2                binder_thread_read
+21817      FileObserver                  inotify_read
+21819      QcRilReceiver                 unix_stream_recvmsg
+21820      QcRilSender                   SyS_epoll_wait
+21821      QcRilReceiver                 unix_stream_recvmsg
+21822      QcRilSender                   SyS_epoll_wait
+21823      Binder:21805_3                binder_thread_read
+21824      Binder:21805_4                binder_thread_read
+22202   com.xiaomi.metoknlp              SyS_epoll_wait
+22207      Signal Catcher                do_sigtimedwait
+22208      ReferenceQueueD               futex_wait_queue_me
+22209      FinalizerDaemon               futex_wait_queue_me
+22210      FinalizerWatchd               futex_wait_queue_me
+22211      HeapTaskDaemon                futex_wait_queue_me
+22212      Binder:22202_1                binder_thread_read
+22213      Binder:22202_2                binder_thread_read
+22214      FileObserver                  inotify_read
+22218      metoknlp_app                  SyS_epoll_wait
+22219      quality_manager               SyS_epoll_wait
+22221      metok_traffic                 SyS_epoll_wait
+22223      location_qualit               SyS_epoll_wait
+22230      metoknlp_cl                   SyS_epoll_wait
+22231      LocationEngine                SyS_epoll_wait
+22232      GeoFence                      SyS_epoll_wait
+22233      Binder:22202_3                binder_thread_read
+22234      timeoutLooper                 SyS_epoll_wait
+22238      allog22202                    SyS_epoll_wait
+22239      collection                    SyS_epoll_wait
+22240      UpTunnelWorkThr               SyS_epoll_wait
+22241      LocationCloudSc               SyS_epoll_wait
+22243      LocationSchedul               SyS_epoll_wait
+22246      WifiManager                   SyS_epoll_wait
+22248      pool-1-thread-1               futex_wait_queue_me
+22253      location_usage                SyS_epoll_wait
+22254      offV3_machine                 SyS_epoll_wait
+22306      scan_watcher                  futex_wait_queue_me
+22591   com.android.browser              SyS_epoll_wait
+22596      Signal Catcher                do_sigtimedwait
+22597      ReferenceQueueD               futex_wait_queue_me
+22598      FinalizerDaemon               futex_wait_queue_me
+22600      FinalizerWatchd               futex_wait_queue_me
+22601      HeapTaskDaemon                futex_wait_queue_me
+22602      Binder:22591_1                binder_thread_read
+22603      Binder:22591_2                binder_thread_read
+22604      FileObserver                  inotify_read
+22608      BrowserShortTim               SyS_epoll_wait
+22611      pool-1-thread-1               futex_wait_queue_me
+22613      local_job_dispa               SyS_epoll_wait
+22616      pool-2-thread-1               futex_wait_queue_me
+22626      pool-4-thread-1               futex_wait_queue_me
+22628      pool-3-thread-1               futex_wait_queue_me
+22631      pool-5-thread-1               futex_wait_queue_me
+22632      pool-6-thread-1               futex_wait_queue_me
+22643      remote_job_disp               SyS_epoll_wait
+22959                                    worker_thread
+22961                                    worker_thread
+23012                                    worker_thread
+23092                                    worker_thread
+24371                                    worker_thread
+24534                                    worker_thread
+24535                                    worker_thread
+24541                                    worker_thread
+24586                                    worker_thread
+24644                                    worker_thread
+24646                                    worker_thread
+24647                                    worker_thread
+24996                                    worker_thread
+25051                                    worker_thread
+25557                                    worker_thread
+25587                                    worker_thread
+25751                                    worker_thread
+26014                                    worker_thread
+26029                                    worker_thread
+26070                                    worker_thread
+26073                                    worker_thread
+26094                                    worker_thread
+26109                                    worker_thread
+26110                                    worker_thread
+26111                                    worker_thread
+26148                                    worker_thread
+26179                                    worker_thread
+26181                                    worker_thread
+26182                                    worker_thread
+26183                                    worker_thread
+26184                                    worker_thread
+26340   android.process.mediaUI          SyS_epoll_wait
+26346      Signal Catcher                do_sigtimedwait
+26347      ReferenceQueueD               futex_wait_queue_me
+26348      FinalizerDaemon               futex_wait_queue_me
+26349      FinalizerWatchd               futex_wait_queue_me
+26350      HeapTaskDaemon                futex_wait_queue_me
+26351      Binder:26340_1                binder_thread_read
+26352      Binder:26340_2                binder_thread_read
+26354      FileObserver                  inotify_read
+26356      Picasso-Stats                 SyS_epoll_wait
+26357      Picasso-Dispatc               SyS_epoll_wait
+26359      ui_bg_work                    SyS_epoll_wait
+26362      WifiManager                   SyS_epoll_wait
+26366      local_job_dispa               SyS_epoll_wait
+26371      pool-1-thread-1               futex_wait_queue_me
+26582      remote_job_disp               SyS_epoll_wait
+26388   com.xiaomi.providers.appindex    SyS_epoll_wait
+26393      Signal Catcher                do_sigtimedwait
+26394      ReferenceQueueD               futex_wait_queue_me
+26395      FinalizerDaemon               futex_wait_queue_me
+26396      FinalizerWatchd               futex_wait_queue_me
+26397      HeapTaskDaemon                futex_wait_queue_me
+26398      Binder:26388_1                binder_thread_read
+26399      Binder:26388_2                binder_thread_read
+26400      FileObserver                  inotify_read
+26404   com.xiaomi.gamecenter            SyS_epoll_wait
+26409      Signal Catcher                do_sigtimedwait
+26410      ReferenceQueueD               futex_wait_queue_me
+26411      FinalizerDaemon               futex_wait_queue_me
+26412      FinalizerWatchd               futex_wait_queue_me
+26413      HeapTaskDaemon                futex_wait_queue_me
+26414      Binder:26404_1                binder_thread_read
+26415      Binder:26404_2                binder_thread_read
+26416      FileObserver                  inotify_read
+26421      gamecenter_repo               SyS_epoll_wait
+26423      backgroundtask                SyS_epoll_wait
+26426      Mns.File.Tracer               SyS_epoll_wait
+26428      AsyncQueryWorke               SyS_epoll_wait
+26437      gc_install_cont               SyS_epoll_wait
+26441                                    SyS_epoll_wait
+26445      AsyncTask #1                  futex_wait_queue_me
+27054      _ss_                          futex_wait_queue_me
+26431   com.xiaomi.market                SyS_epoll_wait
+26436      Signal Catcher                do_sigtimedwait
+26438      ReferenceQueueD               futex_wait_queue_me
+26439      FinalizerDaemon               futex_wait_queue_me
+26440      FinalizerWatchd               futex_wait_queue_me
+26442      HeapTaskDaemon                futex_wait_queue_me
+26443      Binder:26431_1                binder_thread_read
+26446      Binder:26431_2                binder_thread_read
+26448      FileObserver                  inotify_read
+26451      Pool-1-MarketSt               futex_wait_queue_me
+26452      AsyncTask #1                  futex_wait_queue_me
+26453      local_job_dispa               SyS_epoll_wait
+26454      AsyncTask #2                  futex_wait_queue_me
+26455      DownloadThread                SyS_epoll_wait
+26456      InstalHandler                 SyS_epoll_wait
+26457      DownloadInstall               SyS_epoll_wait
+26458      AsyncTask #3                  futex_wait_queue_me
+26459      AsyncTask #4                  futex_wait_queue_me
+26471      LocalAppManager               SyS_epoll_wait
+26496      Pool-5-database               futex_wait_queue_me
+26602      Pool-9-DataUplo               futex_wait_queue_me
+26647      remote_job_disp               SyS_epoll_wait
+26673      DataUsageRecord               SyS_epoll_wait
+26702      Pool-6-database               futex_wait_queue_me
+26474   com.xiaomi.vipaccount            SyS_epoll_wait
+26479      Signal Catcher                do_sigtimedwait
+26481      ReferenceQueueD               futex_wait_queue_me
+26482      FinalizerDaemon               futex_wait_queue_me
+26483      FinalizerWatchd               futex_wait_queue_me
+26484      HeapTaskDaemon                futex_wait_queue_me
+26485      Binder:26474_1                binder_thread_read
+26486      Binder:26474_2                binder_thread_read
+26487      FileObserver                  inotify_read
+26494      WorkThread-3539               futex_wait_queue_me
+26497      CacheThread-353               futex_wait_queue_me
+26545      CacheThread-353               futex_wait_queue_me
+26563      CacheThread-353               futex_wait_queue_me
+27060      logThread-35398               futex_wait_queue_me
+27062      CacheThread-353               futex_wait_queue_me
+26498   com.xiaomi.vipaccount:log        SyS_epoll_wait
+26504      Signal Catcher                do_sigtimedwait
+26505      ReferenceQueueD               futex_wait_queue_me
+26507      FinalizerDaemon               futex_wait_queue_me
+26508      FinalizerWatchd               futex_wait_queue_me
+26510      HeapTaskDaemon                futex_wait_queue_me
+26511      Binder:26498_1                binder_thread_read
+26512      Binder:26498_2                binder_thread_read
+26514      FileObserver                  inotify_read
+26517      WorkThread-3539               futex_wait_queue_me
+26907      logThread-35398               futex_wait_queue_me
+26908      CacheThread-353               futex_wait_queue_me
+27063      CacheThread-354               futex_wait_queue_me
+26546   com.miui.vsimcore                SyS_epoll_wait
+26551      Signal Catcher                do_sigtimedwait
+26552      ReferenceQueueD               futex_wait_queue_me
+26553      FinalizerDaemon               futex_wait_queue_me
+26554      FinalizerWatchd               futex_wait_queue_me
+26555      HeapTaskDaemon                futex_wait_queue_me
+26556      Binder:26546_1                binder_thread_read
+26557      Binder:26546_2                binder_thread_read
+26558      FileObserver                  inotify_read
+26669                                    worker_thread
+26909   com.xiaomi.bluetooth             SyS_epoll_wait
+26914      Signal Catcher                do_sigtimedwait
+26915      ReferenceQueueD               futex_wait_queue_me
+26916      FinalizerDaemon               futex_wait_queue_me
+26917      FinalizerWatchd               futex_wait_queue_me
+26918      HeapTaskDaemon                futex_wait_queue_me
+26919      Binder:26909_1                binder_thread_read
+26920      Binder:26909_2                binder_thread_read
+26921      FileObserver                  inotify_read
+27012   com.miui.cloudservice:pushservice SyS_epoll_wait
+27017      Signal Catcher                do_sigtimedwait
+27018      ReferenceQueueD               futex_wait_queue_me
+27019      FinalizerDaemon               futex_wait_queue_me
+27020      FinalizerWatchd               futex_wait_queue_me
+27021      HeapTaskDaemon                futex_wait_queue_me
+27022      Binder:27012_1                binder_thread_read
+27023      Binder:27012_2                binder_thread_read
+27024      FileObserver                  inotify_read
+27059      AsyncTask #1                  futex_wait_queue_me
+27061      AsyncTask #2                  futex_wait_queue_me
+27078      local_job_dispa               SyS_epoll_wait
+27099      pool-3-thread-1               futex_wait_queue_me
+27113      Connection Cont               futex_wait_queue_me
+27135      pool-1-thread-1               futex_wait_queue_me
+27204      remote_job_disp               SyS_epoll_wait
+27038   com.android.keychain             SyS_epoll_wait
+27043      Signal Catcher                do_sigtimedwait
+27044      ReferenceQueueD               futex_wait_queue_me
+27045      FinalizerDaemon               futex_wait_queue_me
+27047      FinalizerWatchd               futex_wait_queue_me
+27048      HeapTaskDaemon                futex_wait_queue_me
+27052      Binder:27038_1                binder_thread_read
+27053      Binder:27038_2                binder_thread_read
+27055      FileObserver                  inotify_read
+27065   com.xiaomi.simactivate.service   SyS_epoll_wait
+27070      Signal Catcher                do_sigtimedwait
+27071      ReferenceQueueD               futex_wait_queue_me
+27072      FinalizerDaemon               futex_wait_queue_me
+27073      FinalizerWatchd               futex_wait_queue_me
+27074      HeapTaskDaemon                futex_wait_queue_me
+27075      Binder:27065_1                binder_thread_read
+27076      Binder:27065_2                binder_thread_read
+27079      FileObserver                  inotify_read
+27117      local_job_dispa               SyS_epoll_wait
+27133      pool-1-thread-1               futex_wait_queue_me
+27081   com.android.documentsui          SyS_epoll_wait
+27086      Signal Catcher                do_sigtimedwait
+27087      ReferenceQueueD               futex_wait_queue_me
+27088      FinalizerDaemon               futex_wait_queue_me
+27089      FinalizerWatchd               futex_wait_queue_me
+27090      HeapTaskDaemon                futex_wait_queue_me
+27091      Binder:27081_1                binder_thread_read
+27093      Binder:27081_2                binder_thread_read
+27097      FileObserver                  inotify_read
+27101      AsyncTask #1                  futex_wait_queue_me
+27140      AsyncTask #2                  futex_wait_queue_me
+27102   com.android.mms                  SyS_epoll_wait
+27107      Signal Catcher                do_sigtimedwait
+27108      ReferenceQueueD               futex_wait_queue_me
+27109      FinalizerDaemon               futex_wait_queue_me
+27110      FinalizerWatchd               futex_wait_queue_me
+27111      HeapTaskDaemon                futex_wait_queue_me
+27115      Binder:27102_1                binder_thread_read
+27116      Binder:27102_2                binder_thread_read
+27124      FileObserver                  inotify_read
+27156      UnderstandLoade               SyS_epoll_wait
+27158      AsyncTask #1                  futex_wait_queue_me
+27161      SingleContactLo               futex_wait_queue_me
+27163      AsyncTask #2                  futex_wait_queue_me
+27165      local_job_dispa               SyS_epoll_wait
+27166      AsyncTask #3                  futex_wait_queue_me
+27167      MxPushMessageRe               SyS_epoll_wait
+27169      AsyncTask #4                  futex_wait_queue_me
+27170      AsyncTask #5                  futex_wait_queue_me
+27171      AsyncTask #6                  futex_wait_queue_me
+27172      pool-2-thread-1               futex_wait_queue_me
+27173      AsyncTask #7                  futex_wait_queue_me
+27174      AsyncTask #8                  futex_wait_queue_me
+27175      AsyncTask #9                  futex_wait_queue_me
+27176      pool-3-thread-1               futex_wait_queue_me
+27178      pool-5-thread-1               futex_wait_queue_me
+27181      pool-4-thread-1               futex_wait_queue_me
+27196      pool-6-thread-1               futex_wait_queue_me
+27264      onPool-worker-3               futex_wait_queue_me
+27118   com.android.externalstorage      SyS_epoll_wait
+27126      Signal Catcher                do_sigtimedwait
+27127      ReferenceQueueD               futex_wait_queue_me
+27129      FinalizerDaemon               futex_wait_queue_me
+27130      FinalizerWatchd               futex_wait_queue_me
+27131      HeapTaskDaemon                futex_wait_queue_me
+27132      Binder:27118_1                binder_thread_read
+27134      Binder:27118_2                binder_thread_read
+27136      FileObserver                  inotify_read
+27141   com.android.shell                SyS_epoll_wait
+27144      Signal Catcher                do_sigtimedwait
+27147      ReferenceQueueD               futex_wait_queue_me
+27148      FinalizerDaemon               futex_wait_queue_me
+27149      FinalizerWatchd               futex_wait_queue_me
+27150      HeapTaskDaemon                futex_wait_queue_me
+27151      Binder:27141_1                binder_thread_read
+27152      Binder:27141_2                binder_thread_read
+27153      FileObserver                  inotify_read
+27155      Binder:27141_3                binder_thread_read
+27183   com.miui.sysbase                 SyS_epoll_wait
+27188      Signal Catcher                do_sigtimedwait
+27189      ReferenceQueueD               futex_wait_queue_me
+27190      FinalizerDaemon               futex_wait_queue_me
+27191      FinalizerWatchd               futex_wait_queue_me
+27192      HeapTaskDaemon                futex_wait_queue_me
+27194      Binder:27183_1                binder_thread_read
+27195      Binder:27183_2                binder_thread_read
+27197      FileObserver                  inotify_read
+27201   bugreport                        18446743800819639036
+27203   /system/bin/dumpstate            0
+27208   org.simalliance.openmobileapi.service:remote SyS_epoll_wait
+27213      Signal Catcher                do_sigtimedwait
+27214      ReferenceQueueD               futex_wait_queue_me
+27215      FinalizerDaemon               futex_wait_queue_me
+27216      FinalizerWatchd               futex_wait_queue_me
+27217      HeapTaskDaemon                futex_wait_queue_me
+27218      Binder:27208_1                binder_thread_read
+27219      Binder:27208_2                binder_thread_read
+27220      FileObserver                  inotify_read
+27222      SmartCardServic               SyS_epoll_wait
+27223      AsyncTask #1                  futex_wait_queue_me
+27232   com.qualcomm.qti.modemtestmode   SyS_epoll_wait
+27237      Signal Catcher                do_sigtimedwait
+27238      ReferenceQueueD               futex_wait_queue_me
+27239      FinalizerDaemon               futex_wait_queue_me
+27240      FinalizerWatchd               futex_wait_queue_me
+27241      HeapTaskDaemon                futex_wait_queue_me
+27242      Binder:27232_1                binder_thread_read
+27243      Binder:27232_2                binder_thread_read
+27244      FileObserver                  inotify_read
+27248   com.qualcomm.display             SyS_epoll_wait
+27253      Signal Catcher                do_sigtimedwait
+27254      ReferenceQueueD               futex_wait_queue_me
+27255      FinalizerDaemon               futex_wait_queue_me
+27256      FinalizerWatchd               futex_wait_queue_me
+27257      HeapTaskDaemon                futex_wait_queue_me
+27258      Binder:27248_1                binder_thread_read
+27259      Binder:27248_2                binder_thread_read
+27260      FileObserver                  inotify_read
+27265                                    worker_thread
+27267   com.qualcomm.qti.autoregistration SyS_epoll_wait
+27272      Signal Catcher                do_sigtimedwait
+27273      ReferenceQueueD               futex_wait_queue_me
+27274      FinalizerDaemon               futex_wait_queue_me
+27275      FinalizerWatchd               futex_wait_queue_me
+27276      HeapTaskDaemon                futex_wait_queue_me
+27277      Binder:27267_1                binder_thread_read
+27278      Binder:27267_2                binder_thread_read
+27279      FileObserver                  inotify_read
+27978                                    worker_thread

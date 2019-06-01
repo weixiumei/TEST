@@ -1,0 +1,42 @@
+<!--  head：页面的</head>之前代码 -->
+<#include 'inc.head.html'>
+<body>
+	<!-- header：body的共同header -->
+    <#include 'inc.header.html'>
+    <div class="container" ng-controller="bootstrapTest">
+    	<!-- <a href="index.html">首页</a><br><br> -->
+        <!-- table -->
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" ng-checked="isCheckedAll" ng-model="isCheckedAll" ng-click="checkAll()"> 全选</th>
+                    <th>titile1</th>
+                    <th>titile2</th>
+                    <th>titile3</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="table in table_list">
+                    <td><input type="checkbox" ng-checked="table.check" ng-model="table.check" ng-click="checkItem()"></td>
+                    <td>{{table.id}}</td>
+                    <td>{{table.code}}</td>
+                    <td>{{table.name}}</td>
+                    <!--  class="glyphicon glyphicon-search" aria-hidden="true" -->
+                    <td><a ng-click="deleteOneItem(table.id)">delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-primary" ng-show="deleteSelectItemBtnShow" ng-click="deleteSelectItem()">删除</button>
+    </div>
+    <!-- script：引入 js 文件 -->
+    <#include 'inc.script.html'>
+
+    <script type="text/javascript">
+    	// piwik
+        document.title = 'ng';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+<#include 'inc.bottom.html'>

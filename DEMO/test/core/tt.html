@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+
+.sanjiao{
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-bottom-color: red;/*下边框，向上的三角形*/
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: red;
+}
+.donghua{
+  transform: translate(100px);
+  transition-delay: 1s;
+  transition-duration: 3s;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.div{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.center{
+  width:15vw;
+  height: 15vw;
+  overflow: hidden;
+  transform:translate(50%,50%);
+  background-color: #666666;
+
+}
+</style>
+<body>
+    <div class="div">
+
+      <div class="center">1234</div>
+    </div>
+    <br>
+    <div class="donghua">动画</div>
+    <br>
+    <div class="sanjiao"></div>
+    <br>
+    <div class="line"></div>
+    <br>
+    <time datetime="2008-02-14">情人节</time>ddd
+    <p id="pp">哈哈哈哈哈哈</p>
+    <h1>hhhhhhhhh</h1>
+    <h2>qqqqqqqqq</h2>
+
+    <a href="#" id="size-12">12</a>
+    <a href="#" id="size-14">14</a>
+    <a href="#" id="size-16">16</a>
+
+<script>
+
+    var btn = document.getElementById("pp");
+    // btn.onclick = function () {
+    //     document.getElementById("myDiv").innerHTML = "Processing...";
+    // }
+ 
+    // 解决方法
+ 
+    btn.onclick = function () {
+      /******************
+        * btn.onclick = null;
+        *
+        */
+      btn.onclick = null;
+
+      document.getElementById("pp").innerHTML = "Processing...";
+    }
+    // function changeSize(size){
+    //   return function(){
+    //     document.body.style.fontSize = size + 'px';
+    //   };
+    // }
+
+    // var size12 = changeSize(12);
+    // var size14 = changeSize(14);
+    // var size16 = changeSize(16);
+
+    // document.getElementById('size-12').onclick = size12;
+    // document.getElementById('size-14').onclick = size14;
+    // document.getElementById('size-16').onclick = size16;
+    //我们定义行为，然后把它关联到某个用户事件上（点击或者按键）。我们的代码通常会作为一个回调（事件触发时调用的函数）绑定到事件上
+</script>
+</body>
+</html>

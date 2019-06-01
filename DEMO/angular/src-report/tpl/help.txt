@@ -1,0 +1,26 @@
+
+开发命名~
+
+条件:
+	condition_circle :   data-rel="panel-circle" 	data-value="storage" xhr
+	condition_sum :      data-rel="panel-reason" 	data-value="storage1" xhr
+	condition_store :    data-rel="panel-store" 	data-value="storage2" xhr1
+	condition_range :    data-rel="panel-range" 	data-value="storage3" 
+	condition_category : data-rel="panel-category" 	data-value="storage4" xhr2
+	condition_statistics_mode : data-rel="panel-total" 	data-value="storage5" xhr
+	condition_show_result : data-rel="panel-result" 	data-value="storage6" xhr1
+
+panel:
+	panel-circle : 	id='panel-circle'		class="confirm"
+	panel-reason : 	id='panel-reason'		class="confirm_1"
+	panel_store: 	id='panel-store'	class="confirm_2"
+	panel_range : 	id='panel-range'	class="confirm_3"
+	panel_category: id='panel-category'	class="confirm_4"
+	panel_total: 	id='panel-total'	class="confirm_5"
+	panel_result: 	id='panel-result'	class="confirm_6"
+
+filter:
+	class="circle/filter_reason/filter_store/filter_range/filter_category/"
+
+sessionStorage:
+	form1_../form2..

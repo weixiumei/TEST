@@ -1,0 +1,418 @@
+<#include 'inc.head.html'>
+<!-- 门店库存 -->
+<body class="debugx">
+<div id="bg"></div>
+  <div id="container">
+    <header>
+      <span class="menu "></span>
+      <a class="back_a" href=""><span class="menuBack"></span></a>
+      <span tkey="form1"></span><span class="blue" tkey="form1_tittle"></span> 
+      <span class="menuRight" tkey="filter"></span>
+    </header>
+
+    <!-- 查询后顶部显示的文案，例如
+     汇总： 明细 ; 店仓： 博霞路店(本店) ; 范围： 正,负 ; 分类： 大货 ; -->
+    <section class="filter hidden ">
+      <span tkey="sum"></span>： <span class="filter_reason"></span> ;
+      <span tkey="store"></span>： <span class="filter_store"></span> ;
+      <span tkey="range"></span>： <span class="filter_range"></span> ;
+      <span tkey="category"></span>： <span class="filter_category"></span> ;
+    </section>
+    
+    <!-- 查询条件 -->
+    <div class="condition">
+      <div class="row" >
+        <ul class="col-50" id="condition_ul">
+          <!-- 商品编码/条形码 搜索 -->
+          <!-- 汇总 -->
+          <!-- 门店 -->
+          <!-- 范围 -->
+          <!-- 分类 -->
+        </ul>
+        <ul class="col-50" style="width:40%!important">
+          <#include 'btn_search.html'>
+        </ul>
+      </div>
+    </div>
+    <!-- data 显示 -->
+    <#include 'data_content.html'>
+  </div>
+<#include 'inc.script.html'>
+
+<script>
+  var xhr_search;
+  var selectValue = '';
+  var _ID = 0;
+  var _count;//获取侧滑id  
+  var _NUM = {'product':0,'gift':0};
+  var _time_interval = false;
+  var shop_id = getUrlParameter('shop_id') * 1;
+  // 返回地址
+  var lang = getUrlParameter('lang');
+  var back_url='index.html'+ '?shop_id=' + shop_id + '&lang=' + lang; 
+  $('.back_a').attr('href',back_url);
+  var _HEADER = [];//记录header信息
+
+  //  **************  区分是哪个页面，设定缓存  ************** 
+  var form_id = 'form1';
+</script>
+
+<!-- **************  include相应的条件页面  ************** -->
+<!-- 商品编码/条形码 搜索 -->
+<#include 'condition_product_bar.html'>
+
+<!-- 汇总 -->
+<#include 'condition_sum.html'>
+
+<!-- 店仓 -->
+<#include 'condition_store.html'>
+
+<!-- 范围 -->
+<#include 'condition_range.html'>
+
+<!-- 分类 -->
+<#include 'condition_category.html'>
+
+<script>
+  // //条件缓存
+  // if(sessionStorage.getItem('reason1')){
+  //   $('.filter_reason').html(sessionStorage.getItem('reason1'));
+  //   $('input[data-value="storage1"]').val(sessionStorage.getItem('reason1'));
+  // }
+  // if(sessionStorage.getItem('store1')){
+  //   $('.filter_store').html(sessionStorage.getItem('store1'));
+  //   $('input[data-value="storage2"]').val(sessionStorage.getItem('store1'));
+  // }
+  // if(sessionStorage.getItem('range1')){
+  //   $('.filter_range').html(sessionStorage.getItem('range1'));
+  //   $('input[data-value="storage3"]').val(sessionStorage.getItem('range1'));
+  // }
+  // if(sessionStorage.getItem('category1')){
+  //   $('.filter_category').html(sessionStorage.getItem('category1'));
+  //   $('input[data-value="storage4"]').val(sessionStorage.getItem('category1'));
+  // }
+
+  jQuery(document).ready(function($){
+    var table_example;
+    var TABLE = '';
+    function reset(){
+      if(!!table_example){
+          table_example.destroy();
+      }
+      table_example='';
+      $('.data table').remove();
+      var t = TABLE.clone();
+      $('.data').append(t);
+    }
+    TABLE = $('.data table').clone();
+    var render_table_example1 = function(cols){
+      var _columns = [];
+      //************************
+      // 此处修改要排序的col code
+      //************************
+      var _columns_sort = ['product_code','price','shop_code','stock_count','stock_amount','stock_date'];
+      for(var i = 0; i < cols.length; i++){
+        if($.inArray(cols[i], _columns_sort) >= 0){
+          _columns.push(null);
+        }else{
+          _columns.push({orderable:false});
+        }
+      }
+      var tbody_height = $(window).height() - $('header')[0].clientHeight - $('section.filter')[0].clientHeight - 50 - $('section.count')[0].clientHeight - $('footer#mainFooter')[0].clientHeight;
+
+      table_example = $('#example').DataTable( {
+        scrollX: '100%',
+        scrollY: tbody_height,
+        searching: false,
+
+        sort:true,
+        columns:_columns,
+        "bProcessing" : true,  
+        "bServerSide" : true, 
+        "order": [],
+        "ajax":{
+          url: API_URL_PREFIX+API_URL['shop_inventory'],
+          type:'POST',
+          headers: {token:token},
+          dataType : "json",
+          "contentType": "application/json",
+          data: function(d){
+            // showLoadingToast();
+            // if(cols){
+            //   $('#example_processing').hide();
+            // }
+              
+            //************************
+            // 此处修改输入参数
+            //************************
+            var view_type_list = [],shop_ids = [],product_type = [],count_range = [],product_code = '',code = '',min_count,max_count;
+            if(selectValue == 'product_code'){
+              product_code = sessionStorage.getItem('product_code');
+            }else if(selectValue == 'code'){
+              code = $('.item-input1').val();
+            }else{
+              product_code = $('.item-input1').val()
+            }
+            min_count = $('.min_count').val();
+            max_count = $('.max_count').val();
+          
+            $('input[name=reason]:checked').each(function(){
+                view_type_list.push($(this).val());
+            })
+            $('input[name=store]:checked').each(function(){
+                shop_ids.push($(this).val()*1);
+            })
+            $('input[name=category]:checked').each(function(){
+                product_type.push($(this).val());
+            })
+            $('input[name=range]:checked').each(function(){
+                count_range.push($(this).val());
+            })
+
+            if(shop_ids.length == 0){
+              shop_ids.push(shop_id);
+            }
+            d.limit = d.length;
+            d.offset = d.start;
+            d.current_page = 1 + d.start / d.limit;
+            d.shop_ids = shop_ids;
+            d.product_code = product_code;
+            d.code = code;
+            d.product_type = product_type;
+            d.count_range = count_range;
+            d.min_count = min_count;
+            d.max_count = max_count;
+            d.is_multi = 0;
+            // d.view_type_list = view_type_list;
+            d.view_types = view_type_list;
+
+            if(d.order.length > 0){
+              var _order_by = $('.dataTables_scrollHead th:eq('+d.order[0].column+')').attr('data-code');
+              var _is_desc = (d.order[0].dir == 'asc')?0:1;
+
+              d.order_by= _order_by;
+              d.is_desc= _is_desc;
+            }
+
+            return (JSON.stringify(d));
+          },
+          dataSrc:  function(data){
+            // data = data.data;
+            // $('.data_content').hide();
+            // hideLoadingToast();
+            records = [];
+            if(data['records']){
+              for(var i = 0 ; i < data['records'].length ; i ++){
+                var _data = [];
+                for(var j=0; j < cols.length; j++){
+                  _data.push(data['records'][i][cols[j]]);
+                }
+                records.push(_data);
+              }
+            }
+            window.scrollTo(0,0);
+            return records
+          },
+        },
+        "initComplete": function(settings, json) {
+          $('#mainFooter').html('');
+          $('#example_length').appendTo('#mainFooter');
+          $('#example_info').appendTo('#mainFooter');
+          $('#example_paginate').appendTo('#mainFooter');
+          is_show_footer(records);
+        },
+        "lengthMenu": [ [10 , 20, 50, 80], ["10 / 页","20 / 页","50 / 页","80 / 页"] ],
+        "language":   _LANG
+      })
+      new $.fn.dataTable.FixedColumns( table_example, {
+        leftColumns: 1
+      });
+    }
+    //click search
+    $('.nx-btn-display').click(function(){
+        $('.data_content').show();
+        // showLoadingToast();
+        flag = false;
+        $('.data').removeClass('hidden');
+        if($(this).hasClass('disabled')){
+            return;
+        }
+        $(this).addClass('disabled');
+        $(this).html('加载中');
+        reset();
+
+        var code = '',product_code = '',min_count,max_count;
+        if(selectValue == 'product_code'){
+          product_code = $('.item-input1').val();
+        }else if(selectValue == 'code'){
+          code = $('.item-input1').val();
+        }else{
+          product_code = $('.item-input1').val()
+        }
+
+        min_count = $('.min_count').val();
+        max_count = $('.max_count').val();
+
+
+        var view_type_list = [],shop_ids = [],product_type = [],count_range = [];
+        var type = [];
+
+        $('input[name=reason]:checked').each(function(){
+            view_type_list.push($(this).val());
+        })
+        $('input[name=store]:checked').each(function(){
+            shop_ids.push($(this).val()*1);
+        })
+        $('input[name=category]:checked').each(function(){
+            product_type.push($(this).val());
+        })
+        $('input[name=range]:checked').each(function(){
+            count_range.push($(this).val());
+        })
+        if(shop_ids.length == 0){
+          shop_ids.push(shop_id);
+        }
+      
+
+        var data = {
+            "limit": 10,
+            "current_page": 1, // 当前页码
+            "shop_ids": shop_ids, // 店仓
+            "product_code": product_code, // 物品编码
+            "code": code, // 条码
+            product_type:product_type,
+            count_range:count_range,
+            "min_count": min_count, // 库存范围下限
+            "max_count": max_count, // 库存范围上限
+            "is_multi": 0, // 是否为复选
+            // "view_type_list": view_type_list, // 展示方式
+            "view_types": view_type_list, // 展示方式
+        }
+
+        //条件放人缓存
+        setConditionlocalstorage('form1',data);
+        localStorage.form1_range_checked = $('input[name=customize]')[0].checked;
+        //门店库存查询
+        if(xhr_search){
+          xhr_search.abort();
+        }  
+        xhr_search = $.ajax({
+          url: API_URL_PREFIX+API_URL['shop_inventory'],
+          data: JSON.stringify(data),
+          type: 'POST',
+          dataType : "json",
+          contentType: "application/json",
+          success:  function(data){
+            $('.data_content').hide();
+            // hideLoadingToast();
+            if(data.code != 0){
+              _error_handle(data);
+              return;
+            }
+            data = data.data;
+            var data_data = {
+                'stock_count_sum':'stock_total_qty',
+                'page_count':'page_qty',
+                'record_count':'record_qty',
+                'stock_amount_sum':'stock_total_amount'
+            }
+
+            for(var ss in data_data){
+                data[ss] = data[data_data[ss]];
+            }
+
+            records = [];
+            if(data['records']){
+              for(var i = 0 ; i < data['records'].length ; i ++){
+                records.push([
+                  data['records'][i]['product_code'],
+                  data['records'][i]['shop_name'],
+                  data['records'][i]['product_name'],
+                  data['records'][i]['size'],
+                  data['records'][i]['price'],
+                  data['records'][i]['color'],
+                  data['records'][i]['shop_code'],
+                  data['records'][i]['stock_count'], 
+                  data['records'][i]['stock_amount'],
+                  data['records'][i]['stock_date'],
+                ])
+              }
+            }
+            // var _data = {
+            //     headers:[
+            //     {title : data.table_headers.shop_name},
+            //     {title : data.table_headers.product_name},
+            //     {title : data.table_headers.size},
+            //     {title : data.table_headers.price},
+            //     {title : data.table_headers.stock_count},
+            //     {title : data.table_headers.stock_amount}
+            //     ],
+            //     records:records
+            // };
+            var _data = {};
+            var cols = [];
+            var headers = [];
+            var records = [];
+            for(var i = 0 ; i < data.table_headers.length ;i++){
+
+                for(var ss in data.table_headers[i]){
+                    headers.push({title : data.table_headers[i][ss]});
+                    cols.push(ss);
+                    if($('table thead tr').length == 1){
+                      $('table thead tr').append('<th data-code="'+ss+'">'+data.table_headers[i][ss]+'</th>');
+                    }
+                    
+                }
+            }
+            for(var i = 0 ; i < data.records.length; i++){
+                var tmp = [];
+                for(var j=0;j<cols.length;j++){
+                    tmp[j] = data.records[i][cols[j]];
+                }
+                records.push(tmp);
+            }
+            render_table_example1(cols);
+            // _data.records = records;
+            // _data.headers = headers;
+            // render_table_example1(_data);
+
+            // footer
+            var footer = '';
+            footer += '<span class="footerStyle"><span tkey="footer1_1"></span>:'+data.stock_count_sum+'</span>\
+            <span class="footerStyle"><span tkey="footer1_2"></span>:'+data.stock_amount_sum+'</span>' 
+            $('.footer').html(footer);
+
+            // translate();
+
+            if (langs.indexOf(langCode) != -1){
+              $.getJSON('assets/lang/'+langCode+'.json', {},translate);
+            }else{
+              $.getJSON('assets/lang/cn.json', translate);
+            }
+
+            },
+            error:    function(data){
+              console.log('error');
+              _error_handle(data);
+            },
+            complete: function(){
+              // hideLoadingToast();
+              console.log('complete');
+            },
+            beforeSend : function(request){
+              request.setRequestHeader("token", token);
+            }
+        })
+
+        console.dir(data);
+
+        $(this).removeClass('disabled');
+        $(this).html('查询');
+    })
+  })
+</script>
+
+<script type="text/javascript">
+  document.title = '门店库存';
+</script>
+<#include 'inc.bottom.html'>

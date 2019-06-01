@@ -1,0 +1,28 @@
+Global autosave flag:0
+System default power mode:
+[normal 0][default autosave off]
+[idle 1][default autosave off]
+[keyguard 2][default autosave off]
+
+>[normal 0][autosave off]:Stay for 132111419 ms(1 times, average current: 0 mA)
+ [idle 1][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [keyguard 2][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [home 3][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [incall 4][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [reading 6][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [media 7][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [enhanceUI 8][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [navigation 10][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+ [evaluation 11][autosave off]:Stay for 0 ms(0 times, average current: 0 mA)
+
+Current AutoSaving Parameters:
+	windowLength:3000
+	forceIdleOffPct:10
+	forceBusyOffPct:100
+
+
+Current FrozenCheckThread Parameters:
+	 mEnabled =:1
+	 sleepInterval =:180
+	 mCheckUidVector.size =:0
+

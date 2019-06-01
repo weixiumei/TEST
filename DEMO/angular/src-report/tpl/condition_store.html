@@ -1,0 +1,136 @@
+<!-- 店仓 -->
+<div class="condition_div">
+	<li>
+		<div class="item-content item-relative">
+		    <label ><span tkey="skidding_store"></span>:</label>
+		    <div class="item-input">
+		      	<!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+		      	<input type="text" placeholder="请选择需查询店仓(可多选)" placeholder-key="store_desc_input" class="btn-panel relative-value checkAll" data-rel="panel-store" readonly="" data-value="storage2" value="">
+		    </div>
+	  	</div>
+	</li>
+</div>
+<!-- panel 店仓 -->
+<div class="panel panel-right panel-cover" id='panel-store'>
+  <header>
+    <a href="#" class="close-panel back"></a>  
+    <span tkey="store"></span> 
+    <a href="#" class="close-panel confirm confirm_2" tkey="sure"></a>
+  </header>
+  <!-- Click on link with "close-panel" class will close panel -->
+  <div class="list-block">
+    <p class="small">* <span tkey="desc_store"></span></p>
+    <p class="all">
+      <span tkey="all_check"></span>
+      <span class="checkbox">
+        <span class="input-checkbox">
+          <input type="checkbox" name="type" value="" class="checkedAll" data-label="" />
+          <span class="inner"></span>
+        </span>
+      </span>
+    </p>
+    <ul>
+      <!-- Single chekbox item -->
+      <li tkey="loading"></li>
+    </ul>
+  </div>
+</div>
+<script>
+	jQuery(document).ready(function($){
+		$('.condition_div li').appendTo($('#condition_ul'));
+	})
+
+	var xhr1;
+	//init 店仓
+    if(xhr1){
+        xhr1.abort();
+    }
+    var shop_id = getShopId('shop_id=');
+    xhr1 = $.ajax({
+        url: API_URL_PREFIX+API_URL['shop_list'],
+        data: JSON.stringify({"shop_id":shop_id}),
+        type: 'POST',
+        dataType : "json",
+        contentType: "application/json",
+        success:  function(data){
+            if(data.code != 0){
+                _error_handle(data);
+                return;
+            }
+            
+            data = data.data;
+            var str = '';
+            var checked_store = '';
+            var shop_ids = form_id + '_shop_ids';
+
+            for(i=0;i<data.shops.length;i++){
+                var name = data.shops[i]['shop_name'];
+                var code = data.shops[i]['shop_code'];
+                var shop_id = data.shops[i]['shop_id'];
+                if(!!localStorage[shop_ids]){
+                  checked_store = (localStorage[shop_ids].split(',').indexOf(shop_id+'') != -1)?'checked':'';
+                }
+                str += '<li><label class="lb" for="store'+i+'">\
+                        '+ name +'\
+                        <span class="checkbox">\
+                          <span class="input-checkbox '+ checked_store +'">\
+                            <input type="checkbox" name="store" id="store'+i+'" value="'+ shop_id +'" data-label="'+ name +'" />\
+                            <span class="inner"></span>\
+                          </span>\
+                        </span></label>\
+                    </li>';
+            }
+            $('#panel-store ul').html(str);
+            $(document).on("click", "#panel-store .close-panel.confirm_2", function() {
+                var s = '';
+                if($(this).parents('.panel').find('input[type=checkbox]').size() == $(this).parents('.panel').find('input[type=checkbox]:checked').size()){
+                    if(langCode == 'en'){
+                        s = 'All';
+                    }else{
+                        s = '全部门店';
+                    }
+                }else{
+                    $(this).parents('.panel').find('input[type=checkbox]:checked').each(function(){
+                        if(s != ''){
+                            s += ',';
+                        }
+                        s +=  $(this).attr('data-label');
+                    });
+                }
+                $('input[data-value="storage2"]').val(s);
+                $('.filter_store').html(s);
+            });
+
+            // 店仓条件从缓存获取
+            var filter_store = form_id + '_filter_store';
+            if(!!localStorage[filter_store]){
+                $('.filter_store').html(localStorage[filter_store]);
+                $('input[data-value="storage2"]').val(localStorage[filter_store]);
+                var shop_ids_arr = localStorage[shop_ids].split(',');
+                for(var i=0;i<shop_ids_arr.length;i++){
+                    $("#panel-store ul li .input-checkbox input[value='"+shop_ids_arr[i]+"']").click();
+                }
+            }else{
+                // 默认选中
+                $('#panel-store ul li:first-child .input-checkbox input').click();
+            }
+            $('#panel-store .close-panel.confirm_2').click();
+        },
+        error:    function(data){
+            console.log('error');
+            _error_handle(data);
+        },
+        complete: function(){
+            console.log('complete');
+        },
+        beforeSend : function(request){
+            request.setRequestHeader("token", token);
+        }
+    })
+</script>
+
+
+
+
+
+

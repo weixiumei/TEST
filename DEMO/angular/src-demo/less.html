@@ -1,0 +1,26 @@
+<!--  head：页面的</head>之前代码 -->
+<#include 'inc.head.html'>
+<body>
+	<!-- header：body的共同header -->
+    <#include 'inc.header.html'>
+    <div class="container" ng-controller="less">
+    	<div>Less mixin 和变量</div>
+    	<a href="https://www.cnblogs.com/jizhijunboke/p/4993580.html">help</a>
+    	<a href="http://www.1024i.com/demo/less/document.html">help22</a>
+	    <div class="wrapper">
+	     	<div class="content-main">less</div>
+	     	<div class="content-secondary">less2</div>
+	     	<div class="row">
+	     		<div class="col-md-4">col-md-4</div>
+	     		<div class="col-md-4">col-md-4</div>
+	     	</div>
+	    </div>
+
+    <!-- script：引入 js 文件 -->
+    <#include 'inc.script.html'>
+    <script type="text/javascript">
+    	// piwik
+        document.title = 'less';
+    </script>
+<!-- bottom：加载loading和piwik -->
+<#include 'inc.bottom.html'>

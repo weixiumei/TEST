@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script>
+      function clone(x) {
+        /*如果不是引用类型直接返回*/
+        if (typeof x != 'object' || !(x instanceof Object)) {
+          return x;
+        }
+        // const t = checkType(x);//检测是array还是object
+        var t = ''
+        // Object.prototype.toString.call(x) === '[object Array]'
+        if(Array.prototype.isPrototypeOf(x)){
+          t = 'array'
+        }else{
+          t = 'object'
+        }
+
+        let res;
+        if (t === 'array') {
+          res = [];
+          for (let i = 0; i < x.length; i++) {
+            // 避免一层死循环 a.b = a
+            res[i] = x[i] === x ? res: clone(x[i]);
+          }
+        } else if (t === 'object') {
+            res = {};
+            for(let key in x) {
+              console.log(key)
+              if (x.hasOwnProperty(key)) {
+                // 避免一层死循环 a.b = a
+                // console.log(x[key] === x)
+                res[key] = ((x[key] === x) ? res : clone(x[key]));
+              }
+            }
+        }
+        return res;
+    }
+    function Test(){
+      this.aa = [{a:1}]
+    }
+    Test.prototype.bb = '1456'
+    var test = new Test()
+
+    //  test = {
+    //   a: 1,
+    //   b: [2,3],
+    //   c: function(){
+    //     console.log(4)
+    //   },
+    //   d: Symbol('5'),
+    //   e: null
+    // }
+    // test.f = test.a
+    var copy = clone(test)
+    var copy2 = JSON.parse(JSON.stringify(test))
+
+    test.a = 2
+
+    console.log('copy', copy)
+    console.log('copy2', copy2)
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

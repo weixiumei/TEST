@@ -1,0 +1,534 @@
+Current Alarm Manager state:
+  Settings:
+    min_futurity=+5s0ms
+    min_interval=+60s0ms
+    allow_while_idle_short_time=+5s0ms
+    allow_while_idle_long_time=+9m0s0ms
+    allow_while_idle_whitelist_duration=+10s0ms
+
+  nowRTC=1527693491139=2018-05-30 23:18:11 nowELAPSED=+1d12h42m10s649ms
+  mLastTimeChangeClockTime=1527562900962=2018-05-29 11:01:40
+  mLastTimeChangeRealtime=+25m40s472ms
+  Next non-wakeup alarm: +48s861ms = 2018-05-30 23:19:00
+  Next wakeup: +3m47s945ms = 2018-05-30 23:21:59
+  Num time change events: 1
+
+  Next alarm clock information: 
+    user:0 pendingSend:false time:1527696000000 = 2018-05-31 00:00:00 = +41m48s861ms
+
+  Pending alarm batches: 15
+Batch{43185dc num=1 start=132179510 end=132179510 flgs=0x1}:
+    ELAPSED #0: Alarm{40736e5 type 3 when 132179510 android}
+      tag=*alarm*:android.intent.action.TIME_TICK
+      type=3 whenElapsed=+48s861ms when=+48s861ms
+      window=0 repeatInterval=0 count=0 flags=0x1
+      operation=PendingIntent{6a5909f: PendingIntentRecord{8492db android broadcastIntent}}
+Batch{3ea55ba num=1 start=132358594 end=132358594 flgs=0x9}:
+    ELAPSED_WAKEUP #0: Alarm{8c15c6b type 2 when 132358594 com.android.bluetooth}
+      tag=*walarm*:com.android.bluetooth.btservice.action.ALARM_WAKEUP
+      type=2 whenElapsed=+3m47s945ms when=+3m47s945ms
+      window=0 repeatInterval=0 count=0 flags=0x9
+      operation=PendingIntent{a3f23c8: PendingIntentRecord{c2c15bc com.android.bluetooth broadcastIntent}}
+Batch{e795c61 num=3 start=132497755 end=132558715 flgs=0x8}:
+    RTC #2: Alarm{bceb208 type 1 when 1527693858245 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+6m7s106ms when=2018-05-30 23:24:18
+      window=+9h0m0s0ms repeatInterval=43200000 count=0 flags=0x0
+      operation=PendingIntent{ff175d6: PendingIntentRecord{dd79fea com.miui.systemAdSolution startService}}
+    ELAPSED #1: Alarm{7d81386 type 3 when 132333715 com.miui.powerkeeper}
+      tag=*alarm*:miui.intent.action.powerkeeper_alarm
+      type=3 whenElapsed=+3m23s66ms when=+3m23s66ms
+      window=+3m45s0ms repeatInterval=300000 count=0 flags=0x8
+      operation=PendingIntent{1e9fbcb: PendingIntentRecord{27af721 com.miui.powerkeeper startService}}
+    ELAPSED_WAKEUP #0: Alarm{c975447 type 2 when 132033998 com.miui.hybrid}
+      tag=*walarm*:com.miui.hybrid/.statistics.StatsReceiver
+      type=2 whenElapsed=-1m31s650ms when=-1m36s651ms
+      window=+11m15s0ms repeatInterval=900000 count=0 flags=0x0
+      operation=PendingIntent{e06b474: PendingIntentRecord{d288e7e com.miui.hybrid broadcastIntent}}
+Batch{98e5d9d num=2 start=133417085 end=134574545 flgs=0x8}:
+    RTC #1: Alarm{f636362 type 1 when 1527694777575 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+21m26s436ms when=2018-05-30 23:39:37
+      window=+3h0m0s0ms repeatInterval=14400000 count=0 flags=0x0
+      operation=PendingIntent{faf88b9: PendingIntentRecord{c10571 com.miui.systemAdSolution startService}}
+    ELAPSED #0: Alarm{7c3e40b type 3 when 133224545 android}
+      tag=*alarm*:com.android.server.action.NETWORK_STATS_POLL
+      type=3 whenElapsed=+18m13s896ms when=+18m13s896ms
+      window=+22m30s0ms repeatInterval=1800000 count=0 flags=0x8
+      operation=PendingIntent{b243187: PendingIntentRecord{6ee9092 android broadcastIntent}}
+Batch{691e212 num=1 start=134639510 end=134639510 flgs=0x3}:
+    RTC_WAKEUP #0: Alarm{b2915a7 type 0 when 1527696000000 com.android.calendar}
+      tag=*walarm*:com.android.calendar.APPWIDGET_SCHEDULED_UPDATE
+      type=0 whenElapsed=+41m48s861ms when=2018-05-31 00:00:00
+      window=0 repeatInterval=0 count=0 flags=0x3
+      Alarm clock:
+        triggerTime=2018-05-31 00:00:00
+        showIntent=null
+      operation=PendingIntent{b414a54: PendingIntentRecord{f7c64 com.android.calendar broadcastIntent}}
+Batch{aeaede3 num=1 start=134639510 end=134639510 flgs=0x1}:
+    RTC #0: Alarm{21326c1 type 1 when 1527696000000 android}
+      tag=*alarm*:android.intent.action.DATE_CHANGED
+      type=1 whenElapsed=+41m48s861ms when=2018-05-31 00:00:00
+      window=0 repeatInterval=0 count=0 flags=0x1
+      operation=PendingIntent{bd8fe6a: PendingIntentRecord{e6f8bd5 android broadcastIntent}}
+Batch{b14a3e0 num=12 start=140480636 end=140558110 flgs=0x8}:
+    RTC #11: Alarm{acab5e7 type 1 when 1527701841126 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+2h19m9s987ms when=2018-05-31 01:37:21
+      window=+2h15m0s0ms repeatInterval=10800000 count=0 flags=0x0
+      operation=PendingIntent{c983b11: PendingIntentRecord{f113660 com.miui.analytics startService}}
+    RTC #10: Alarm{3660594 type 1 when 1527701074221 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+2h6m23s82ms when=2018-05-31 01:24:34
+      window=+3h0m0s0ms repeatInterval=14400000 count=0 flags=0x0
+      operation=PendingIntent{4968a77: PendingIntentRecord{fa5fafb com.miui.systemAdSolution startService}}
+    RTC #9: Alarm{619fcba type 1 when 1527700281948 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+1h53m10s809ms when=2018-05-31 01:11:21
+      window=+4h30m0s0ms repeatInterval=21600000 count=0 flags=0x0
+      operation=PendingIntent{bc60806: PendingIntentRecord{fbb148a com.miui.systemAdSolution startService}}
+    ELAPSED #8: Alarm{c9ba83d type 3 when 138600000 android}
+      tag=*alarm*:miui.intent.action.CHECK_TIME_UP
+      type=3 whenElapsed=+1h47m49s351ms when=+1h47m49s351ms
+      window=+1h30m0s0ms repeatInterval=7200000 count=0 flags=0x8
+      operation=PendingIntent{234774d: PendingIntentRecord{e248a93 android broadcastIntent}}
+    RTC #7: Alarm{7b76832 type 1 when 1527699346275 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+1h37m35s136ms when=2018-05-31 00:55:46
+      window=+3h0m0s0ms repeatInterval=14400000 count=0 flags=0x0
+      operation=PendingIntent{3df5713: PendingIntentRecord{5afb92a com.miui.systemAdSolution startService}}
+    ELAPSED #6: Alarm{f83699 type 3 when 137449920 android}
+      tag=*alarm*:android.content.jobscheduler.JOB_DEADLINE_EXPIRED
+      type=3 whenElapsed=+1h28m39s271ms when=+1h28m39s271ms
+      window=+1h10m2s426ms repeatInterval=0 count=0 flags=0x8
+      operation=PendingIntent{ac88f9b: PendingIntentRecord{2ba6959 android broadcastIntent}}
+    ELAPSED #5: Alarm{da80d5e type 3 when 136824641 android}
+      tag=*alarm*:android.content.jobscheduler.JOB_DELAY_EXPIRED
+      type=3 whenElapsed=+1h18m13s992ms when=+1h18m13s992ms
+      window=+1h2m13s469ms repeatInterval=0 count=0 flags=0x8
+      operation=PendingIntent{deb2c4a: PendingIntentRecord{a2d7746 android broadcastIntent}}
+    RTC #4: Alarm{9821af2 type 1 when 1527697693135 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+1h10m1s996ms when=2018-05-31 00:28:13
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{310e72: PendingIntentRecord{98228a8 com.miui.analytics startService}}
+    RTC #3: Alarm{72b87ee type 1 when 1527697317553 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+1h3m46s414ms when=2018-05-31 00:21:57
+      window=+9h0m0s0ms repeatInterval=43200000 count=0 flags=0x0
+      operation=PendingIntent{2cf9740: PendingIntentRecord{94e291e com.miui.systemAdSolution startService}}
+    RTC #2: Alarm{9c76543 type 1 when 1527696977948 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+58m6s809ms when=2018-05-31 00:16:17
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{27d9fbe: PendingIntentRecord{25e9a01 com.miui.analytics startService}}
+    RTC #1: Alarm{76529fa type 1 when 1527696000000 com.sohu.inputmethod.sogou.xiaomi}
+      tag=*alarm*:sogou.action.statisticsdata.onedayup
+      type=1 whenElapsed=+41m48s861ms when=2018-05-31 00:00:00
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{a393bab: PendingIntentRecord{d26ff65 com.sohu.inputmethod.sogou.xiaomi broadcastIntent}}
+    RTC #0: Alarm{f92b7c0 type 1 when 1527696000000 com.miui.securitycenter}
+      tag=*alarm*:com.miui.action.REFRESH_DATA_USAGE_DAILY
+      type=1 whenElapsed=+41m48s861ms when=2018-05-31 00:00:00
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x8
+      operation=PendingIntent{19fc565: PendingIntentRecord{5d74d07 com.miui.securitycenter broadcastIntent}}
+Batch{954853f num=1 start=150169731 end=150169731 flgs=0x9}:
+    RTC #0: Alarm{1e4809c type 1 when 1527711530221 android}
+      tag=*alarm*:com.android.server.action.UPDATE_TWILIGHT_STATE
+      type=1 whenElapsed=+5h0m39s82ms when=2018-05-31 04:18:50
+      window=0 repeatInterval=0 count=0 flags=0x9
+      operation=PendingIntent{2227aa5: PendingIntentRecord{cc30b0f android broadcastIntent}}
+Batch{7501e0c num=1 start=158577932 end=158577932 flgs=0x3}:
+    RTC_WAKEUP #0: Alarm{cec63e6 type 0 when 1527719938422 com.android.providers.calendar}
+      tag=*walarm*:com.android.providers.calendar.SCHEDULE_ALARM
+      type=0 whenElapsed=+7h20m47s283ms when=2018-05-31 06:38:58
+      window=0 repeatInterval=0 count=0 flags=0x3
+      Alarm clock:
+        triggerTime=2018-05-31 06:38:58
+        showIntent=null
+      operation=PendingIntent{facd27: PendingIntentRecord{a89decd com.android.providers.calendar broadcastIntent}}
+Batch{f8ca355 num=1 start=159839511 end=159839511 flgs=0x9}:
+    RTC_WAKEUP #0: Alarm{ad1b17d type 0 when 1527721200000 com.miui.securitycenter}
+      tag=*walarm*:com.miui.powercenter.RESET_BOOT_TIME
+      type=0 whenElapsed=+7h41m48s862ms when=2018-05-31 07:00:00
+      window=0 repeatInterval=0 count=0 flags=0x9
+      operation=PendingIntent{30ad872: PendingIntentRecord{911b2a3 com.miui.securitycenter startService}}
+Batch{163a16a num=1 start=159839596 end=159839596 flgs=0x9}:
+    RTC #0: Alarm{8e4732c type 1 when 1527721200085 com.miui.powerkeeper}
+      tag=*alarm*:miui.intent.action.powerkeeper_schedule
+      type=1 whenElapsed=+7h41m48s947ms when=2018-05-31 07:00:00
+      window=0 repeatInterval=0 count=0 flags=0x9
+      operation=PendingIntent{464a1f5: PendingIntentRecord{68c86e com.miui.powerkeeper broadcastIntent}}
+Batch{496365b num=15 start=167844289 end=167854090 flgs=0x8}:
+    RTC #14: Alarm{199e5fb type 1 when 1527729204779 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+9h55m13s640ms when=2018-05-31 09:13:24
+      window=+9h0m0s0ms repeatInterval=43200000 count=0 flags=0x0
+      operation=PendingIntent{dbb9618: PendingIntentRecord{10d2ce1 com.miui.analytics startService}}
+    RTC #13: Alarm{9d23a1f type 1 when 1527726008042 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+9h1m56s903ms when=2018-05-31 08:20:08
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{7bc97a4: PendingIntentRecord{33b5ac9 com.miui.analytics startService}}
+    RTC #12: Alarm{f32616c type 1 when 1527725912720 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+9h0m21s581ms when=2018-05-31 08:18:32
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{136f0c2: PendingIntentRecord{a524382 com.miui.analytics startService}}
+    RTC_WAKEUP #11: Alarm{7aa9335 type 0 when 1527722308582 com.miui.analytics}
+      tag=*walarm*:com.miui.analytics/.internal.WakeupService
+      type=0 whenElapsed=+8h0m17s443ms when=2018-05-31 07:18:28
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{efd8a10: PendingIntentRecord{6308253 com.miui.analytics startService}}
+    RTC_WAKEUP #10: Alarm{f2a6871 type 0 when 1527721200011 com.android.email}
+      tag=*walarm*:com.kingsoft.email.action.battery_setting_changed
+      type=0 whenElapsed=+7h41m48s872ms when=2018-05-31 07:00:00
+      window=+5h58m47s999ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{9471656: PendingIntentRecord{56123de com.android.email broadcastIntent}}
+    RTC #9: Alarm{c7903ca type 1 when 1527719064237 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+7h6m13s98ms when=2018-05-31 06:24:24
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{d07570e: PendingIntentRecord{8138470 com.miui.analytics startService}}
+    RTC #8: Alarm{6ea593b type 1 when 1527718817653 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+7h2m6s514ms when=2018-05-31 06:20:17
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{919373c: PendingIntentRecord{f269132 com.miui.analytics startService}}
+    RTC #7: Alarm{896e6d7 type 1 when 1527714804822 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+5h55m13s683ms when=2018-05-31 05:13:24
+      window=+6h0m0s0ms repeatInterval=28800000 count=0 flags=0x0
+      operation=PendingIntent{3dffbc4: PendingIntentRecord{1beea91 com.miui.analytics startService}}
+    RTC #6: Alarm{2ac1aad type 1 when 1527714804784 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+5h55m13s645ms when=2018-05-31 05:13:24
+      window=+6h0m0s0ms repeatInterval=28800000 count=0 flags=0x0
+      operation=PendingIntent{23641e2: PendingIntentRecord{d384242 com.miui.analytics startService}}
+    RTC #5: Alarm{79a2858 type 1 when 1527713793133 com.miui.securitycenter}
+      tag=*alarm*:com.miui.securitycenter/.service.CloudDataUpdateService
+      type=1 whenElapsed=+5h38m21s994ms when=2018-05-31 04:56:33
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x8
+      operation=PendingIntent{f267eb6: PendingIntentRecord{270b90b com.miui.securitycenter startService}}
+    RTC #4: Alarm{ff91973 type 1 when 1527713014581 com.sohu.inputmethod.sogou.xiaomi}
+      tag=*alarm*:sogou.action.excute.for.six.hour
+      type=1 whenElapsed=+5h25m23s442ms when=2018-05-31 04:43:34
+      window=+4h29m59s999ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{4c31030: PendingIntentRecord{8e1e34 com.sohu.inputmethod.sogou.xiaomi broadcastIntent}}
+    RTC #3: Alarm{87887b1 type 1 when 1527711265896 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+4h56m14s757ms when=2018-05-31 04:14:25
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{665d61a: PendingIntentRecord{badb6b3 com.miui.analytics startService}}
+    RTC #2: Alarm{88fe496 type 1 when 1527711244880 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+4h55m53s741ms when=2018-05-31 04:14:04
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{6e08b28: PendingIntentRecord{fc0c0da com.miui.analytics startService}}
+    RTC #1: Alarm{eee3817 type 1 when 1527704329008 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+3h0m37s870ms when=2018-05-31 02:18:49
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{8fb39e6: PendingIntentRecord{202d5ff com.miui.analytics startService}}
+    RTC #0: Alarm{94f1404 type 1 when 1527704273504 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+2h59m42s366ms when=2018-05-31 02:17:53
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{34731d4: PendingIntentRecord{6f2542c com.miui.analytics startService}}
+Batch{de70ef8 num=1 start=170639510 end=170639510 flgs=0x3}:
+    RTC_WAKEUP #0: Alarm{49da346 type 0 when 1527732000000 com.android.calendar}
+      tag=*walarm*:com.android.calendar.NOTIFY
+      type=0 whenElapsed=+10h41m48s861ms when=2018-05-31 10:00:00
+      window=0 repeatInterval=0 count=0 flags=0x3
+      Alarm clock:
+        triggerTime=2018-05-31 10:00:00
+        showIntent=null
+      operation=PendingIntent{d020907: PendingIntentRecord{caf7188 com.android.calendar startService}}
+Batch{dc11fd1 num=20 start=202305152 end=205654055 flgs=0x8}:
+    RTC #19: Alarm{e16c23a type 1 when 1527763665641 com.miui.securitycenter}
+      tag=*alarm*:com.miui.securitycenter/.receiver.CleanMasterReceiver
+      type=1 whenElapsed=+19h29m34s503ms when=2018-05-31 18:47:45
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x8
+      operation=PendingIntent{127668d: PendingIntentRecord{e08e9a0 com.miui.securitycenter broadcastIntent}}
+    RTC #18: Alarm{1ba8eeb type 1 when 1527762455337 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+19h9m24s199ms when=2018-05-31 18:27:35
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{a464305: PendingIntentRecord{ee64cb8 com.miui.analytics startService}}
+    RTC #17: Alarm{8bca448 type 1 when 1527762009157 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+19h1m58s19ms when=2018-05-31 18:20:09
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{228958b: PendingIntentRecord{1033cef com.miui.analytics startService}}
+    ELAPSED #16: Alarm{af98466 type 3 when 197434813 android}
+      tag=*alarm*:com.android.server.NetworkTimeUpdateService.action.POLL
+      type=3 whenElapsed=+18h8m24s164ms when=+18h8m24s164ms
+      window=+18h0m0s0ms repeatInterval=0 count=0 flags=0x8
+      operation=PendingIntent{485f822: PendingIntentRecord{3a9b800 android broadcastIntent}}
+    RTC #15: Alarm{f0542dd type 1 when 1527757537538 com.sohu.inputmethod.sogou.xiaomi}
+      tag=*alarm*:sogou.action.excute.for.one.week
+      type=1 whenElapsed=+17h47m26s400ms when=2018-05-31 17:05:37
+      window=+22h48m2s271ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{38afe52: PendingIntentRecord{d937178 com.sohu.inputmethod.sogou.xiaomi broadcastIntent}}
+    RTC #14: Alarm{f78a3a7 type 1 when 1527754525026 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+16h57m13s888ms when=2018-05-31 16:15:25
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{adecdbd: PendingIntentRecord{acbf3fc com.miui.analytics startService}}
+    RTC #13: Alarm{76faa62 type 1 when 1527754231528 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+16h52m20s390ms when=2018-05-31 16:10:31
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{c9c2b03: PendingIntentRecord{c271ef4 com.miui.analytics startService}}
+    RTC #12: Alarm{5f18f62 type 1 when 1527747947400 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+15h7m36s262ms when=2018-05-31 14:25:47
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{a2c29d9: PendingIntentRecord{83def56 com.miui.analytics startService}}
+    RTC #11: Alarm{95618f3 type 1 when 1527747428830 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+14h58m57s692ms when=2018-05-31 14:17:08
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{e77ca7f: PendingIntentRecord{c41aae2 com.miui.analytics startService}}
+    RTC #10: Alarm{434d9b0 type 1 when 1527746211003 com.sohu.inputmethod.sogou.xiaomi}
+      tag=*alarm*:sogou.action.excute.for.one.day
+      type=1 whenElapsed=+14h38m39s865ms when=2018-05-31 13:56:51
+      window=+17h59m59s987ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{2f48029: PendingIntentRecord{313fcbc com.sohu.inputmethod.sogou.xiaomi broadcastIntent}}
+    RTC #9: Alarm{596c062 type 1 when 1527741813117 com.miui.securitycenter}
+      tag=*alarm*:com.miui.securitycenter.action.ITEM_UPDATE
+      type=1 whenElapsed=+13h25m21s979ms when=2018-05-31 12:43:33
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x8
+      operation=PendingIntent{5476dea: PendingIntentRecord{29b2130 com.miui.securitycenter broadcastIntent}}
+    RTC #8: Alarm{71979dd type 1 when 1527740556535 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+13h4m25s397ms when=2018-05-31 12:22:36
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{6dee5ab: PendingIntentRecord{98c408e com.miui.analytics startService}}
+    RTC #7: Alarm{1177523 type 1 when 1527740386761 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+13h1m35s623ms when=2018-05-31 12:19:46
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{7a727a1: PendingIntentRecord{cceb61d com.miui.analytics startService}}
+    RTC #6: Alarm{8bfba20 type 1 when 1527738893452 com.miui.systemAdSolution}
+      tag=*alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+      type=1 whenElapsed=+12h36m42s314ms when=2018-05-31 11:54:53
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{184b804: PendingIntentRecord{40fd79a com.miui.systemAdSolution startService}}
+    ELAPSED_WAKEUP #5: Alarm{9182fd9 type 2 when 174375554 com.xiaomi.finddevice}
+      tag=*walarm*:com.xiaomi.finddevice/.v2.update.PeriodicUpdateTaskReceiver
+      type=2 whenElapsed=+11h44m4s905ms when=+11h44m4s905ms
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x8
+      operation=PendingIntent{8b6ad9e: PendingIntentRecord{b49f1a9 com.xiaomi.finddevice broadcastIntent}}
+    RTC #4: Alarm{c41d9cf type 1 when 1527734614556 com.sohu.inputmethod.sogou.xiaomi}
+      tag=*alarm*:sogou.action.excute.for.half.day
+      type=1 whenElapsed=+11h25m23s418ms when=2018-05-31 10:43:34
+      window=+8h59m59s988ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{d80ff5c: PendingIntentRecord{b75e648 com.sohu.inputmethod.sogou.xiaomi broadcastIntent}}
+    RTC #3: Alarm{4e2407f type 1 when 1527734241219 com.miui.cloudservice}
+      tag=*alarm*:com.miui.cloudservice/.stat.StatService
+      type=1 whenElapsed=+11h19m10s80ms when=2018-05-31 10:37:21
+      window=+17h59m59s977ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{536584c: PendingIntentRecord{7a4d8c7 com.miui.cloudservice startService}}
+    RTC #2: Alarm{dd2f095 type 1 when 1527734241132 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+11h19m9s993ms when=2018-05-31 10:37:21
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{f975070: PendingIntentRecord{9233fdf com.miui.analytics startService}}
+    RTC #1: Alarm{5c05aa type 1 when 1527733470889 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+11h6m19s750ms when=2018-05-31 10:24:30
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{8e2697a: PendingIntentRecord{2553e83 com.miui.analytics startService}}
+    RTC #0: Alarm{c64659b type 1 when 1527733176212 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+11h1m25s73ms when=2018-05-31 10:19:36
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{f60bd88: PendingIntentRecord{b4a2d24 com.miui.analytics startService}}
+Batch{f926a36 num=5 start=215566031 end=266851902}:
+    RTC #4: Alarm{79a2b3a type 1 when 1527776926521 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+23h10m35s382ms when=2018-05-31 22:28:46
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{8ee73b0: PendingIntentRecord{6d2ce73 com.miui.analytics startService}}
+    RTC #3: Alarm{eac43eb type 1 when 1527775900751 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+22h53m29s612ms when=2018-05-31 22:11:40
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{4a169ae: PendingIntentRecord{7d69ecd com.miui.analytics startService}}
+    RTC #2: Alarm{75d0a1e type 1 when 1527769650002 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+21h9m18s863ms when=2018-05-31 20:27:30
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{99108c8: PendingIntentRecord{66515ce com.miui.analytics startService}}
+    RTC #1: Alarm{ce6a2ff type 1 when 1527769551529 com.miui.analytics}
+      tag=*alarm*:com.miui.analytics/.internal.WakeupService
+      type=1 whenElapsed=+21h7m40s391ms when=2018-05-31 20:25:51
+      window=+18h0m0s0ms repeatInterval=86400000 count=0 flags=0x0
+      operation=PendingIntent{e310086: PendingIntentRecord{2fa10a6 com.miui.analytics startService}}
+    RTC #0: Alarm{eccb548 type 1 when 1527768376830 com.miui.cloudservice}
+      tag=*alarm*:com.miui.cloudservice/.state.MiCloudSyncNotificationService
+      type=1 whenElapsed=+20h48m5s692ms when=2018-05-31 20:06:16
+      window=+16h37m15s561ms repeatInterval=0 count=0 flags=0x0
+      operation=PendingIntent{a154fe1: PendingIntentRecord{6e83df6 com.miui.cloudservice startService}}
+
+  Next wake from idle: Alarm{b2915a7 type 0 when 1527696000000 com.android.calendar}
+    tag=*walarm*:com.android.calendar.APPWIDGET_SCHEDULED_UPDATE
+    type=0 whenElapsed=+41m48s861ms when=2018-05-31 00:00:00
+    window=0 repeatInterval=0 count=0 flags=0x3
+    Alarm clock:
+      triggerTime=2018-05-31 00:00:00
+      showIntent=null
+    operation=PendingIntent{b414a54: PendingIntentRecord{f7c64 com.android.calendar broadcastIntent}}
+
+  Past-due non-wakeup alarms: (none)
+    Number of delayed alarms: 0, total delay time: 0
+    Max delay time: 0, max non-interactive time: 0
+
+  Broadcast ref count: 0
+
+  mAllowWhileIdleMinTime=+5s0ms
+  Last allow while idle dispatch times:
+  UID u0a82: -1d12h39m24s172ms
+  UID u0a94: -1d1h52m10s648ms
+
+  Top Alarms:
+    +2m29s565ms running, 325 wakeups, 325 alarms: u0a57:com.miui.hybrid
+      *walarm*:com.miui.hybrid/.statistics.StatsReceiver
+    +1m29s689ms running, 0 wakeups, 2202 alarms: 1000:android
+      *alarm*:android.intent.action.TIME_TICK
+    +1m11s94ms running, 0 wakeups, 183 alarms: 1000:android
+      *alarm*:android.content.jobscheduler.JOB_DELAY_EXPIRED
+    +22s614ms running, 0 wakeups, 74 alarms: 1000:android
+      *alarm*:com.android.server.action.NETWORK_STATS_POLL
+    +21s774ms running, 0 wakeups, 78 alarms: 1000:android
+      *alarm*:android.content.jobscheduler.JOB_DEADLINE_EXPIRED
+    +20s851ms running, 10 wakeups, 10 alarms: 1000:android
+      *walarm*:?
+    +8s828ms running, 0 wakeups, 437 alarms: 1000:com.miui.powerkeeper
+      *alarm*:miui.intent.action.powerkeeper_alarm
+    +8s307ms running, 0 wakeups, 41 alarms: 1000:android
+      *alarm*:com.android.server.NetworkTimeUpdateService.action.POLL
+    +7s153ms running, 2 wakeups, 2 alarms: u0a2:com.android.providers.calendar
+      *walarm*:com.android.providers.calendar.intent.CalendarProvider2
+    +5s870ms running, 146 wakeups, 146 alarms: 1002:com.android.bluetooth
+      *walarm*:com.android.bluetooth.btservice.action.ALARM_WAKEUP
+ 
+  Alarm Stats:
+  1000:com.miui.powerkeeper +10s354ms running, 0 wakeups:
+    +8s828ms 0 wakes 437 alarms, last -1m36s934ms:
+      *alarm*:miui.intent.action.powerkeeper_alarm
+    +1s532ms 0 wakes 3 alarms, last -18m11s109ms:
+      *alarm*:miui.intent.action.powerkeeper_schedule
+  1000:com.miui.securitycenter +6s151ms running, 1 wakeups:
+    +3s684ms 0 wakes 4 alarms, last -23h18m11s138ms:
+      *alarm*:com.miui.action.REFRESH_DATA_USAGE_DAILY
+    +1s590ms 0 wakes 3 alarms, last -10h34m38s22ms:
+      *alarm*:com.miui.securitycenter.action.ITEM_UPDATE
+    +815ms 0 wakes 2 alarms, last -4h30m25s498ms:
+      *alarm*:com.miui.securitycenter/.receiver.CleanMasterReceiver
+    +84ms 0 wakes 3 alarms, last -18h21m36s53ms:
+      *alarm*:com.miui.securitycenter/.service.CloudDataUpdateService
+    +14ms 1 wakes 1 alarms, last -16h18m11s138ms:
+      *walarm*:com.miui.powercenter.RESET_BOOT_TIME
+  1000:android +3m29s205ms running, 39 wakeups:
+    +1m29s689ms 0 wakes 2202 alarms, last -11s138ms:
+      *alarm*:android.intent.action.TIME_TICK
+    +1m11s94ms 0 wakes 183 alarms, last -4m45s996ms:
+      *alarm*:android.content.jobscheduler.JOB_DELAY_EXPIRED
+    +22s614ms 0 wakes 74 alarms, last -11m36s934ms:
+      *alarm*:com.android.server.action.NETWORK_STATS_POLL
+    +21s774ms 0 wakes 78 alarms, last -40m47s973ms:
+      *alarm*:android.content.jobscheduler.JOB_DEADLINE_EXPIRED
+    +20s851ms 10 wakes 10 alarms, last -16h18m9s248ms:
+      *walarm*:?
+    +8s307ms 0 wakes 41 alarms, last -5h51m35s842ms:
+      *alarm*:com.android.server.NetworkTimeUpdateService.action.POLL
+    +4s655ms 0 wakes 19 alarms, last -11m36s934ms:
+      *alarm*:miui.intent.action.CHECK_TIME_UP
+    +1s413ms 22 wakes 22 alarms, last -1d1h3m26s567ms:
+      *walarm*:android.content.syncmanager.SYNC_ALARM
+    +1s207ms 0 wakes 1 alarms, last -23h18m11s138ms:
+      *alarm*:android.intent.action.DATE_CHANGED
+    +16ms 4 wakes 4 alarms, last -1d6h15m58s696ms:
+      *walarm*:android.net.dhcp.DhcpClient.wlan0.KICK
+    +9ms 0 wakes 3 alarms, last -3h8m30s46ms:
+      *alarm*:com.android.server.action.UPDATE_TWILIGHT_STATE
+    +5ms 2 wakes 2 alarms, last -23h56m29s50ms:
+      *walarm*:android.net.dhcp.DhcpClient.wlan0.RENEW
+    +2ms 1 wakes 1 alarms, last -1d6h15m56s530ms:
+      *walarm*:android.net.dhcp.DhcpClient.wlan0.TIMEOUT
+  1000:com.miui.whetstone +42ms running, 0 wakeups:
+    +42ms 0 wakes 1 alarms, last -1d12h26m20s899ms:
+      *alarm*:action_schedule_delay_job
+  1002:com.android.bluetooth +5s870ms running, 146 wakeups:
+    +5s870ms 146 wakes 146 alarms, last -11m12s71ms:
+      *walarm*:com.android.bluetooth.btservice.action.ALARM_WAKEUP
+  9810:com.xiaomi.finddevice +713ms running, 2 wakeups:
+    +713ms 2 wakes 2 alarms, last -12h15m56s132ms:
+      *walarm*:com.xiaomi.finddevice/.v2.update.PeriodicUpdateTaskReceiver
+  u0a2:com.android.providers.calendar +7s455ms running, 3 wakeups:
+    +7s153ms 2 wakes 2 alarms, last -14h40m12s744ms:
+      *walarm*:com.android.providers.calendar.intent.CalendarProvider2
+    +302ms 1 wakes 1 alarms, last -14h40m18s42ms:
+      *walarm*:com.android.providers.calendar.SCHEDULE_ALARM
+  u0a8:com.android.calendar +1s217ms running, 1 wakeups:
+    +1s217ms 1 wakes 1 alarms, last -23h18m11s138ms:
+      *walarm*:com.android.calendar.APPWIDGET_SCHEDULED_UPDATE
+  u0a37:com.miui.analytics +4s309ms running, 1 wakeups:
+    +4s309ms 0 wakes 138 alarms, last -40m47s973ms:
+      *alarm*:com.miui.analytics/.internal.WakeupService
+    +21ms 1 wakes 1 alarms, last -15h51m36s54ms:
+      *walarm*:com.miui.analytics/.internal.WakeupService
+  u0a45:com.miui.cloudservice +101ms running, 0 wakeups:
+    +57ms 0 wakes 2 alarms, last -1h21m36s710ms:
+      *alarm*:com.miui.cloudservice/.state.MiCloudSyncNotificationService
+    +27ms 0 wakes 1 alarms, last -1d12h41m19s925ms:
+      *alarm*:com.miui.cloudservice/.sync.SyncResumeService
+    +17ms 0 wakes 1 alarms, last -12h40m50s7ms:
+      *alarm*:com.miui.cloudservice/.stat.StatService
+  u0a48:com.miui.guardprovider +945ms running, 4 wakeups:
+    +945ms 2 wakes 2 alarms, last -1d5h51m1s188ms:
+      *walarm*:com.tencent.tmsdk.HeartBeatPlot.ACTION_HEARTBEAT_PLOT_ALARM_CYCLE
+    +945ms 2 wakes 2 alarms, last -1d5h51m1s188ms:
+      *walarm*:action_keep_alive_after_send_end
+  u0a56:com.xiaomi.metoknlp +47ms running, 0 wakeups:
+    +19ms 0 wakes 4 alarms, last -12h33m17s514ms:
+      *alarm*:miui.action.metoknlp.TIME_DOWNLOAD
+    +17ms 0 wakes 3 alarms, last -1d2h6m25s123ms:
+      *alarm*:metoknlp.location.alarm.action.wifisacn_timeout
+    +11ms 0 wakes 4 alarms, last -12h33m12s515ms:
+      *alarm*:miui.action.metoknlp.TIME_DOWNLOAD_OFFLINE
+  u0a57:com.miui.hybrid +2m29s565ms running, 325 wakeups:
+    +2m29s565ms 325 wakes 325 alarms, last -1m36s934ms:
+      *walarm*:com.miui.hybrid/.statistics.StatsReceiver
+  u0a58:com.android.email +1s908ms running, 3 wakeups:
+    +1s908ms 3 wakes 3 alarms, last -16m36s933ms:
+      *walarm*:com.kingsoft.email.action.battery_setting_changed
+  u0a82:com.mobiletools.systemhelper +19ms running, 1 wakeups:
+    +19ms 1 wakes 1 alarms, last -1d12h39m24s172ms:
+      *walarm*:com.mobiletools.systemhelper/.control.RegisterReceiver
+  u0a84:com.miui.systemAdSolution +1s169ms running, 0 wakeups:
+    +1s169ms 0 wakes 36 alarms, last -1h53m36s916ms:
+      *alarm*:com.miui.systemAdSolution/com.xiaomi.ad.internal.server.WakeupService
+  u0a94:com.xiaomi.xmsf +5s508ms running, 121 wakeups:
+    +5s508ms 121 wakes 121 alarms, last -1d1h52m10s648ms:
+      *walarm*:com.xiaomi.push.PING_TIMER
+  u0a97:com.qualcomm.embms +351ms running, 0 wakeups:
+    +351ms 0 wakes 1 alarms, last -1d11h38m37s703ms:
+      *alarm*:com.qualcomm.embms.EmbmsSntpClient.action.RING_ALARM
+  u0a101:com.sohu.inputmethod.sogou.xiaomi +11s214ms running, 0 wakeups:
+    +4s129ms 0 wakes 6 alarms, last -1d1h9m55s19ms:
+      *alarm*:com.sohu.inputmethod.sogou.xiaomi/com.sohu.inputmethod.settings.AutoUpgradeReceiver
+    +2s602ms 0 wakes 4 alarms, last -12h30m33s382ms:
+      *alarm*:sogou.action.excute.for.one.hour
+    +2s520ms 0 wakes 7 alarms, last -34m36s659ms:
+      *alarm*:sogou.action.excute.for.six.hour
+    +1s323ms 0 wakes 4 alarms, last -34m36s659ms:
+      *alarm*:sogou.action.excute.for.half.day
+    +1s248ms 0 wakes 1 alarms, last -23h18m11s138ms:
+      *alarm*:sogou.action.statisticsdata.onedayup
+    +641ms 0 wakes 2 alarms, last -9h21m20s179ms:
+      *alarm*:sogou.action.excute.for.one.day
+    +50ms 0 wakes 1 alarms, last -17h40m21s469ms:
+      *alarm*:sogou.upgrade.alive

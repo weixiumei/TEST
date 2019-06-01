@@ -1,0 +1,134 @@
+Bluetooth Status
+  enabled: true
+  state: 12
+  address: 74:23:44:C3:FF:57
+  name: QCOM-BTD
+
+Bonded devices:
+
+Profile: BtGatt.GattService
+  mAdvertisingServiceUuids:
+  mMaxScanFilters: 0
+
+GATT Client Map
+  Entries: 0
+
+GATT Server Map
+  Entries: 0
+
+GATT Handle Map
+  Entries: 0
+  Requests: 0
+
+Profile: HeadsetService
+  mCurrentDevice: null
+  mTargetDevice: null
+  mIncomingDevice: null
+  mActiveScoDevice: null
+  mMultiDisconnectDevice: null
+  mVirtualCallStarted: false
+  mVoiceRecognitionStarted: false
+  mWaitingForVoiceRecognition: false
+  StateMachine: HeadsetStateMachine:
+ total records=227
+ rec[0]: time=05-30 21:36:06.752 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[1]: time=05-30 21:39:35.341 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[2]: time=05-30 21:42:20.910 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[3]: time=05-30 21:45:06.497 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[4]: time=05-30 21:47:52.079 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[5]: time=05-30 21:50:37.683 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[6]: time=05-30 21:56:06.748 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[7]: time=05-30 21:58:54.394 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[8]: time=05-30 22:01:40.209 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[9]: time=05-30 22:04:25.800 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[10]: time=05-30 22:06:06.748 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[11]: time=05-30 22:09:56.879 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[12]: time=05-30 22:15:28.027 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[13]: time=05-30 22:18:13.585 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[14]: time=05-30 22:34:46.680 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[15]: time=05-30 22:45:48.786 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[16]: time=05-30 23:06:06.746 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[17]: time=05-30 23:07:52.700 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[18]: time=05-30 23:13:23.866 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+ rec[19]: time=05-30 23:16:06.748 processed=Disconnected org=Disconnected dest=<null> what=10(0xa)
+curState=Disconnected
+
+  mPhoneState: com.android.bluetooth.hfp.HeadsetPhoneState@9a6c5d8
+  mAudioState: 10
+
+Profile: A2dpService
+  mCurrentDevice: null
+  mTargetDevice: null
+  mIncomingDevice: null
+  mPlayingA2dpDevice: []
+  StateMachine: A2dpStateMachine:
+ total records=0
+curState=Disconnected
+
+AVRCP:
+  mMetadata: Metadata[artist=null trackTitle=null albumTitle=null genre=null tracknum=-1]
+  mTransportControlFlags: 0
+  mCurrentPlayState: 0
+  mPlayStatusChangedNT: 1
+  mTrackChangedNT: 1
+  mTrackNumber: -1
+  mCurrentPosMs: -1
+  mPlayStartTimeMs: -1
+  mSongLengthMs: 0
+  mPlaybackIntervalMs: 0
+  mPlayPosChangedNT: 1
+  mNextPosMs: 0
+  mPrevPosMs: 0
+  mSkipStartTime: 0
+  mFeatures: 0
+  mAbsoluteVolume: -1
+  mLastSetVolume: -1
+  mLastDirection: 0
+  mVolumeStep: 8
+  mAudioStreamMax: 15
+  mVolCmdInProgress: false
+  mAbsVolRetryTimes: 0
+  mSkipAmount: 0
+
+Profile: HidService
+  mTargetDevice: null
+  mInputDevices:
+
+Profile: HealthService
+  mHealthChannels:
+  mApps:
+  mHealthDevices:
+
+Profile: PanService
+  mMaxPanDevices: 5
+  mPanIfName: bt-pan
+  mTetherOn: false
+  mPanDevices:
+  mBluetoothIfaceAddresses:
+
+Profile: BluetoothMapService
+  mRemoteDevice: null
+  sRemoteDeviceName: null
+  mState: 0
+  mAppObserver: com.android.bluetooth.map.BluetoothMapAppObserver@95a3d31
+  mIsWaitingAuthorization: false
+  mRemoveTimeoutMsg: false
+  mPermission: 0
+  mAccountChanged: false
+  mBluetoothMnsObexClient: null
+  mMasInstanceMap:
+    null : MasId: 0 Uri:null SMS/MMS:true
+  mEnabledAccounts:
+
+Profile: AvrcpControllerService
+
+Profile: SapService
+
+Profile: HidDevService
+
+Connection Events:
+  None
+
+--- BEGIN:BTSNOOP_LOG_SUMMARY (156 bytes in) ---
+AVsr3tttbQUAeJxjYWh7r8KkEPmXQZzhBw8DgwCfCCOQAwLBTAwMK1kZGN6lMjKwMFwRMGOAKDuIqsweiE8yMzBYlTAAld1qE4Qqs+dFUQYC9SwMDDUFIGXWFuzKEGWLUJXpqzEw3Acqq6vgYwAAEUMbsw==
+--- END:BTSNOOP_LOG_SUMMARY (165 bytes out) ---

@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <title>深拷贝</title>
+  </head>
+  <!-- https://www.cnblogs.com/renbo/p/9563050.html -->
+  <script>
+    console.log('递归: 可以深拷贝引用类型，但是可能暴栈和不能循环引用')
+    function deepCopy(obj) {
+      var result = Array.isArray(obj) ? [] : {};
+      for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+          if (typeof obj[key] === 'object'&& obj[key] != null) {
+          // if (obj[key] instanceof Object) {
+            result[key] = deepCopy(obj[key]);   //递归复制
+          } else {
+            result[key] = obj[key];
+          }
+        }
+      }
+      return result;
+    }
+
+    var person = {
+      arr: [],
+      name :'tino',
+      deep: {
+        say: function(){
+          console.log('hi');
+        }
+      },
+      ok: Symbol('obj'),
+      un: undefined,
+      null: null,
+      aa: ''
+    }
+    // 局限性（undefined,function,Symbol拷贝不了）
+    // console.log(JSON.parse(JSON.stringify(person)))
+    // console.log(deepCopy(person))
+    var aa = deepCopy(person)
+    person.name = '11'
+    person.arr.push(12)
+    // console.log('deepCopy1', aa)
+
+    
+    console.log('不会出现暴栈，但是循环引用还是不行')
+    function deepCopy2(x) {
+      // var result = Array.isArray(x) ? [] : {};
+      const root = {}
+      // 需要借助一个栈，当栈为空时就遍历完了，栈里面存储下一个需要拷贝的节点
+      const loopList = [
+        {
+          parent: root,
+          // 首先我们往栈里放入种子数据，key用来存储放哪一个父元素的那一个子元素拷贝对象
+          key: undefined,
+          data: x
+        }
+      ];
+      
+      while(loopList.length) {
+        // console.log(root, loopList)
+        // 深度优先
+        const node = loopList.pop();
+        const parent = node.parent;
+        const key = node.key;
+        const data = node.data;
+        // 初始化赋值目标，key为undefined则拷贝到父元素，否则拷贝到子元素
+        let res = parent;
+        if (typeof key !== 'undefined') {
+          res = parent[key] = {};
+        }
+        for(let k in data) {
+          if (data.hasOwnProperty(k)) {
+            if (typeof data[k] === 'object'&& data[k] != null) {
+              // 下一次循环
+              loopList.push({
+                parent: res,
+                key: k,
+                data: data[k],
+              });
+            } else {
+              res[k] = data[k];
+            }
+          }
+        }
+      }
+      return root;
+    }
+
+    var b=1
+    var person2 = {
+      arr: [1,2],
+      name :'tino',
+      c:b,
+      d:b,
+      // deep: {
+      //   say: function(){
+      //     console.log('hi');
+      //   }
+      // },
+      // ok: Symbol('obj'),
+      // un: undefined,
+      // null: null,
+      // aa: ''
+    }
+
+    // 循环引用
+    // person2.aa = person2.arr
+    var aa2 = deepCopy2(person2)
+    console.log('deepCopy2', aa2, aa2.c===aa2.d)
+
+
+    function find(arr, item) {
+      for(let i = 0; i < arr.length; i++) {
+        if (arr[i].source === item) {
+          return arr[i];
+        }
+      }
+      return null;
+    }
+    console.log('解决循环引用和引用丢失')
+    function deepCopy3(x) {
+      // =============
+      const uniqueList = []; // 用来去重
+      // =============
+
+      let root = {};
+
+      // 循环数组
+      const loopList = [
+          {
+              parent: root,
+              key: undefined,
+              data: x,
+          }
+      ];
+
+      while(loopList.length) {
+        // 深度优先
+        const node = loopList.pop();
+        const parent = node.parent;
+        const key = node.key;
+        const data = node.data;
+
+        // 初始化赋值目标，key为undefined则拷贝到父元素，否则拷贝到子元素
+        let res = parent;
+        if (typeof key !== 'undefined') {
+          res = parent[key] = {};
+        }
+
+        // =============
+        // 数据已经存在
+        let uniqueData = find(uniqueList, data);
+        if (uniqueData) {
+          parent[key] = uniqueData.target;
+          break; // 中断本次循环
+        }
+
+        // 数据不存在
+        // 保存源数据，在拷贝数据中对应的引用
+        uniqueList.push({
+          source: data,
+          target: res,
+        });
+        // =============
+
+        for(let k in data) {
+          if (data.hasOwnProperty(k)) {
+            if (typeof data[k] === 'object'&& data[k] != null) {
+              // 下一次循环
+              loopList.push({
+                parent: res,
+                key: k,
+                data: data[k],
+              });
+            } else {
+              res[k] = data[k];
+            }
+          }
+        }
+      }
+
+      return root;
+    }
+
+    var person3 = {
+      arr: [1,2,3],
+      name :'tino',
+      deep: {
+        say: function(){
+          console.log('hi');
+        }
+      },
+      ok: Symbol('obj'),
+      un: undefined,
+      null: null,
+      aa: ''
+    }
+
+    // 循环引用
+    // person3.aa = person3
+    var aa3 = deepCopy3(person3)
+    console.log('aa3', aa3)
+
+    // var a = {};
+    // a.a = a;
+    // deepCopy3(a)
+    // console.log(a)
+  </script>
+  <style>
+  </style>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+Current Location Manager state:
+  Location Listeners:
+    Reciever[89bc62d listener UpdateRecord[passive com.xiaomi.metoknlp(10056) Request[POWER_NONE passive fastest=+3s0ms]]]
+    Reciever[d2163c5 listener UpdateRecord[network android(1000) Request[POWER_LOW network requested=+24h0m0s0ms fastest=+24h0m0s0ms]]]
+    Reciever[2fbb11a listener UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]]
+    Reciever[6d6fd10 listener UpdateRecord[passive com.qualcomm.location(1000) Request[POWER_NONE passive fastest=0]]]
+    Reciever[d5d2544 listener UpdateRecord[passive com.xiaomi.metoknlp(10056) Request[POWER_NONE passive fastest=+1s0ms]]]
+    Reciever[facd42f listener UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]]
+    Reciever[96da3c listener UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]]
+  Active Records by Provider:
+    network:
+      UpdateRecord[network android(1000) Request[POWER_LOW network requested=+24h0m0s0ms fastest=+24h0m0s0ms]]
+    gps:
+    passive:
+      UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]
+      UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]
+      UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]
+      UpdateRecord[passive com.qualcomm.location(1000) Request[POWER_NONE passive fastest=0]]
+      UpdateRecord[passive com.xiaomi.metoknlp(10056) Request[POWER_NONE passive fastest=+1s0ms]]
+      UpdateRecord[passive com.xiaomi.metoknlp(10056) Request[POWER_NONE passive fastest=+3s0ms]]
+  Historical Records by Provider:
+    com.qzjf.shanlaiqian: network: Interval 60 seconds: Duration requested 0 out of the last 475 minutes
+    com.efund.jqb: passive: Interval 9 seconds: Duration requested 2 out of the last 489 minutes
+    com.huahan.baodian.han: gps: Interval 10 seconds: Duration requested 2 out of the last 2102 minutes
+    com.pplive.uoqpandroidphone: passive: Interval 1 seconds: Duration requested 1 out of the last 2155 minutes
+    com.ape.petcircle: gps: Interval 1 seconds: Duration requested 2 out of the last 771 minutes
+    com.yunfc.bushang: passive: Interval 9 seconds: Duration requested 1 out of the last 1938 minutes
+    com.youke.futurehotelclient: gps: Interval 0 seconds: Duration requested 0 out of the last 706 minutes
+    com.ningxia.guyuanwenzheng: gps: Interval 2 seconds: Duration requested 0 out of the last 1751 minutes
+    cn.izd.app: gps: Interval 1 seconds: Duration requested 1 out of the last 1550 minutes
+    com.platform.jhj: gps: Interval 1 seconds: Duration requested 0 out of the last 2195 minutes
+    com.qzjf.shanlaiqian: gps: Min interval 10 seconds: Max interval 120 seconds: Duration requested 0 out of the last 475 minutes
+    com.gs1hk.realbarcode: gps: Interval 0 seconds: Duration requested 2 out of the last 1742 minutes
+    com.easou.search: gps: Interval 1 seconds: Duration requested 0 out of the last 2105 minutes
+    com.yunxun.moxian: network: Interval 3 seconds: Duration requested 0 out of the last 140 minutes
+    com.yunxun.moxian: gps: Interval 1 seconds: Duration requested 2 out of the last 140 minutes
+    com.dayou.moe: gps: Interval 1 seconds: Duration requested 0 out of the last 2173 minutes
+    com.ruanmeng.pingtaihui: gps: Interval 0 seconds: Duration requested 1 out of the last 344 minutes
+    com.qualcomm.location: passive: Interval 0 seconds: Duration requested 2201 out of the last 2201 minutes: Currently active
+    com.zhugezhaofang: network: Interval 2 seconds: Duration requested 0 out of the last 2111 minutes
+    com.lwqh.qihuocaijingbao: network: Interval 2 seconds: Duration requested 0 out of the last 1768 minutes
+    com.appbyme.app74590: passive: Interval 9 seconds: Duration requested 0 out of the last 2129 minutes
+    com.warmcar.nf.x: gps: Interval 1 seconds: Duration requested 1 out of the last 337 minutes
+    com.lingshang.ls: passive: Interval 1 seconds: Duration requested 0 out of the last 724 minutes
+    com.youtoo: gps: Interval 1 seconds: Duration requested 1 out of the last 1759 minutes
+    com.gs1hk.realbarcode: network: Interval 0 seconds: Duration requested 2 out of the last 1742 minutes
+    io.dcloud.H51FEE642: gps: Interval 0 seconds: Duration requested 0 out of the last 255 minutes
+    com.youtoo: passive: Interval 9 seconds: Duration requested 1 out of the last 1759 minutes
+    com.xmyflb.lebao.business: network: Interval 2 seconds: Duration requested 0 out of the last 2148 minutes
+    com.qianpai.xzs.xianzhushou: network: Interval 2 seconds: Duration requested 0 out of the last 2158 minutes
+    com.ShengYiZhuanJia.five: gps: Interval 0 seconds: Duration requested 2 out of the last 1347 minutes
+    com.xin.ownerrent: gps: Interval 0 seconds: Duration requested 0 out of the last 1645 minutes
+    com.xiaomi.metoknlp: passive: Min interval 1 seconds: Max interval 3 seconds: Duration requested 2189 out of the last 2201 minutes: Currently active
+    com.eju.mobile.leju.finance: gps: Interval 0 seconds: Duration requested 2 out of the last 394 minutes
+    com.cloister.channel: gps: Interval 1 seconds: Duration requested 2 out of the last 2142 minutes
+    com.app.antmechanic: gps: Interval 10 seconds: Duration requested 0 out of the last 1890 minutes
+    sinia.com.baihangeducation: gps: Interval 0 seconds: Duration requested 2 out of the last 354 minutes
+    com.orthoguardgroup.patient: gps: Interval 1 seconds: Duration requested 2 out of the last 1817 minutes
+    com.achievo.haoqiu: gps: Interval 1 seconds: Duration requested 1 out of the last 1633 minutes
+    com.meishakeji.camp: gps: Interval 1 seconds: Duration requested 0 out of the last 484 minutes
+    com.ab.lcb: passive: Interval 9 seconds: Duration requested 1 out of the last 1893 minutes
+    com.kuaichengwuliu.client: gps: Interval 1 seconds: Duration requested 2 out of the last 851 minutes
+    com.dayou.moe: network: Interval 0 seconds: Duration requested 0 out of the last 2174 minutes
+    com.c8software.onehealth: gps: Interval 0 seconds: Duration requested 0 out of the last 651 minutes
+    com.cloister.channel: network: Interval 2 seconds: Duration requested 0 out of the last 2141 minutes
+    com.langu.jia: gps: Interval 300 seconds: Duration requested 0 out of the last 293 minutes
+    com.example.administrator.lefangtong: passive: Interval 9 seconds: Duration requested 1 out of the last 313 minutes
+    com.wswy.wzcx: passive: Interval 9 seconds: Duration requested 0 out of the last 792 minutes
+    com.buduobushao.android.webclient: passive: Interval 9 seconds: Duration requested 0 out of the last 1965 minutes
+    com.resell.df: gps: Interval 0 seconds: Duration requested 1 out of the last 2171 minutes
+    com.saicmobility.driver: passive: Interval 9 seconds: Duration requested 0 out of the last 384 minutes
+    com.orthoguardgroup.patient: passive: Interval 9 seconds: Duration requested 2 out of the last 1817 minutes
+    com.shuanaer.info: gps: Interval 0 seconds: Duration requested 0 out of the last 2134 minutes
+    com.meet.pianolearn: passive: Interval 9 seconds: Duration requested 0 out of the last 1609 minutes
+    com.mqfenqi.www: network: Interval 1 seconds: Duration requested 0 out of the last 748 minutes
+    com.shqj.litouwang: network: Interval 1 seconds: Duration requested 0 out of the last 1840 minutes
+    com.glavesoft.tianzheng: gps: Interval 1 seconds: Duration requested 0 out of the last 447 minutes
+    com.example.administrator.lefangtong: gps: Interval 1 seconds: Duration requested 1 out of the last 313 minutes
+    com.wswy.wzcx: gps: Interval 1 seconds: Duration requested 0 out of the last 792 minutes
+    com.ixiaowo.technology: passive: Interval 9 seconds: Duration requested 2 out of the last 832 minutes
+    com.cloud.oil: gps: Interval 1 seconds: Duration requested 0 out of the last 1784 minutes
+    com.weimob.loanking: network: Interval 60 seconds: Duration requested 2 out of the last 334 minutes
+    com.weimob.loanking: gps: Min interval 1 seconds: Max interval 120 seconds: Duration requested 2 out of the last 334 minutes
+    com.baihe.pie: passive: Interval 9 seconds: Duration requested 0 out of the last 1844 minutes
+    com.cloud.oil: passive: Interval 9 seconds: Duration requested 0 out of the last 1784 minutes
+    com.ixiaowo.technology: gps: Interval 1 seconds: Duration requested 2 out of the last 832 minutes
+    com.clover.imuseum: gps: Interval 1 seconds: Duration requested 0 out of the last 126 minutes
+    com.easou.search: passive: Interval 9 seconds: Duration requested 0 out of the last 2105 minutes
+    com.yunronglife: passive: Interval 9 seconds: Duration requested 0 out of the last 398 minutes
+    com.eico.tei.zhve.app.meshot: network: Interval 300 seconds: Duration requested 0 out of the last 677 minutes
+    cc.bodyplus: gps: Interval 0 seconds: Duration requested 0 out of the last 289 minutes
+    com.xin.ownerrent: passive: Interval 0 seconds: Duration requested 0 out of the last 1645 minutes
+    com.xcar.gcp: passive: Interval 1 seconds: Duration requested 0 out of the last 1579 minutes
+    com.e2oto.customer: gps: Interval 0 seconds: Duration requested 0 out of the last 243 minutes
+    com.zsd.joy: gps: Interval 0 seconds: Duration requested 0 out of the last 566 minutes
+    com.toroke.qiguanbang: passive: Interval 9 seconds: Duration requested 0 out of the last 712 minutes
+    com.zhugezhaofang: passive: Min interval 1 seconds: Max interval 9 seconds: Duration requested 1 out of the last 2112 minutes
+    com.pplive.uoqpandroidphone: gps: Interval 0 seconds: Duration requested 1 out of the last 2155 minutes
+    com.ape.petcircle: passive: Interval 9 seconds: Duration requested 2 out of the last 771 minutes
+    com.freshjn.shop: network: Min interval 0 seconds: Max interval 1 seconds: Duration requested 0 out of the last 709 minutes
+    com.medp.zzh.sls: passive: Interval 9 seconds: Duration requested 1 out of the last 1660 minutes
+    com.poushengcommunity: passive: Interval 1 seconds: Duration requested 1 out of the last 129 minutes
+    com.langu.jia: passive: Interval 300 seconds: Duration requested 0 out of the last 293 minutes
+    android: network: Interval 86400 seconds: Duration requested 2201 out of the last 2201 minutes: Currently active
+    com.eico.tei.zhve.app.meshot: gps: Interval 300 seconds: Duration requested 0 out of the last 677 minutes
+    cn.iaapp.app.cheguanshishanghu: passive: Interval 9 seconds: Duration requested 0 out of the last 1968 minutes
+    com.langu.jia: network: Interval 300 seconds: Duration requested 0 out of the last 293 minutes
+    com.mqfenqi.www: gps: Interval 1 seconds: Duration requested 0 out of the last 748 minutes
+    com.xcar.gcp: gps: Interval 1 seconds: Duration requested 1 out of the last 1580 minutes
+    com.ab.lcb: gps: Interval 1 seconds: Duration requested 1 out of the last 1893 minutes
+    cn.charge: gps: Interval 0 seconds: Duration requested 1 out of the last 1694 minutes
+    com.freshjn.shop: gps: Interval 0 seconds: Duration requested 0 out of the last 709 minutes
+    com.yunfc.bushang: gps: Interval 1 seconds: Duration requested 1 out of the last 1937 minutes
+    com.saicmobility.driver: gps: Interval 1 seconds: Duration requested 0 out of the last 384 minutes
+    com.czb.chezhubang: gps: Interval 0 seconds: Duration requested 0 out of the last 296 minutes
+    com.example.shadow.heartrecreation: gps: Interval 1 seconds: Duration requested 2 out of the last 252 minutes
+    com.buduobushao.android.webclient: gps: Interval 1 seconds: Duration requested 0 out of the last 1965 minutes
+    com.stg.rouge.activity: passive: Interval 1 seconds: Duration requested 0 out of the last 157 minutes
+    com.dayou.moe: passive: Interval 9 seconds: Duration requested 0 out of the last 2173 minutes
+    com.stg.rouge.activity: gps: Interval 1 seconds: Duration requested 0 out of the last 157 minutes
+    com.qianhezi.qhz: gps: Interval 1 seconds: Duration requested 1 out of the last 1798 minutes
+    android: passive: Interval 0 seconds: Duration requested 2201 out of the last 2201 minutes: Currently active
+    com.shabro.android.activity: gps: Min interval 0 seconds: Max interval 1 seconds: Duration requested 2 out of the last 435 minutes
+    yourong58.com: network: Interval 1 seconds: Duration requested 0 out of the last 1712 minutes
+    com.yunronglife: gps: Interval 1 seconds: Duration requested 0 out of the last 398 minutes
+    com.yjkj.PKGC2778A558AA3C465: network: Interval 2 seconds: Duration requested 2 out of the last 2001 minutes
+    com.optionsmanager.app: network: Interval 2 seconds: Duration requested 0 out of the last 1744 minutes
+    com.qianhezi.qhz: passive: Interval 9 seconds: Duration requested 1 out of the last 1798 minutes
+    com.huahan.baodian.han: passive: Interval 1 seconds: Duration requested 0 out of the last 2100 minutes
+    com.meishakeji.camp: passive: Interval 9 seconds: Duration requested 0 out of the last 484 minutes
+    com.zlqb.app: gps: Interval 1 seconds: Duration requested 1 out of the last 515 minutes
+    com.sunxp.dollar: network: Interval 0 seconds: Duration requested 0 out of the last 1663 minutes
+    com.powerlife.phone: gps: Interval 0 seconds: Duration requested 1 out of the last 2162 minutes
+    com.gs1hk.realbarcode: passive: Interval 0 seconds: Duration requested 2 out of the last 1742 minutes
+    com.eico.tei.zhve.app.meshot: passive: Interval 300 seconds: Duration requested 0 out of the last 677 minutes
+    com.shanxiangjiaoyu.iteacher: gps: Interval 1 seconds: Duration requested 0 out of the last 655 minutes
+    io.dcloud.H51FEE642: network: Interval 0 seconds: Duration requested 0 out of the last 255 minutes
+    com.appbyme.app74590: gps: Interval 1 seconds: Duration requested 1 out of the last 2129 minutes
+    com.hebao.app: gps: Interval 0 seconds: Duration requested 0 out of the last 777 minutes
+    com.tripadvisor.tripadvisor.daodao: gps: Interval 0 seconds: Duration requested 1 out of the last 1957 minutes
+    com.xin.ownerrent: network: Interval 0 seconds: Duration requested 0 out of the last 1645 minutes
+    cn.longmaster.health: gps: Interval 0 seconds: Duration requested 0 out of the last 789 minutes
+    com.lwqh.qihuocaijingbao: gps: Interval 2 seconds: Duration requested 0 out of the last 1769 minutes
+    com.shanxiangjiaoyu.iteacher: passive: Interval 9 seconds: Duration requested 0 out of the last 655 minutes
+    com.medp.zzh.sls: gps: Interval 1 seconds: Duration requested 1 out of the last 1660 minutes
+    com.appbyme.app74590: network: Interval 1 seconds: Duration requested 0 out of the last 2129 minutes
+    com.kgc.qianduanbaike: passive: Interval 9 seconds: Duration requested 0 out of the last 1714 minutes
+    com.ningxia.guyuanwenzheng: network: Interval 2 seconds: Duration requested 0 out of the last 1751 minutes
+    com.baihe.pie: gps: Interval 1 seconds: Duration requested 0 out of the last 1844 minutes
+    com.poushengcommunity: gps: Interval 1 seconds: Duration requested 0 out of the last 129 minutes
+    com.ucardstore.Activity: gps: Interval 1 seconds: Duration requested 0 out of the last 1951 minutes
+    com.achievo.haoqiu: passive: Interval 9 seconds: Duration requested 1 out of the last 1633 minutes
+    com.zsfz.wxnschlb.mi: gps: Interval 0 seconds: Duration requested 0 out of the last 2117 minutes
+    com.meelive.ingkee: gps: Interval 1 seconds: Duration requested 0 out of the last 259 minutes
+    com.meet.pianolearn: gps: Interval 1 seconds: Duration requested 0 out of the last 1609 minutes
+    com.tt.travel_and_driver: gps: Interval 0 seconds: Duration requested 2 out of the last 374 minutes
+    com.zlqb.app: passive: Interval 9 seconds: Duration requested 1 out of the last 515 minutes
+    com.toroke.qiguanbang: gps: Interval 1 seconds: Duration requested 0 out of the last 712 minutes
+    com.warmcar.nf.x: passive: Interval 9 seconds: Duration requested 1 out of the last 337 minutes
+    com.chenbund.mh: gps: Interval 0 seconds: Duration requested 2 out of the last 1576 minutes
+    com.cloister.channel: passive: Interval 9 seconds: Duration requested 2 out of the last 2142 minutes
+    cn.izd.app: passive: Interval 1 seconds: Duration requested 0 out of the last 1549 minutes
+    com.zhugezhaofang: gps: Interval 1 seconds: Duration requested 0 out of the last 2112 minutes
+    cn.newugo.app: passive: Interval 9 seconds: Duration requested 2 out of the last 1649 minutes
+    cn.iaapp.app.cheguanshishanghu: gps: Interval 1 seconds: Duration requested 0 out of the last 1968 minutes
+    com.hzpd.jwztc: network: Interval 0 seconds: Duration requested 0 out of the last 1859 minutes
+    com.app.antmechanic: passive: Interval 1 seconds: Duration requested 0 out of the last 1890 minutes
+    com.yunxun.moxian: passive: Interval 1 seconds: Duration requested 1 out of the last 140 minutes
+    com.kgc.qianduanbaike: gps: Interval 1 seconds: Duration requested 0 out of the last 1714 minutes
+    com.alfl.www.borrowSuperman: gps: Interval 1 seconds: Duration requested 1 out of the last 202 minutes
+    com.innoresearch.cda: network: Interval 1 seconds: Duration requested 2 out of the last 351 minutes
+    com.gole.goleer: gps: Interval 0 seconds: Duration requested 2 out of the last 741 minutes
+  Last Known Locations:
+    network: Location[network 40.043805,116.320958 acc=30 et=+10h51m28s43ms {Bundle[{adcode=110108, citycode=010, number=28å·, province=åäº¬å¸, retype=-5, source=2, street=å®å®åºåè¡, aoiname=èç§èæº-èå·¢å·¥åº, poiname=æ¸æ²³å»é¢, amap=1, city=åäº¬å¸, desc=åäº¬å¸ æµ·æ·åº å®å®åºåè·¯ é è¿æ¸æ²³å»é¢, road=å®å®åºåè·¯, type=mem, district=æµ·æ·åº, metoknlp_quality=0, country=ä¸­å½}]}]
+    passive: Location[network 40.043805,116.320958 acc=30 et=+10h51m28s43ms {Bundle[{adcode=110108, citycode=010, number=28å·, province=åäº¬å¸, retype=-5, source=2, street=å®å®åºåè¡, aoiname=èç§èæº-èå·¢å·¥åº, poiname=æ¸æ²³å»é¢, amap=1, city=åäº¬å¸, desc=åäº¬å¸ æµ·æ·åº å®å®åºåè·¯ é è¿æ¸æ²³å»é¢, road=å®å®åºåè·¯, type=mem, district=æµ·æ·åº, metoknlp_quality=0, country=ä¸­å½}]}]
+  Last Known Locations Coarse Intervals:
+    network: Location[network 40.043805,116.320958 acc=30 et=+10h51m22s871ms {Bundle[{adcode=110108, citycode=010, number=28å·, province=åäº¬å¸, retype=-5, source=2, street=å®å®åºåè¡, aoiname=èç§èæº-èå·¢å·¥åº, poiname=æ¸æ²³å»é¢, amap=1, city=åäº¬å¸, desc=åäº¬å¸ æµ·æ·åº å®å®åºåè·¯ é è¿æ¸æ²³å»é¢, road=å®å®åºåè·¯, type=mem, district=æµ·æ·åº, metoknlp_quality=0, country=ä¸­å½}]}]
+    passive: Location[network 40.043805,116.320958 acc=30 et=+10h51m22s871ms {Bundle[{adcode=110108, citycode=010, number=28å·, province=åäº¬å¸, retype=-5, source=2, street=å®å®åºåè¡, aoiname=èç§èæº-èå·¢å·¥åº, poiname=æ¸æ²³å»é¢, amap=1, city=åäº¬å¸, desc=åäº¬å¸ æµ·æ·åº å®å®åºåè·¯ é è¿æ¸æ²³å»é¢, road=å®å®åºåè·¯, type=mem, district=æµ·æ·åº, metoknlp_quality=0, country=ä¸­å½}]}]
+  Geofences:
+  Enabled Providers:
+    fused
+    passive
+  mWhitelist=[] mBlacklist=[]
+  fudger: offset: -189, -330 (meters)
+passive Internal State:
+mReportLocation=true
+gps Internal State:
+  mFixInterval=1000
+  mDisableGps (battery saver mode)=false
+  mEngineCapabilities=0x37 (SCHED MSB MSA ON_DEMAND_TIME )
+nullnetwork Internal State (com.xiaomi.metoknlp):
+REMOTE SERVICE name=network pkg=com.xiaomi.metoknlp version=1
+service down (Exception)
+fused Internal State (com.qualcomm.location):
+REMOTE SERVICE name=fused pkg=com.qualcomm.location version=1

@@ -1,0 +1,458 @@
+Backup Manager is disabled / provisioned / not pending init
+Auto-restore is enabled
+Last backup pass started: 0 (now = 1527693491171)
+  next scheduled: 1527691936726
+Transport whitelist:
+    android/com.android.internal.backup.LocalTransportService
+    com.google.android.gms/.backup.component.D2dTransportService
+    com.google.android.gms/.backup.BackupTransportService
+Available transports:
+  * android/com.android.internal.backup.LocalTransport
+       destination: Backing up to debug-only private cache
+       intent: null
+Pending init: 0
+Ancestral: 0
+Current:   0
+Participants:
+  uid: 1000
+    com.miui.fm
+    com.android.settings
+    com.miui.securitycenter
+    com.android.providers.settings
+    android
+  uid: 1001
+    com.android.phone
+  uid: 10003
+    com.android.providers.userdictionary
+    com.android.calllogbackup
+    com.android.contacts
+  uid: 10008
+    com.android.calendar
+  uid: 10016
+    com.android.camera
+  uid: 10017
+    com.miui.home
+  uid: 10019
+    com.android.mms
+  uid: 10021
+    com.android.browser
+  uid: 10028
+    com.android.sharedstoragebackup
+  uid: 10032
+    com.miui.personalassistant
+  uid: 10046
+    com.android.deskclock
+  uid: 10058
+    com.android.email
+  uid: 10068
+    com.miui.notes
+Ancestral packages: none
+Ever backed up: 0
+Pending key/value backup: 20
+    BackupRequest{pkg=com.android.camera}
+    BackupRequest{pkg=com.android.providers.settings}
+    BackupRequest{pkg=com.android.deskclock}
+    BackupRequest{pkg=com.android.email}
+    BackupRequest{pkg=com.android.calendar}
+    BackupRequest{pkg=com.android.settings}
+    BackupRequest{pkg=com.android.sharedstoragebackup}
+    BackupRequest{pkg=com.miui.notes}
+    BackupRequest{pkg=com.miui.home}
+    BackupRequest{pkg=com.miui.fm}
+    BackupRequest{pkg=com.android.providers.userdictionary}
+    BackupRequest{pkg=com.android.phone}
+    BackupRequest{pkg=com.android.calllogbackup}
+    BackupRequest{pkg=com.android.contacts}
+    BackupRequest{pkg=android}
+    BackupRequest{pkg=com.android.mms}
+    BackupRequest{pkg=com.android.browser}
+    BackupRequest{pkg=com.miui.securitycenter}
+    BackupRequest{pkg=@pm@}
+    BackupRequest{pkg=com.miui.personalassistant}
+Full backup queue:386
+    0 : com.android.providers.calendar
+    0 : com.xiaomi.vipaccount
+    0 : com.android.providers.media
+    0 : com.milink.service
+    0 : com.mobiletools.systemhelper
+    0 : com.qualcomm.shutdownlistner
+    0 : com.android.wallpapercropper
+    0 : com.xiaomi.micloud.sdk
+    0 : com.android.documentsui
+    0 : com.android.galaxy4
+    0 : com.android.externalstorage
+    0 : com.xiaomi.gamecenter.sdk.service
+    0 : com.android.htmlviewer
+    0 : com.miui.securityadd
+    0 : com.miui.gallery
+    0 : com.android.quicksearchbox
+    0 : com.android.providers.downloads
+    0 : com.qualcomm.qti.telephonyservice
+    0 : com.miui.systemAdSolution
+    0 : com.android.soundrecorder
+    0 : com.miui.guardprovider
+    0 : com.android.providers.downloads.ui
+    0 : com.android.pacprocessor
+    0 : com.xiaomi.ab
+    0 : com.mi.webkit.core
+    0 : com.android.wallpaper.holospiral
+    0 : com.android.phasebeam
+    0 : com.miui.virtualsim
+    0 : com.miui.compass
+    0 : com.android.midrive
+    0 : com.miui.vpnsdkmanager
+    0 : com.android.incallui
+    0 : com.android.frameworks.telresources
+    0 : com.android.fileexplorer
+    0 : com.miui.cloudbackup
+    0 : com.android.cellbroadcastreceiver
+    0 : com.google.android.webview
+    0 : com.xiaomi.pass
+    0 : com.xiaomi.upnp
+    0 : com.svox.pico
+    0 : com.android.proxyhandler
+    0 : com.miui.video
+    0 : com.xiaomi.market
+    0 : com.xiaomi.midrop
+    0 : com.miui.cloudservice
+    0 : com.android.managedprovisioning
+    0 : com.miui.hybrid.accessory
+    0 : com.xiaomi.providers.appindex
+    0 : com.android.noisefield
+    0 : com.android.smspush
+    0 : com.miui.calculator
+    0 : com.android.wallpaper.livepicker
+    0 : com.miui.miwallpaper
+    0 : com.jeejen.family.miui
+    0 : com.xiaomi.gamecenter
+    0 : com.xiaomi.metoknlp
+    0 : com.qualcomm.qti.accesscache
+    0 : com.miui.weather2
+    0 : com.xiaomi.scanner
+    0 : com.miui.yellowpage
+    0 : com.android.wallpaper
+    0 : com.miui.voiceassist
+    0 : com.wt.version_query
+    0 : com.miui.providers.weather
+    0 : com.android.bluetoothmidiservice
+    0 : com.miui.smsextra
+    0 : com.android.thememanager.module
+    0 : com.lbe.security.miui
+    0 : com.qualcomm.embms
+    0 : com.stability.camerastability
+    0 : com.android.captiveportallogin
+    1525923193505 : com.miui.analytics
+    1526538932421 : com.miui.player
+    1526884873848 : com.miui.hybrid
+    1527561788891 : com.platform.jhj
+    1527562163640 : com.jingzhun
+    1527562367948 : cn.aip.het
+    1527562568146 : com.recapps.selfiekimdto
+    1527562988013 : com.dayou.moe
+    1527563369192 : com.yiyuan.merchant
+    1527563698850 : com.powerlife.phone
+    1527563890086 : com.qianpai.xzs.xianzhushou
+    1527564155355 : com.pplive.uoqpandroidphone
+    1527564345198 : com.goyourfly.bigidea
+    1527564523576 : com.xmyflb.lebao.business
+    1527564702358 : com.guotai.mall
+    1527564929073 : com.cloister.channel
+    1527565106928 : com.git.lottery01
+    1527565404036 : com.shuanaer.info
+    1527565834385 : com.word2art.wordart
+    1527566041537 : com.xccl.liuliu
+    1527566227410 : com.real.fcRealPlayer
+    1527566437853 : com.zsfz.wxnschlb.mi
+    1527566729741 : com.zhugezhaofang
+    1527567140779 : com.easou.search
+    1527567334284 : com.huahan.baodian.han
+    1527567534158 : com.shengui.yuntui.android
+    1527568836328 : com.dingboshi.yunreader
+    1527569173724 : com.lhcp.mi.dandanpc
+    1527570801692 : cn.yingtaoapp.android
+    1527571006838 : com.liubowang.cellphonealarm
+    1527571543622 : net.duohuo.magapp.zaiyulin
+    1527571874072 : com.bbm.mmnn
+    1527572037437 : xcpshell.kuaichuan.xiaomi
+    1527572228336 : com.yuyoogame.ameng.dinosaur3
+    1527572983155 : diveo.e_watch
+    1527573190162 : net.yiweiyun.ewaycloudims
+    1527573374829 : com.yjkj.PKGC2778A558AA3C465
+    1527573641751 : com.trade.zhiying.yumi
+    1527574068160 : air.com.tutotoons.app.misspreschoolmathworldf.freehgnjcsykhx
+    1527574467728 : com.zeeedaleather
+    1527574668533 : com.glyd.huangziteng.ezhanhu
+    1527574966387 : com.jizhi.jgj.corporate
+    1527575567316 : com.buduobushao.android.webclient
+    1527575760016 : com.zlzx.calendard
+    1527576231623 : com.sheep.jesus
+    1527576429311 : com.ucardstore.Activity
+    1527576643484 : com.darenjie168.www
+    1527576845895 : cn.edoctor.android.talkmed
+    1527577009154 : com.dyys.xianhuabei
+    1527577206179 : com.yunfc.bushang
+    1527577390984 : com.zhaozhao.zhaozhaoxiezuo.app
+    1527577799295 : com.verdictq.preschoollearningaxcoqo
+    1527577985068 : com.haoyun.ssczs
+    1527578277717 : recruitment.join.com.recruitment
+    1527578613199 : com.zhengdianfang.AiQiuMi
+    1527578825233 : cn.xckj.talk_customer
+    1527579040817 : com.rabbit.doctor
+    1527579241523 : com.Magicast.siwanghua
+    1527579429432 : com.quchao.jinrong_app
+    1527579660827 : info.xinfu.aries
+    1527580056573 : com.app.antmechanic
+    1527580271771 : com.izd.app
+    1527580467253 : com.ubestkid.card.a
+    1527580678846 : com.qxkj.heroes
+    1527580884932 : cn.unionblue.taxrefund
+    1527581080155 : com.pluscity
+    1527581268085 : com.chebao
+    1527581470755 : com.linpus.purewater.freenew
+    1527582059626 : com.dlwj.moai
+    1527582456395 : com.gh.tooim
+    1527582645523 : com.babymaths.ettyvbabybusgo
+    1527582826310 : com.baihe.pie
+    1527583034708 : com.shqj.litouwang
+    1527583231700 : cn.com.haoyiku
+    1527583425808 : com.huamengtong.release
+    1527583863506 : cn.futurecn.kingdom.wy
+    1527584233127 : com.kocla.onehourparents
+    1527584426545 : com.orthoguardgroup.patient
+    1527584608976 : com.yht.mbifen15950203040613202125
+    1527584830872 : com.tiande.lrw
+    1527585143490 : com.shonline.bcb
+    1527585361293 : cn.appoa.partymall
+    1527585551526 : com.qianhezi.qhz
+    1527585835131 : com.tianhai.tmsh.mi
+    1527586070666 : com.ztesoft.govmrkt.dev.smart.river.chief
+    1527586240743 : com.ruanjie.casualworker
+    1527586426901 : com.cloud.oil
+    1527586737756 : com.ksmak.smartlock
+    1527586923483 : com.lingxinstudio.guzhengtuner
+    1527587110091 : com.aitoutiao.newsapp
+    1527587307374 : com.lwqh.qihuocaijingbao
+    1527587508215 : com.chazuo.college.enterprise
+    1527587704858 : com.lanzhou
+    1527588135859 : cc.youplus.app
+    1527588329423 : com.ningxia.guyuanwenzheng
+    1527588533857 : com.shinedata.teacher
+    1527588947061 : com.gs1hk.realbarcode
+    1527589166641 : com.avatar.kungfufinance
+    1527589379500 : com.fulingame.btcrxpehg
+    1527589576853 : com.ddcard.exiche
+    1527589840382 : com.tppm.fisheye.photo.editorcwmxlf
+    1527590137893 : com.guliguli.babyCleaning
+    1527590563868 : com.kgc.qianduanbaike
+    1527590745153 : yourong58.com
+    1527590908129 : cn.chongfa.www.legalprofes
+    1527591108055 : com.SpotIt.Matchingobjectsuv
+    1527591409145 : com.liaoai
+    1527591590472 : com.webapp.jkd
+    1527591783397 : cn.charge
+    1527591965979 : org.cocos2dx.yinyububian3057
+    1527592168259 : com.sogou.todayread
+    1527592436624 : com.ichuanyi.icy
+    1527592861042 : com.xiaochui.helper
+    1527593063549 : mj.xs.yxs
+    1527593261271 : com.ad.ostore
+    1527593463003 : com.hjhbnkj.trfcv
+    1527593653298 : com.sunxp.dollar
+    1527593858328 : com.medp.zzh.sls
+    1527594111309 : com.gzxs.baby.a
+    1527594500070 : cn.newugo.app
+    1527595111261 : com.bernylabs.loans.supertapchuchelrandom123.pt
+    1527595477080 : com.achievo.haoqiu
+    1527595874268 : com.hongyantu.hongyantub2b
+    1527596058317 : cn.com.stamp
+    1527596236060 : com.tuyue.piaodada
+    1527596442457 : yuxing.renrenbus.user.com
+    1527596676120 : neuron.makeblock.com
+    1527596896886 : com.meet.pianolearn
+    1527597317211 : com.alarmclockfree
+    1527597517247 : com.juyikeyi.peacemind
+    1527597726434 : com.ldnet.Property
+    1527597912139 : com.yht.pujingqiche14710310
+    1527598224347 : com.shishicai.csj
+    1527598411852 : com.youjiarui.shi_niu
+    1527598652628 : com.xcar.gcp
+    1527598882304 : com.chenbund.mh
+    1527599088127 : com.ubestkid.jigsawpuzzle.a
+    1527599284247 : com.uniplaza.fenx
+    1527599469263 : com.borzen.sscsjzs_lottomat
+    1527599712600 : com.xiaocongapp.chain
+    1527599891178 : com.chuangdun.lieliu
+    1527600070925 : com.adin.caipiao
+    1527600259806 : com.yc.phonogram
+    1527600443743 : cn.izd.app
+    1527600788510 : com.ftz.fzscjh
+    1527602300738 : com.doctor.sun.doctor
+    1527611595989 : com.fuzzyhouse.jfrijw
+    1527612641479 : com.ShengYiZhuanJia.five
+    1527612844753 : cn.dahe.central
+    1527613034075 : com.Angela.picture.book
+    1527626685690 : appinventor.ai_fanat68rus.Drawing_Fingers_Final
+    1527642053157 : com.bjxy.xyks
+    1527642402905 : com.kuaichengwuliu.client
+    1527642594775 : com.baicaibuy.daili
+    1527642816772 : com.tancheng.tanchengbox
+    1527643322600 : com.ilvdo.android.company
+    1527643750267 : com.wdj408261k.weidaijiekuan
+    1527644040070 : com.bj12345.goldqnet
+    1527644225208 : com.drakeet.purewriter
+    1527644941223 : com.jjychange
+    1527645313926 : com.imayi.dinotruckfreeruslzpbpiuskgpjwuselpdtbxeubcghqchcapetxnmgodn
+    1527645521789 : com.mstaz.app.yfmall
+    1527645753474 : com.hongju.chunxiao
+    1527645940295 : com.wswy.wzcx
+    1527646149532 : cn.longmaster.health
+    1527646636574 : com.zpf.jieyanjuntuan.jieyanjuntuan
+    1527647016100 : com.jiewin.yy.jwgj
+    1527647221668 : com.ape.petcircle
+    1527647411606 : com.gjmetal.app
+    1527647784085 : com.kunkunnapps.photocollageoykhlzuf
+    1527647984576 : com.hxd.zjsmk
+    1527648166116 : cc.juexin.swmall
+    1527648367354 : cn.uctimes.insight.android
+    1527648595205 : com.mqfenqi.www
+    1527648770611 : com.chinaj.park
+    1527649011054 : com.gole.goleer
+    1527649241227 : com.xiamu.doll
+    1527649445697 : com.KJWY.CrossBorderSellPlatform
+    1527649654545 : com.zuqshuhz.test
+    1527649851429 : com.asion.geyulin
+    1527650045076 : com.lingshang.ls
+    1527650278313 : com.qhht.kkstudent
+    1527650478977 : com.xuelang.oem.dashujubeikao
+    1527650684807 : com.toroke.qiguanbang
+    1527650900651 : com.freshjn.shop
+    1527651114278 : com.youke.futurehotelclient
+    1527651234592 : com.hxqydyl.app.ys
+    1527651423041 : cn.healthmall.healthMallSaaS
+    1527651646052 : com.istrong.im.ningbofisher
+    1527651832354 : com.gezlife.zhiputong
+    1527652014212 : com.hucun365.app
+    1527652214936 : com.tech.maison
+    1527652418414 : com.bj.saicheweizhang.query
+    1527652616829 : com.tangchaoke.yiyoubangjiao
+    1527652822003 : com.eico.tei.zhve.app.meshot
+    1527653058555 : com.fuwan369.android
+    1527653631229 : com.wqx.zycar
+    1527654121683 : com.shanxiangjiaoyu.iteacher
+    1527654422132 : com.c8software.onehealth
+    1527654614998 : com.youngs.funnyworld
+    1527654745734 : com.canglangge.airhero
+    1527654986269 : com.xiongdailicai.app
+    1527655397210 : com.popalm.duizhuang
+    1527655678237 : com.w.schulte
+    1527657011928 : com.njty.xinehome
+    1527659029164 : com.istrong.hzyIM
+    1527659526864 : com.zsd.joy
+    1527659740909 : com.guigui.soulmate
+    1527659956017 : com.cpyouxuan.app.android
+    1527660251348 : com.Magicast.Holiday
+    1527660456142 : zhangwolinyi.tsou.activity
+    1527660646288 : com.PjcjingzhunshishicaiMIPjc
+    1527660837417 : com.szyd.yingxiang
+    1527661034741 : com.caiyu.taocaipiao
+    1527661258102 : com.nibiru.vrassistant
+    1527661490929 : com.ct.teacheripa
+    1527661731256 : com.youtiankeji.shellbusiness
+    1527661910423 : com.mlxy.betzs
+    1527662138231 : com.salbacore.app
+    1527662360489 : com.lincho.hufabcfd
+    1527662545649 : com.zlqb.app
+    1527662722950 : net.caixiaomi.info
+    1527662939143 : com.lf.fanli
+    1527663138158 : com.example.king.kbwind
+    1527663339817 : com.adyuansu.yuanbao
+    1527663526509 : www.knowledgeshare.com.knowledgeshare
+    1527663920133 : com.mola.molaandroid
+    1527664116552 : com.efund.jqb
+    1527664334708 : com.meishakeji.camp
+    1527664516888 : com.junhetang.doctor
+    1527664704717 : snaildev.huajun.zq.xp.zebrafinch.puzzle
+    1527664867138 : com.qzjf.shanlaiqian
+    1527665259192 : com.android_dly.llblpingting
+    1527665445722 : com.example.ai_popularize
+    1527665640963 : com.hxwl.wulinfeng
+    1527666024116 : com.rgbvr.funland
+    1527666238835 : com.ssbd.fortune
+    1527666429991 : com.hp.app.product
+    1527666633636 : com.glavesoft.tianzheng
+    1527666872751 : com.bingo.yeliao
+    1527667081403 : cn.rrlsz.renrenli
+    1527667381375 : com.shabro.android.activity
+    1527667582632 : com.dure.fastread
+    1527667769850 : cn.dictcn.android.digitize.wjs_sc42
+    1527668053305 : com.cjquanapp.com
+    1527668236439 : com.housingbirdsrshbworker
+    1527668450557 : com.esaicguzhi.app
+    1527668833412 : com.qijiukeji.jdhb
+    1527669004931 : com.zdanjian.zdanjian
+    1527669188350 : com.bjssczix.sxdl
+    1527669594046 : com.yunronglife
+    1527670015761 : com.dewmobile.game
+    1527670216647 : io.dcloud.H5A74CF18
+    1527670788745 : com.smallisfine.littlestore
+    1527671021722 : com.tt.travel_and_driver
+    1527671221486 : com.lsege.leze.mallmgr
+    1527671414598 : com.zlzx.second
+    1527671599785 : com.forecastshare.a1
+    1527671808172 : com.paralworld.parallelwitkey
+    1527672225073 : sinia.com.baihangeducation
+    1527672403043 : com.innoresearch.cda
+    1527672609091 : net.SandStormEarl.AC.fhp
+    1527672843414 : com.ruanmeng.pingtaihui
+    1527673042254 : cn.rrcx.jywl
+    1527673442034 : com.weimob.loanking
+    1527673629023 : com.lexun99.head
+    1527673821696 : com.ns.ftit.ns_user_android
+    1527674239210 : com.fl.activity
+    1527674435992 : com.duxin.duxin37B
+    1527674644833 : com.example.administrator.lefangtong
+    1527675072510 : com.consignor
+    1527675261608 : com.hexin.plat.android.GuoJinZXGSecurity
+    1527675478882 : com.yunfeng.industrialcloud
+    1527675677937 : com.czb.chezhubang
+    1527675907236 : com.langu.jia
+    1527676332152 : com.jcfinance.jchaoche
+    1527676540048 : com.meorient.b2b.supplier
+    1527676950414 : com.souxie5.app
+    1527677163653 : cc.autochat.boring
+    1527677353468 : com.lifeline.ka.kahealthdoctor
+    1527677594701 : net.duohuo.magapp.xcsq
+    1527678321538 : com.example.shadow.heartrecreation
+    1527678558105 : com.cucr.myapplication
+    1527678700092 : com.example.touzi.zhongjin
+    1527678889006 : com.e2oto.customer
+    1527679018348 : com.zh.wanggejinfu
+    1527679229622 : com.shuidihuzhu.aixinchou
+    1527679451705 : com.scbwealth
+    1527680053566 : com.qqswshu.kiss.parent
+    1527680238521 : com.ymnet.chaojxjx
+    1527680421938 : com.shenzhou.caipiao
+    1527680616273 : com.packagehr.onessc
+    1527680813619 : com.duxin37.duxin37C
+    1527681314373 : com.alfl.www.borrowSuperman
+    1527681520799 : com.linco.sd11xuan5
+    1527681931377 : com.minsu.minsu
+    1527682337941 : com.yitao.juyiting
+    1527682549356 : com.longpackage.guessfootball
+    1527682733843 : com.tour.flightbible
+    1527682880523 : com.yingqu.lehuayun
+    1527683095578 : videoeditor.videomaker.videoeditorforyoutube
+    1527683282863 : com.fcbox.hivebox
+    1527683591102 : com.huazhen.HZQG
+    1527684065833 : com.stg.rouge.activity
+    1527684690055 : com.fnjdxz.psrecovery
+    1527684902157 : com.xmiles.vipgift.all
+    1527685091524 : com.yunxun.moxian
+    1527685277705 : com.woshipm.startschool
+    1527685480144 : com.jssc.peking
+    1527685689232 : com.poushengcommunity
+    1527685887852 : com.clover.imuseum
+    1527686092484 : com.xgck.wantu
+    1527687287881 : com.eoffcn.mobile
+    1527688696252 : com.yuyoogame.ameng.puzzle3.sub1
+    1527693359370 : com.mm.lobster.mortgage

@@ -1,0 +1,129 @@
+binder transactions:
+proc 27102
+  buffer 44036757: ffffff800b0800a8 size 8:0 delivered
+  buffer 44036349: ffffff800b080100 size 8:0 delivered
+  buffer 44036473: ffffff800b080230 size 8:0 delivered
+  buffer 44036689: ffffff800b080288 size 8:0 delivered
+  buffer 44036954: ffffff800b0802e0 size 120:0 delivered
+  buffer 44037207: ffffff800b0803a8 size 8:0 delivered
+  buffer 44036659: ffffff800b080400 size 4:0 delivered
+  buffer 44037220: ffffff800b080458 size 284:0 delivered
+proc 27012
+  buffer 44035523: ffffff8008900050 size 8:0 delivered
+  buffer 44035819: ffffff8008900260 size 4:0 delivered
+proc 26498
+  buffer 44019542: ffffff80075003b8 size 212:0 delivered
+  buffer 44031072: ffffff80075004e0 size 1060:0 delivered
+  buffer 44035229: ffffff8007500958 size 1060:0 delivered
+proc 26474
+  buffer 44019410: ffffff8006f00050 size 66276:8 delivered
+  buffer 44019416: ffffff8006f10390 size 212:0 delivered
+  buffer 44019460: ffffff8006f10510 size 8228:0 delivered
+proc 26431
+  buffer 44018993: ffffff8006c00050 size 4:0 delivered
+  buffer 44020913: ffffff8006c00100 size 8:0 delivered
+  buffer 44018977: ffffff8006c002d8 size 2328:0 delivered
+  buffer 44018990: ffffff8006c14390 size 2328:0 delivered
+proc 18885
+  buffer 43385194: ffffff80070003d8 size 4:0 delivered
+proc 18665
+  buffer 43369558: ffffff8004b00050 size 8:0 delivered
+  buffer 43369591: ffffff8004b000a8 size 20:0 delivered
+proc 18571
+  buffer 43355050: ffffff8007300050 size 44:0 delivered
+  buffer 44014415: ffffff80073000d0 size 8:0 delivered
+proc 18414
+  buffer 43343107: ffffff8002f80050 size 8:0 delivered
+  buffer 43343321: ffffff8002f800a8 size 8:0 delivered
+  buffer 43343091: ffffff8002f80470 size 212:0 delivered
+proc 16473
+  buffer 39015376: ffffff8004700050 size 8:0 delivered
+  buffer 43917920: ffffff80047000a8 size 4:0 delivered
+  buffer 43991071: ffffff8004700100 size 4:0 delivered
+  buffer 44017788: ffffff8004700158 size 4:0 delivered
+  buffer 43994599: ffffff80047001b0 size 4:0 delivered
+  buffer 44020386: ffffff8004700208 size 4:0 delivered
+  buffer 39015495: ffffff8004700268 size 120:0 delivered
+proc 22591
+  buffer 33685370: ffffff8004900050 size 8:0 delivered
+  buffer 33653248: ffffff80049000f0 size 1144:0 delivered
+  buffer 33749696: ffffff80049005b8 size 120:0 delivered
+proc 22202
+  buffer 43982191: ffffff8007400050 size 4:0 delivered
+proc 21805
+  buffer 44037530: ffffff8004e00050 size 4:0 delivered
+  buffer 29005843: ffffff8004e00168 size 4:0 delivered
+proc 20044
+  buffer 44033438: ffffff8003c80148 size 8:0 delivered
+proc 20018
+  buffer 43900970: ffffff8008f80050 size 4:0 delivered
+  buffer 31666305: ffffff8008f80228 size 8:0 delivered
+  buffer 31666339: ffffff8008f80280 size 364:0 delivered
+  buffer 31666454: ffffff8008f80440 size 8:0 delivered
+proc 14682
+  buffer 25087424: ffffff8005500050 size 8:0 delivered
+  buffer 26499340: ffffff80055000c0 size 4:0 delivered
+  buffer 25085528: ffffff8005500118 size 140:0 delivered
+  buffer 25087407: ffffff80055001f8 size 4:0 delivered
+  buffer 25092000: ffffff8005500250 size 44:0 delivered
+  buffer 25138128: ffffff80055003b0 size 8:0 delivered
+proc 681
+  buffer 40214448: ffffff800fb80050 size 4:0 delivered
+proc 3630
+  buffer 33599: ffffff8007c00050 size 4:0 delivered
+  buffer 44013934: ffffff8007c000c0 size 4:0 delivered
+  buffer 37783415: ffffff8007c00118 size 4:0 delivered
+  buffer 44014183: ffffff8007c00170 size 4:0 delivered
+  buffer 35943: ffffff8007c00208 size 8:0 delivered
+proc 2631
+  buffer 23373: ffffff800d7000f8 size 4:0 delivered
+  buffer 43981609: ffffff800d700150 size 4:0 delivered
+  buffer 44037062: ffffff800d7001a8 size 4:0 delivered
+proc 2517
+  buffer 739518: ffffff800ce00050 size 4:0 delivered
+  buffer 38684: ffffff800ce000a8 size 180:0 delivered
+  buffer 719868: ffffff800ce001b0 size 4:0 delivered
+  buffer 25974333: ffffff800ce00208 size 8:0 delivered
+  buffer 37965: ffffff800ce002a0 size 4:0 delivered
+  buffer 716374: ffffff800ce002f8 size 4:0 delivered
+  buffer 29640773: ffffff800ce00350 size 4:0 delivered
+  buffer 28856161: ffffff800ce003a8 size 120:0 delivered
+proc 2448
+  buffer 658707: ffffff800c900050 size 40:0 delivered
+  buffer 2979555: ffffff800c9000c8 size 40:0 delivered
+  buffer 34644287: ffffff800c900140 size 40:0 delivered
+proc 2362
+  buffer 17275: ffffff800bc80050 size 20:0 delivered
+  buffer 37935364: ffffff800bc800b8 size 24:8 delivered
+proc 1931
+  buffer 7983: ffffff8008600050 size 20:0 delivered
+  buffer 8400: ffffff80086000b8 size 20:0 delivered
+proc 1914
+  buffer 44035227: ffffff8008500050 size 8:0 delivered
+  buffer 43980373: ffffff80085000a8 size 8:0 delivered
+proc 1803
+  buffer 44037613: ffffff8005100050 size 20:0 delivered
+  buffer 28854689: ffffff80051000b8 size 120:0 delivered
+  buffer 25974093: ffffff80051001d8 size 8:0 delivered
+proc 642
+  buffer 43923067: ffffff8003200050 size 76:0 delivered
+proc 1342
+  thread 15369: l 01
+    incoming transaction 44032704: ffffffc013409b00 from 0:0 to 1342:15369 code 2 flags 10 pri 0 r1 node 485 size 3392:8 data ffffff800d0003b0
+  buffer 44032709: ffffff800d000050 size 8:0 delivered
+  buffer 43888941: ffffff800d0000a8 size 0:0 delivered
+  buffer 44033483: ffffff800d0000f8 size 4:0 delivered
+  buffer 7740: ffffff800d000340 size 24:8 delivered
+  buffer 44032704: ffffff800d0003b0 size 3392:8 active
+proc 647
+  buffer 13262: ffffff8006a00050 size 24:8 delivered
+  buffer 13287: ffffff8006a000c0 size 4:0 delivered
+proc 645
+  buffer 206: ffffff80067000f0 size 4:0 delivered
+proc 810
+  buffer 159: ffffff80066000f0 size 4:0 delivered
+proc 725
+  buffer 4783: ffffff8006200050 size 4:0 delivered
+proc 451
+  buffer 8: ffffff8003f80050 size 4:0 delivered
+

@@ -1,0 +1,915 @@
+Applications Graphics Acceleration Info:
+Uptime: 132135476 Realtime: 132135476
+
+** Graphics info for pid 19269 [system:ui] **
+Profile data in ms:
+
+	android/com.android.internal.app.ResolverActivity/android.view.ViewRootImpl@8552fa0 (visibility=0)
+View hierarchy:
+
+  android/com.android.internal.app.ResolverActivity/android.view.ViewRootImpl@8552fa0
+  37 views, 35.84 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        37
+Total DisplayList:  35.84 kB
+
+
+** Graphics info for pid 22202 [com.xiaomi.metoknlp] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 3630 [com.android.bluetooth] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27324 [com.jeejen.family.miui:monitor] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27267 [com.qualcomm.qti.autoregistration] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27248 [com.qualcomm.display] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27232 [com.qualcomm.qti.modemtestmode] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 21805 [com.qualcomm.qcrilmsgtunnel] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27208 [org.simalliance.openmobileapi.service:remote] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27183 [com.miui.sysbase] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27102 [com.android.mms] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27065 [com.xiaomi.simactivate.service] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 18414 [com.miui.cloudservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27141 [com.android.shell] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27118 [com.android.externalstorage] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 18885 [com.android.quicksearchbox] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 16473 [android.process.media] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27081 [com.android.documentsui] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 18571 [com.miui.analytics] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26546 [com.miui.vsimcore] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26474 [com.xiaomi.vipaccount] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26431 [com.xiaomi.market] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26498 [com.xiaomi.vipaccount:log] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27038 [com.android.keychain] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26404 [com.xiaomi.gamecenter] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26388 [com.xiaomi.providers.appindex] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 14682 [com.miui.securitycenter.remote] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 18665 [com.miui.systemAdSolution] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26340 [android.process.mediaUI] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 18831 [com.miui.personalassistant] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 19863 [com.lbe.security.miui] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 27012 [com.miui.cloudservice:pushservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 21362 [com.jeejen.family.miui] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 26909 [com.xiaomi.bluetooth] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 19571 [com.qualcomm.qti.accesscache] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 19353 [com.android.smspush] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 18791 [com.miui.autotestutils] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 22591 [com.android.browser] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 20561 [com.miui.core] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 20044 [com.miui.powerkeeper:service] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 20018 [com.sohu.inputmethod.sogou.xiaomi] **
+
+Stats since: 844024954207ns
+Total frames rendered: 7882
+Janky frames: 2413 (30.61%)
+90th percentile: 53ms
+95th percentile: 73ms
+99th percentile: 105ms
+Number Missed Vsync: 650
+Number High input latency: 0
+Number Slow UI thread: 2108
+Number Slow bitmap uploads: 370
+Number Slow issue draw commands: 138
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache          1673360 / 75497472
+  LayerCache                  0 / 50331648 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608
+  GradientCache               0 /  1048576
+  PathCache                   0 / 33554432
+  TessellationCache           0 /  1048576
+  TextDropShadowCache         0 /  6291456
+  PatchCache               3008 /   131072
+  FontRenderer 0 A8     1048576 /  1048576
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total  1048576 /  1048576
+Other:
+  FboCache                    0 /        0
+Total memory usage:
+  2724944 bytes, 2.60 MB
+
+Profile data in ms:
+
+	InputMethod/android.view.ViewRootImpl@93c21ea (visibility=8)
+Stats since: 844024954207ns
+Total frames rendered: 7882
+Janky frames: 2413 (30.61%)
+90th percentile: 53ms
+95th percentile: 73ms
+99th percentile: 105ms
+Number Missed Vsync: 650
+Number High input latency: 0
+Number Slow UI thread: 2108
+Number Slow bitmap uploads: 370
+Number Slow issue draw commands: 138
+
+View hierarchy:
+
+  InputMethod/android.view.ViewRootImpl@93c21ea
+  13 views, 12.59 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        13
+Total DisplayList:  12.59 kB
+
+
+** Graphics info for pid 17052 [com.qti.service.colorservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2631 [com.android.phone] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2610 [com.qualcomm.qti.tetherservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2586 [com.quicinc.wbcserviceapp] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2568 [com.mi.AutoTest] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2551 [com.qualcomm.qti.carrierconfigure] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2530 [com.qualcomm.qti.loadcarrier] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2517 [com.xiaomi.finddevice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2503 [com.fingerprints.serviceext] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2487 [com.qti.dpmserviceapp] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2475 [com.qualcomm.qti.notificationservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2461 [com.quicinc.cne.CNEService] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2448 [com.miui.contentcatcher] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 2362 [com.miui.daemon] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 1931 [com.miui.whetstone] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 1914 [com.xiaomi.xmsf] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+
+
+** Graphics info for pid 1803 [com.android.systemui] **
+
+Stats since: 24317448009ns
+Total frames rendered: 386198
+Janky frames: 17975 (4.65%)
+90th percentile: 10ms
+95th percentile: 16ms
+99th percentile: 31ms
+Number Missed Vsync: 3459
+Number High input latency: 2
+Number Slow UI thread: 10744
+Number Slow bitmap uploads: 719
+Number Slow issue draw commands: 3865
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache          3330040 / 75497472
+  LayerCache                  0 / 50331648 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608
+  GradientCache               0 /  1048576
+  PathCache                   0 / 33554432
+  TessellationCache           0 /  1048576
+  TextDropShadowCache   1414704 /  6291456
+  PatchCache              13952 /   131072
+  FontRenderer 0 A8     3145728 /  3145728
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total  3145728 /  3145728
+Other:
+  FboCache                    0 /        0
+Total memory usage:
+  7904424 bytes, 7.54 MB
+
+Profile data in ms:
+
+	StatusBar/android.view.ViewRootImpl@665e8ab (visibility=0)
+Stats since: 24317448009ns
+Total frames rendered: 386198
+Janky frames: 17975 (4.65%)
+90th percentile: 10ms
+95th percentile: 16ms
+99th percentile: 31ms
+Number Missed Vsync: 3459
+Number High input latency: 2
+Number Slow UI thread: 10744
+Number Slow bitmap uploads: 719
+Number Slow issue draw commands: 3865
+
+	AssistPreviewPanel/android.view.ViewRootImpl@58a5b08 (visibility=8)
+Stats since: 24317448009ns
+Total frames rendered: 386198
+Janky frames: 17975 (4.65%)
+90th percentile: 10ms
+95th percentile: 16ms
+99th percentile: 31ms
+Number Missed Vsync: 3459
+Number High input latency: 2
+Number Slow UI thread: 10744
+Number Slow bitmap uploads: 719
+Number Slow issue draw commands: 3865
+
+	RecentsPanel/android.view.ViewRootImpl@3d562a1 (visibility=8)
+Stats since: 24317448009ns
+Total frames rendered: 386198
+Janky frames: 17975 (4.65%)
+90th percentile: 10ms
+95th percentile: 16ms
+99th percentile: 31ms
+Number Missed Vsync: 3459
+Number High input latency: 2
+Number Slow UI thread: 10744
+Number Slow bitmap uploads: 719
+Number Slow issue draw commands: 3865
+
+	FloatNotificationPanel/android.view.ViewRootImpl@f6e3cc6 (visibility=8)
+Stats since: 24317448009ns
+Total frames rendered: 386198
+Janky frames: 17975 (4.65%)
+90th percentile: 10ms
+95th percentile: 16ms
+99th percentile: 31ms
+Number Missed Vsync: 3459
+Number High input latency: 2
+Number Slow UI thread: 10744
+Number Slow bitmap uploads: 719
+Number Slow issue draw commands: 3865
+
+View hierarchy:
+
+  StatusBar/android.view.ViewRootImpl@665e8ab
+  548 views, 572.26 kB of display lists
+
+  AssistPreviewPanel/android.view.ViewRootImpl@58a5b08
+  5 views, 4.84 kB of display lists
+
+  RecentsPanel/android.view.ViewRootImpl@3d562a1
+  14 views, 13.56 kB of display lists
+
+  FloatNotificationPanel/android.view.ViewRootImpl@f6e3cc6
+  2 views, 1.94 kB of display lists
+
+
+Total ViewRootImpl: 4
+Total Views:        569
+Total DisplayList:  592.61 kB
+
+
+** Graphics info for pid 1342 [system] **
+
+Stats since: 3285560945723ns
+Total frames rendered: 368
+Janky frames: 76 (20.65%)
+90th percentile: 48ms
+95th percentile: 97ms
+99th percentile: 121ms
+Number Missed Vsync: 42
+Number High input latency: 0
+Number Slow UI thread: 53
+Number Slow bitmap uploads: 2
+Number Slow issue draw commands: 71
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache                0 / 75497472
+  LayerCache                  0 / 50331648 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608
+  GradientCache               0 /  1048576
+  PathCache                   0 / 33554432
+  TessellationCache           0 /  1048576
+  TextDropShadowCache         0 /  6291456
+  PatchCache                  0 /   131072
+  FontRenderer 0 A8           0 /        0
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total        0 /        0
+Other:
+  FboCache                    0 /        0
+Total memory usage:
+  0 bytes, 0.00 MB
+
+Profile data in ms:
+
+	KeyguardScrim/android.view.ViewRootImpl@43f055e (visibility=8)
+	Starting cn.aip.het/android.view.ViewRootImpl@72c1d3f (visibility=8)
+	Starting xcpshell.kuaichuan.xiaomi/android.view.ViewRootImpl@b76f50a (visibility=8)
+	Starting com.yht.mbifen15950203040613202125/android.view.ViewRootImpl@674bff9 (visibility=8)
+	Starting com.ksmak.smartlock/android.view.ViewRootImpl@9472b0e (visibility=8)
+	Starting com.sunxp.dollar/android.view.ViewRootImpl@78b6a40 (visibility=8)
+	Starting com.shishicai.csj/android.view.ViewRootImpl@b20deab (visibility=8)
+	Starting com.phegda.chainmall.tt/android.view.ViewRootImpl@a2d52fe (visibility=8)
+	Starting com.kunkunnapps.photocollageoykhlzuf/android.view.ViewRootImpl@309ea5f (visibility=8)
+	Starting cn.healthmall.healthMallSaaS/android.view.ViewRootImpl@51becac (visibility=8)
+	Starting com.c8software.onehealth/android.view.ViewRootImpl@74a866f (visibility=8)
+	Starting com.w.schulte/android.view.ViewRootImpl@ca0ee0 (visibility=8)
+	Starting com.szyd.yingxiang/android.view.ViewRootImpl@7d0c599 (visibility=8)
+	Starting com.adyuansu.yuanbao/android.view.ViewRootImpl@c020a76 (visibility=8)
+	Starting com.bjssczix.sxdl/android.view.ViewRootImpl@4778dc0 (visibility=8)
+	Starting com.tt.travel_and_driver/android.view.ViewRootImpl@6980af9 (visibility=8)
+	Starting com.lsege.leze.mallmgr/android.view.ViewRootImpl@7aaba3e (visibility=8)
+	Starting cc.autochat.boring/android.view.ViewRootImpl@200d1de (visibility=8)
+	Starting com.example.touzi.zhongjin/android.view.ViewRootImpl@4d5b03f (visibility=8)
+	Starting com.qqswshu.kiss.parent/android.view.ViewRootImpl@a696d0c (visibility=8)
+	Starting com.shenzhou.caipiao/android.view.ViewRootImpl@1654655 (visibility=8)
+View hierarchy:
+
+  KeyguardScrim/android.view.ViewRootImpl@43f055e
+  1 views, 0.97 kB of display lists
+
+  Starting cn.aip.het/android.view.ViewRootImpl@72c1d3f
+  5 views, 4.84 kB of display lists
+
+  Starting xcpshell.kuaichuan.xiaomi/android.view.ViewRootImpl@b76f50a
+  4 views, 3.88 kB of display lists
+
+  Starting com.yht.mbifen15950203040613202125/android.view.ViewRootImpl@674bff9
+  4 views, 3.88 kB of display lists
+
+  Starting com.ksmak.smartlock/android.view.ViewRootImpl@9472b0e
+  4 views, 3.88 kB of display lists
+
+  Starting com.sunxp.dollar/android.view.ViewRootImpl@78b6a40
+  5 views, 4.84 kB of display lists
+
+  Starting com.shishicai.csj/android.view.ViewRootImpl@b20deab
+  5 views, 4.84 kB of display lists
+
+  Starting com.phegda.chainmall.tt/android.view.ViewRootImpl@a2d52fe
+  4 views, 3.88 kB of display lists
+
+  Starting com.kunkunnapps.photocollageoykhlzuf/android.view.ViewRootImpl@309ea5f
+  4 views, 3.88 kB of display lists
+
+  Starting cn.healthmall.healthMallSaaS/android.view.ViewRootImpl@51becac
+  5 views, 4.84 kB of display lists
+
+  Starting com.c8software.onehealth/android.view.ViewRootImpl@74a866f
+  4 views, 3.88 kB of display lists
+
+  Starting com.w.schulte/android.view.ViewRootImpl@ca0ee0
+  4 views, 3.88 kB of display lists
+
+  Starting com.szyd.yingxiang/android.view.ViewRootImpl@7d0c599
+  5 views, 4.84 kB of display lists
+
+  Starting com.adyuansu.yuanbao/android.view.ViewRootImpl@c020a76
+  4 views, 3.88 kB of display lists
+
+  Starting com.bjssczix.sxdl/android.view.ViewRootImpl@4778dc0
+  5 views, 4.84 kB of display lists
+
+  Starting com.tt.travel_and_driver/android.view.ViewRootImpl@6980af9
+  5 views, 4.84 kB of display lists
+
+  Starting com.lsege.leze.mallmgr/android.view.ViewRootImpl@7aaba3e
+  5 views, 4.84 kB of display lists
+
+  Starting cc.autochat.boring/android.view.ViewRootImpl@200d1de
+  5 views, 4.84 kB of display lists
+
+  Starting com.example.touzi.zhongjin/android.view.ViewRootImpl@4d5b03f
+  4 views, 3.88 kB of display lists
+
+  Starting com.qqswshu.kiss.parent/android.view.ViewRootImpl@a696d0c
+  4 views, 3.88 kB of display lists
+
+  Starting com.shenzhou.caipiao/android.view.ViewRootImpl@1654655
+  5 views, 4.84 kB of display lists
+
+
+Total ViewRootImpl: 21
+Total Views:        91
+Total DisplayList:  88.16 kB
+

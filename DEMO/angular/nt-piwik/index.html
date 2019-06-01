@@ -1,0 +1,130 @@
+<!--  head：页面的</head>之前代码 -->
+<!DOCTYPE html>
+<html ng-app="NtSF" ng-cloak="" class="ng-cloak">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <!-- common.css不可变 -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <script src="project.js" type="text/javascript" charset="utf-8"></script>
+    <!-- ** 注：根据项目的实际情况 添加或删除引入的css文件 ** -->
+    <!--
+    <link rel="stylesheet" type="text/css" href="assets/css/autocomplete.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datarangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ng-table.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    -->
+    
+    <script>
+        // var storage = window.localStorage;
+        // var TOKEN = (!!storage.getItem('NXPB_TOKEN'))?storage.getItem('NXPB_TOKEN'):'';
+        // if(!!!TOKEN){
+        //     window.location.href = 'login.html';
+        // }
+    </script>
+</head>
+<body ng-controller="demoController">
+	<!-- header：body的共同header -->
+    <!-- ** 注：根据项目的实际情况 添加每个页面需要显示的内容 ** -->
+
+<!-- <header>
+  <div class="header new_header"> 
+    <ul> 
+      <li style="width: 10%;height:100%"></li> 
+      <li> 
+        <a href="index.html" class="nav_active header_a" tkey="store_sale"></a>
+      </li> 
+      <li> 
+        <a href="index-indicator.html" class="header_a" tkey="store_target"></a> 
+      </li> 
+      <li> 
+        <a href="index-week.html" class="header_a" tkey="store_week"></a> 
+      </li> 
+      <li> 
+        <a href="index-store.html" class="header_a" tkey="kucun_analysis"></a> 
+      </li> 
+      <li style="width: 10%"> 
+        <div class="shop_change" onclick="show_shop_search()"> 
+          <span tkey="switch_store"></span> 
+        </div> 
+      </li> 
+   </ul> 
+  </div> 
+</header> -->
+
+
+    
+    <!-- ** 注：your code ** -->
+    <div style="text-align: center;">
+        <button onclick="window.location.href='third.html'" style="margin:10px;padding:5px 10px;">去第三个页面</button>
+    </div>
+    <!-- script：引入 js 文件 -->
+    <!-- ** 注：根据项目的实际情况 添加或删除引入的js文件 ** -->
+
+<script src="assets/lib/jquery.min.js"></script> 
+<script src="assets/lib/echarts.min.js"></script>
+<script src="assets/lib/angular-1.4.8.min.js"></script>
+<script src="assets/lib/angular-resource.js"></script>
+<script src="assets/lib/angular-route.js"></script>
+<script src="assets/lib/bootstrap.min.js"></script>
+<script src="assets/lib/common.js"></script>
+
+<!-- 
+<script src="assets/lib/ng-infinite-scroll.js"></script>
+<script src="assets/lib/ng-table.min.js"></script>
+<script src="assets/lib/autocomplete.js"></script>
+<script src="assets/lib/moment.min.js"></script>
+<script src="assets/lib/dataTool.min.js"></script>
+<script src="assets/lib/demo.js"></script>
+<script src="assets/lib/tasks.js"></script> 
+-->
+
+<script src="assets/api/api.config.js"></script>
+<script src="assets/api/api.js"></script>
+
+    <script type="text/javascript">
+    	// piwik
+        document.title = '首页';
+    </script>
+
+    <!-- bottom：加载loading和piwik -->
+    <script>
+        var _paq = _paq || [];
+
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          try {
+            var u="//192.168.64.2/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            
+            _paq.push(['setSiteId', '1']);
+            _paq.push(['setUserId', 'cai']);
+
+            // Override document.title
+            // _paq.push(['setDocumentTitle', 'title']);
+
+            _paq.push(['setCustomVariable', "1", "isLogin", 'login', 'page']);
+
+            // // “visit”表示对一个访问者赋予用户变量，“page”表示对一次页面访问赋予用户变量
+            // _paq.push(['setCustomVariable', "1", "Platform", P_CV.Platform, 'page']);
+            // _paq.push(['setCustomVariable', "2", "TenantId", P_CV.TenantID, 'visit']);
+            // _paq.push(['setCustomVariable', "3", "TenantName", P_CV.TenantName]);
+            // _paq.push(['setCustomVariable', "4", "ShopName", P_CV.ShopName]);
+            // _paq.push(['setCustomVariable', "5", "AppVersion", P_CV.Appversion, 'page']);
+
+            _paq.push(['storeCustomVariablesInCookie']);
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            
+
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            var isLogin = getCustomVariable( 1, 'page' );
+            console.log(isLogin);
+          }catch (e){
+            console.log(e);
+          }
+        })();
+    </script>

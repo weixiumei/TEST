@@ -1,0 +1,566 @@
+Current Notification Manager state:
+  Notification List:
+    NotificationRecord(0x07bc0078: pkg=com.miui.cloudservice user=UserHandle{0} id=8888 tag=null score=0 key=0|com.miui.cloudservice|8888|null|10045: Notification(pri=0 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x10 color=0x00000000 vis=PRIVATE))
+      uid=10045 userId=0
+      icon=Icon(typ=RESOURCE pkg=com.miui.cloudservice id=0x7f02006f) / com.miui.cloudservice:drawable/notif_micloud
+      pri=0 score=0
+      key=0|com.miui.cloudservice|8888|null|10045
+      seen=false
+      groupKey=0|com.miui.cloudservice|8888|null|10045
+      contentIntent=PendingIntent{800f351: PendingIntentRecord{d076054 com.miui.cloudservice startActivity}}
+      deleteIntent=PendingIntent{43077b6: PendingIntentRecord{5f32466 com.miui.cloudservice startService}}
+      tickerText=æ¨ææ°æ®æªåæ­¥
+      contentView=null
+      defaults=0x00000000 flags=0x00000010
+      sound=null
+      audioStreamType=-1
+      audioAttributes=AudioAttributes: usage=5 content=4 flags=0x0 tags=
+      color=0x00000000
+      vibrate=null
+      led=0x00000000 onMs=0 offMs=0
+      extras={
+        android.title=String
+        android.subText=null
+        android.showChronometer=Boolean (false)
+        android.icon=Icon (Icon(typ=RESOURCE pkg=com.miui.cloudservice id=0x7f02006f))
+        android.text=String
+        android.progress=Integer (0)
+        android.progressMax=Integer (0)
+        android.showWhen=Boolean (true)
+        android.rebuild.applicationInfo=ApplicationInfo (ApplicationInfo{9e09cb7 com.miui.cloudservice})
+        android.rebuild.contentView=Boolean (true)
+        android.infoText=null
+        android.originatingUserId=Integer (0)
+        android.progressIndeterminate=Boolean (false)
+        android.rebuild=Boolean (true)
+      }
+      stats=SingleNotificationStats{posttimeElapsedMs=127235565, posttimeToFirstClickMs=-1, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedSEMs=-1}
+      mContactAffinity=0.0
+      mRecentlyIntrusive=false
+      mPackagePriority=0
+      mPackageVisibility=-1000
+      mIntercept=false
+      mGlobalSortKey=intrsv=1:grnk=0x0001:gsmry=1:nsk:rnk=0x0001
+      mRankingTimeMs=1527688596046
+      mCreationTimeMs=1527688596054
+      mVisibleSinceMs=0
+      mUpdateTimeMs=1527688596054
+    NotificationRecord(0x0ce799b2: pkg=com.xiaomi.xmsf user=UserHandle{0} id=-1243484182 tag=null score=0 key=0|com.xiaomi.xmsf|-1243484182|null|10094: Notification(pri=0 contentView=null vibrate=default sound=default defaults=0x7 flags=0x11 color=0x00000000 vis=PRIVATE))
+      uid=10094 userId=0
+      icon=Icon(typ=RESOURCE pkg=com.xiaomi.xmsf id=0x7f020000) / com.xiaomi.xmsf:drawable/icon
+      pri=0 score=0
+      key=0|com.xiaomi.xmsf|-1243484182|null|10094
+      seen=false
+      groupKey=0|com.xiaomi.xmsf|-1243484182|null|10094
+      contentIntent=PendingIntent{11cdd03: PendingIntentRecord{46f6964 com.xiaomi.xmsf startService}}
+      deleteIntent=null
+      tickerText=null
+      contentView=null
+      defaults=0x00000007 flags=0x00000011
+      sound=null
+      audioStreamType=-1
+      audioAttributes=AudioAttributes: usage=5 content=4 flags=0x0 tags=
+      color=0x00000000
+      vibrate=null
+      led=0x00000000 onMs=0 offMs=0
+      extras={
+        android.title=String
+        android.subText=null
+        message_id=String
+        android.template=String
+        android.showChronometer=Boolean (false)
+        android.icon=Icon (Icon(typ=RESOURCE pkg=com.xiaomi.xmsf id=0x7f020000))
+        android.text=String
+        android.progress=Integer (0)
+        android.progressMax=Integer (0)
+        android.showWhen=Boolean (true)
+        android.rebuild.applicationInfo=ApplicationInfo (ApplicationInfo{7f33480 com.xiaomi.xmsf})
+        android.rebuild.contentView=Boolean (true)
+        android.bigText=String
+        android.infoText=null
+        android.originatingUserId=Integer (0)
+        android.progressIndeterminate=Boolean (false)
+        android.rebuild=Boolean (true)
+        score_info=String
+        android.rebuild.bigView=Boolean (true)
+      }
+      stats=SingleNotificationStats{posttimeElapsedMs=22357752, posttimeToFirstClickMs=-1, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedSEMs=-1}
+      mContactAffinity=0.0
+      mRecentlyIntrusive=false
+      mPackagePriority=0
+      mPackageVisibility=-1000
+      mIntercept=false
+      mGlobalSortKey=intrsv=1:grnk=0x0002:gsmry=1:nsk:rnk=0x0002
+      mRankingTimeMs=1527583718230
+      mCreationTimeMs=1527583718241
+      mVisibleSinceMs=0
+      mUpdateTimeMs=1527583718241
+    NotificationRecord(0x078c8ab9: pkg=com.xiaomi.xmsf user=UserHandle{0} id=-1243486828 tag=null score=0 key=0|com.xiaomi.xmsf|-1243486828|null|10094: Notification(pri=0 contentView=null vibrate=default sound=default defaults=0x7 flags=0x11 color=0x00000000 vis=PRIVATE))
+      uid=10094 userId=0
+      icon=Icon(typ=RESOURCE pkg=com.xiaomi.xmsf id=0x7f020000) / com.xiaomi.xmsf:drawable/icon
+      pri=0 score=0
+      key=0|com.xiaomi.xmsf|-1243486828|null|10094
+      seen=false
+      groupKey=0|com.xiaomi.xmsf|-1243486828|null|10094
+      contentIntent=PendingIntent{d319efe: PendingIntentRecord{ce487cd com.xiaomi.xmsf startService}}
+      deleteIntent=null
+      tickerText=null
+      contentView=null
+      defaults=0x00000007 flags=0x00000011
+      sound=null
+      audioStreamType=-1
+      audioAttributes=AudioAttributes: usage=5 content=4 flags=0x0 tags=
+      color=0x00000000
+      vibrate=null
+      led=0x00000000 onMs=0 offMs=0
+      extras={
+        android.title=String
+        android.subText=null
+        message_id=String
+        android.template=String
+        android.showChronometer=Boolean (false)
+        android.icon=Icon (Icon(typ=RESOURCE pkg=com.xiaomi.xmsf id=0x7f020000))
+        android.text=String
+        android.progress=Integer (0)
+        android.progressMax=Integer (0)
+        android.showWhen=Boolean (true)
+        android.rebuild.applicationInfo=ApplicationInfo (ApplicationInfo{306465f com.xiaomi.xmsf})
+        android.rebuild.contentView=Boolean (true)
+        android.bigText=String
+        android.infoText=null
+        android.originatingUserId=Integer (0)
+        android.progressIndeterminate=Boolean (false)
+        android.rebuild=Boolean (true)
+        score_info=String
+        android.rebuild.bigView=Boolean (true)
+      }
+      stats=SingleNotificationStats{posttimeElapsedMs=21362043, posttimeToFirstClickMs=-1, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedSEMs=-1}
+      mContactAffinity=0.0
+      mRecentlyIntrusive=false
+      mPackagePriority=0
+      mPackageVisibility=-1000
+      mIntercept=false
+      mGlobalSortKey=intrsv=1:grnk=0x0003:gsmry=1:nsk:rnk=0x0003
+      mRankingTimeMs=1527582722494
+      mCreationTimeMs=1527582722533
+      mVisibleSinceMs=0
+      mUpdateTimeMs=1527582722533
+    NotificationRecord(0x0065467d: pkg=android user=UserHandle{-1} id=17040370 tag=null score=-10 key=-1|android|17040370|null|1000: Notification(pri=-1 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x2 color=0xff607d8b vis=PUBLIC))
+      uid=1000 userId=-1
+      icon=Icon(typ=RESOURCE pkg=android id=0x01080654) / android:drawable/stat_sys_adb
+      pri=-1 score=-10
+      key=-1|android|17040370|null|1000
+      seen=false
+      groupKey=-1|android|17040370|null|1000
+      contentIntent=PendingIntent{8474972: PendingIntentRecord{9eee45d android startActivity}}
+      deleteIntent=null
+      tickerText=å·²è¿æ¥å°USBè°è¯
+      contentView=null
+      defaults=0x00000000 flags=0x00000002
+      sound=null
+      audioStreamType=-1
+      audioAttributes=AudioAttributes: usage=5 content=4 flags=0x0 tags=
+      color=0xff607d8b
+      vibrate=null
+      led=0x00000000 onMs=0 offMs=0
+      extras={
+        android.title=String
+        android.subText=null
+        android.showChronometer=Boolean (false)
+        android.icon=Icon (Icon(typ=RESOURCE pkg=android id=0x01080654))
+        android.text=String
+        android.progress=Integer (0)
+        android.progressMax=Integer (0)
+        android.showWhen=Boolean (true)
+        android.rebuild.applicationInfo=ApplicationInfo (ApplicationInfo{ee731c3 android})
+        android.rebuild.contentView=Boolean (true)
+        android.infoText=null
+        android.originatingUserId=Integer (0)
+        android.progressIndeterminate=Boolean (false)
+        android.rebuild=Boolean (true)
+      }
+      stats=SingleNotificationStats{posttimeElapsedMs=26443, posttimeToFirstClickMs=1434100, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedSEMs=-1}
+      mContactAffinity=0.0
+      mRecentlyIntrusive=false
+      mPackagePriority=0
+      mPackageVisibility=-1000
+      mIntercept=false
+      mGlobalSortKey=intrsv=1:grnk=0x0004:gsmry=1:nsk:rnk=0x0004
+      mRankingTimeMs=1527561382581
+      mCreationTimeMs=1527561382581
+      mVisibleSinceMs=0
+      mUpdateTimeMs=1527561382581
+    NotificationRecord(0x096bca40: pkg=android user=UserHandle{-1} id=17040364 tag=null score=-20 key=-1|android|17040364|null|1000: Notification(pri=-2 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x2 color=0xff607d8b vis=PUBLIC))
+      uid=1000 userId=-1
+      icon=Icon(typ=RESOURCE pkg=android id=0x01080654) / android:drawable/stat_sys_adb
+      pri=-2 score=-20
+      key=-1|android|17040364|null|1000
+      seen=false
+      groupKey=-1|android|17040364|null|1000
+      contentIntent=PendingIntent{804cd79: PendingIntentRecord{98be8cb android startActivity}}
+      deleteIntent=null
+      tickerText=æ­£å¨éè¿ USB åçµ
+      contentView=null
+      defaults=0x00000000 flags=0x00000002
+      sound=null
+      audioStreamType=-1
+      audioAttributes=AudioAttributes: usage=5 content=4 flags=0x0 tags=
+      color=0xff607d8b
+      vibrate=null
+      led=0x00000000 onMs=0 offMs=0
+      extras={
+        android.title=String
+        android.subText=null
+        android.showChronometer=Boolean (false)
+        android.icon=Icon (Icon(typ=RESOURCE pkg=android id=0x01080654))
+        android.text=String
+        android.progress=Integer (0)
+        android.progressMax=Integer (0)
+        android.showWhen=Boolean (true)
+        android.rebuild.applicationInfo=ApplicationInfo (ApplicationInfo{ee731c3 android})
+        android.rebuild.contentView=Boolean (true)
+        android.infoText=null
+        android.originatingUserId=Integer (0)
+        android.progressIndeterminate=Boolean (false)
+        android.rebuild=Boolean (true)
+      }
+      stats=SingleNotificationStats{posttimeElapsedMs=26442, posttimeToFirstClickMs=7529359, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedSEMs=-1}
+      mContactAffinity=0.0
+      mRecentlyIntrusive=false
+      mPackagePriority=0
+      mPackageVisibility=-1000
+      mIntercept=false
+      mGlobalSortKey=intrsv=1:grnk=0x0005:gsmry=1:nsk:rnk=0x0005
+      mRankingTimeMs=1527561382576
+      mCreationTimeMs=1527561382576
+      mVisibleSinceMs=0
+      mUpdateTimeMs=1527561382576
+  
+  mUseAttentionLight=false
+  mNotificationPulseEnabled=true
+  mSoundNotificationKey=null
+  mVibrateNotificationKey=null
+  mDisableNotificationEffects=false
+  mCallState=CALL_STATE_IDLE
+  mSystemReady=true
+  mArchive=Archive (100 notifications)
+    StatusBarNotification(pkg=com.android.providers.contacts user=UserHandle{0} id=100 tag=null score=0 key=0|com.android.providers.contacts|100|null|10003: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE))
+    StatusBarNotification(pkg=com.tbstbs.xiacai user=UserHandle{0} id=537050853 tag=null score=-20 key=0|com.tbstbs.xiacai|537050853|null|10479: Notification(pri=-2 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE))
+    StatusBarNotification(pkg=com.android.providers.contacts user=UserHandle{0} id=100 tag=null score=0 key=0|com.android.providers.contacts|100|null|10003: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE))
+    StatusBarNotification(pkg=com.yuyoogame.ameng.puzzle3.sub1 user=UserHandle{0} id=9371 tag=null score=0 key=0|com.yuyoogame.ameng.puzzle3.sub1|9371|null|10478: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE))
+    StatusBarNotification(pkg=com.android.providers.contacts user=UserHandle{0} id=100 tag=null score=0 key=0|com.android.providers.contacts|100|null|10003: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE))
+    ...
+
+  Usage Stats:
+    AggregatedStats{
+      key='__global',
+      numPostedByApp=714,
+      numUpdatedByApp=93,
+      numRemovedByApp=696,
+      numPeopleCacheHit=805,
+      numWithStaredPeople=0,
+      numWithValidPeople=0,
+      numPeopleCacheMiss=0,
+      numBlocked=0,
+    }
+    mStatsArrays.size(): 1
+    post_frequency{user_id=-1,pkg=android,day=1,count=2}
+    post_frequency{user_id=-1,pkg=android,day=4,count=1}
+    post_frequency{user_id=-1,pkg=android,day=6,count=2}
+    post_frequency{user_id=0,pkg=cn.healthmall.healthMallSaaS,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=0,count=195}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=0,count=130}
+    post_frequency{user_id=0,pkg=com.bingo.yeliao,day=0,count=2}
+    post_frequency{user_id=0,pkg=com.bj12345.goldqnet,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.deqingcity.forum,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.fuwan369.android,day=0,count=2}
+    post_frequency{user_id=0,pkg=com.huazhen.HZQG,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.hxqydyl.app.ys,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.istrong.im.ningbofisher,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.junhetang.doctor,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.lifeline.ka.kahealthdoctor,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.meelive.ingkee,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.meinhb.app,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.miui.cloudservice,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.njty.xinehome,day=0,count=2}
+    post_frequency{user_id=0,pkg=com.ns.ftit.ns_user_android,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.popalm.duizhuang,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.saicmobility.driver,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.tbstbs.xiacai,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.tech.maison,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.tf.tianfeng_fxbiao,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.tour.flightbible,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.tt.travel_and_driver,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.woshipm.startschool,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.xiongdailicai.app,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.yitao.juyiting,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.yuyoogame.ameng.puzzle3.sub1,day=0,count=1}
+    post_frequency{user_id=0,pkg=com.zsd.joy,day=0,count=1}
+    post_frequency{user_id=0,pkg=net.duohuo.magapp.xcsq,day=0,count=1}
+    post_frequency{user_id=0,pkg=oneapp.onechain.androidapp,day=0,count=2}
+    post_frequency{user_id=0,pkg=cn.charge,day=1,count=1}
+    post_frequency{user_id=0,pkg=cn.chongfa.www.legalprofes,day=1,count=1}
+    post_frequency{user_id=0,pkg=cn.com.haoyiku,day=1,count=1}
+    post_frequency{user_id=0,pkg=cn.edoctor.android.talkmed,day=1,count=1}
+    post_frequency{user_id=0,pkg=cn.unionblue.taxrefund,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.achievo.haoqiu,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.aitoutiao.newsapp,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=1,count=181}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=1,count=99}
+    post_frequency{user_id=0,pkg=com.appbyme.app74590,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.askdd.ddstudy,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.avatar.kungfufinance,day=1,count=2}
+    post_frequency{user_id=0,pkg=com.bs.trade,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.chazuo.college.enterprise,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.dlwj.moai,day=1,count=2}
+    post_frequency{user_id=0,pkg=com.doctor.sun.doctor,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.example.businesshall,day=1,count=9}
+    post_frequency{user_id=0,pkg=com.jizhi.jgj.corporate,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.kgc.qianduanbaike,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.kocla.onehourparents,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.ksmak.smartlock,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.miui.securitycenter,day=1,count=7}
+    post_frequency{user_id=0,pkg=com.qianhezi.qhz,day=1,count=3}
+    post_frequency{user_id=0,pkg=com.shengui.yuntui.android,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.shqj.litouwang,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.smart.mobile.community,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.sogou.todayread,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.trade.zhiying.yumi,day=1,count=2}
+    post_frequency{user_id=0,pkg=com.ucardstore.Activity,day=1,count=3}
+    post_frequency{user_id=0,pkg=com.xiaocongapp.chain,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.xiaomi.xmsf,day=1,count=21}
+    post_frequency{user_id=0,pkg=com.youjiarui.shi_niu,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.yuyoogame.ameng.dinosaur3,day=1,count=1}
+    post_frequency{user_id=0,pkg=com.zsfz.wxnschlb.mi,day=1,count=2}
+    post_frequency{user_id=0,pkg=net.duohuo.magapp.zaiyulin,day=1,count=1}
+    post_frequency{user_id=0,pkg=net.yiweiyun.ewaycloudims,day=1,count=1}
+    post_frequency{user_id=0,pkg=cn.dlc.CrazyCraneMachine,day=2,count=2}
+    post_frequency{user_id=0,pkg=cn.microants.merchants,day=2,count=1}
+    post_frequency{user_id=0,pkg=cn.missfresh.application,day=2,count=1}
+    post_frequency{user_id=0,pkg=cn.ptaxi.yunda.client,day=2,count=2}
+    post_frequency{user_id=0,pkg=com.aligames.wegame,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.android.calendar,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=2,count=224}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=2,count=114}
+    post_frequency{user_id=0,pkg=com.baigong.baoxian,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.bhbest.forum,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.doudoubird.weather,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.example.androiddcxt,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.genzhilin.kc.android,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.gjj.cxyy,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.guochengwang.forum,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.iue.fk052,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.leba.wasee,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.luobotec.robotgameandroid,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.maowan.litegame,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.miui.securitycenter,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.neisha.ppzu,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.news.toutiao,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.strawberry.chat,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.svw.sc.avacar,day=2,count=3}
+    post_frequency{user_id=0,pkg=com.tantu.travel.android,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.trade.gufanfan,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.utrust.LogSupplier.cn,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.weisheng.coinla,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.xiaomi.xmsf,day=2,count=32}
+    post_frequency{user_id=0,pkg=com.yixia.fungame,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.yuantiku.tutor,day=2,count=1}
+    post_frequency{user_id=0,pkg=com.yupaopao.yuer,day=2,count=2}
+    post_frequency{user_id=0,pkg=net.pinrenwu.pinrenwu,day=2,count=1}
+    post_frequency{user_id=0,pkg=org.wanmen.wanmenmid,day=2,count=29}
+    post_frequency{user_id=0,pkg=com.android.calendar,day=3,count=6}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=3,count=111}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=3,count=3}
+    post_frequency{user_id=0,pkg=com.miui.cloudservice,day=3,count=1}
+    post_frequency{user_id=0,pkg=com.xiaomi.xmsf,day=3,count=30}
+    post_frequency{user_id=0,pkg=com.zhaocw.woreplycn,day=3,count=1}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=4,count=44}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=4,count=40}
+    post_frequency{user_id=0,pkg=com.hepai.hepaiandroid,day=4,count=1}
+    post_frequency{user_id=0,pkg=com.miui.securitycenter,day=4,count=2}
+    post_frequency{user_id=0,pkg=com.qihoo360.transfer,day=4,count=1}
+    post_frequency{user_id=0,pkg=com.xiaomi.xmsf,day=4,count=10}
+    post_frequency{user_id=0,pkg=cn.com.lygtq.lygzx,day=5,count=1}
+    post_frequency{user_id=0,pkg=cn.icarowner.icarowner,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.android.calendar,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.android.htmlviewer,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=5,count=202}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=5,count=107}
+    post_frequency{user_id=0,pkg=com.beweyk.ctaobao,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.delicloud.app.smartoffice,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.gangyun.makeup,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.gsthy.tbmb.mibrt5556,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.guoyuncm.rainbow,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.hema.xiaobaicai.klsf,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.hengxin.job91,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.hskonline,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.ht.bimviewmaster,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.ht.cadpageview,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.hundsun.hospitalcloud.platform.guangdong.doctor,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.idealworkshops.idealschool,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.ijinshan.browser_fast,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.itaoke.baotao,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.junhetang.doctor,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.kedacom.ovopark.taiji,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.lmcity.lmbuy,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.machengxinxiwang.forum,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.mahuafm.app,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.meelive.ingkee,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.mgyun.vpsim.gg.onelocker,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.missu.girlscalendar,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.mitures,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.miui.securitycenter,day=5,count=14}
+    post_frequency{user_id=0,pkg=com.mocuz.nantongrexian,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.pocketpiano.mobile,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.quncao.lark,day=5,count=4}
+    post_frequency{user_id=0,pkg=com.rsc.android_driver,day=5,count=2}
+    post_frequency{user_id=0,pkg=com.rsc.tradecenter,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.sy.charts,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.taoshen.version,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.tenement,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.thlc.mychengxing,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.trend.information,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.tzzs.bikeclient,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.wanplus.wp,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.weikuaibupo.qicaihongbao,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.xiaomi.xmsf,day=5,count=18}
+    post_frequency{user_id=0,pkg=com.yl.wenling,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.zhangyou.plamreading,day=5,count=1}
+    post_frequency{user_id=0,pkg=com.zhuyu.bi.loans,day=5,count=1}
+    post_frequency{user_id=0,pkg=net.duohuo.magapp.xcsq,day=5,count=1}
+    post_frequency{user_id=0,pkg=oneapp.onechain.androidapp,day=5,count=2}
+    post_frequency{user_id=0,pkg=bhojpuri.hitsongs,day=6,count=1}
+    post_frequency{user_id=0,pkg=cn.lanx.guild,day=6,count=1}
+    post_frequency{user_id=0,pkg=cn.qxtec.jishulink,day=6,count=2}
+    post_frequency{user_id=0,pkg=com.ac.englishtomarathitranslator,day=6,count=33}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=6,count=294}
+    post_frequency{user_id=0,pkg=com.android.providers.downloads,day=6,count=5}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=6,count=186}
+    post_frequency{user_id=0,pkg=com.androidrocker.bluelightfiltereitnsomh,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.appbyme.app153369,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.baibaod,day=6,count=2}
+    post_frequency{user_id=0,pkg=com.baidu.ekegju.pad,day=6,count=10}
+    post_frequency{user_id=0,pkg=com.beisen.titamobile,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.cleevio.spendee,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.djfb,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.dolphin.funStreet,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.gemmy.kinbos.app.client,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.jxcloud.mrball,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.kuaimashi.shunbian,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.kuaiyou.xiaoxinyl,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.lian.sdz,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.livenaked.hubapp,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.maka.app,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.miui.cloudservice,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.miui.securitycenter,day=6,count=17}
+    post_frequency{user_id=0,pkg=com.muniao.fk,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.press.healthassistant,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.pxjy.app.student,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.quanwang.videos,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.quncao.lark,day=6,count=8}
+    post_frequency{user_id=0,pkg=com.shoujiduoduo.videodesk,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.shuangge.shuangge_shejiao,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.ss.yys.activity,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.sysongy.main,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.sytown.syt,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.tangjiutoutiao.main,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.tencent.mobileqqi,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.three.dl3lz041,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.vivoqlds,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.wattforex,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.xiangyangrexian.forum,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.xiaomi.xmsf,day=6,count=17}
+    post_frequency{user_id=0,pkg=com.xj.saikeshop,day=6,count=2}
+    post_frequency{user_id=0,pkg=com.ylteb.antlive,day=6,count=2}
+    post_frequency{user_id=0,pkg=com.zeeshan.circlesidebar,day=6,count=5}
+    post_frequency{user_id=0,pkg=com.zyh.zyh_admin,day=6,count=1}
+    post_frequency{user_id=0,pkg=io.dcloud.H57190C0A,day=6,count=1}
+    post_frequency{user_id=0,pkg=net.icaibei.live,day=6,count=1}
+    post_frequency{user_id=0,pkg=tv.xiaoka.live,day=6,count=1}
+    post_frequency{user_id=0,pkg=com.android.providers.contacts,day=7,count=48}
+    post_frequency{user_id=0,pkg=com.android.systemui,day=7,count=49}
+    post_frequency{user_id=0,pkg=com.bingbingtao,day=7,count=1}
+    post_frequency{user_id=0,pkg=com.hxjf.dubei,day=7,count=1}
+    post_frequency{user_id=0,pkg=com.lishu.renwudaren,day=7,count=1}
+    post_frequency{user_id=0,pkg=com.miui.cloudservice,day=7,count=1}
+    post_frequency{user_id=0,pkg=com.miui.securitycenter,day=7,count=10}
+    post_frequency{user_id=0,pkg=com.mjanroidlottery,day=7,count=1}
+    post_frequency{user_id=0,pkg=com.mobikeeper.sjgj,day=7,count=14}
+    post_frequency{user_id=0,pkg=com.rongxin.rongx,day=7,count=1}
+    post_frequency{user_id=0,pkg=com.xiaopeng.mycarinfo,day=7,count=1}
+    post_frequency{user_id=0,pkg=huawen.com.rongyan,day=7,count=1}
+    post_frequency{user_id=0,pkg=net.sctcm120.chengdutkt,day=7,count=26}
+
+  Zen Mode:
+    mInterruptionFilter=1
+    mZenMode=ZEN_MODE_OFF
+    mDefaultConfig=allow(calls=true,callsFrom=3,repeatCallers=false,messages=false,messagesFrom=3,events=false,reminders=true)
+      manualRule=null
+      automaticRules=ZenRule[enabled=false,snoozing=false,name=æ´»å¨,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=null,component=null]
+                     ZenRule[enabled=false,snoozing=false,name=å¨æ«,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&start=23.30&end=10.0,condition=null,component=null]
+                     ZenRule[enabled=false,snoozing=false,name=å¨ä¸è³å¨äºå¤é´,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0,condition=null,component=null]
+    mConfigs[u=0]=allow(calls=true,callsFrom=3,repeatCallers=false,messages=false,messagesFrom=3,events=false,reminders=true)
+      manualRule=null
+      automaticRules=ZenRule[enabled=false,snoozing=false,name=æ´»å¨,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=null,component=null]
+                     ZenRule[enabled=false,snoozing=false,name=å¨æ«,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&start=23.30&end=10.0,condition=null,component=null]
+                     ZenRule[enabled=false,snoozing=false,name=å¨ä¸è³å¨äºå¤é´,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0,condition=null,component=null]
+    mUser=0
+    mConfig=allow(calls=true,callsFrom=3,repeatCallers=false,messages=false,messagesFrom=3,events=false,reminders=true)
+      manualRule=null
+      automaticRules=ZenRule[enabled=false,snoozing=false,name=æ´»å¨,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=null,component=null]
+                     ZenRule[enabled=false,snoozing=false,name=å¨æ«,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&start=23.30&end=10.0,condition=null,component=null]
+                     ZenRule[enabled=false,snoozing=false,name=å¨ä¸è³å¨äºå¤é´,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0,condition=null,component=null]
+    mEffectsSuppressed=false
+    mDefaultPhoneApp=null
+    RepeatCallers.mThresholdMinutes=0
+    mSubscriptions={}
+
+  Zen Log:
+    05-29 17:20:21.569 set_ringer_mode_external: com.android.systemui,e:normal->vibrate,i:normal->vibrate
+    05-30 16:40:52.634 set_ringer_mode_external: com.android.systemui,e:vibrate->normal,i:vibrate->normal
+
+  Ranking Config:
+
+  Notification listeners:
+    All notification listeners (1) enabled for current profiles:
+      ComponentInfo{com.xiaomi.xmsf/com.xiaomi.xmsf.push.service.notificationcollection.NotificationListener}
+    Live notification listeners (2):
+      ComponentInfo{com.android.systemui/com.android.systemui.statusbar.phone.PhoneStatusBar} (user -1): android.service.notification.INotificationListener$Stub$Proxy@53c8abe SYSTEM
+      ComponentInfo{com.xiaomi.xmsf/com.xiaomi.xmsf.push.service.notificationcollection.NotificationListener} (user 0): android.service.notification.INotificationListener$Stub$Proxy@a01271f
+    mListenerHints: 0
+    mListenersDisablingEffects: ()
+
+  Policy access:
+    mPolicyAccess: com.android.server.notification.NotificationManagerService$PolicyAccess@d634a6c
+
+  Condition providers:
+    All condition providers (0) enabled for current profiles:
+    Live condition providers (3):
+      ComponentInfo{android/com.android.server.notification.CountdownConditionProvider} (user 0): android.service.notification.ConditionProviderService$Provider@f7bc835 SYSTEM
+      ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider} (user 0): android.service.notification.ConditionProviderService$Provider@cb294ca SYSTEM
+      ComponentInfo{android/com.android.server.notification.EventConditionProvider} (user 0): android.service.notification.ConditionProviderService$Provider@f9b163b SYSTEM
+    mRecords(0):
+    mSystemConditionProviders: {schedule, event, countdown}
+    EventConditionProvider:
+      mConnected=true
+      mRegistered=false
+      mBootComplete=true
+      mNextAlarmTime=0
+      mSubscriptions=
+      mTrackers=
+        user=0
+          mCallback=null
+          mRegistered=false
+          u=0
+    ScheduleConditionProvider:
+      mConnected=true
+      mRegistered=false
+      mSubscriptions=
+      mNextAlarmTime=0
+    CountdownConditionProvider:
+      mConnected=true
+      mTime=0
+
+  Group summaries:
+
+  Banned Packages:

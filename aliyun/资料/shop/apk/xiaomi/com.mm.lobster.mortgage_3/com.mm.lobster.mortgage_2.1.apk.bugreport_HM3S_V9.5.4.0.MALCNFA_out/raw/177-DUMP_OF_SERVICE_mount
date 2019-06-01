@@ -1,0 +1,47 @@
+Disks:
+
+Volumes:
+  VolumeInfo{emulated}:
+    type=EMULATED diskId=null partGuid=null mountFlags=PRIMARY|VISIBLE mountUserId=-1 state=MOUNTED 
+    fsType=null fsUuid=null fsLabel=null 
+    path=/storage/emulated internalPath=/data/media 
+
+Records:
+
+Primary storage UUID: null
+Force adoptable: false
+
+mObbMounts:
+
+mObbPathToStateMap:
+
+mConnection:
+  05-30 21:04:24.521 - RCV <- {200 482 Command succeeded}
+  05-30 21:07:43.239 - SND -> {483 volume remount_uid 10473 default}
+  05-30 21:07:43.255 - RCV <- {200 483 Command succeeded}
+  05-30 21:07:43.256 - SND -> {484 volume remount_uid 10473 write}
+  05-30 21:07:43.271 - RCV <- {200 484 Command succeeded}
+  05-30 21:11:16.690 - SND -> {485 volume remount_uid 10474 default}
+  05-30 21:11:16.708 - RCV <- {200 485 Command succeeded}
+  05-30 21:11:16.710 - SND -> {486 volume remount_uid 10474 write}
+  05-30 21:11:16.726 - RCV <- {200 486 Command succeeded}
+  05-30 21:14:36.471 - SND -> {487 volume remount_uid 10475 default}
+  05-30 21:14:36.491 - RCV <- {200 487 Command succeeded}
+  05-30 21:14:36.492 - SND -> {488 volume remount_uid 10475 write}
+  05-30 21:14:36.509 - RCV <- {200 488 Command succeeded}
+  05-30 21:27:54.362 - SND -> {489 volume remount_uid 10476 default}
+  05-30 21:27:54.380 - RCV <- {200 489 Command succeeded}
+  05-30 21:27:54.381 - SND -> {490 volume remount_uid 10476 write}
+  05-30 21:27:54.397 - RCV <- {200 490 Command succeeded}
+  05-30 21:34:18.425 - SND -> {491 volume remount_uid 10477 default}
+  05-30 21:34:18.446 - RCV <- {200 491 Command succeeded}
+  05-30 21:34:18.447 - SND -> {492 volume remount_uid 10477 write}
+  05-30 21:34:18.467 - RCV <- {200 492 Command succeeded}
+  05-30 23:05:36.718 - SND -> {493 volume remount_uid 10479 default}
+  05-30 23:05:36.734 - RCV <- {200 493 Command succeeded}
+  05-30 23:05:36.735 - SND -> {494 volume remount_uid 10479 write}
+  05-30 23:05:36.749 - RCV <- {200 494 Command succeeded}
+  
+  Pending requests:
+
+Last maintenance: 2018-05-29 10:36:15

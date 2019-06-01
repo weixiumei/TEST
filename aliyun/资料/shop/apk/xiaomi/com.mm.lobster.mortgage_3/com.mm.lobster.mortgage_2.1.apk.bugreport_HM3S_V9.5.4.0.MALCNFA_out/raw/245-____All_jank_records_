@@ -1,0 +1,9 @@
+    Package : com.mm.lobster.mortgage
+    Package : com.android.systemui
+    Top jank records : 
+    26584|com.mm.lobster.mortgage|581|76|running|null
+    26584|com.mm.lobster.mortgage|591|151|running|null
+    1803|com.android.systemui|204|157|running|null
+    26584|com.mm.lobster.mortgage|439|292|running|null
+    26584|com.mm.lobster.mortgage|631|308|running|null
+    

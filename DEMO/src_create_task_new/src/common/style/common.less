@@ -1,0 +1,112 @@
+@import 'variable.less';
+
+.commonBtn {
+  width: 100px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+  color: @theme-blue;
+}
+.btn_div{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #fff;
+  z-index: 10;
+}
+.btn_div div{
+  padding: 0 45px;
+  border: 1px solid @main-color;
+  color: @main-color;
+  margin-bottom: 8px;
+  margin-top: 8px!important;
+  height: 34px;
+  line-height: 34px;
+}
+.label_style{
+  border: 1px solid #e4e5e5;
+  padding: 2px 5px;
+  margin: 5px 8px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.selected{
+  border: 1px solid @main-color;
+  font-weight: 500;
+  color: @main-color;
+  border-radius: 5px;
+}
+.color{
+  color: @main-color;
+}
+.weui-btn_plain-primary{
+  background: #fff;
+}
+.nodata, .searching{
+  font-size: .3rem;
+  background: #EDF0F4;
+  text-align: center;
+  padding: 1rem;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.jiange{
+  height: 10px;
+  width: 100%;
+  background: #EDF0F4;
+}
+.no_border{
+  border:0;
+}
+.weui-btn_plain-primary{
+  border: 1px solid #81B83B;
+  color: #81B83B;
+}
+// 任务编辑
+.weui-cells__title{
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #646464;
+  line-height: 24px;
+  margin-top: 16px;
+}
+.weui-cells__title .require{
+  font-size: 14px;
+}
+.border{
+  background: #EEF0F3!important;
+  border-radius: 5px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+}
+.right_btn{
+  background: #81B83B;
+  color: #fff!important;
+}
+/* draft/process/done/invalid */
+.draft{
+  color: #89C0FF!important;
+}
+.process{
+  color: #F5A623!important;
+}
+.done{
+  color: #81B83B!important;
+}
+.invalid{
+  color: #A4ADB7!important;
+}
+.bg{
+  background: #d5d5d5;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}

@@ -1,0 +1,997 @@
+$timescale 1ms $end
+$scope am_logs $end
+$var wire 1 a41 com.android.printspooler $end
+$var wire 1 a3 com.miui.hybrid $end
+$var wire 1 a63 com.jeejen.family.miui:monitor $end
+$var wire 1 a66 com.android.statementservice/.DirectStatementService $end
+$var wire 1 a4 com.android.defcontainer $end
+$var wire 1 a58 com.qualcomm.display $end
+$var wire 1 a26 com.xiaomi.vipaccount $end
+$var wire 1 a34 com.tbstbs.xiacai/.module.main.activity.splash.SplashActivity $end
+$var wire 1 a49 com.miui.cloudservice:pushservice $end
+$var wire 1 a11 com.miui.securitycore.remote $end
+$var wire 1 a37 com.tbstbs.xiacai:QALSERVICE $end
+$var wire 1 a53 org.simalliance.openmobileapi.service/.SmartcardService $end
+$var wire 1 a1 com.eoffcn.mobile/.app.view.appImpl.LoginActivity $end
+$var wire 1 a20 com.miui.guardprovider $end
+$var wire 1 a62 com.qualcomm.qti.autoregistration/.RegistrationService $end
+$var wire 1 a5 com.eoffcn.mobile $end
+$var wire 1 a38 com.tbstbs.xiacai/.module.main.activity.MainActivity $end
+$var wire 1 a43 com.mm.lobster.mortgage/.MainActivity $end
+$var wire 1 a57 com.jeejen.family.miui/com.jeejen.message.center.DaemonService $end
+$var wire 1 a23 com.xiaomi.vipaccount:log $end
+$var wire 1 a8 com.android.externalstorage $end
+$var wire 1 a18 com.miui.securitycenter/com.miui.permcenter.install.AdbInstallActivity $end
+$var wire 1 a19 com.miui.securitycenter $end
+$var wire 1 a32 com.android.settings:remote $end
+$var wire 1 a48 com.jeejen.family.miui/com.jeejen.push.DaemonService $end
+$var wire 1 a15 android.process.acore $end
+$var wire 1 a17 com.xiaomi.providers.appindex $end
+$var wire 1 a22 com.android.keychain $end
+$var wire 1 a50 com.miui.cloudservice/com.xiaomi.push.service.XMPushService $end
+$var wire 1 a56 com.jeejen.family.miui:msgcenter $end
+$var wire 1 a7 com.android.documentsui $end
+$var wire 1 a52 org.simalliance.openmobileapi.service:remote $end
+$var wire 1 a9 com.svox.pico $end
+$var wire 1 a46 com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiBleAppService $end
+$var wire 1 a13 com.miui.gallery $end
+$var wire 1 a31 com.yuyoogame.ameng.puzzle3.sub1/com.taobao.accs.ChannelService $end
+$var wire 1 a61 com.qualcomm.qti.autoregistration $end
+$var wire 1 a33 com.android.email $end
+$var wire 1 a54 com.qualcomm.qti.modemtestmode $end
+$var wire 1 a45 com.xiaomi.bluetooth $end
+$var wire 1 a25 com.xiaomi.market $end
+$var wire 1 a65 com.android.statementservice $end
+$var wire 1 a6 android/com.android.internal.app.ResolverActivity $end
+$var wire 1 a35 com.tbstbs.xiacai $end
+$var wire 1 a42 com.miui.home $end
+$var wire 1 a51 com.xiaomi.account:pushservice $end
+$var wire 1 a21 com.xiaomi.gamecenter $end
+$var wire 1 a60 com.qualcomm.svi/.SVIService $end
+$var wire 1 a69 com.miui.sysbase $end
+$var wire 1 a28 com.yuyoogame.ameng.puzzle3.sub1/org.cocos2dx.javascript.AppActivity $end
+$var wire 1 a36 com.tbstbs.xiacai:pushcore $end
+$var wire 1 a40 com.tbstbs.xiacai/cn.jpush.android.service.PushService $end
+$var wire 1 a16 android.process.mediaUI $end
+$var wire 1 a24 com.xiaomi.vipaccount/com.xiaomi.vipbase.service.MvLogService $end
+$var wire 1 a30 com.yuyoogame.ameng.puzzle3.sub1:channel $end
+$var wire 1 a2 com.eoffcn.mobile/.app.view.appImpl.SplashActivity $end
+$var wire 1 a59 com.qualcomm.cabl/.CABLService $end
+$var wire 1 a68 com.android.mms $end
+$var wire 1 a27 com.miui.vsimcore $end
+$var wire 1 a10 com.android.shell $end
+$var wire 1 a47 com.jeejen.family.miui:pushcenter $end
+$var wire 1 a64 com.jeejen.family.miui/com.jeejen.home.launcher.services.LauncherService $end
+$var wire 1 a67 com.xiaomi.simactivate.service $end
+$var wire 1 a39 com.tbstbs.xiacai/com.tencent.qalsdk.service.QalService $end
+$var wire 1 a14 com.android.soundrecorder:remote $end
+$var wire 1 a44 com.mm.lobster.mortgage $end
+$var wire 1 a29 com.yuyoogame.ameng.puzzle3.sub1 $end
+$var wire 1 a55 com.qualcomm.qti.modemtestmode/.MbnSystemService $end
+$var wire 1 a12 com.android.soundrecorder $end
+$upscope $end
+$enddefinitions $end
+#16061763016
+b0 a41
+b0 a3
+bZ a63
+b- a66
+bZ a4
+bZ a58
+bZ a26
+bZ a34
+bZ a49
+bZ a11
+b0 a37
+b- a53
+bZ a1
+b0 a20
+b- a62
+b0 a5
+bZ a38
+bZ a43
+b- a57
+bZ a23
+b0 a8
+bZ a18
+b0 a19
+b0 a32
+b- a48
+bZ a15
+bZ a17
+bZ a22
+b- a50
+bZ a56
+b0 a7
+bZ a52
+bZ a9
+b- a46
+b0 a13
+b- a31
+bZ a61
+b0 a33
+bZ a54
+bZ a45
+bZ a25
+bZ a65
+bZ a6
+b0 a35
+b0 a42
+bZ a51
+bZ a21
+b- a60
+b0 a69
+bZ a28
+b0 a36
+b- a40
+bZ a16
+b- a24
+b0 a30
+b- a2
+b- a59
+b0 a68
+bZ a27
+b0 a10
+bZ a47
+b- a64
+b0 a67
+b- a39
+b0 a14
+b0 a44
+b0 a29
+b- a55
+b0 a12
+#16061763022
+bX a1
+#16061763387
+bZ a2
+#16061766146
+b- a2
+#16061766147
+b- a1
+#16061766161
+bX a2
+#16061766699
+b- a1
+#16061766701
+b- a2
+#16061766713
+bX a1
+#16061767064
+bZ a2
+#16061770433
+b- a2
+#16061770437
+b- a1
+#16061770455
+bX a2
+#16061770990
+b- a1
+#16061770992
+b- a2
+#16061771003
+bX a1
+#16061771376
+bZ a2
+#16061777480
+b- a2
+#16061777484
+b- a1
+#16061777501
+bX a2
+#16061778039
+b- a1
+#16061778042
+b- a2
+#16061778055
+bX a1
+#16061778425
+bZ a2
+#16061778734
+b- a2
+#16061778741
+b- a1
+#16061778750
+bX a2
+#16061779288
+b- a1
+#16061779295
+b- a2
+#16061779306
+bX a1
+#16061779663
+bZ a2
+#16061785150
+b- a2
+#16061785153
+b- a1
+#16061785166
+bX a2
+#16061785705
+b- a1
+#16061785710
+b- a2
+#16061785726
+bX a1
+#16061786079
+bZ a2
+#16061790968
+b- a2
+#16061790971
+b- a1
+#16061790984
+bX a2
+#16061791525
+b- a1
+#16061791530
+b- a2
+#16061791546
+bX a1
+#16061791909
+bZ a2
+#16061794218
+bZ a3
+#16061794350
+b- a2
+#16061794353
+b- a1
+#16061794369
+bX a2
+#16061794793
+b0 a4
+#16061794908
+b- a1
+#16061794914
+b- a2
+#16061794925
+bX a1
+#16061795267
+bZ a2
+#16061803815
+b- a2
+#16061803818
+b- a1
+#16061803834
+bX a2
+#16061804376
+b- a1
+#16061804380
+b- a2
+#16061804396
+bX a1
+#16061804758
+bZ a2
+#16061809962
+b- a2
+#16061809969
+b- a1
+#16061809981
+bX a2
+#16061810525
+b- a1
+#16061810532
+b- a2
+#16061810542
+bX a1
+#16061810895
+bZ a2
+#16061814543
+b- a2
+#16061814545
+b- a1
+#16061814560
+bX a2
+#16061815102
+b- a1
+#16061815104
+b- a2
+#16061815115
+bX a1
+#16061815488
+bZ a2
+#16061825588
+bZ a5
+#16061825611
+b- a6
+#16061825619
+bX a6
+#16061825628
+bZ a1
+#16061825646
+bZ a1
+#16061825646
+bZ a1
+#16061825647
+bZ a1
+#16061825647
+bZ a1
+#16061825647
+bZ a1
+#16061825647
+bZ a1
+#16061825647
+bZ a1
+#16061825647
+bZ a1
+#16061825647
+bZ a1
+#16061825648
+bZ a1
+#16061825648
+bZ a1
+#16061825648
+bZ a1
+#16061827125
+bZ a4
+#16061827323
+bZ a7
+#16061827442
+bZ a8
+#16061827500
+b0 a9
+#16061827563
+bZ a10
+#16061827641
+b0 a3
+#16062094222
+bZ a3
+#16062094711
+b0 a11
+#16062994643
+bZ a12
+#16062995406
+bZ a13
+#16062995425
+b0 a4
+#16062995460
+bZ a14
+#16062995941
+b0 a15
+#16062995991
+b0 a16
+#16063062045
+b- a6
+#16063062056
+b- a6
+#16063062061
+bZ a6
+#16063062069
+bX a6
+#16063062100
+b0 a17
+#16063063909
+b- a6
+#16063063913
+b- a6
+#16063063915
+bZ a6
+#16063063923
+bX a6
+#16063064906
+b- a6
+#16063064910
+b- a6
+#16063064912
+bZ a6
+#16063064920
+bX a6
+#16063065904
+b- a6
+#16063065908
+b- a6
+#16063065911
+bZ a6
+#16063065918
+bX a6
+#16063076322
+b- a18
+#16063076325
+b- a6
+#16063076347
+bZ a19
+#16063076389
+bX a18
+#16063076515
+bZ a20
+#16063076673
+b- a18
+#16063076703
+bX a6
+#16063076718
+bZ a18
+#16063076723
+b0 a21
+#16063076740
+bZ a4
+#16063076750
+b0 a22
+#16063081551
+bZ a15
+#16063081909
+bZ a16
+#16063081961
+b0 a23
+#16063081964
+bZ a24
+#16063082218
+bZ a9
+#16063082282
+b0 a25
+#16063082356
+bZ a17
+#16063082370
+b0 a26
+#16063082532
+bZ a21
+#16063082630
+b0 a27
+#16063083036
+bZ a25
+#16063083528
+bZ a26
+#16063084072
+bZ a23
+#16063084074
+b0 a7
+#16063084580
+b0 a8
+#16063088320
+b0 a10
+#16063089950
+b- a18
+#16063089954
+b- a6
+#16063089969
+bX a18
+#16063090001
+b- a18
+#16063090013
+bX a6
+#16063090020
+bZ a18
+#16063096330
+bZ a22
+#16063096482
+bZ a27
+#16063096637
+b0 a3
+#16063098575
+b- a28
+#16063098576
+b- a6
+#16063098592
+bZ a29
+#16063098668
+bX a28
+#16063099595
+bZ a30
+#16063101731
+b0 a12
+#16063102020
+b0 a13
+#16063104711
+b0 a14
+#16063106701
+b- a6
+#16063106703
+b- a28
+#16063106722
+bX a6
+#16063106966
+bZ a6
+#16063110858
+bZ a11
+#16063113329
+b- a6
+#16063113339
+bX a28
+#16063113710
+b0 a20
+#16063231485
+bZ a31
+#16063231513
+b- a6
+#16063231522
+bX a6
+#16063231528
+bZ a6
+#16063233367
+bZ a7
+#16063233490
+bZ a8
+#16063233570
+b0 a19
+#16063233658
+bZ a10
+#16063233750
+b0 a9
+#16063900769
+bZ a3
+#16063901313
+b0 a11
+#16065443379
+bZ a32
+#16065443772
+b0 a4
+#16066894296
+bZ a33
+#16066894980
+b0 a15
+#16067116842
+b- a6
+#16067116852
+b- a6
+#16067116856
+bZ a6
+#16067116865
+bX a6
+#16067116913
+b0 a16
+#16067118738
+b- a6
+#16067118742
+b- a6
+#16067118744
+bZ a6
+#16067118752
+bX a6
+#16067119745
+b- a6
+#16067119750
+b- a6
+#16067119752
+bZ a6
+#16067119760
+bX a6
+#16067120742
+b- a6
+#16067120745
+b- a6
+#16067120748
+bZ a6
+#16067120756
+bX a6
+#16067130869
+b- a18
+#16067130872
+b- a6
+#16067130892
+bZ a19
+#16067131004
+bX a18
+#16067131170
+bZ a20
+#16067131368
+b- a18
+#16067131458
+bX a6
+#16067131462
+bZ a18
+#16067131471
+b0 a17
+#16067131487
+bZ a4
+#16067131501
+b0 a21
+#16067137185
+bZ a15
+#16067137501
+bZ a16
+#16067137548
+b0 a22
+#16067137841
+bZ a9
+#16067137903
+b0 a23
+#16067137906
+bZ a24
+#16067137991
+bZ a17
+#16067138013
+b0 a25
+#16067138141
+bZ a21
+#16067138190
+b0 a26
+#16067138628
+bZ a25
+#16067139112
+bZ a26
+#16067139587
+bZ a23
+#16067139610
+b0 a27
+#16067139941
+b0 a7
+#16067143621
+b0 a8
+#16067146280
+b- a18
+#16067146285
+b- a6
+#16067146306
+bX a18
+#16067146334
+b- a18
+#16067146347
+bX a6
+#16067146355
+bZ a18
+#16067153359
+bZ a22
+#16067153480
+bZ a27
+#16067153593
+b0 a10
+#16067155453
+b- a34
+#16067155454
+b- a6
+#16067155469
+bZ a35
+#16067155510
+bX a34
+#16067156788
+bZ a36
+#16067157759
+bZ a37
+#16067158200
+b0 a32
+#16067161521
+b0 a3
+#16067161635
+b- a38
+#16067161639
+b- a34
+#16067161656
+bX a38
+#16067161884
+bZ a6
+#16067161927
+b0 a33
+#16067162242
+bZ a34
+#16067162498
+b- a6
+#16067162502
+b- a38
+#16067162522
+bX a6
+#16067164678
+b- a6
+#16067164693
+bX a38
+#16067164696
+bZ a6
+#16067166466
+bZ a11
+#16067166630
+b0 a20
+#16067169567
+b0 a19
+#16067185334
+b- a34
+#16067185340
+b- a38
+#16067185354
+bX a34
+#16067188384
+b- a38
+#16067188388
+b- a34
+#16067188399
+bX a38
+#16067188863
+bZ a34
+#16067196235
+b- a38
+#16067196740
+bX a38
+#16067198226
+bZ a39
+#16067198253
+bZ a35
+#16067198259
+bZ a40
+#16067198277
+b- a6
+#16067198288
+bX a6
+#16067198292
+bZ a38
+#16067199068
+bZ a36
+#16067199213
+bZ a40
+#16067200145
+bZ a7
+#16067200293
+bZ a8
+#16067200465
+bZ a10
+#16067200560
+b0 a9
+#16067294465
+bZ a41
+#16067299670
+b0 a11
+#16067605161
+bZ a3
+#16067605644
+bZ a42
+#16067605648
+b0 a4
+#16067607224
+b0 a15
+#16067749206
+b- a6
+#16067749217
+b- a6
+#16067749221
+bZ a6
+#16067749230
+bX a6
+#16067749290
+b0 a16
+#16067750153
+b- a6
+#16067750157
+b- a6
+#16067750160
+bZ a6
+#16067750167
+bX a6
+#16067751156
+b- a6
+#16067751160
+b- a6
+#16067751162
+bZ a6
+#16067751170
+bX a6
+#16067752161
+b- a6
+#16067752166
+b- a6
+#16067752168
+bZ a6
+#16067752176
+bX a6
+#16067754512
+b- a18
+#16067754514
+b- a6
+#16067754538
+bZ a19
+#16067754588
+bX a18
+#16067754755
+bZ a20
+#16067754888
+b- a18
+#16067754913
+bX a6
+#16067754931
+b0 a17
+#16067754933
+bZ a18
+#16067754955
+bZ a4
+#16067754970
+b0 a21
+#16067756146
+bZ a15
+#16067756434
+bZ a16
+#16067756501
+b0 a22
+#16067756743
+bZ a9
+#16067756807
+b0 a23
+#16067756812
+bZ a24
+#16067756905
+bZ a17
+#16067757040
+bZ a21
+#16067757160
+b0 a25
+#16067757463
+bZ a25
+#16067757570
+b0 a26
+#16067757821
+b- a18
+#16067757823
+b- a6
+#16067757841
+bX a18
+#16067757864
+bZ a26
+#16067757874
+b- a18
+#16067757886
+bX a6
+#16067757907
+bZ a18
+#16067758993
+bZ a23
+#16067759077
+b0 a27
+#16067759296
+b0 a7
+#16067759564
+bZ a22
+#16067759684
+bZ a27
+#16067759740
+b0 a8
+#16067759842
+b0 a10
+#16067761747
+b- a43
+#16067761749
+b- a6
+#16067761764
+bZ a44
+#16067761805
+bX a43
+#16067767922
+b0 a41
+#16067768040
+b0 a3
+#16067769950
+b- a43
+#16067769963
+bX a6
+#16067773047
+b- a6
+#16067773060
+bX a43
+#16067773068
+bZ a6
+#16067773130
+b0 a42
+#16067774941
+bZ a11
+#16067775131
+b0 a20
+#16067788080
+b0 a19
+#16067793620
+b- a43
+#16067793623
+b- a43
+#16067793636
+bX a43
+#16067794228
+bZ a3
+#16067794940
+b0 a22
+#16067810191
+b- a43
+#16067810194
+b- a43
+#16067810698
+bX a43
+#16067817719
+b- a43
+#16067817722
+b- a43
+#16067817732
+bX a43
+#16067819441
+b0 a45
+#16067819447
+bZ a46
+#16067819494
+b0 a47
+#16067819501
+bZ a48
+#16067819523
+b0 a49
+#16067819529
+bZ a50
+#16067819532
+b0 a51
+#16067820459
+bZ a45
+#16067825089
+b- a43
+#16067825093
+b- a43
+#16067825102
+bX a43
+#16067825240
+b0 a52
+#16067825242
+bZ a53
+#16067825267
+b0 a54
+#16067825272
+bZ a55
+#16067825274
+b0 a56
+#16067825280
+bZ a57
+#16067825311
+b0 a58
+#16067825316
+bZ a59
+#16067825317
+bZ a60
+#16067825319
+b0 a61
+#16067825321
+bZ a62
+#16067825322
+b0 a63
+#16067825328
+bZ a64
+#16067825330
+b0 a65
+#16067825332
+bZ a66
+#16067825415
+b- a43
+#16067825420
+b- a43
+#16067825715
+bX a43
+#16067825746
+b- a43
+#16067825748
+b- a43
+#16067826256
+bX a43
+#16067828988
+bZ a44
+#16067829020
+b- a6
+#16067829028
+bX a6
+#16067829033
+bZ a43
+#16067829036
+bZ a43
+#16067829038
+bZ a43
+#16067829039
+bZ a43
+#16067829040
+bZ a43
+#16067830459
+bZ a49
+#16067830764
+bZ a22
+#16067830887
+bZ a67
+#16067830919
+bZ a7
+#16067831133
+bZ a68
+#16067831184
+bZ a8
+#16067831321
+b0 a9
+#16067831351
+b0 a3
+#16067831398
+bZ a10
+#16067831480
+b0 a11
+#16067832000
+b0 a4
+#16067834602
+bZ a69
+#16067834718
+b0 a15
+#16067840492
+bZ a52
+#16067850472
+bZ a54
+#16067860469
+bZ a58
+#16067880466
+bZ a61

@@ -1,0 +1,232 @@
+Build configuration: [sf] [libui] [libgui]
+Sync configuration: [using: EGL_ANDROID_native_fence_sync EGL_KHR_wait_sync]
+DispSync configuration: app phase 0 ns, sf phase 0 ns, present offset 0 ns (refresh 16666666 ns)
+
+Static screen stats:
+  < 1 frames: 9049.211 s (6.8%)
+  < 2 frames: 9832.645 s (7.4%)
+  < 3 frames: 1061.338 s (0.8%)
+  < 4 frames: 802.220 s (0.6%)
+  < 5 frames: 2501.832 s (1.9%)
+  < 6 frames: 3156.105 s (2.4%)
+  < 7 frames: 322.731 s (0.2%)
+  7+ frames: 105387.148 s (79.8%)
+
+Visible layers (count = 9)
++ LayerDim 0x55b1199d70 (DimLayer)
+  Region transparentRegion (this=0x55b1199f88, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b1199d90, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0x55b1199e08, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=        0, pos=(0,0), size=(  16,  16), crop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, alpha=0xff, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1131cc0
+      format= 0, activeBuffer=[   0x   0:   0,  0], queued-frames=0, mRefreshPending=0
+            mTexName=13 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[1x1], default-format=1, transform-hint=00, FIFO(0)={}
++ LayerDim 0x55b1428490 (DimLayer)
+  Region transparentRegion (this=0x55b14286a8, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b14284b0, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0x55b1428528, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=        0, pos=(0,0), size=(  16,  16), crop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, alpha=0xff, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1131cc0
+      format= 0, activeBuffer=[   0x   0:   0,  0], queued-frames=0, mRefreshPending=0
+            mTexName=40 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[1x1], default-format=1, transform-hint=00, FIFO(0)={}
++ Layer 0x55b11bc3d0 (com.android.systemui.ImageWallpaper)
+  Region transparentRegion (this=0x55b11bc5e8, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b11bc3f0, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0x55b11bc468, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    21000, pos=(0,0), size=( 720,1280), crop=(   0,   0, 720,1280), isOpaque=1, invalidate=0, alpha=0xff, flags=0x00000003, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b11a44b0
+      format= 2, activeBuffer=[ 720x1280: 768,  2], queued-frames=0, mRefreshPending=0
+            mTexName=19 mCurrentTexture=0
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[720x1280], default-format=2, transform-hint=00, FIFO(0)={}
++ LayerDim 0x55b149dc30 (DimLayer)
+  Region transparentRegion (this=0x55b149de48, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b149dc50, count=1)
+    [-180, -320, 900, 1600]
+  Region surfaceDamageRegion (this=0x55b149dcc8, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    21004, pos=(-180,-320), size=(1080,1920), crop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, alpha=0x4d, flags=0x00000000, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1131cc0
+      format= 0, activeBuffer=[   0x   0:   0,  0], queued-frames=0, mRefreshPending=0
+            mTexName=39 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[1080x1920], default-format=1, transform-hint=00, FIFO(0)={}
++ Layer 0x55b152a1f0 (android/com.android.internal.app.ResolverActivity)
+  Region transparentRegion (this=0x55b152a408, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b152a210, count=1)
+    [  0, 680, 720, 1280]
+  Region surfaceDamageRegion (this=0x55b152a288, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    21005, pos=(0,680), size=( 720, 600), crop=(   0,   0, 720, 600), isOpaque=0, invalidate=0, alpha=0xff, flags=0x00000000, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1427c10
+      format= 1, activeBuffer=[ 720x 600: 768,  1], queued-frames=0, mRefreshPending=0
+            mTexName=65 mCurrentTexture=0
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[720x600], default-format=1, transform-hint=00, FIFO(0)={}
+            >[00:0x55b15103d0] state=ACQUIRED, 0x55b1415a20 [ 720x 600: 768,  1]
+             [01:0x55b1446990] state=FREE    , 0x55b14ca590 [ 720x 600: 768,  1]
+             [02:0x55b144d390] state=FREE    , 0x55b154f870 [ 720x 600: 768,  1]
++ Layer 0x55b1195cd0 (FocusedStackFrame)
+  Region transparentRegion (this=0x55b1195ee8, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b1195cf0, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0x55b1195d68, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    21006, pos=(0,0), size=(   1,   1), crop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, alpha=0x4d, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1131cc0
+      format= 1, activeBuffer=[   0x   0:   0,  0], queued-frames=0, mRefreshPending=0
+            mTexName=11 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[1x1], default-format=1, transform-hint=00, FIFO(0)={}
++ LayerDim 0x55b1197560 (DimLayer)
+  Region transparentRegion (this=0x55b1197778, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b1197580, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0x55b11975f8, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=   110999, pos=(-180,-320), size=(1080,1920), crop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, alpha=0x00, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1131cc0
+      format= 0, activeBuffer=[   0x   0:   0,  0], queued-frames=0, mRefreshPending=0
+            mTexName=12 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[1080x1920], default-format=1, transform-hint=00, FIFO(0)={}
++ Layer 0x55b11a4610 (StatusBar)
+  Region transparentRegion (this=0x55b11a4828, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b11a4630, count=1)
+    [  0,   0, 720,  48]
+  Region surfaceDamageRegion (this=0x55b11a46a8, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=   161000, pos=(0,0), size=( 720,  48), crop=(   0,   0, 720,  48), isOpaque=0, invalidate=0, alpha=0xff, flags=0x00000000, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b11a44b0
+      format= 1, activeBuffer=[ 720x  48: 768,  1], queued-frames=0, mRefreshPending=0
+            mTexName=15 mCurrentTexture=1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[720x48], default-format=1, transform-hint=00, FIFO(0)={}
+             [00:0x55b149fe70] state=FREE    , 0x55b13fcd00 [ 720x  48: 768,  1]
+            >[01:0x55b1458520] state=ACQUIRED, 0x55b1423580 [ 720x  48: 768,  1]
+             [02:0x55b1477a60] state=FREE    , 0x55b14ea410 [ 720x  48: 768,  1]
++ Layer 0x55b1459d10 (StrictModeFlash)
+  Region transparentRegion (this=0x55b1459f28, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0x55b1459d30, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0x55b1459da8, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=  1010000, pos=(0,0), size=(   1,   1), crop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, alpha=0xff, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0x55b1131cc0
+      format= 1, activeBuffer=[   1x   1:  64,  1], queued-frames=0, mRefreshPending=0
+            mTexName=37 mCurrentTexture=0
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            -BufferQueue mMaxAcquiredBufferCount=1, mDequeueBufferCannotBlock=0, default-size=[720x1280], default-format=1, transform-hint=00, FIFO(0)={}
+            >[00:0x55b14aaf90] state=ACQUIRED, 0x55b134edc0 [   1x   1:  64,  1]
+Displays (1 entries)
++ DisplayDevice: Built-in Screen
+   type=0, hwcId=0, layerStack=0, ( 720x1280), ANativeWindow=0x55b0ed08e0, orient= 0 (type=00000000), flips=1272794, isSecure=1, secureVis=0, powerMode=2, activeConfig=0, numLayers=3
+   v:[0,0,720,1280], f:[0,0,720,1280], s:[0,0,720,1280],transform:[[1.000,0.000,-0.000][0.000,1.000,-0.000][0.000,0.000,1.000]]
+mAbandoned=0
+-BufferQueue mMaxAcquiredBufferCount=2, mDequeueBufferCannotBlock=0, default-size=[720x1280], default-format=1, transform-hint=00, FIFO(0)={}
+ [00:0x55b0ed6570] state=FREE    , 0x55b0ed67f0 [ 720x1280: 768,  1]
+>[01:0x55b0ed6950] state=ACQUIRED, 0x55b0ed6a60 [ 720x1280: 768,  1]
+ [02:0x55b0ed6ac0] state=FREE    , 0x55b0ed6bd0 [ 720x1280: 768,  1]
+SurfaceFlinger global state:
+EGL implementation : 1.4
+EGL_QUALCOMM_shared_image EGL_KHR_image EGL_KHR_image_base EGL_QCOM_create_image EGL_QCOM_gpu_perf EGL_KHR_lock_surface EGL_KHR_lock_surface2 EGL_KHR_lock_surface3 EGL_KHR_fence_sync EGL_KHR_wait_sync EGL_KHR_cl_event EGL_KHR_cl_event2 EGL_KHR_reusable_sync EGL_IMG_context_priority EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_renderbuffer_image EGL_EXT_create_context_robustness EGL_EXT_yuv_surface EGL_ANDROID_blob_cache EGL_KHR_create_context EGL_KHR_gl_colorspace EGL_KHR_surfaceless_context EGL_KHR_create_context_no_error EGL_KHR_get_all_proc_addresses EGL_QCOM_lock_image2 EGL_KHR_partial_update EGL_ANDROID_recordable EGL_ANDROID_native_fence_sync EGL_ANDROID_image_native_buffer EGL_ANDROID_framebuffer_target EGL_ANDROID_image_crop EGL_IMG_image_plane_attribs 
+GLES: Qualcomm, Adreno (TM) 505, OpenGL ES 3.1 V@145.0 (GIT@I74772a33ad)
+GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_half_float GL_OES_framebuffer_object GL_OES_rgb8_rgba8 GL_OES_compressed_ETC1_RGB8_texture GL_AMD_compressed_ATC_texture GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_OES_texture_compression_astc GL_OES_texture_npot GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_OES_texture_3D GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_QCOM_alpha_test GL_OES_depth24 GL_OES_packed_depth_stencil GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_EXT_sRGB GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_EXT_texture_type_2_10_10_10_REV GL_EXT_texture_sRGB_decode GL_OES_element_index_uint GL_EXT_copy_image GL_EXT_geometry_shader GL_EXT_tessellation_shader GL_OES_texture_stencil8 GL_EXT_shader_io_blocks GL_OES_shader_image_atomic GL_OES_sample_variables GL_EXT_texture_border_clamp GL_EXT_multisampled_render_to_texture GL_OES_shader_multisample_interpolation GL_EXT_texture_cube_map_array GL_EXT_draw_buffers_indexed GL_EXT_gpu_shader5 GL_EXT_robustness GL_EXT_texture_buffer GL_EXT_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_OES_texture_storage_multisample_2d_array GL_OES_sample_shading GL_OES_get_program_binary GL_EXT_debug_label GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_QCOM_tiled_rendering GL_ANDROID_extension_pack_es31a GL_EXT_primitive_bounding_box GL_OES_standard_derivatives GL_OES_vertex_array_object GL_EXT_disjoint_timer_query GL_KHR_debug GL_EXT_YUV_target GL_EXT_sRGB_write_control GL_EXT_texture_norm16 GL_EXT_discard_framebuffer GL_OES_surfaceless_context GL_OVR_multiview GL_OVR_multiview2 GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_EXT_debug_marker GL_OVR_multiview_multisampled_render_to_texture GL_EXT_buffer_storage GL_EXT_blit_framebuffer_params 
+  Region undefinedRegion (this=0x55b0ed0668, count=1)
+    [  0,   0, 720, 1280]
+  orientation=0, isDisplayOn=1
+  last eglSwapBuffers() time: 345.677000 us
+  last transaction time     : 39.531000 us
+  transaction-flags         : 00000000
+  refresh-rate              : 60.000002 fps
+  x-dpi                     : 294.967010
+  y-dpi                     : 295.562988
+  gpu_to_cpu_unsupported    : 0
+  eglSwapBuffers time: 0.000000 us
+  transaction time: 0.000000 us
+VSYNC state: disabled
+  soft-vsync: disabled
+  numListeners=12,
+  events-delivered: 1861246
+    0x55b0da9d80: count=-1
+    0x55b0ed6850: count=-1
+    0x55b110e550: count=-1
+    0x55b1152b50: count=-1
+    0x55b115f9c0: count=-1
+    0x55b11695c0: count=-1
+    0x55b11799e0: count=-1
+    0x55b12d7da0: count=-1
+    0x55b12da460: count=-1
+    0x55b1477e20: count=-1
+    0x55b14eb1e0: count=-1
+    0x55b154eb70: count=-1
+h/w composer state:
+  h/w composer present and enabled
+Hardware Composer state (version 01050000):
+  mDebugForceFakeVSync=0
+  Display[0] configurations (* current):
+    * 0: 720x1280, xdpi=294.967010, ydpi=295.562988, refresh=16666666, colorTransform=0
+  numHwLayers=4, flags=00000000
+    type   |  handle  | hint | flag | tr | blnd |   format    |     source crop (l,t,r,b)      |          frame         | name 
+-----------+----------+------+------+----+------+-------------+--------------------------------+------------------------+------
+      GLES | 00000000 | 0002 | 80000000 | 00 | 0105 | ? ffffffff  |   -0.2,   -0.2,   -0.8,   -0.8 |    0,    0,  720, 1280 | DimLayer
+      GLES | 55b1415a20 | 0002 | 0000 | 00 | 0105 | RGBA_8888   |    0.0,    0.0,  720.0,  600.0 |    0,  680,  720, 1280 | android/com.android.internal.app.ResolverActivity
+      GLES | 55b1423580 | 0002 | 0000 | 00 | 0105 | RGBA_8888   |    0.0,    0.0,  720.0,   48.0 |    0,    0,  720,   48 | StatusBar
+ FB TARGET | 55b0ed6a60 | 0000 | 0000 | 00 | 0105 | RGBA_8888   |    0.0,    0.0,  720.0, 1280.0 |    0,    0,  720, 1280 | HWC_FRAMEBUFFER_TARGET
+
+-------- Snapdragon Display Manager --------
+-----------------------
+device type: 0
+state: 1, vsync on: 0, max. mixer stages: 4
+num configs: 1, active config index: 0
+res:720 x 1280, dpi:294.97 x 295.56, fps:60,vsync period: 16666666
+
+ROI(L T R B) : LEFT(0 0 720 1280)
+
+|-----|-------------|--------|----|-------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|
+| Idx |  Comp Type  |  Split | WB |  Pipe |    W x H    |          Format          |  Src Rect (L T R B) |  Dst Rect (L T R B) |  Z |    Flags   | Deci(HxV) | CS |
+|-----|-------------|--------|----|-------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|
+|   3 |  GPU_TARGET | Comp-1 |  - | 0x040 |  768 x 1280 |           RGBA_8888_UBWC |    0    0  720 1280 |    0    0  720 1280 |  0 | 0x00000002 |   0 x   0 |  0 |
+|-----|-------------|--------|----|-------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|
+
+Allocated buffers:
+0x55b0ed67f0: 3840.00 KiB |  720 ( 768) x 1280 |        1 | 0x20001a00
+0x55b0ed6a60: 3840.00 KiB |  720 ( 768) x 1280 |        1 | 0x20001a00
+0x55b0ed6bd0: 3840.00 KiB |  720 ( 768) x 1280 |        1 | 0x20001a00
+0x55b11a60f0: 3840.00 KiB |  720 ( 768) x 1280 |        2 | 0x20000900
+0x55b134edc0:    0.25 KiB |    1 (  64) x    1 |        1 | 0x00000933
+0x55b13fcd00:  144.00 KiB |  720 ( 768) x   48 |        1 | 0x20000900
+0x55b1415a20: 1800.00 KiB |  720 ( 768) x  600 |        1 | 0x00000933
+0x55b1423580:  144.00 KiB |  720 ( 768) x   48 |        1 | 0x20000900
+0x55b14ca590: 1800.00 KiB |  720 ( 768) x  600 |        1 | 0x00000933
+0x55b14ea410:  144.00 KiB |  720 ( 768) x   48 |        1 | 0x20000900
+0x55b154f870: 1800.00 KiB |  720 ( 768) x  600 |        1 | 0x00000933
+Total allocated (estimate): 21192.25 KB

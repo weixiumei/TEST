@@ -1,0 +1,245 @@
+<!--  head：页面的</head>之前代码 -->
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="NtSF" ng-cloak="" class="ng-cloak">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>FE</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/jquery.daterangepicker.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style.less -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/about_date.css" rel="stylesheet">
+    <link href="assets/css/demo.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/js/daterangepicker.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        // var storage = window.localStorage;
+        // var TOKEN = (!!storage.getItem('NXPB_TOKEN'))?storage.getItem('NXPB_TOKEN'):'';
+        // if(!!!TOKEN){
+        //     window.location.href = 'login.html';
+        // }
+    </script>
+  </head>
+<body>
+	<!-- header：body的共同header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img class="plum" src="assets/img/plum_2.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+        <li class="li-homepage">
+          <a href="index.html">
+            首页</a>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            angularJS <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="angular_form.html">表单</a></li>
+              <li><a href="angular.html">angular特性</a></li>
+            </ul>
+        </li>
+        <li class="li-application dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            react <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="react_demo.html">栅格</a></li>
+            </ul>
+        </li>
+        <li class="li-application dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            bootstrap <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bootstrap_grid.html">栅格</a></li>
+              <li><a href="bootstrap_type_setting.html">排版</a></li>
+              <li><a href="bootstrap_table.html">表格</a></li>
+            </ul>
+        </li>
+        <li class="li-monitor dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            JS/jQuery <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="js_component.html">JS武器库</a></li>
+              <li><a href="js_table.html">表格</a></li>
+              <li><a href="js_date.html">日期计算</a></li>
+              <li><a href="js_closure_prototype.html">closure prototype</a></li>
+            </ul>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            扩展 <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="less.html">less</a></li>
+            </ul>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            DEMO <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="demo_charts.html">charts</a></li>
+              <li><a href="demo_date.html">datepicker</a></li>
+            </ul>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            about <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="about_clear.html">clear</a></li>
+              <li><a href="about_datepicker.html">date</a></li>
+              <li><a href="about_layout.html">布局</a></li>
+            </ul>
+        </li>
+        <li class="li-monitor dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Test <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="test.html">test</a></li>
+              <li><a href="test.html">test</a></li> -->
+              <li><a href="ng-iscroll-4.html">ng-iscroll-4</a></li>
+              <li><a href="ng-iscroll-5.html">ng-iscroll-5</a></li>
+              <li><a href="demo_form.html">demo2</a></li>
+              <li><a href="test_multiple_iscrolls.html">demo3</a></li>
+              <li><a href="iscroll-5.html">iscroll-5</a></li>
+              <li><a href="iscroll-4.html">iscroll-4</a></li>
+              <li><a href="test3.html">test3</a></li>
+            </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" ng-cloak ng-controller="userInfo">
+        <li><a href="#" class="avatar "><img src="assets/img/avatar.jpg" ng-src="{{user.avatar}}" alt="{{user.name}}" class="img-circle"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" ng-click="logout()">注销</a></li>
+            <li><a href="#" ng-click="reset()">清除缓存</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container" ng-controller="less">
+    	<div>Less mixin 和变量</div>
+    	<a href="https://www.cnblogs.com/jizhijunboke/p/4993580.html">help</a>
+    	<a href="http://www.1024i.com/demo/less/document.html">help22</a>
+	    <div class="wrapper">
+	     	<div class="content-main">less</div>
+	     	<div class="content-secondary">less2</div>
+	     	<div class="row">
+	     		<div class="col-md-4">col-md-4</div>
+	     		<div class="col-md-4">col-md-4</div>
+	     	</div>
+	    </div>
+
+    <!-- script：引入 js 文件 -->
+    
+<script src="assets/js/jquery.min.js"></script> 
+<!-- <script src="assets/js/iscroll-4.js"></script> -->
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/angular-1.4.8.min.js"></script>
+<script src="assets/js/angular-resource.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/js/common.js"></script>
+<!-- <script src="assets/js/demo.js"></script> -->
+<script src="assets/api/api.config.js"></script>
+<script src="assets/api/api.js"></script>
+<script>
+	
+</script>
+    <script type="text/javascript">
+    	// piwik
+        document.title = 'less';
+    </script>
+<!-- bottom：加载loading和piwik -->
+    <script>
+    // var site_id = getUrlParameter('site_id');
+    // var _paq = _paq || [];
+
+    // _paq.push(['enableLinkTracking', true]);
+    // (function() {
+    //     try {
+    //         // var site_id = false;
+            
+    //         if(site_id == '' || site_id == false){
+    //             return
+    //         }
+    //         var u = "//a.nexttao.com";
+            
+    //         if(u == "" || u == "false" || u == false){
+    //             return
+    //         }
+    //         _paq.push(['setTrackerUrl', u+'piwik.php']);
+    //         _paq.push(['setSiteId', site_id]);
+    //         _paq.push(['setDocumentTitle', document.title]);
+           
+    //         _paq.push(['trackPageView']);
+    //         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    //         g.type='text/javascript'; 
+    //         g.async=true; 
+    //         g.defer=true;
+    //         g.src=u+'piwik.js';
+    //         s.parentNode.insertBefore(g,s);
+    //     }catch (e){
+    //         console.log(e);
+    //     }
+    // })();
+  </script>
+
+  <div id="bg"></div>
+
+  <div class="data_content" style="display: none">
+    <div class="loading"></div>
+    <!-- loading -->
+    <div class="loader loader--style1" title="0">
+      <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+      <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+      <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+        C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml"
+          attributeName="transform"
+          type="rotate"
+          from="0 20 20"
+          to="360 20 20"
+          dur="0.5s"
+          repeatCount="indefinite"/>
+        </path>
+      </svg>
+      <p>加载中...</p>
+    </div>  
+  </div>
+
+  </body>
+</html>

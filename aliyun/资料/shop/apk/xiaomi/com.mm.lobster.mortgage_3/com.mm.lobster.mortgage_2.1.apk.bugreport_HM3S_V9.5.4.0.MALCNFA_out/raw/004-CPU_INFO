@@ -1,0 +1,39 @@
+
+
+
+User 1%, System 2%, IOW 0%, IRQ 0%
+User 14 + Nice 0 + Sys 20 + Idle 754 + IOW 0 + IRQ 0 + SIRQ 0 = 788
+
+  PID   TID PR CPU% S     VSS     RSS PCY UID      Thread          Proc
+27227 27227  2   3% R   4692K   2096K  fg shell    top             top
+27208 27217  5   0% S 1324332K  35076K  bg system   HeapTaskDaemon  org.simalliance.openmobileapi.service:remote
+   51    51  4   0% S      0K      0K  fg root     msm_watchdog    
+   28    28  5   0% S      0K      0K  fg root     ksoftirqd/5     
+    8     8  5   0% S      0K      0K  fg root     rcu_sched       
+    9     9  0   0% S      0K      0K  fg root     rcu_bh          
+   10    10  0   0% R      0K      0K  fg root     migration/0     
+   11    11  1   0% R      0K      0K  fg root     migration/1     
+   12    12  1   0% R      0K      0K  fg root     ksoftirqd/1     
+   15    15  2   0% S      0K      0K  fg root     migration/2     
+   16    16  2   0% S      0K      0K  fg root     ksoftirqd/2     
+   19    19  3   0% S      0K      0K  fg root     migration/3     
+   20    20  3   0% S      0K      0K  fg root     ksoftirqd/3     
+   23    23  4   0% S      0K      0K  fg root     migration/4     
+   24    24  4   0% S      0K      0K  fg root     ksoftirqd/4     
+   26    26  4   0% S      0K      0K  fg root     kworker/4:0H    
+   27    27  5   0% S      0K      0K  fg root     migration/5     
+   30    30  5   0% S      0K      0K  fg root     kworker/5:0H    
+   31    31  6   0% S      0K      0K  fg root     migration/6     
+   32    32  6   0% S      0K      0K  fg root     ksoftirqd/6     
+   34    34  6   0% S      0K      0K  fg root     kworker/6:0H    
+   35    35  7   0% S      0K      0K  fg root     migration/7     
+   36    36  7   0% S      0K      0K  fg root     ksoftirqd/7     
+   38    38  7   0% S      0K      0K  fg root     kworker/7:0H    
+   39    39  1   0% S      0K      0K  fg root     khelper         
+   40    40  2   0% S      0K      0K  fg root     netns           
+   41    41  1   0% S      0K      0K  fg root     perf            
+   42    42  2   0% S      0K      0K  fg root     smd_channel_clo 
+   43    43  1   0% S      0K      0K  fg root     glink_tx        
+   44    44  1   0% S      0K      0K  fg root     glink_tx        
+[top: 1.681s elapsed]
+

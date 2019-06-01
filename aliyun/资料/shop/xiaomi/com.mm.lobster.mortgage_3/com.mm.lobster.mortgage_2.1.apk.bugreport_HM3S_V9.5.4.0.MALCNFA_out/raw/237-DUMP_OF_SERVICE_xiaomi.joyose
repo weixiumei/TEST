@@ -1,0 +1,43 @@
+---------DUMP SysbaseClService------------
+===================dump SmartPModeManager info======================
+===================dump SmartPActionsReceiver info======================
+All Register Actions : 
+===================dump SmartPSensorManager info======================
+All Register Sensors : 
+===================dump SmartPAlarmReceiver info======================
+All Register Alarms : 
+===================dump SleepModeAdapter info======================
+mIsCollectEnable : false
+mIsPredictEnable : false
+mIsPSceneEnable : false
+mIsScreenOn : true
+mIsCharging : false
+mIsSleeping : false
+mSleepState : state_no_sleep
+===================dump SleepDataManager info======================
+the enter mTimeGap is 30
+the enter mStartCollectTime is 21
+the enter mEndCollectTime is 3
+the enter mStartPredictTime is 21
+the enter mEndPredictTime is 3
+the enter mPositiveThreshold is 14400000
+the enter mHistorySize is 30
+the enter mAlarmTimeList is null
+the enter mLightTimeList is [90, 90, 60, 60, 60, 60, 60, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, ]
+the enter mSensorTimeList is [180, 150, 120, 100, 80, 60, ]
+the enter mDefaultLightTime is 30
+===================dump SleepDataManager info====================== end
+===================dump SleepPredictScene info======================
+===================dump SleepModeABTest info======================
+mEnable : false
+---------DUMP SmartPRetryController config------------
+===================dump SleepScreenStatusRecord info======================
+mStartRecord : false
+screeninfo : null
+===================dump PlaceController info======================
+the place tracker enable switch is false
+[dumpsys: 33.776s elapsed]
+
+========================================================
+== Checkins
+========================================================

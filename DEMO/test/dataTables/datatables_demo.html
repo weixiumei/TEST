@@ -1,0 +1,151 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.1/css/colReorder.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.5/css/rowReorder.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./main.css"> -->
+  <link rel="stylesheet" type="text/css" href="">
+    <style>
+      .grip {
+        width:20px;
+        height:30px;
+        margin-top: 40px;
+        background-image:url(./grip.png);
+        margin-left:-5px;
+        position:relative;
+        z-index:88;
+        cursor:e-resize
+      }
+    </style>
+
+  </head>
+  <body>
+    <button id="reset" style="height: 40px;margin: 10px 0;">reset</button>
+    <table id="example" class="display" style="width:100%">
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/colreorder/1.5.1/js/dataTables.colReorder.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/rowreorder/1.2.5/js/dataTables.rowReorder.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.colVis.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="./colResizable-1.6.min.js"></script>
+  <!-- http://www.bacubacu.com/colresizable/#download -->
+  <!-- https://datatables.net/forums/discussion/26786/basic-column-resizing-plugin -->
+  <script>
+    var data = [
+      {"name":"Tiger Nixon1","position":"System Architect","salary":"$3,120","start_date":"2011/04/25","office":"Edinburgh","extn":"5421","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters2","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters3","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters4","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters5","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters6","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters7","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters8","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters9","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters10","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters11","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters12","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters13","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters14","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters15","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters16","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters17","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+      {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422","extn2":"5421","extn3":"5421","extn4":"5421"},
+    ];
+    var columns_data = [
+      { name: '名字' },
+      { position: '定位' },
+      { salary: '价格' },
+      { office: '办公' },
+      { extn: '数量' },
+      { extn2: '数量2' },
+      { extn3: '数量3' },
+      { extn4: '数量4' },
+    ]
+    var table_example = ''
+    function setColumns(table_headers) {
+      var th_html = '',
+        columns = []
+      for (var i = 0; i < table_headers.length; i++) {
+        for (var ss in table_headers[i]) {
+          th_html = th_html + '<th data-code="' + ss + '">' + table_headers[i][ss] + '</th>'
+          columns.push({
+            data: ss
+          })
+        }
+      }
+      $('table thead tr').html(th_html)
+      return columns;
+    }
+    var columns = setColumns(columns_data)
+    $(document).ready(function() {
+      var table = $('#example').DataTable( {
+        columns:    columns,
+        data:       data,
+        // "scrollX": true,
+        colReorder: true,
+        // rowReorder: true,
+        fixedHeader: true,
+        responsive: true,
+        stateSave:  true,
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        // paging: false,//是否分页
+        //显示隐藏列
+        dom: 'Bfrtip',
+        buttons: [
+          'colvis' 
+        ],
+        // colReorder: {
+        //   指定顺序
+        //   order: [ 4, 3, 2, 1, 0 ]
+        //   节约性能
+        //   realtime: false
+        // }
+        // initComplete: function(settings) {
+        //     $('#example').colResizable({liveDrag:true});
+        // }
+      })
+      // 重置
+      $('#reset').click( function (e) {
+        e.preventDefault();
+        table.colReorder.reset();
+      });
+      new $.fn.dataTable.FixedColumns( table, {
+        leftColumns: 1,
+        rightColumns: 1
+      });
+      $('#example').colResizable({
+        // liveDrag:true, 
+        // resizeMode:'flex'
+        liveDrag:true,
+        gripInnerHtml:"<div class='grip'></div>", 
+        draggingClass:"dragging", 
+        onResize:onSampleResized
+      });
+      var onSampleResized = function(e){  
+        var table = $(e.currentTarget); //reference to the resized table
+      };  
+      // $('.table').colResizable();
+    });
+  </script>
+</html>

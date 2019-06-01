@@ -1,0 +1,6 @@
+  Granted Uri Permissions:
+  * UID 1000 holds:
+    UriPermission{35a6a3a 0 @ content://downloads/all_downloads/3}
+      targetUserId=0 sourcePkg=com.android.providers.downloads targetPkg=com.miui.sysbase
+      mode=0x3 owned=0x0 global=0x3 persistable=0x0 persisted=0x0
+

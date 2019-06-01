@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script src="vue_2.5.16.js"></script>
+    <script src="button_counter.js"></script>
+    <script src="base_input.js"></script>
+    <style>
+        div {
+             width: 100px;
+         }
+         #obj1 {
+             background: deeppink;
+         }
+         #obj2 {
+             background: pink;
+         }
+         #obj3 {
+             background: hotpink;
+         }#obj4 {
+             background: #ff4225;
+         }
+     </style>
+  </head>
+  <body>
+    <!-- <div id="app">
+      {{ message }}
+    </div> -->
+    <div id="components-demo">
+      <!-- <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fa9140accd95d143ce7bec711299e967/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg" alt=""> -->
+      {{ message }}<br>
+      <button-counter></button-counter>
+      <button-counter></button-counter>
+      <button-counter></button-counter>
+      <!-- <base-input v-on:focus.native="onFocus"></base-input> -->
+      <base-input v-on:focus="onFocus" v-model="idata" label="标识" placeholder="请输入信息"></base-input>
+      <div>{{idata}}</div>
+      <div id="content">
+        
+        <div id="obj1" v-on:click.capture="doc">
+          obj1
+          <div id="obj2" v-on:click.capture="doc">
+              obj2
+              <div id="obj3" v-on:click.self="doc">
+                  obj3
+                  <div id="obj4" v-on:click="doc">
+                  obj4
+                  <!--。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。点击obj4的时候，弹出的顺序为：obj1、obj2、obj4、obj3；
+                  由于1，2有修饰符，故而先触发事件，然后就是4本身触发，最后冒泡事件。
+                  -->
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: '#components-demo',
+        data: {
+          message: 'Hello Vue!',
+          idata:''
+        },
+        methods:{
+          onFocus:function(){
+            console.log('onFocus')
+          },
+          doc() {
+            this.id= event.currentTarget.id;
+            alert(this.id)
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

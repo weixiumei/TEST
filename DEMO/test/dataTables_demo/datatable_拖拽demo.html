@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta utf-8>
+    <link rel="stylesheet" type="text/css" href="">
+    <style>
+      .JCLRgrip .JColResizer{
+        background: #d5d5d5!important;
+        opacity: 1!important;
+      }
+      table th, table td{
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="example" class="display" style="width:100%;text-align: center;">
+    </table>
+  </body>
+  <script type="text/javascript" charset="utf8" src="./jquery-1.8.3.js"></script>
+  <script type="text/javascript" charset="utf8" src="./jquery.dataTables.min.js"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="./dataTables.colReorder.min.js"></script> -->
+  <script type="text/javascript" charset="utf8" src="./dataTables.colReorder.js"></script>
+  <script type="text/javascript" charset="utf8" src="./testResize.js"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="./colResizable-1.6.js"></script> -->
+  <!-- <script type="text/javascript" charset="utf8" src="./all2.js"></script> -->
+  <script>
+    var table_example = ''
+    var data = [
+      {"name":"Tiger n","position":"System Architect","salary":"$3,120","start_date":"2011/04/25","office":"Edinburgh","extn":"5421"},
+      {"name":"Garrett Winters2","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+      {"name":"Garrett Winters3","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"}
+    ]
+    var columns = [
+      { title: '名字', data: 'name' },
+      { title: '定位', data: 'position' },
+      { title: '价格', data: 'salary' },
+      { title: '时间', data: 'start_date' },
+      { title: '办公', data: 'office' },
+      { title: '数量', data: 'extn1' },
+      { title: '数量', data: 'extn2' },
+      // { title: '数量', data: 'extn3' },
+      // { title: '数量', data: 'extn4' },
+      // { title: '数量', data: 'extn5' },
+      // { title: '数量', data: 'extn6' },
+      // { title: '数量', data: 'extn7' },
+      // { title: '数量', data: 'extn8' }
+    ]
+    $(document).ready(function() {
+      window.onResize = function(){
+        alert(1111)
+      }
+      $(window).bind('resize.JColResizer', function(){
+        console.log(this)
+        setTimeout(function(){
+          if(!!table){
+            console.log('####resize####')
+            // var options = {
+            //   disable: false,
+            //   disabledColumns: [],
+            //   dragCursor: "e-resize",
+            //   draggingClass: "JCLRgripDrag",
+            //   fixed: true,
+            //   flush: false,
+            //   gripInnerHtml: "",
+            //   headerOnly: false,
+            //   hoverCursor: "e-resize",
+            //   liveDrag: true,
+            //   marginLeft: null,
+            //   marginRight: null,
+            //   minWidth: 15,
+            //   onDrag: null,
+            //   onResize: null,
+            //   overflow: false,
+            //   partialRefresh: false,
+            //   postbackSafe: false,
+            //   resizeMode: "overflow"
+            // }
+            setTimeout(function(){
+              $('#example').colResizable()
+              // colResizable.init( $('table'), options);
+            }, 0)
+          }
+        }, 0)
+      })
+      var table = $('#example').DataTable( {
+        columns:    columns,
+        // data:       data,
+        // "autoWidth": true,
+        // "scrollX": true,
+        colReorder: {
+          realtime: false
+        },
+        stateSave:  true,
+        serverSide: true,
+        "ajax": {
+          "url": "data.json",
+          "dataSrc": function ( json ) {
+            return json;
+          }
+        },
+        initComplete: function(settings) {
+          $('#example').colResizable({ 
+            // postbackSafe: true,//刷新后保留之前的拖拽宽度
+            liveDrag:true, 
+            // gripInnerHtml:"<div class='grip'></div>", 
+            // draggingClass:"dragging", 
+            // resizeMode:'overflow',
+            // resizeMode:'flex',
+            onResize: onSampleResized,
+          })
+        },
+        stateSaveCallback: function(settings, data) {
+          if(!!table){
+            console.log('####换列####')
+            // var options = {
+            //   disable: false,
+            //   disabledColumns: [],
+            //   dragCursor: "e-resize",
+            //   draggingClass: "JCLRgripDrag",
+            //   fixed: true,
+            //   flush: false,
+            //   gripInnerHtml: "",
+            //   headerOnly: false,
+            //   hoverCursor: "e-resize",
+            //   liveDrag: true,
+            //   marginLeft: null,
+            //   marginRight: null,
+            //   minWidth: 15,
+            //   onDrag: null,
+            //   onResize: null,
+            //   overflow: false,
+            //   partialRefresh: false,
+            //   postbackSafe: false,
+            //   resizeMode: "overflow"
+            // }
+            setTimeout(function(){
+              $('#example').colResizable()
+              // colResizable.destroy($('table'))
+              // colResizable.init( $('table'), options);
+            }, 0)
+          }
+        }
+      })
+      // new $.fn.dataTable.ColReorder( table );
+      function onSampleResized(){
+        console.log('onSampleResized')
+      }
+    });
+  </script>
+</html>

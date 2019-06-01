@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>继承</title>
+  </head>
+  <script>
+    // 一 原型链
+    console.log('原型链')
+    function Father() {
+      // 3
+      this.name = '父亲'
+      this.colors = ["red","blue","green"]
+      this.func1 = function(){
+        console.log('Father--func1')
+      }
+    }
+    // 4
+    Father.prototype.name = 'father'
+
+    Father.prototype.func1 = function(){
+        console.log('prototype--func1')
+      }
+
+    function Son(){
+      // 1
+      this.name = '儿子'
+    }
+    Son.prototype = new Father()
+    // 2
+    Son.prototype.name = 'son'
+    var son1 = new Son()
+    son1.colors.push('123')
+    var son2 = new Son()
+    // son.name
+    // --> 先在实例内部找
+    // --> 然后在实例的__proto__(Son.prototype)找 = 也就是继承的new Father()的内部
+    // --> Father.prototype
+    // --> Object.prototype
+    console.log('优点：可继承父类属性方法')
+    console.log(son1.name)//1234
+    console.log(son2.colors)//["red", "blue", "green", "123"]
+    son2.func1()
+    console.log('缺点：1.引用类型互相影响  2.不能给父函数传参')
+    console.log('--------------')
+
+
+    // 二 借用构造函数
+    console.log('借用构造函数')
+    function Father2() {
+      this.name = '父亲'
+      this.colors = ["red","blue","green"]
+      this.getName2 = function(){
+        console.log('func')
+      }
+    };
+    Father2.prototype.name = 'father'
+    Father2.prototype.getName2 = function(){
+      console.log('func1')
+    }
+    function Son2(){
+      this.name = '儿子'
+      this.getName1 = function(){
+        this.name = 'fuc1'
+      }
+      // 引用类型不共享，切可以传参
+      Father.call(this)
+    }
+    var son1 = new Son2()
+    son1.colors.push('123')
+    var son2 = new Son2()
+    console.log('优点：引用类型不共享，且可以传参')
+    console.log(son2.colors)
+    console.log('缺点: 1.方法都在构造函数中定义, 因此函数不可复用。2. 超类型中定义的方法,对子类型而言也是不可见的')
+    console.log(son2.getName1())
+    console.log(son1.getName1()==son2.getName1())
+    // console.log(son2.getName2())
+    console.log('-------------')
+
+    // 组合继承
+    console.log('组合继承')
+    function Father3(){
+      this.name = '父'
+      this.colors = ['1','2']
+      this.getName3 = function(){
+        return ('Father3.getName3')
+      }
+    }
+    Father3.prototype.getName3 = function(){
+      return ('prototype.getName3')
+    }
+    function Son3(){
+      this.name = '儿'
+      // Father3.call(this)
+      Son3.superclass.constructor.call(this)
+    }
+    // Son3.prototype = new Father3()
+    extend(Son3, Father3)
+    var son3_1 = new Son3()
+    son3_1.colors.push('1234')
+    var son3_2 = new Son3()
+    console.log('优点：1. 在原型上定义方法实现了函数复用  2.每个实例都有它自己的属性  3.能给父函数传参')
+    console.log('使用原型链实现对原型属性和方法的继承,通过借用构造函数来实现对实例属性的继承.')
+    console.log(son3_2.colors)
+    console.log(son3_1.getName3())
+    console.log('缺点：调用了两次父类构造函数')
+    console.log('-------------')
+
+    function extend(subClass, superClass) {
+      // subClass.prototype = new superClass()
+      var F = function() {};
+      F.prototype = superClass.prototype;
+      subClass.prototype = new F(); 
+      subClass.prototype.constructor = subClass;
+
+      subClass.superclass = superClass.prototype;
+      if(superClass.prototype.constructor == Object.prototype.constructor) {
+        superClass.prototype.constructor = superClass;
+      }
+    }
+    
+  </script>
+  <style>
+  .button{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+    background: #e0e0e0;
+    margin: 0 auto;
+  }
+  .button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 30px;
+  }
+  </style>
+  <body>
+    <div>
+      <!-- 半圆 -->
+      <!-- <div class="button">button</div> -->
+      <!-- <div class="sanjiao">sanjiao</div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+ <head>
+     <title>跨域测试</title>
+     <script src="jquery.min.js"></script>
+     <script>
+         $(document).ready(function () {
+           function callback(item){
+             console.log(item)
+           }
+           function callback(item){
+             console.log(item)
+           }
+             $("#btn").click(function () {
+                //  $.ajax({
+                //     //  url: 'https://opentest.pbwear.com:88/api/v6/shop/paycenter/status/get',
+                //      url: 'http://api.map.baidu.com/telematics/v3/weather?location=广州&output=json&ak=FK9mkfdQsloEngodbFl4FeY3',
+                //      type: 'post',
+                //      success: function (data) {
+                //         $(text).val(data);
+                //      }
+                //  });
+                function callback(item){
+                  console.log(item)
+                };
+                var url = 'http://mobads.baidu.com/cpro/ui/mads.php?code2=IWd9UhwzUv-bg168P10dndtsQW08Piusp1dWUvY8mh7GuZR8UyqBmyw1Qhw-Uyt8Uy7GUBuLpHdhnAcYnWb3Ph7BPyuxPjItn1Khm1m3nym4rH6Yg1RLxjcYPjfzPvfkPWR3mdtvnMk9rjRLPAN9P1-bP19xP1utujf3n10YmHIWmyf3g16zFMPLpHYkFMK9IWYsFhGB5H0hpL-JmWYsFMKxIhNz5H68P101rau8Ijd8Iyk_g10hmLP1pyfquW0lmWflnWblrjmlmyclPyutXRDVrNNvuDIMyHI9R7FimBuzug7xpyfquyRLryfzuH03PAN-uHTzrAFWrHbsuA79nWnzuywWPj0hpy4Yuy4Y5iRznY-8IAN8IaR1fhPEUgKEUhN8IaR1wAPEUi4Bmy-bIi4VUvF9uZn8uANVUz4Vmy-8FHFAQhG1TvwoQb94mMFGuD-8IhN8IAqzXR7WIA-vpgw4FHPauy4bFMFsIjYkFMK9uvNxIgF_5y9YIZ0-nYD-nbm-nbuWTZFEQhF9pywdTLw9IA-WQhPEUiRzwh-8uAN3UZ08pZwVUausmyI-gLwGIAk-5iN7PBR3fiR4PiN7PBR4PaNawiN7raNKwBNaPaN7PBR4raR3wiN7PBR4PBR3PzN7PBNKniNKnzuk5yR3PWuWuhcsgvPsTBu9TZKGujd-rjmvmvuBnauL5HDsPHbhpjYkPH68rjRhUZTqn1R1FhkC5HDLPzu9mLfqH70_wDshTZFEujdJTLPbpzu9TA-b5Hn1njRvPjnhmgKY5H0hmMfqnauhILfqnau85HDhuhNY5RkaQDkNQD7rNDb_i7wPHakPRdPfQDGHHY4fFh7spy4hU1dGHZDsPZFDUHw5IMDdHDqLPHIHPgmVmhkdIR9GIDkcp1udH10vQgukPgFxUWNBThTdIyFVPDqgnWfVNA3vTbIxPRqjPMnVTh3duyD1TzdmTMwdyZ7vQN9oIgFBUHudiAbdT-K_TvF5nWuzgLDYHZFzTvFhpjN-mhIYHY9MPgN9g1udw1mYHvFVPgNDUZwdmgG1QRkkIBdzUgKdRA3YuRw8PDqRpjNdRAYvQgmsTvczgdqnfLGdPv78gYsVrgPnH1FEuMbzIjTVrNqnQgGdPLCsPMNRUjw-wA6YIRw8PyNfUjw-TMDsIgc8FMwzuMws5gPbpdt3QWTsPHnhmg0qnau9IjY1PiuhIy4W5yP9UAkBmyPoFMws5RdFcjwnNDRhUhNY5HDsnauBThfqyA-9UvdGFhq15y78uZFEpyfhmhwz5Hc1FMPL5HDsrj0hTv6qnHbznau1UWY3PWT1nWnsnWRLnHT1rj6hpyYqPjmsnHDsnHcsPWbYPHfkFMw9mWYsFMPbm1YdnzsYPWc_PHn_PjmzFMP-UWdnRakDHauWTZRqnauVuyYqnassFhd9m1YsnWCsnjCsnjCsnjCsnjCsnauWIy-b5HIAPW-awWbznYf1rjf3nWDvwWwDrD77wbnkPD7jnHmdxj63n1TkP1Rznjnzn1Tvraubuy3qnzuETLmqPB3sQWDhpyd-pHY3PWT1nWnsnWRLnHT1rj6hmy4bThqGu7qGujYYP1TLrjRsPhfsrHnvuWI-FMRquANhmgN_IauGuHYkFMwV5HRknBuWUHYdnHchUyfqniuBnHR1nWRzPWnYrj01n1Yk&b=1532526348040'
+                $.ajax({
+                    type: "get",
+                    // async: false,
+                    // url: "http://api.map.baidu.com/telematics/v3/weather?location=广州&output=json&ak=FK9mkfdQsloEngodbFl4FeY3",
+                    url: url,
+                    data: {},
+                    dataType: "jsonp",
+                    jsonp: "callback",
+                    jsonpCallback: "callback",
+                    // contentType: "application/json; charset=utf-8",
+                    // success: function (json) {    //成功回调函数                                                  
+                    //   // alert(json.result[0].weather_data[0].data);   //输出结果
+                    //   console.log(JSON.parse(json));
+                    // },
+                    // error: function (xhr, testStatus, error) {  //失败回调函数
+                    //   console.log('fail to get weather data!');
+                    //   console.log(xhr,testStatus,error)
+                    // }
+                }).done(function(res) {
+                  console.log("success");
+                  console.log(res);
+                  $(text).val(res);
+                }).fail(function(res) {
+                  console.log("error");
+                  console.log(res);
+                });
+                // $.ajax({
+                //   url: "http://tonghuashuo.github.io/test/jsonp.txt",
+                //   dataType: 'jsonp',
+                //   jsonp: "callback",
+                //   jsonpCallback: "dosomething"
+                // })
+                // .done(function(res) {
+                //   console.log("success");
+                //   console.log(res);
+                // })
+                // .fail(function(res) {
+                //   console.log("error");
+                //   console.log(res);
+                // });
+             });
+         });
+     </script>
+ </head>
+ <body>
+     <input id="btn" type="button" value="跨域获取数据" />
+     <textarea id="text" style="width: 400px; height: 100px;"></textarea>
+ </body>
+ </html>

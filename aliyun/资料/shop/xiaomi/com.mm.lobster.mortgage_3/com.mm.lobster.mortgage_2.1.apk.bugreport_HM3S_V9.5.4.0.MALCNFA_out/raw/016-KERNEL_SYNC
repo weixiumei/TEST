@@ -1,0 +1,151 @@
+objs:
+--------------
+rot_timeline_0 sw_sync: 5351
+
+mdss_fb_0 sw_sync: 1272787
+  pt signaled@28.519870: 72
+  pt signaled@115390.328530: 1128206
+  pt signaled@115592.853752: 1131105
+  pt signaled@115694.425482: 1133299
+  pt signaled@132059.137980: 1272450
+  pt signaled@132059.554267: 1272485
+  pt signaled@132059.538143: 1272466
+  pt signaled@132068.593642: 1272743
+  pt signaled@132069.011354: 1272768
+  pt signaled@132069.963754: 1272770
+  pt signaled@132070.197678: 1272784
+  pt signaled@132070.214385: 1272785
+  pt signaled@132070.214385: 1272785
+  pt signaled@132070.297917: 1272787
+  pt signaled@132070.297918: 1272787
+  pt signaled@132070.297918: 1272787
+  pt signaled@132070.297919: 1272787
+  pt active: 1272788
+  pt active: 1272788
+  pt active: 1272788
+
+mdss_fb_1 sw_sync: 0
+
+kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-1 kgsl-timeline: 0 queued:0 retired:0
+
+kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2 kgsl-timeline: 151248192 queued:151248192 retired:151248192
+  pt signaled@115040.841512: 133340800
+  pt signaled@132058.488748: 150948992
+  pt signaled@132059.137979: 150966400
+  pt signaled@132059.538140: 150971840
+  pt signaled@132068.565705: 151246016
+  pt signaled@132069.066827: 151247104
+  pt signaled@132069.947401: 151247104
+  pt signaled@132070.181774: 151247104
+  pt signaled@132070.198385: 151247104
+  pt signaled@132070.286814: 151248192
+  pt signaled@132070.286814: 151248192
+
+kgsl-3d0_ndroid.systemui(1803)-RenderThread(2088)-5 kgsl-timeline: 0 queued:0 retired:0
+
+kgsl-3d0_ndroid.systemui(1803)-RenderThread(2088)-6 kgsl-timeline: 752203904 queued:752203904 retired:752203904
+  pt signaled@132059.137980: 752146240
+  pt signaled@132059.530146: 752203904
+  pt signaled@132059.538142: 752178880
+  pt signaled@132070.215800: 752203904
+
+kgsl-3d0_ndroid.systemui(1803)-ndroid.systemui(1803)-7 kgsl-timeline: 2112 queued:0 retired:0
+  pt signaled@28.497106: 2112
+  pt signaled@115390.298964: 2112
+
+kgsl-3d0_od.sogou.xiaomi(20018)-RenderThread(20307)-3 kgsl-timeline: 0 queued:0 retired:0
+
+kgsl-3d0_od.sogou.xiaomi(20018)-RenderThread(20307)-8 kgsl-timeline: 35776 queued:35776 retired:35776
+
+fences:
+--------------
+[ffffffc060e60f00] fb0_retire: signaled
+  mdss_fb_0_pt signaled@28.519870: 72 / 1272787
+
+[ffffffc06ef48080] kgsl-3d0-pid-1803-ctx-7-ts-2112: signaled
+  kgsl-3d0_ndroid.systemui(1803)-ndroid.systemui(1803)-7_pt signaled@28.497106: 2112 / 2112 queued:0 retired:0
+
+[ffffffc0650b4680] kgsl-3d0-pid-441-ctx-2-ts-13334: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@115040.841512: 133340800 / 151248192 queued:151248192 retired:151248192
+
+[ffffffc05ff6f680] com.android.systemui.ImageWa:0: signaled
+  kgsl-3d0_ndroid.systemui(1803)-ndroid.systemui(1803)-7_pt signaled@115390.298964: 2112 / 2112 queued:0 retired:0
+  mdss_fb_0_pt signaled@115390.328530: 1128206 / 1272787
+
+[ffffffc038551800] fb0_retire: signaled
+  mdss_fb_0_pt signaled@115592.853752: 1131105 / 1272787
+
+[ffffffc0136b9e80] fb0_retire: signaled
+  mdss_fb_0_pt signaled@115694.425482: 1133299 / 1272787
+
+[ffffffc066f51100] kgsl-3d0-pid-441-ctx-2-ts-15094: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132058.488748: 150948992 / 151248192 queued:151248192 retired:151248192
+
+[ffffffc03a494c00] StatusBar:1: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132059.137979: 150966400 / 151248192 queued:151248192 retired:151248192
+  kgsl-3d0_ndroid.systemui(1803)-RenderThread(2088)-6_pt signaled@132059.137980: 752146240 / 752203904 queued:752203904 retired:752203904
+  mdss_fb_0_pt signaled@132059.137980: 1272450 / 1272787
+
+[ffffffc00daca200] kgsl-3d0-pid-1803-ctx-6-ts-7522: signaled
+  kgsl-3d0_ndroid.systemui(1803)-RenderThread(2088)-6_pt signaled@132059.530146: 752203904 / 752203904 queued:752203904 retired:752203904
+
+[ffffffc01368b900] fb0_retire: signaled
+  mdss_fb_0_pt signaled@132059.554267: 1272485 / 1272787
+
+[ffffffc035fe1c80] StatusBar:2: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132059.538140: 150971840 / 151248192 queued:151248192 retired:151248192
+  kgsl-3d0_ndroid.systemui(1803)-RenderThread(2088)-6_pt signaled@132059.538142: 752178880 / 752203904 queued:752203904 retired:752203904
+  mdss_fb_0_pt signaled@132059.538143: 1272466 / 1272787
+
+[ffffffc00d831100] FramebufferSurface:1: signaled
+  mdss_fb_0_pt signaled@132068.593642: 1272743 / 1272787
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132068.565705: 151246016 / 151248192 queued:151248192 retired:151248192
+
+[ffffffc01ba20380] fb0_retire: signaled
+  mdss_fb_0_pt signaled@132069.011354: 1272768 / 1272787
+
+[ffffffc03fd55900] FramebufferSurface:0: signaled
+  mdss_fb_0_pt signaled@132069.963754: 1272770 / 1272787
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132069.066827: 151247104 / 151248192 queued:151248192 retired:151248192
+
+[ffffffc03fd55d00] kgsl-3d0-pid-441-ctx-2-ts-15124: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132069.947401: 151247104 / 151248192 queued:151248192 retired:151248192
+
+[ffffffc039710080] android/com.android.internal:2: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132070.181774: 151247104 / 151248192 queued:151248192 retired:151248192
+  mdss_fb_0_pt signaled@132070.197678: 1272784 / 1272787
+
+[ffffffc05eb6c280] fb0_retire: signaled
+  mdss_fb_0_pt signaled@132070.214385: 1272785 / 1272787
+
+[ffffffc039710200] android/com.android.internal:1: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132070.198385: 151247104 / 151248192 queued:151248192 retired:151248192
+  mdss_fb_0_pt signaled@132070.214385: 1272785 / 1272787
+
+[ffffffc02be3f880] fb0_release: signaled
+  mdss_fb_0_pt signaled@132070.297917: 1272787 / 1272787
+
+[ffffffc023c6d080] fb0_retire: signaled
+  mdss_fb_0_pt signaled@132070.297918: 1272787 / 1272787
+
+[ffffffc039710500] android/com.android.internal:0: signaled
+  mdss_fb_0_pt signaled@132070.297918: 1272787 / 1272787
+
+[ffffffc023c6d100] StatusBar:0: signaled
+  kgsl-3d0_ndroid.systemui(1803)-RenderThread(2088)-6_pt signaled@132070.215800: 752203904 / 752203904 queued:752203904 retired:752203904
+  mdss_fb_0_pt signaled@132070.297919: 1272787 / 1272787
+
+[ffffffc00e7e1f80] kgsl-3d0-pid-441-ctx-2-ts-15124: signaled
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132070.286814: 151248192 / 151248192 queued:151248192 retired:151248192
+
+[ffffffc011868280] fb0_release: active
+  mdss_fb_0_pt active: 1272788 / 1272787
+
+[ffffffc03263b900] fb0_retire: active
+  mdss_fb_0_pt active: 1272788 / 1272787
+
+[ffffffc01776da00] FramebufferSurface:2: active
+  mdss_fb_0_pt active: 1272788 / 1272787
+  kgsl-3d0_surfaceflinger(441)-surfaceflinger(441)-2_pt signaled@132070.286814: 151248192 / 151248192 queued:151248192 retired:151248192
+
+

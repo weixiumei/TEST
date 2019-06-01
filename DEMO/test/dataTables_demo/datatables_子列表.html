@@ -1,0 +1,204 @@
+<html>
+  <head>
+      <!-- http://www.datatables.club/example/user_share/row_details.html -->
+      <link rel="stylesheet" type="text/css" href="jquery.dataTables.css"> 
+      <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script type="text/javascript" charset="utf8" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="jquery.dataTables.js"></script>
+    <!-- <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+  </head>
+  <body>
+    <table class="table table-striped table-bordered table-hover table-full-width" id="sample_1">
+      <thead>
+        <tr>
+          <th style="width:50%">年度</th>
+          <th style="width:50%">语言</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </body>
+  <script>
+    var oTable;
+   jQuery(document).ready(function() {
+       oTable = $("#sample_1").dataTable({
+           "aoColumnDefs": [{
+               //设置第一列不排序
+               "bSortable": false,
+               "aTargets": [0]
+           }],
+           //"aaSorting": [[1, 'asc']],//排序
+           "aLengthMenu": [[5, 10, 12, -1, 0], ['5', '10', '12', "所有", "0"] // change per page values here
+           ],
+           "iDisplayLength": 12,
+           "aaData": [
+               ['2014', 'javascript'],
+               ['2013', 'Transact-SQL'],
+               ['2012', 'Objective-C'],
+               ['2011', 'Objective-C'],
+               ['2010', 'Python'],
+               ['2009', 'Go'],
+               ['2008', 'C'],
+               ['2007', 'Python'],
+               ['2006', 'Ruby'],
+               ['2005', 'Java'],
+               ['2004', 'PHP'],
+               ['2003', 'C++']
+           ],
+           "oLanguage": {
+               "oAria": {
+                   "sSortAscending": " - click/return to sort ascending",
+                   "sSortDescending": " - click/return to sort descending"
+               },
+               "sLengthMenu": "显示 _MENU_ 记录",
+               "sZeroRecords": "对不起，查询不到任何相关数据",
+               "sEmptyTable": "未有相关数据",
+               "sLoadingRecords": "正在加载数据-请等待...",
+               "sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录。",
+               "sInfoEmpty": "当前显示0到0条，共0条记录",
+               "sInfoFiltered": "（数据库中共为 _MAX_ 条记录）",
+               "sProcessing": "<img src='../resources/user_share/row_details/select2-spinner.gif'/> 正在加载数据...",
+               "sSearch": "模糊查询：",
+               "sUrl": "",
+               //多语言配置文件，可将oLanguage的设置放在一个txt文件中，例：Javascript/datatable/dtCH.txt
+               "oPaginate": {
+                   "sFirst": "首页",
+                   "sPrevious": " 上一页 ",
+                   "sNext": " 下一页 ",
+                   "sLast": " 尾页 "
+               }
+           },
+           //多语言配置
+           // set the initial value
+           "fnCreatedRow": function(nRow, aData, iDataIndex) {
+               $('td:eq(0)', nRow).html("<span class='row-details row-details-close' data_id='" + aData[1] + "'></span>&nbsp;" + aData[0]);
+           }
+       });
+ 
+       $('.table').on('click', ' tbody td .row-details',
+               function() {
+                   var nTr = $(this).parents('tr')[0];
+                   if (oTable.fnIsOpen(nTr)) //判断是否已打开
+                   {
+                       /* This row is already open - close it */
+                       $(this).addClass("row-details-close").removeClass("row-details-open");
+                       oTable.fnClose(nTr);
+                   } else {
+                       /* Open this row */
+                       $(this).addClass("row-details-open").removeClass("row-details-close");
+                       //  alert($(this).attr("data_id"));
+                       //oTable.fnOpen( nTr,
+                       // 调用方法显示详细信息 data_id为自定义属性 存放配置ID
+                       fnFormatDetails(nTr, $(this).attr("data_id"));
+                   }
+               });
+   });
+ 
+   function fnFormatDetails(nTr, pdataId) {
+       //根据配置Id 异步查询数据
+      //  $.get("../resources/user_share/row_details/language.txt",
+      //          function(json) {
+      //              var array = json.data;
+      //              for (var i = 0; i < array.length; i++) {
+      //                  if (pdataId == array[i].language) {
+      //                      var sOut = '<center> <p style="width:70%">' + array[i].desc + '<a target="_blank" href="' + array[i].url + '">更多</a></p></center>';
+      //                      oTable.fnOpen(nTr, sOut, 'details');
+      //                  }
+      //              }
+      //          });
+      var json = {
+    "data": [
+        {
+            "language": "Java",
+            "url": "http://baike.baidu.com/subview/29/12654100.htm",
+            "desc": "Java是一种可以撰写跨平台应用软件的面向对象的程序设计语言。Java 技术具有卓越的通用性、高效性、平台移植性和安全性，广泛应用于个人PC、数据中心、游戏控制台、科学超级计算机、移动电话和互联网，同时拥有全球最大的开发者专业社群。"
+        },
+        {
+            "language": "PHP",
+            "url": "http://baike.baidu.com/subview/99/5828265.htm",
+            "desc": "PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。"
+        },
+        {
+            "language": "C++",
+            "url": "http://baike.baidu.com/view/824.htm",
+            "desc": "C++是在C语言的基础上开发的一种通用编程语言，应用广泛。C++支持多种编程范式 －－面向对象编程、泛型编程和过程化编程。最新正式标准C++14于2014年8月18日公布。其编程领域众广，常用于系统开发，引擎开发等应用领域，是至今为止最受广大受用的最强大编程语言之一,支持类：类、封装、重载等!"
+        },
+        {
+            "language": "Ruby",
+            "url": "http://baike.baidu.com/subview/45135/5977034.htm",
+            "desc": "Ruby，一种为简单快捷的面向对象编程（面向对象程序设计）而创的脚本语言，在20世纪90年代由日本人松本行弘（まつもとゆきひろ/Yukihiro Matsumoto）开发，遵守GPL协议和Ruby License。它的灵感与特性来自于 Perl、Smalltalk、Eiffel、Ada以及 Lisp 语言。由 Ruby 语言本身还发展出了JRuby（Java平台）、IronRuby（.NET平台）等其他平台的 Ruby 语言替代品。Ruby的作者于1993年2月24日开始编写Ruby，直至1995年12月才正式公开发布于fj（新闻组）。因为Perl发音与6月诞生石pearl（珍珠）相同，因此Ruby以7月诞生石ruby（红宝石）命名。"
+        },
+        {
+            "language": "Python",
+            "url": "http://baike.baidu.com/view/21087.htm",
+            "desc": "Python（英语发音：/?pa?θ?n/）, 是一种面向对象、解释型计算机程序设计语言，由Guido van Rossum于1989年底发明，第一个公开发行版发行于1991年，Python 源代码同样遵循 GPL(GNU General Public License)协议 。Python语法简洁而清晰，具有丰富和强大的类库。它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起。常见的一种应用情形是，使用Python快速生成程序的原型（有时甚至是程序的最终界面），然后对其中有特别要求的部分，用更合适的语言改写，比如3D游戏中的图形渲染模块，性能要求特别高，就可以用C/C++重写，而后封装为Python可以调用的扩展类库。需要注意的是在您使用扩展类库时可能需要考虑平台问题，某些可能不提供跨平台的实现。"
+        },
+        {
+            "language": "C",
+            "url": "http://baike.baidu.com/view/1219.htm",
+            "desc": "C语言是一门通用计算机编程语言，应用广泛。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。"
+        },
+        {
+            "language": "Go",
+            "url": "http://baike.baidu.com/subview/5897/7068513.htm",
+            "desc": "Go是一种新的语言，一种并发的、带垃圾回收的、快速编译的语言。"
+        },
+        {
+            "language": "Objective-C",
+            "url": "http://baike.baidu.com/view/459423.htm",
+            "desc": "Objective-C，通常写作ObjC和较少用的Objective C或Obj-C，是扩充C的面向对象编程语言。它主要使用于Mac OS X和GNUstep这两个使用OpenStep标准的系统，而在NeXTSTEP和OpenStep中它更是基本语言。Objective-C可以在GCC以及Clang运作的系统上编写和编译，因为GCC与Clang含Objective-C的编译器。1980年代初布莱德·确斯(Brad Cox)在其公司Stepstone发明Objective-C。他对软件设计和编程里的真实可用度问题十分关心。Objective-C最主要的描述是他1986年出版的Object Oriented Programming: An Evolutionary Approach. Addison Wesley. ISBN 0-201-54834-8."
+        },
+        {
+            "language": "Transact-SQL",
+            "url": "http://baike.baidu.com/view/861870.htm",
+            "desc": "Transact-SQL（又称 T-SQL），是在 Microsoft SQL Server 和 Sybase SQL Server 上的 ANSI SQL 实现，与 Oracle 的 PL/SQL 性质相近（不只是实现 ANSI SQL，也为自身数据库系统的特性提供实现支持），目前在 Microsoft SQL Server 和 Sybase Adaptive Server 中仍然被使用为核心的查询语言。"
+        },
+        {
+            "language": "javascript",
+            "url": "http://baike.baidu.com/view/16168.htm",
+            "desc": "JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。Node.js。 "
+        }
+    ]}
+
+      var array = json.data;
+      for (var i = 0; i < array.length; i++) {
+          if (pdataId == array[i].language) {
+              var sOut = '<center> <p style="width:70%">' + array[i].desc + '<a target="_blank" href="' + array[i].url + '">更多</a></p></center>';
+              oTable.fnOpen(nTr, sOut, 'details');
+          }
+      }
+      
+       /**
+        $.ajax({
+               type:'post',
+               url:'${pageContext.request.contextPath }/statistic/statistic!ajaxDetails.do',
+               data:{"pdataId":pdataId},
+               dataType:"text",
+               async:true,
+               beforeSend:function(xhr){//信息加载中
+                   oTable.fnOpen( nTr, '<span id="configure_chart_loading"><img src="${pageContext.request.contextPath }/image/select2-spinner.gif"/>详细信息加载中...</span>', 'details' );
+               },
+               success:function (data,textStatus){
+                   if(textStatus=="success"){  //转换格式 组合显示内容
+                       var res = eval("("+data+")");
+                       var sOut = '<table style="width:100%;">';
+                       for(var i=0;i<res.length;i++){
+                           sOut+='<tr>';
+                           sOut+='<td width="5%"></td><td width="35%">'+res[i].name+'</td>';
+                           sOut+='<td width="30%"><div class="div_left">'+res[i].num1+'</div><div class="div_center">|</div><div class="div_right">'+res[i].count1+'</div></td>';
+                           sOut+='<td style="width:30%"><div class="div_left">'+res[i].num2+'</div><div class="div_center">|</div><div class="div_right">'+res[i].count2+'</div></td>';
+                           sOut+='</tr>'
+                       }
+                       sOut+='</table>';
+                       oTable.fnOpen( nTr,sOut, 'details' );
+                   }
+               },
+               error: function(){//请求出错处理
+                   oTable.fnOpen( nTr,'加载数据超时~', 'details' );
+               }
+           });**/
+   }
+  </script>
+</html>

@@ -1,0 +1,36 @@
+Icon list:
+   0: (headset) null
+   1: (mikey) null
+   2: (call_record) null
+   3: (privacy_mode) null
+   4: (ble_unlock_mode) null
+   5: (quiet) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201ee) user=0 )
+   6: (gps) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x00000000) user=0 )
+   7: (missed_call) null
+   8: (managed_profile) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201e2) user=0 )
+   9: (ime) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.sohu.inputmethod.sogou.xiaomi id=0x7f020210) user=0 )
+  10: (sync_failing) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f020228) user=0 )
+  11: (sync_active) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f020226) user=0 )
+  12: (cast) null
+  13: (location) null
+  14: (bluetooth) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201c1) visible user=0 )
+  15: (bluetooth_handsfree_battery) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201b5) user=0 )
+  16: (nfc) null
+  17: (tty) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f02022b) user=0 )
+  18: (speakerphone) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f02021a) user=0 )
+  19: (zen) null
+  20: (mute) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201a9) user=0 )
+  21: (volume) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201f2) user=0 )
+  22: (wifi) null
+  23: (wimax) null
+  24: (cdma_eri) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201f4) user=0 )
+  25: (data_connection) null
+  26: (phone_evdo_signal) null
+  27: (phone_signal) null
+  28: (battery) null
+  29: (alarm_clock) StatusBarIcon(icon=Icon(typ=RESOURCE pkg=com.android.systemui id=0x7f0201b1) user=0 )
+  30: (secure) null
+  31: (clock) null
+  mDisabled1=0x0
+  mDisabled2=0x0
+  mDisableRecords.size=0

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./vue.js"></script>
+    <title>Vue-原理</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="a"></div>
+    <script>
+      var vue = new Vue({
+        el: '#app',
+        data: {
+          name: 'wei'
+        },
+        beforeCreate(){
+          console.log('------------------beforeCreate-------------------')
+          console.log('刚刚new Vue()之后，初始化事件和生命周期，这个时候，数据还没有挂载呢，只是一个空壳，无法访问到数据和真实的dom')
+          console.log(this.name) //undefined
+          console.log(document.getElementsByClassName("a")[0]) // undefined
+        },
+        created(){
+          console.log('------------------created-------------------')
+          this.helloWorld()
+        },
+        methods: {
+          helloWorld(){
+            console.log('my name is ' + this.name)
+          }
+        }
+      })  
+    </script>
+  </body>
+</html>

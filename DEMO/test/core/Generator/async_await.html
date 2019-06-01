@@ -1,0 +1,62 @@
+<html>
+  <script>
+class Sleep {
+  constructor(timeout) {
+    this.timeout = timeout;
+  }
+  then(resolve, reject) {
+    const startTime = Date.now();
+    setTimeout(
+      () => resolve(Date.now() - startTime),
+      this.timeout
+    );
+  }
+}
+
+(async () => {
+  const actualTime = await new Sleep(1000);
+  console.log(actualTime);
+})();
+
+console.log('------------')
+async function f() {
+  // try {
+    await Promise.reject('出错了');
+  // } catch(e) {
+  // }
+  return await Promise.resolve('hello world');
+}
+
+f()
+.then(v => console.log(v))
+.catch(v => console.log(v))
+
+console.log('--------------')
+function fetch(url){
+  return new Promise(function(resolve, reject){
+    var xmlHttp = new XMLHttpRequest()
+    xmlHttp.open('get', url)
+    xmlHttp.onreadystatechange = function(){
+      // console.log(xmlHttp.response)
+      if(xmlHttp.status == 200 && xmlHttp.readyState == 4){
+        resolve(JSON.parse(xmlHttp.response))
+      }
+    }
+    xmlHttp.send()
+  })
+}
+function logInOrder(urls) {
+  // 远程读取所有URL
+  const textPromises = urls.map(url => {
+    return fetch(url).then(response => response);
+  });
+
+  // 按次序输出
+  textPromises.reduce((chain, textPromise) => {
+    return chain.then(() => textPromise)
+      .then(text => console.log(text));
+  }, Promise.resolve());
+}
+logInOrder(['data.json','data.json'])
+  </script>
+</html>

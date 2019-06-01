@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>事件模型</title>
+    <style>
+      #outter{
+        width: 12rem;
+        background: red;
+        height: 10rem;
+      }
+      #inner{
+        width: 6rem;
+        background: rgb(13, 97, 206);
+        height: 5rem;
+      }
+    </style>
+    <script>
+      window.onload = function (){
+        // 默认冒泡
+        var outter = document.getElementById('outter')
+        var inner = document.getElementById('inner')
+        outter.addEventListener('click',function(){
+          alert('outter')
+          console.log(event.target)
+        })
+        // inner.addEventListener('click',function(){
+        //   alert('inner')
+        //   // event.stopPropagation()
+        // })
+        // inner.addEventListener('click',function(){
+        //   alert('inner2')
+        // })
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="outter">
+      <div id="inner"></div>
+    </div>
+  </body>
+
+</html>
