@@ -1,4 +1,4 @@
-# koa-myself
+# full-stack-vue-koa
 
 > A Vue.js project
 
