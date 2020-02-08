@@ -1,0 +1,97 @@
+<html>
+  <head></head>
+  <script>
+    // function a(){
+    //   var ins = '11';
+    //   return function(){
+    //     console.log(ins)
+    //   }
+    // }
+    // setTimeout(a(), 100)
+    // for (var i=0;i<100;i++){
+    //   (function(i){
+    //     setTimeout(function(){
+    //             console.log(i)
+    //         })
+    //   })(i)
+    // }
+
+    // var a = 0
+    // console.log(0, new Date().getTime(), a)
+    // setTimeout(function(){
+    //   console.log('setTimeout', new Date().getTime())
+    // }, 10)
+    // for(var i=0;i<10000000;i++){
+    //   a++
+    // }
+    // console.log(1, new Date().getTime(), a)
+
+    // setTimeout(function(){
+    //   console.log(setTimeout, new Date().getTime())
+    // }, 10)
+
+    // var addTwoNumbers = function(l1, l2) {
+    //     return ((l1.reverse().join('')*1+l2.reverse().join('')*1)+'').split('').reverse()
+    // };
+    
+    // var lengthOfLongestSubstring = function(s) {
+    //   // abcbdabcead
+    //   const arr = s.split('')
+    //   let temp = []
+    //   let max = 0
+    //   for(let i=0;i<arr.length;i++){
+    //       if(temp.indexOf(arr[i])>-1){
+    //           if(max<temp.length){
+    //             max=temp.length
+    //           }
+    //           temp = temp.slice(temp.indexOf(arr[i]) + 1, temp.length)
+    //       }
+    //       temp.push(arr[i])
+    //   }
+    //   console.log(max==0?temp.length:max)
+    //   return temp.length>max?temp.length:max
+    // };
+    // lengthOfLongestSubstring("aab")
+
+    // function debounce(fn) {
+	  //   // 创建一个标记用来存放定时器的返回值
+    //   let timeout = null; 
+    //   return function () {
+    //   	// 每当用户输入的时候把前一个 setTimeout clear 掉
+    //     clearTimeout(timeout); 
+    //     timeout = setTimeout(() => { 
+    //       // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后
+    //       // 的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数
+    //       fn.apply(this, arguments);
+    //     }, 500);
+    //   };
+    // }
+    // function sayHi() {
+    //   console.log('防抖成功');
+    // }
+    // var inp = document.getElementById('inp');
+    // inp.addEventListener('input', debounce(sayHi)); // 防抖
+
+    // 防抖 debounce（某事件执行完后需延长 x ms,如果在 x ms内又触发了，就清除之前的事件，执行后面的事件）
+    // 1500后执行后面一个，且只执行一次
+    var timeout = null
+    function debounce(){
+      console.log()
+      clearTimeout(timeout)
+      timeout = setTimeout(function(){
+        console.log('aaa')
+      }, 1000)
+    }
+    // var fn = setTimeout(function(){
+    //   console.log('aaa')
+    // })
+    debounce()
+    setTimeout(function(){
+      debounce()
+    }, 500)
+    // 节流 throttle（某时间段内只执行一次某时间，执行第一次）
+  </script>
+  <body>
+    
+  </body>
+</html>

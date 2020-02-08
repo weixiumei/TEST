@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>const</title>
+  <script>
+    // 类似let特点
+    // 初始化时必须立即赋值
+    // 后面不能改变值
+    const PI = 3.1415926
+    console.log(PI)
+    // 报错，不能改变
+    // PI = 3.14
+
+    const obj = {}
+    // freeze可冻结对象，不可改变
+    Object.freeze(obj);
+    // obj指向的地址指向一个对象，指向对象地址不可变，对象结构可变
+    obj.a = 1
+    console.log(obj)
+    // 报错，不能改变
+    // obj = {}
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

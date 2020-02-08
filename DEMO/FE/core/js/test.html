@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function clickbb(e){
+      console.log(e.target)
+    }
+  </script>
+</head>
+<body>
+  <div class="ha">
+    <div class="a">a</div>
+    <div class="b">
+      b
+      <div class="bb1">bb1</div>
+      <div class="bb2" onclick="clickbb(event)">bb2</div>
+      <div class="bb3">bb3</div>
+    </div>
+    <div class="c">c</div>
+  </div>
+</body>
+</html>

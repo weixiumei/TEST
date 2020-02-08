@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    let str = 'aabcabc'
+    let concat = str.concat('def')
+    console.log('concat:', concat)
+
+    let indexOf = str.indexOf('ab') 
+    let indexOf1= str.indexOf('bb') 
+    console.log('indexOf:', indexOf, indexOf1)
+
+    let charAt= str.charAt(3) 
+    let substring= str.substring(3)
+    let slice= str.slice(3)
+    let substr= str.substr(3,2)
+    let charAt_3= str.charAt(-3)
+    let substring_3= str.substring(-3)
+    let slice_3= str.slice(-3)
+    console.log('charAt:', charAt)
+    console.log('substring:', substring)
+    console.log('slice:', slice)
+    console.log('substr:', substr)
+    console.log('负数:')
+    console.log('charAt_3:', charAt_3)
+    console.log('substring_3:', substring_3)
+    console.log('slice_3:', slice_3)
+
+    console.log('--------------------------')
+    let obj = [1,2,3,4,5]
+    // 包含被删除项目的新数组
+    // splice(添加/删除项目的位置, 要删除的项目数量, 向数组添加的新项目)
+    console.log('splice:',obj.splice(1,2,4,4), obj)
+    //复制数组的前面两个元素到后面两个元素上：
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.copyWithin(2,1);
+    console.log(fruits)
+
+    let nums = [12,34,23,13,54]
+    let adult = nums.every(function(num){
+      return num > 11
+    })
+    console.log('every:', adult)
+
+    //移除最后一个数组元素
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits.pop(), fruits);
+
+    //降序函数  
+    var desc = function(x,y) {    
+      if (x > y)      
+      return -1;  //返回一个小于0 的数即可  
+      else        
+      return 1;  //返回一个大于0 的数即可  
+    }    
+    //升序函数  
+    var asc = function(x,y) {    
+      if (x > y)      
+      return 1;  //返回一个大于0 的数即可  
+      else            
+      return -1;  //返回一个小于0 的数即可  
+    }  
+    var arr2 = [14,6,4,2,7,9,0,1];    
+    arr2.sort(desc); //降序排序  
+    document.writeln(arr2);    //9,7,6,4,4,2,1,0
+    document.writeln("<br>");    
+    arr2.sort(asc); //升序排序  
+    document.writeln(arr2); //0,1,2,4,4,6,7,9
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

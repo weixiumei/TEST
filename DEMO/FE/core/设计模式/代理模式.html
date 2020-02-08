@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>代理模式</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        <div>代理模式：不能或不想直接操作某个对象时、开销很多的对象</div>
+        <a href="https://www.jianshu.com/p/798152197124">代理模式</a>
+      </navigator>
+      <div class="title">缓存代理：相加</div>
+      <div>     ...</div>
+      <div class="title">虚拟代理</div>
+      <div class="image-container">
+      </div>
+    </section>
+    
+    <script>
+      // 节流 --> 代理模式1
+      console.log('代理模式1')
+      var throttle = function (fn, interval) {
+        var firstTime, timer
+        return function () {
+          var _this = this
+          if(!firstTime) {
+            fn.apply(this, arguments)
+            firstTime = true
+          }
+          
+          if (!timer) {
+            timer = setTimeout(function() {
+              fn.apply(_this, arguments)
+              timer = null
+            }, interval);
+          }
+        }
+      }
+      var onScroll = function () {
+        // console.log('onScroll', Date.now())
+      }
+      var throttleOnScroll = throttle(onScroll, 2000)
+      setInterval(throttleOnScroll, 300) // 每2秒执行一次onScroll函数
+
+
+      // 图片预加载 --> 虚拟代理
+      var MyImage = function () {
+        this.img = document.createElement('img')
+        document.body.appendChild(this.img)
+      }
+      MyImage.prototype.setSrc = function (src) {
+        this.img.src = src
+      }
+      var ProxyImage = function () {
+        this.img = new MyImage()
+      }
+      ProxyImage.prototype.setSrc = function (src) {
+        var img = this.img
+        var _img = new Image()
+        _img.onload = function () {
+          console.log('onload', src)
+          img.setSrc(src) // 当新图片加载成功后替换loading图
+        }
+        _img.src = src
+        img.setSrc('./loading.gif') // 将图片设置为loading图
+      }
+      var img = new ProxyImage()
+      img.setSrc('https://goss3.veer.com/creative/vcg/veer/612/veer-158729052.jpg')
+      
+      // 缓存代理
+      var multAdd = function(){
+        var res = 0
+        for(var i=0;i<arguments.length;i++){
+          res += res + arguments[i]
+        }
+        return res
+      }
+      var proxyAdd = (function(){
+        var cache = {}
+        return function(){
+          // arguments.join(',')
+          var args = Array.prototype.join.call(arguments, ',')
+          if(args in cache){
+            return cache[args]
+          }else{
+            return cache[args] = multAdd.apply(this, arguments)
+            // 直接传的话，接受到的arguments是[[1,2]], 要的是[1,2]
+            // return cache[args] = multAdd(arguments)
+          }
+        }
+      })()
+      proxyAdd(1,2)
+      console.log(proxyAdd(3,4))
+    </script>
+  </body>
+</html>

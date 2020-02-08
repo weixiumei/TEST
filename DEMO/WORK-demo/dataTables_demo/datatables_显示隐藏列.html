@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <meta utf-8>
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.1/css/colReorder.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.5/css/rowReorder.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./main.css"> -->
+  <link rel="stylesheet" type="text/css" href="">
+    <style>
+      /* .grip {
+        width:20px;
+        height:30px;
+        margin-top: 40px;
+        background-image:url(./grip.png);
+        margin-left:-5px;
+        position:relative;
+        z-index:88;
+        cursor:e-resize
+      } */
+      .JCLRgrip .JColResizer{
+        background: #d5d5d5!important;
+        opacity: 1!important;
+      }
+      th, td{
+        border: 1px solid red;
+      }
+    </style>
+
+  </head>
+  <body>
+    <table id="example" class="display" style="width:100%;text-align: center;">
+    </table>
+  </body>
+  <script type="text/javascript" charset="utf8" src="./jquery-1.8.3.js"></script>
+  <script type="text/javascript" charset="utf8" src="./jquery.dataTables.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="./dataTables.colReorder.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="./dataTables.colReorder.js"></script>
+  <script type="text/javascript" charset="utf8" src="./testResize.js"></script>
+ 
+<!-- DataTables -->
+  <!-- http://www.bacubacu.com/colresizable/#download -->
+  <!-- https://datatables.net/forums/discussion/26786/basic-column-resizing-plugin -->
+  <script>
+    var data = [
+      // {"name":"Tiger Nixon1","position":"System Architect","salary":"$3,120"}
+      {"name":"Tiger Nixon1Nixon1Nixon1Nixon1Nixon1Nixon1Nixon1","position":"System Architect","salary":"$3,120","start_date":"2011/04/25","office":"Edinburgh","extn":"5421"},
+      {"name":"Garrett Winters2","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+      {"name":"Garrett Winters3","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"}
+    ];
+    var columns_data = [
+      { name: '名字' },
+      { position: '定位' },
+      { salary: '价格' },
+      { office: '办公' },
+      { extn: '数量' }
+    ]
+    var table_example = ''
+    function setColumns(table_headers) {
+      var th_html = '',
+        columns = []
+      for (var i = 0; i < table_headers.length; i++) {
+        for (var ss in table_headers[i]) {
+          th_html = th_html + '<th data-code="' + ss + '">' + table_headers[i][ss] + '</th>'
+          columns.push({
+            data: ss
+          })
+        }
+      }
+      $('table thead tr').html(th_html)
+      return columns;
+    }
+    var columns = [
+      { title: '名字', data: 'name' },
+      { title: '定位', data: 'position' },
+      { title: '价格', data: 'salary' },
+      { title: '办公', data: 'office' },
+      { title: '数量', data: 'extn' }
+    ]
+
+    $(document).ready(function() {
+      var table = $('#example').DataTable( {
+        columns:    columns,
+        data:       data,
+        colReorder: {
+          realtime: false
+        },
+        stateSave:  true,
+        initComplete: function(settings) {
+          $('#example').colResizable({
+            // postbackSafe: true,//刷新后保留之前的拖拽宽度
+            liveDrag:true, 
+            resizeMode:'overflow',
+            gripInnerHtml:"<div class='grip'></div>", 
+            draggingClass:"dragging", 
+          })
+        },
+        drawCallback: function(settings){
+          console.log(settings)
+          setTimeout(function(){
+
+            if(!!table){
+              // console.log(settings, data.ColReorder)
+              console.log('------------拖拽条位置--------------')
+              var JCLRgrip = $('.JCLRgrips .JCLRgrip')
+              // 两个拖拽条之间的距离
+              for(var i=0; i<JCLRgrip.length;i++){
+                console.log(i, 1*$('.JCLRgrips .JCLRgrip')[i].style.left.substring(0, $('.JCLRgrips .JCLRgrip')[i].style.left.indexOf('px')))
+              }
+              console.log('------------th宽度--------------')
+              // table 表格宽度
+              for(var i=0; i<$('table th').length;i++){
+                console.log(i, $('table th')[i].style.width)
+              }
+            }
+          })
+        },
+        stateSaveCallback: function(settings, data) {
+          if(!!table){
+            var options = {
+              disable: false,
+              disabledColumns: [],
+              dragCursor: "e-resize",
+              draggingClass: "JCLRgripDrag",
+              fixed: true,
+              flush: false,
+              gripInnerHtml: "",
+              headerOnly: false,
+              hoverCursor: "e-resize",
+              liveDrag: true,
+              marginLeft: null,
+              marginRight: null,
+              minWidth: 15,
+              onDrag: null,
+              onResize: null,
+              overflow: false,
+              partialRefresh: false,
+              postbackSafe: false,
+              resizeMode: "fit"
+            }
+            colResizable.init( $('table'), options);
+            // createGrips($('table'))
+            console.log(settings, data.ColReorder)
+            console.log('--------------------------')
+            var JCLRgrip = $('.JCLRgrips .JCLRgrip')
+            // 两个拖拽条之间的距离
+            for(var i=0; i<JCLRgrip.length;i++){
+              if(i==0){
+                console.log(i, 1*$('.JCLRgrips .JCLRgrip')[i].style.left.substring(0, $('.JCLRgrips .JCLRgrip')[i].style.left.indexOf('px')))
+              }else{
+                console.log(i, 
+                  $('.JCLRgrips .JCLRgrip')[i].style.left.substring(0, $('.JCLRgrips .JCLRgrip')[i].style.left.indexOf('px'))
+                  -
+                  $('.JCLRgrips .JCLRgrip')[i-1].style.left.substring(0, $('.JCLRgrips .JCLRgrip')[i-1].style.left.indexOf('px'))
+                )
+              }
+            }
+            console.log('--------------------------')
+            // table 表格宽度
+            for(var i=0; i<$('table th').length;i++){
+              console.log(i, $('table th')[i].style.width)
+            }
+            
+          }
+        }
+      })
+      var onSampleResized = function(e){  
+        table = $(e.currentTarget); //reference to the resized table
+      }
+      table.on( 'draw', function () {
+          console.log( 'Redraw occurred at: '+new Date().getTime() );
+      } );
+    });
+  </script>
+</html>

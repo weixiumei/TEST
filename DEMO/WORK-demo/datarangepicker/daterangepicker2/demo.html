@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./daterangepicker.min.css" />
+  <link rel="stylesheet" href="./daterangepicker_custom.css" />
+  <script src="./jquery.min.js"></script>
+  <script src="./moment.min.js"></script>
+  <script src="./jquery.daterangepicker.min.js"></script>
+  <script src="./demo.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('#datepicker1').attr('data-date1', '2019-09-01')
+    $('#datepicker1').attr('data-date2', '2019-09-30')
+    $('.startDate')[0].innerHTML = '2019-09-01';
+    $('.endDate')[0].innerHTML = '2019-09-30';
+    // $('.datepicker').click()
+  })
+
+  function confirm(){
+    $('.wrapper').hide()
+    $('#bg').hide()
+    var startDay = $('#datepicker1').attr('data-date1');
+    var endDay = $('#datepicker1').attr('data-date2');
+    $('.startDate')[0].innerHTML = startDay;
+    $('.endDate')[0].innerHTML = endDay;
+  }
+  </script>
+</head>
+<body>
+  <div id="bg"></div>
+  <div id="datepicker1" class="alert_block datepicker">
+    <div class="date_text date_text1">
+      <span class="startDate"></span>
+      <span class="icondate">/</span>
+      <span class="endDate"></span>
+    </div>
+    <img src="./date.png" />
+  </div>
+
+  <div class="wrapper" style="transform: scale(0.56);">
+    <div class="dataTab">
+    <ul>
+      <!-- <li id="dp-day"><label><input type="radio" name="mode" value="day" id="mode_day" />日</label></li>
+      <li id="dp-week"><label><input type="radio" name="mode" value="week" id="mode_week" />周</label></li>
+      <li id="dp-month"><label><input type="radio" name="mode" value="month" id="mode_month" />月</label></li> -->
+      <li id="dp-range"><label class="active" style="border-right: 1px solid rgb(18, 150, 219);"><input type="radio" name="mode" value="customize" id="mode_range" />自定义</label></li>
+    </ul>
+    <button onclick="confirm()">确认</button>
+    </div>
+    <div class="picker" id="pickerBox" style="width: 850px;">
+    <div style="float: left; width: 100%;">
+      <div id="pickerContainer"></div>
+      <div class="shopForce">
+      <img src="./Group.png" />
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

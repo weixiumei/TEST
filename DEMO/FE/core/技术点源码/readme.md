@@ -1,0 +1,1 @@
+ctrl+alt+n 执行js文件

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Promise</title>
+  <script src="./jquery.min.js"></script>
+  <script>
+  function Promise(fn) {
+    var state = 'pending',
+        value = null,
+        callbacks = [];
+    this.then = function (onFulfilled) {
+      return new Promise(function (resolve) {
+        handle({
+          onFulfilled: onFulfilled || null,
+          resolve: resolve
+        });
+      });
+    };
+    function handle(callback) {
+      if (state === 'pending') {
+        callbacks.push(callback);
+        return;
+      }
+      //如果then中没有传递任何东西
+      if(!callback.onFulfilled) {
+        callback.resolve(value);
+        return;
+      }
+      var ret = callback.onFulfilled(value);
+      callback.resolve(ret);
+    }
+    
+    function resolve(newValue) {
+      if (newValue && (typeof newValue === 'object' || typeof newValue === 'function')) {
+        var then = newValue.then;
+        if (typeof then === 'function') {
+          then.call(newValue, resolve);
+          return;
+        }
+      }
+      state = 'fulfilled';
+      value = newValue;
+      setTimeout(function () {
+        callbacks.forEach(function (callback) {
+          handle(callback);
+        });
+      }, 0);
+    }
+    fn(resolve);
+  }
+
+  let promise1 = new Promise((resolve, reject)=>{
+    $.ajax({
+      url: 'promise.json',
+      dataType: 'json',
+      success(data){
+        if(data.aa==1){
+          resolve(data)
+        }else{
+          reject(data)
+        }
+      }
+    })
+  })
+
+  let promise2 = new Promise((resolve, reject)=>{
+    $.ajax({
+      url: 'promise2.json',
+      dataType: 'json',
+      success(data){
+        resolve(data)
+      }
+    })
+  })
+  
+
+  async function async(){
+    var result1 = await promise1
+    var result2 = await promise2
+    console.log('result1:',result1)
+    console.log('result2:',result2)
+    return [result1, result2]
+  }
+  console.log('async返回:', async())
+  async().then(function(data){
+    console.log(data)
+  })
+
+  console.log('--------------2不可以是ajax------------------')
+
+  let promise3 = function(){
+    $.ajax({
+      url: 'promise2.json',
+      dataType: 'json',
+      success(data){
+        return data
+      }
+    })
+  }
+
+  async function async1(){
+    var result1 = await promise3()
+    console.log(result1)
+  }
+  async1()
+
+  console.log('--------------2不可以是ajax------------------')
+
+  
+  // promise1.then((data) => {
+  //   console.log(data)
+  //   return promise2
+  // }).then((data) => {
+  //   console.log(data)
+  // })
+
+  </script>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

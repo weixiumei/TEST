@@ -1,0 +1,176 @@
+<html>
+  <!-- <head>datatables</head> -->
+  <!--第一步：引入Javascript / CSS （CDN）-->
+  <!-- DataTables CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="jquery.dataTables.css"> -->
+  <!-- jQuery -->
+  <!-- <script type="text/javascript" charset="utf8" src="jquery-1.10.2.min.js"></script> -->
+  <!-- DataTables -->
+  <!-- <script type="text/javascript" charset="utf8" src="jquery.dataTables.js"></script> -->
+
+  <!--第一步：引入Javascript / CSS （CDN）-->
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+  
+  <!-- jQuery -->
+  <script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  
+  <!-- DataTables -->
+  <!-- <script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script> -->
+
+  <script src="datatables.js"></script>
+  <!-- <script src="assets/vendor/Scroller-1.4.2/js/dataTables.scroller.min.js"></script> -->
+  <script type="text/javascript" charset="utf8" src="moment.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="jquery.daterangepicker.min.js"></script>
+  <style>
+    table{
+			table-layout:fixed;
+		}
+    /* table.dataTable thead th, table.dataTable thead td, div.dataTables_scrollBody > table > tbody > tr > td{
+      max-width: 100px!important;
+      word-break: keep-all;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+      display: inline-block;
+    } */
+    /* th, td {
+      max-width: 100px!important;
+      word-break: keep-all;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+    } */
+  </style>
+  <script>
+    // <!--第三步：初始化Datatables-->
+    $(document).ready( function () {
+
+      // function reset(){
+      //   if(!!table_example){
+      //     table_example.destroy();
+      //   }
+      //   table_example='';
+      // }
+      // if(!!table_example){
+      //   table_example.destroy();
+      // }
+      var data = [
+        {"name":"Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1","position":"System Architect","salary":"$3,120","start_date":"2011/04/25","office":"Edinburgh","extn":"5421"},
+        {"name":"Garrett Winters2","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters3","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters4","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters5","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters6","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters7","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters8","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters9","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters10","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters11","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters12","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters13","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters14","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters15","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters16","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters17","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+      ];
+      var columns_data = [
+        { name: '名字' },
+        { position: '定位' },
+        { salary: '价格' },
+        { office: '办公' },
+        { extn: '数量' }
+      ]
+      var table_example = ''
+      function setColumns(table_headers) {
+        var th_html = '',
+          columns = []
+        for (var i = 0; i < table_headers.length; i++) {
+          for (var ss in table_headers[i]) {
+            th_html = th_html + '<th data-code="' + ss + '">' + table_headers[i][ss] + '</th>'
+            columns.push({
+              data: ss,
+              // width: '120px'
+            })
+          }
+        }
+        columns[0].width = '200px'
+        $('table thead tr').html(th_html)
+        return columns;
+      }
+      var columns = setColumns(columns_data)
+      console.log('columns==', columns)
+      console.log('data==', data)
+      //object可以如下初始化表格
+      table_example = $('#table_id_example').DataTable({
+        stateSave: true,
+        ordering: false,
+        ocolReorder:true,
+        bpaging:false,
+        scrollX:true,//水平滚动
+        bAutoWidth: false,
+        flexibleWidth: false,
+        responsive: true,
+        // columns: [{ data: 'taskNumber',"width":"200px" }], //设置列宽像素
+        // autoFill: {
+        //   update: false
+        // },
+        // colReorder: {
+        //     order: [ 5, 4, 3, 2, 1, 0 ]
+        // },
+        // autoFill: {
+        //     editor: editor
+        // },
+        //使用对象数组，一定要配置columns，告诉 DataTables 每列对应的属性
+        //data 这里是固定不变的，name，position，salary，office 为你数据里对应的属性
+        data:      data,
+        columns:   columns,
+        scrollY:   400, //滚动高度
+        paging:    true,//分页
+        // searching: true,//搜索
+        // ordering:  true,//排序
+        lengthChange: true, //改变一页显示条数
+        "info": false,
+        // columns: [
+        //   { data: 'name' },
+        //   { data: 'position' },
+        //   { data: 'salary' },
+        //   { data: 'office' },
+        //   { data: 'office' }
+        // ]
+        "footerCallback": function ( tfoot, data, start, end, display ) {
+          // console.log('----footerCallback start----')
+          // // var api = this.api();
+          // console.log(tfoot, data, start, end, display )
+        },
+        "headerCallback": function( thead, data, start, end, display ) {
+          // console.log('----headerCallback start----')
+          // console.log(thead, data, start, end, display )
+          //可以分别打印 thead, data, start, end, display 看看究竟是什么
+          // $(thead).find('th').eq(0).html( '显示 '+(end-start)+' 条记录' );
+        },
+        "createdRow": function( row, data, dataIndex ) {
+          // console.log('----createdRow start----')
+          // console.log(row, data, dataIndex)
+        },
+      });
+    })
+  </script>
+  <body>
+    <!--第二步：添加如下 HTML 代码-->
+    <table id="table_id_example" class="display">
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>

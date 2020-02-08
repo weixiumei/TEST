@@ -1,0 +1,15 @@
+
+环境安装启动
+  npm i vue-cli
+  vue init webpack
+  npm run dev / npm run build
+
+vant安装
+  npm i vant -s
+  npm i vant --save --registry=https://registry.npm.tabao.com
+
+部分引入 -- babel-plugin-import
+  .babelrc: ["import", {"libraryName":"vant", "style":true}]
+
+安装Vue VScode Snippets快速生成
+vbase

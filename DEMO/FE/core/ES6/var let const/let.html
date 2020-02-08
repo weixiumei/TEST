@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>let</title>
+  <script>
+    // 3.let不变量提升（Cannot access 'a' before initialization）
+    // console.log(a)
+    let a = 1
+    console.log('window:', a)
+    if(true){
+      var c = 1
+      let cc = 1
+      console.log('if:', a)
+    }
+    var b = 2
+    function aa(){
+      // 2. 暂时性死区1
+      // 如果区块中存在let和const命令，这个区块对这些命令声明的变量，
+      // 从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。
+      // Cannot access 'b' before initialization
+      // b = 3
+      let b = 3
+      console.log('function-a:', a)
+      console.log('function-b:', b)
+    }
+    aa()
+    console.log(c)
+    // 1. 无法访问{}
+    // console.log(cc)
+
+    // 暂时性死区2
+    function bar(x = y, y = 2) {
+      return [x, y];
+    }
+    // Cannot access 'y' before initialization
+    // bar(); // 报错
+
+    // Cannot access 'x' before initialization
+    // let x = x;
+
+    // Identifier 'a' has already been declared
+    // // 报错
+    // function func() {
+    //   let a = 10;
+    //   var a = 1;
+    // }
+
+    // // 报错
+    // function func() {
+    //   let a = 10;
+    //   let a = 1;
+    // }
+
+    // function func(arg) {
+    //   let arg;
+    // }
+    // func() // 报错
+
+    // function func(arg) {
+    //   {
+    //     let arg;
+    //   }
+    // }
+    // func() // 不报错
+
+    // let tmp = new Date();
+    function f() {
+      let tmp = new Date();
+      console.log(tmp);
+      if (true) {
+        let tmp = 'hello world';
+      }
+    }
+    f(); // undefined
+
+    let aaa = 1
+    if(true){
+      let aaa = 2
+      console.log('aaa:', aaa)
+    }
+    console.log('aaa:', aaa)
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

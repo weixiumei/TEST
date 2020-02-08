@@ -1,0 +1,14 @@
+
+// 建package.json(npm init),webpack.config.js文件
+npm install webpack webpack-dev-server
+
+// webpack 命令
+npm i -D webpack-cli
+
+// 会生成一个包含引入js的文件 dist/index.html
+npm install html-webpack-plugin
+
+npm install css-loader style-loader
+
+// 移动入口chunk引入的css文件到styles.css，比较大时CSS bundle 会跟 JS bundle 并行加载
+npm install extract-text-webpack-plugin

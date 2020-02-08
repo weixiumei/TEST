@@ -1,0 +1,180 @@
+
+ol,ul {
+  list-style:none
+}
+* {
+  margin:0;
+  padding:0;
+  font-family:PingFangSC-Regular,Helvetica Neue,Helvetica,sans-serif
+}
+body {
+  background:#edeff3;
+}
+#bg{
+  height:100%;
+  width:100%;
+  background:#000;
+  opacity:.3;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  display:none
+}
+.alert_block {
+  text-align:right;
+  margin-right:20px;
+  position:absolute;
+  right:0
+}
+.alert_block img {
+  width:30px;
+  height:30px;
+  margin-top:7px;
+  margin-left:20px
+}
+.wrapper,.wrapper4 {
+  margin:0 auto;
+  color:#555;
+  font-family:Tahoma,Verdana,sans-serif;
+  line-height:1.5;
+  font-size:14px;
+  position:fixed;
+  z-index:20;
+  top:30%;
+  left:24%;
+  top:50%!important;
+  left:50%!important;
+  margin-left:-432px;
+  margin-top:-260px;
+  background:#f7f7fa;
+  display:none;
+  font-size:18px
+}
+.date-picker-wrapper .month-wrapper table .day.lalala {
+  background-color:orange
+}
+.date-picker-wrapper.date-range-picker19 .day.first-date-selected {
+  background-color:red!important
+}
+.date-picker-wrapper.date-range-picker19 .day.last-date-selected {
+  background-color:orange!important
+}
+.wrapper4 .dataTab ul li,.wrapper .dataTab ul li {
+  padding:0
+}
+.wrapper4 .dataTab ul li label,.wrapper .dataTab ul li label {
+  width:92px;
+  height:50px;
+  border:1px solid #2699de;
+  color:#2699de;
+  display:inline-block;
+  float:left;
+  text-align:center;
+  line-height:50px;
+  border-right:0;
+  margin-top:15%;
+  margin-left:20%;
+  font-size:18px
+}
+.dataTab {
+  height:40px
+}
+.wrapper4 p,.wrapper p {
+  padding:0 0 10px 10px
+}
+.date-picker-wrapper.no-shortcuts {
+  background:#f7f7fa;
+  border:none
+}
+.date-picker-wrapper .month-wrapper {
+  border:none!important;
+  height:200px!important
+}
+.date-picker-wrapper table .caption {
+  border-bottom:1px solid #f7f7f7
+}
+.date_text {
+  width:auto;
+  float:left;
+  text-align:right;
+  line-height:47px
+}
+.dataTab button {
+  width:150px;
+  height:44px;
+  border-radius:4px;
+  border:0;
+  float:right;
+  margin-right:30px;
+  outline:0;
+  background:#2699de;
+  color:#fff;
+  margin-top:-63px;
+  font-size: 18px;
+}
+.dataTab ul {
+  display:-webkit-box;
+  height:80px;
+  background:#fff
+}
+.wrapper4 .dataTab ul li label input,.wrapper .dataTab ul li label input {
+  display:none
+}
+.wrapper4 .dataTab ul li label.active,.wrapper .dataTab ul li label.active {
+  background:#2699de;
+  color:#fff
+}
+.shopForce img {
+  width:300px;
+  height:auto;
+  position:absolute;
+  top:40%;
+  right:9%
+}
+.date-picker-wrapper .month-wrapper {
+  border:none!important;
+  padding:4px!important;
+  height:391px!important
+}
+.date-picker-wrapper .month-wrapper table,.date-picker-wrapper .month-wrapper table.month2 {
+  width:370px!important;
+  height:391px!important
+}
+.date-picker-wrapper .month-wrapper table .day {
+  font-size:18px!important
+}
+.date-picker-wrapper .gap {
+  width:40px!important
+}
+.date-picker-wrapper .month-wrapper table .week-name {
+  height:50px!important;
+  font-size:14px!important
+}
+.wrapper .dataTab ul li#dp-day label {
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px
+}
+.date-picker-wrapper .month-wrapper table td,.date-picker-wrapper .month-wrapper table th {
+  color:#a4adb7
+}
+.date-picker-wrapper .month-wrapper table td,.date-picker-wrapper .month-wrapper table th.month-name,.date-picker-wrapper table .caption .next,.date-picker-wrapper table .caption .prev {
+  color:#34495e
+}
+.date-picker-wrapper .gap {
+  background:none!important
+}
+.date-picker-wrapper .month-wrapper table th.month-name {
+  font-size:14px;
+  font-weight:700!important
+}
+.date-picker-wrapper table .caption .next,.date-picker-wrapper table .caption .prev {
+  font-size:22px!important;
+  font-weight:200!important
+}
+.date-picker-wrapper .drp_top-bar {
+  font-size:18px!important
+}
+.date-picker-wrapper .month-wrapper table .day {
+  padding:5px 15px!important
+}

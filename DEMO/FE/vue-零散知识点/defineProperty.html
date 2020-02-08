@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id='ele'>123</div>
+  <ul class="fragment_test">
+    <li>qq</li>
+    <li>ww</li>
+    <li>ee</li>
+  </ul>
+  <script>
+  // 1
+  var lis = document.getElementsByTagName('li')
+  console.log(lis.forEach) // undefined
+  var lis2 = [].slice.call(lis)
+  console.log(lis2.forEach)
+  
+  console.log('-------------nodeType---------------')
+  var ele_node = document.getElementById('ele')
+  var attr_node = ele_node.getAttributeNode('id')
+  var text_node = ele_node.firstChild
+  console.log(ele_node.nodeType, attr_node.nodeType, text_node.nodeType )
+
+  // 2
+  var obj = {
+    first_name:'A',
+    last_name:'B',
+  }
+  /*
+    1. 数据描述符
+      configurable: true, //是否可以重新定义
+      enumerable: true,   //是否可以枚举
+      writable: true,      //是否可以修改属性值
+      value: 'aaa-bbb',   //属性值，默认为undefined
+      
+    2. 访问描述符
+      //访问该属性时，调用此回调方法
+      get:function(){
+        return this.first_name + '-' + this.last_name
+      },
+      //属性值修改时，调用此回调方法
+      set:function(o){
+        this.first_name = o.split('-')[0]
+        this.last_name = o.split('-')[1]
+      }
+  */
+  Object.defineProperty(obj, 'full_name', {
+    get:function(){
+      return this.first_name + '-' + this.last_name
+    },
+    set:function(o){
+      this.first_name = o.split('-')[0]
+      this.last_name = o.split('-')[1]
+    }
+  })
+
+  console.log('----------full_name----------')
+  console.log(obj.full_name)
+  obj.first_name='C'
+  obj.last_name='D'
+  console.log(obj.full_name)
+  obj.full_name = 'E-F'
+  console.log(obj.first_name, obj.last_name)
+
+  console.log('----------full_name2----------')
+  Object.defineProperty(obj, 'full_name2', {
+    configurable: false,
+    enumerable: false,
+    writable: false,
+    value: 'aaa-bbb'
+  })
+  // writable: false,
+  obj.full_name2 = '123'
+  console.log(obj.full_name2)
+
+  // configurable: false,
+  // Object.defineProperty(obj, 'full_name2', {
+  //   configurable: true,
+  //   enumerable: true,
+  //   writable: false,
+  //   value: 'aaa-ccc'
+  // })
+  // console.log(obj.full_name2)
+
+  // 3
+  // enumerable: false,
+  // Object.keys(obj): 得到对象 自身 可枚举 的属性组成的数组
+  var names = Object.keys(obj)
+  console.log(names)
+
+  // 4
+  // obj.hasOwnProperty(prop) 判断prop是否是obj的自身属性
+  console.log('obj.hasOwnProperty(full_name): '+obj.hasOwnProperty('full_name'))
+  console.log('obj.hasOwnProperty(toString): '+obj.hasOwnProperty('toString'))
+
+  // 5
+  // DocumentFragment : 文档碎片（高效批量更新多个节点）
+  // document ：对应显示的页面，包含多个element，一旦更新document内部的某个元素界面会更新
+  // DocumentFragment ：内存中保存n个element的容器对象（不与界面关联），如果fragment中的某个element更新，界面不变
+  /*
+    <ul class="fragment_test">
+      <li>qq</li>
+      <li>ww</li>
+      <li>ee</li>
+    </ul>
+  */
+  const ul = document.getElementsByClassName('fragment_test')[0]
+  //（1）创建fragment
+  const fragment = document.createDocumentFragment()
+  //（2）取出ul所有节点保存到fragment
+  let child
+  while(child=ul.firstChild){ // 先赋值，再判断child是否存在
+    // console.log('child:', child)
+    fragment.appendChild(child) // 先将child从ul里移除，添加为fragment的子节点
+  }
+  //（3）更新fragment里的li文本
+  // console.log('fragment:',fragment)
+  Array.prototype.slice.call(fragment.childNodes).forEach((node)=>{
+    if(node.nodeType===1){
+      node.textContent = '123456'
+    }
+  })
+  //（4）将fragment插入ul
+  ul.appendChild(fragment)
+  </script>
+</body>
+</html>

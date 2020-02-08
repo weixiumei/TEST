@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>房贷计算器</title>
+		<title></title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1.0, user-scalable=no"> 
 		<meta content="telephone=no" name="format-detection" />
+		<style type="text/css">
+			.cover {
+					width: 600px;
+					height: 300px;
+					position: relative;
+					text-align: center;
+					line-height: 300px;
+					color: #fff;
+					margin: 20px auto;
+			}
+			 
+			.cover::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 600px;
+					height: 300px;
+					background: transparent url(https://tpc.googlesyndication.com/daca_images/simgad/16495892886802096639) center center no-repeat;
+					filter: blur(8px);
+					z-index: -1;
+					background-size: cover;
+			}
+	</style>
+
 	</head>
 	<body>
-    <img src="assets/img/test.png" alt="">
-  </body>
+			<div class="cover">
+					<h2>背景模糊，文字清晰显示</h2>
+			</div>
+	</body>
   </html>

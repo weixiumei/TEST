@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>var</title>
+  <script>
+    // 变量声明：
+    // es5: var, function
+    // es6: var, function, let, const, import, class
+    
+    // var 变量提升, 函数也变量提升，函数会覆盖变量
+    console.log(a)
+    // if块内的也可提升
+    console.log(b)
+    var a = 1;
+    function a(){
+      // b提升到函数顶部
+      console.log(b)
+      var b = 2
+      a = 2
+    }
+    // 1:真正赋值后变量a覆盖函数a
+    console.log(a)
+    if(a==1){
+      var b = 2
+      console.log(a)
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

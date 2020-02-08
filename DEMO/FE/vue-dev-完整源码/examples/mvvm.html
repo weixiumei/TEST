@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM</title>
+    <script src="../dist/vue.js"></script>
+</head>
+<body>
+
+<div id="mvvm-app">
+    <!-- <p>{{ name_first}} {{name_second}}</p> -->
+    <div>{{getHelloWord}}</div>
+    <!-- <input type="text" v-model="someStr">
+    <input type="text" v-model="child.someStr">
+    <p :class="className" class="abc">
+        {{someStr}}
+        <span v-text="child.someStr"></span>
+    </p>
+    <p v-html="htmlStr"></p>
+    <button v-on:click="clickBtn">change model</button>
+    <count></count>
+    <count1></count1> -->
+</div>
+<!-- Delete ".min" for console warnings in development -->
+<script>
+    // Vue.component('count', {
+    //     data: function () {
+    //         return {
+    //             count: 0
+    //         }
+    //     },
+    //     created(){
+    //         console.log('2-created')
+    //     },
+    //     template: '<div v-on:click="count++">{{count}}-11</div>'
+    // })
+    // Vue.component('count1', {
+    //     data: function () {
+    //         return {
+    //             count: 0
+    //         }
+    //     },
+    //     created(){
+    //         console.log('2-created')
+    //     },
+    //     template: '<div v-on:click="count++">{{count}}-22</div>'
+    // })
+    var vm = new Vue({
+        el: '#mvvm-app',
+        data: {
+            full_name: '',
+            name_first: 'hello ',
+            name_second: 'World !',
+            htmlStr: '<span style="color: #f00;">red</span>',
+            child: {
+                name_in: 'World !'
+            }
+        },
+        // created(){
+        //     this.name_first = 'fuzhi'
+        // },
+        mounted(){
+            this.name_first = 'hello2'
+        },
+        // watch:{
+        //     name_first(){
+        //         this.full_name = this.name_first + this.name_second
+        //     }
+        // },
+        computed: {
+            getHelloWord: function() {
+                // console.log('*****************')
+                return this.name_first + this.name_second;
+            }
+        },
+        // methods: {
+        //     clickBtn: function(e) {
+        //         var randomStrArr = ['childOne', 'childTwo', 'childThree'];
+        //         this.child.someStr = randomStrArr[parseInt(Math.random() * 3)];
+        //     }
+        // }
+    });
+
+    // vm.$watch('child.someStr', function() {
+    //     console.log(arguments);
+    // });
+</script>
+
+</body>
+</html>
