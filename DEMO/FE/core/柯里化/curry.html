@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span>span</span>
+  <p>pppp</p>
+  <div>div</div>
+</body>
+
+<script>
+  var addEvent = (function(){
+    console.log(1)
+    if (window.addEventListener) {
+      return function(el, sType, fn, capture) {
+        document.getElementsByTagName(el)[0].addEventListener(sType, function(e) {
+          fn.call(el, e);
+        }, (capture));
+      };
+    } else if (window.attachEvent) {
+      return function(el, sType, fn, capture) {
+        document.getElementsByTagName(el)[0].attachEvent("on" + sType, function(e) {
+          fn.call(el, e);
+        });
+      };
+    }
+  })();
+
+  addEvent('span', 'click', function () {console.log(2)}, false)
+  addEvent('div', 'click', function () {}, false)
+  addEvent('p', 'click', function () {}, false)
+  addEvent('div', 'dblclick', function () {}, false)
+</script>
+</html>

@@ -16,10 +16,10 @@
         {{someStr}}
         <span v-text="child.someStr"></span>
     </p>
-    <p v-html="htmlStr"></p>
-    <button v-on:click="clickBtn">change model</button>
-    <count></count>
-    <count1></count1> -->
+    <p v-html="htmlStr"></p>-->
+    <!-- <button v-on:click="clickBtn">change model</button> -->
+    <!-- <count></count>
+    <count1></count1>  -->
 </div>
 <!-- Delete ".min" for console warnings in development -->
 <script>
@@ -48,39 +48,61 @@
     var vm = new Vue({
         el: '#mvvm-app',
         data: {
-            full_name: '',
+            // full_name: '',
             name_first: 'hello ',
             name_second: 'World !',
-            htmlStr: '<span style="color: #f00;">red</span>',
-            child: {
-                name_in: 'World !'
-            }
+            // htmlStr: '<span style="color: #f00;">red</span>',
+            // child: {
+            //     name_in: 'World !'
+            // }
         },
-        // created(){
-        //     this.name_first = 'fuzhi'
+        beforeCreate() {
+            console.log('---------beforeCreate---------')
+        },
+        // created () {
+        //     this.name_first = '1234'
+        //     console.log('---------created---------')
         // },
-        mounted(){
+        beforeMount() {
+            console.log('---------beforeMount---------')
+        },
+        mounted () {
+            console.log('---------mounted---------')
             this.name_first = 'hello2'
+        },
+        beforeUpdate () {
+            console.log('---------beforeUpdate---------')
+        },
+        updated () {
+            console.log('---------updated---------')
+        },
+        beforeDestroy () {
+            console.log('---------beforeDestroy---------')
+        },
+        destroyed () {
+            console.log('---------destroyed---------')
         },
         // watch:{
         //     name_first(){
+        //         console.log('watch')
         //         this.full_name = this.name_first + this.name_second
         //     }
         // },
         computed: {
             getHelloWord: function() {
-                // console.log('*****************')
+                console.log('computed')
                 return this.name_first + this.name_second;
             }
         },
         // methods: {
         //     clickBtn: function(e) {
-        //         var randomStrArr = ['childOne', 'childTwo', 'childThree'];
-        //         this.child.someStr = randomStrArr[parseInt(Math.random() * 3)];
+        //         console.log('clickBtn')
+        //         this.getHelloWord = change
+        //         // var randomStrArr = ['childOne', 'childTwo', 'childThree'];
+        //         // this.child.someStr = randomStrArr[parseInt(Math.random() * 3)];
         //     }
         // }
     });
-
     // vm.$watch('child.someStr', function() {
     //     console.log(arguments);
     // });

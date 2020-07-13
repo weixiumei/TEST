@@ -1,6 +1,21 @@
+## npm init -y : 初始package.json
+npm i webpack webpack-cli --save dev
 
-手动配置webpack
-index.html  首页
-main.js  webpack入口文件
-demo.vue  编写Vue代码案例
-webpack.config.js  webpack配置文件
+webpack4可以零配置打包，默认入口: src/index.js, 出口: dist/main.js
+
+
+npm i
+
+css-loader style-loader less less-loader
+postcss-loader autoprefixer
+
+webpack-dev-server
+
+html-webpack-plugin mini-css-extract-plugin uglifyjs-webpack-plugin 
+babel babel-loader @babel/core @babel/preset-env @babel/polyfill
+
+eslint eslint-loader file-loader url-loader
+
+clean-webpack-plugin copy-webpack-plugin
+
+expose-loader

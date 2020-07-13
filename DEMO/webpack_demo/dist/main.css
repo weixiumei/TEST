@@ -1,0 +1,16 @@
+body{
+  background: red;
+}
+body .page {
+  background: pink;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+       -o-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+
+/*# sourceMappingURL=main.css.map*/

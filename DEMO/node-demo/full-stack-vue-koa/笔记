@@ -7,6 +7,7 @@
 vant安装
   npm i vant -s
   npm i vant --save --registry=https://registry.npm.tabao.com
+  
 
 部分引入 -- babel-plugin-import
   .babelrc: ["import", {"libraryName":"vant", "style":true}]

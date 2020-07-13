@@ -43,6 +43,7 @@ var Promise = (function() {
       try {
         then = x.then
         if (typeof then === 'function') {
+          console.log('x=', x)
           then.call(x, function rs(y) {
             return resolvePromise(promise, y, resolve, reject)
           }, function rj(r) {

@@ -1,84 +1,163 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// webpack是node写出来的，支持node语法
+let path = require('path')
+let webpack = require('webpack')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
+let MiniCssExtractPlugin = require('mini-css-extract-plugin')
+let UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+let {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
-const config = {
-  mode: 'production',
-  entry: './src/index.js',
+// path.join: 把参数一一拼接，成为合规的地址，../../是前面拼好的地址上上层级
+// console.log(path.join(__dirname, '../../', 'dist'))
+module.exports = {
+  optimization:{ // 优化项 (开发环境不执行优化项) 
+    // minimize: true,
+    minimizer:[
+      new UglifyJsPlugin({
+        cache: true,
+        // 并行压缩多个
+        parallel: true,
+        sourceMap: true
+      })
+    ]
+  },
+  resolve:{
+    // 解析第三方包找的路径 common
+    modules:[path.resolve('node_modules')],
+    extensions:['.js','.css','.json','.vue'],
+    // 别名
+    alias:{
+      'bootstrap':'bootstrap/dist/css/bootstrap.css'
+    }
+  },
+  devServer:{ // 开发服务器的配置
+    // port:3000,
+    progress:true,//进度条
+    contentBase:'./dist',
+    compress:true,
+
+    // 3)有自己写的服务端
+
+    // // 2) mock数据
+    // before(app){ // 钩子
+    //   app.get('/api/user', (req, res) => {
+    //     console.log('请求成功22')
+    //     res.json({name:'跨域成功22'})
+    //   })
+    // }
+    // 1)服务端是别人的
+    proxy: {
+      '/api':{
+        // target: 'https://crmdemo.nexttao.com:4000',
+        // secure: false,
+        target: 'http://localhost:3000',
+        // pathRewrite: {"^/api" : ""}
+      }
+    }
+  },
+  devtool:'source-map',
+  // development/production
+  mode:'development',
+  entry:'./src/index.js',
   output:{
-    // path:__dirname,
-    // filename:'./build.js'
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename:'bundle.[hash:8].js', // 打包后的文件名
+    path: path.resolve(__dirname + '/dist')
+    // path: path.join(__dirname, '..', 'dist')
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist'
-  },
-  module: {
-    rules: [
-      { test:/\.vue$/, use:'vue-loader'},
-      // { test: /\.html$/, use: 'vue-template-compiler' },
+  // externals:{
+  //   // 不需要打包的插件（scrip引入）
+  //   jquery: '$'
+  // },
+  plugins:[ 
+    new HtmlWebpackPlugin({
+      template:'./src/index.html',
+      filename:'index.html',
+      // filename:'index-out.html',
+      // hash:true, // 引入的bundle加hash
+      // minify:{
+      //   removeAttributeQuotes:true, // 去掉双引号
+      //   collapseWhitespace:true  // 去空格
+      // }
+    }),
+    new MiniCssExtractPlugin({
+      filename:'main.css'
+    }),
+    // new CleanWebpackPlugin({}),
+    // 定义环境变量
+    new webpack.DefinePlugin({
+      DEV:JSON.stringify('production'),
+      FLAG:'true',
+      EXPRESSION:JSON.stringify('1+1')
+    }),
+    new webpack.ProvidePlugin({
+      $:'jquery'
+    })
+  ],
+  module:{ // 模块
+    noParse:/jquery/,// 不去解析jQuery中的依赖库
+    rules:[
       // {
-      //   test: /\.html$/,
-      //   use: 'vue-template-loader'
+      //   test:require.resolve('jquery'),
+      //   use:'expose-loader?$'
       // },
-      { 
-        test:/\.js$/, 
-        use:['cache-loader', 'babel-loader'], 
-        exclude:/node_modules/
+      // {
+      //   test:/\.js$/,
+      //   use:['eslint-loader'],
+      //   options:{
+      //     enforce:'pre'
+      //   }
+      // },
+      {
+        test:/\.js$/,
+        use:{
+          loader:'babel-loader',
+          options:{
+            presets:[
+              '@babel/preset-env'
+              // es7（class）一些兼容。。
+            ]
+          }
+        },
+        include:path.resolve('src'),
+        exclude:/node_module/
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        // 从右向左(从下到上)执行
+        use: [
+          // styel-loader把css转换成<style>插入页面
+          // {
+          //   loader: 'style-loader',
+          //   options:{
+          //     insert:'meta'
+          //   }
+          // },
+          // 抽离成main.css文件
+          MiniCssExtractPlugin.loader,
+          // css-loader解析@import
+          'css-loader',
+          // 加浏览器前缀
+          'postcss-loader'
+        ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [ 'file-loader' ]
-      },
-      {
-        test: /\.(png|jpg)/,
-        loader: 'file-loader',
-        options: {
-          // ...
-        }
+        // npm i less less-loader / node-sass sass-loader / stylus stylus-loader
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          // 'style-loader',
+          'css-loader',
+          // 加浏览器前缀
+          // 'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            // options:
+            // {
+            //   plugins:[require("autoprefixer")("last 100 versions")]
+            // }
+          },
+          'less-loader'
+        ]
       }
     ]
-  },
-  plugins: [
-    new VueLoaderPlugin(),
-    // new HtmlWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: "./index.html" //new 一个这个插件的实例，并传入相关的参数
-    // }),
-    new HtmlWebpackPlugin({
-      title: 'Development'
-    }),
-    new webpack.HotModuleReplacementPlugin({
-      // Options...
-    })
-  ],
-
-  devServer:{
-    // client:168 Invalid Host/Origin header
-    disableHostCheck: true
-  },
-  performance: {
-    // hints:false
-    hints: "warning", // 枚举
-    maxAssetSize: 30000000, // 整数类型（以字节为单位）
-    maxEntrypointSize: 50000000, // 整数类型（以字节为单位）
-    assetFilter: function(assetFilename) {
-    // 提供资源文件名的断言函数
-    return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
-    
-    }
-  }  
-  // babel:{
-  //   presets:['es2015'],
-  //   plugins:['transform-runtime']
-  // }
+  }
 }
-module.exports = config

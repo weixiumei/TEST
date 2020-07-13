@@ -1,0 +1,91 @@
+<html>
+  <!--第一步：引入Javascript / CSS （CDN）-->
+  <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+  
+  <script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  
+  <script src="datatables.js"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="moment.min.js"></script> -->
+  <!-- <script type="text/javascript" charset="utf8" src="jquery.daterangepicker.min.js"></script> -->
+  <style>
+    table{
+			/* table-layout:fixed; */
+		}
+  </style>
+  <script>
+    // <!--第三步：初始化Datatables-->
+    $(document).ready( function () {
+      var data = [
+        {"name":"Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1Tiger Nixon1","position":"System Architect","salary":"$3,120","start_date":"2011/04/25","office":"Edinburgh","extn":"5421"},
+        {"name":"Garrett Winters2","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"},
+        {"name":"Garrett Winters3","position":"Director","salary":"$5,300","start_date":"2011/07/25","office":"Edinburgh","extn":"8422"}
+      ]
+      var columns_data = [
+        { name: '名字' },
+        { position: '定位' },
+        { salary: '价格' },
+        { office: '办公' },
+        { extn: '数量' }
+      ]
+      var _LANG = {
+        "decimal":        "",
+        "emptyTable":     "没有数据",
+        "info":           "共 <span>_TOTAL_</span> 条",
+        "infoEmpty":      "",
+        "infoFiltered":   "",
+        "infoPostFix":    "",
+        "thousands":      ",",
+        "lengthMenu":     "_MENU_",
+        "loadingRecords": "加载中...",
+        "processing":     "处理中...",
+        "search":         "搜索:",
+        "zeroRecords":    "没有数据",
+        "paginate": {
+            "first":      "",
+            "last":       "",
+            "next":       ">",
+            "previous":   "<"
+        },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+      }
+      var table_example = ''
+      function setColumns(table_headers) {
+        var th_html = '',
+          columns = []
+        for (var i = 0; i < table_headers.length; i++) {
+          for (var ss in table_headers[i]) {
+            th_html = th_html + '<th data-code="' + ss + '">' + table_headers[i][ss] + '</th>'
+            columns.push({
+              data: ss,
+              // width: '120px'
+            })
+          }
+        }
+        columns[0].width = '200px'
+        $('table thead tr').html(th_html)
+        return columns;
+      }
+      var columns = setColumns(columns_data)
+      //object可以如下初始化表格
+      table_example = $('#table_id_example').DataTable({
+        searching: false,
+        data:      data,
+        columns:   columns,
+        scrollY:   400, //滚动高度
+        "language": _LANG
+      });
+    })
+  </script>
+  <body>
+    <!--第二步：添加如下 HTML 代码-->
+    <table id="table_id_example" class="display">
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
