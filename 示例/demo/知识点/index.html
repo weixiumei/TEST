@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>知识点</title>
+  </head>
+  <body>
+    <!-- flex居中 -->
+    <div class="center1">
+      <style>
+        .center1{
+          /* 子div 垂直水平居中 */
+          height: 200px;
+          background: rgb(228, 153, 153);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .div_1{
+          font-size: 12px;
+          width:100px;
+          height: 100px;
+          background: red;
+          /* 文案垂直居中 */
+          text-align: center;
+          line-height: 100px;
+        }
+      </style>
+      <div class="div_1">flex上下左右居中</div>
+    </div>
+    <!-- position居中 -->
+    <div class="center2">
+      <style>
+        .center2{
+          height: 200px;
+          position: relative;
+          background: rgb(213, 219, 154);
+        }
+        .div_2{
+          font-size: 12px;
+          width: 120px;
+          height: 100px;
+          background: red;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -60px;
+          margin-top: -50px;
+          /* 文案垂直居中 */
+          text-align: center;
+          line-height: 100px;
+        }
+        .div_2::after{
+          clear: both;
+        }
+      </style>
+      <div class="div_2">position上下左右居中</div>
+    </div>
+    <div class="center3">
+      <style>
+        .center3{
+          height: 200px;
+          position: relative;
+          background: rgb(82, 85, 58);
+        }
+        .div_3{
+          width: 120px;
+          height: 100px;
+          background: red;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      </style>
+      <div class="div_3">margin: auto;上下左右居中</div>
+    </div>
+    <!-- 自适应布局float -->
+    <div class="content3 clearfix">
+      <style>
+        .content3{
+          width: 100%;
+          background: rgb(221, 220, 220);
+          /* overflow:hidden 可以清除浮动，但不能设定高度*/
+        }
+        .content3 .left{
+          background: rgb(104, 164, 233);
+          height: 100px;
+          width: 100px;
+          float: left;
+        }
+        .content3 .center{
+          float: left;
+        }
+        .content3 .right{
+          background: rgb(52, 93, 141);
+          height: 100px;
+          width: 100px;
+          float: right;
+        }
+        .clearfix:after{
+          content:"."; 
+          display:block; 
+          height:0; 
+          visibility:hidden; 
+          clear:both; 
+          /* 清除IE浮动 */
+          zoom: 1;
+        }
+      </style>
+      <h3>float实现三列宽度自适应布局-浮动清除</h3>
+      <div class="left">左</div>
+      <div class="center">中</div>
+      <div class="right">右</div>
+      <!-- <div style="clear:both"></div> -->
+    </div>
+
+    <!-- 自适应布局position -->
+    <div class="content4">
+      <style>
+        .content4{
+          background: rgb(212, 211, 99);
+          height: 200px;
+          /* width: 100%; */
+          position: relative;
+        }
+        .content4 .left,.content4 .right{
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          background: rgb(57, 145, 148);
+        }
+        .content4 .left{
+          left: 0;
+        }
+        .content4 .center{
+          position: absolute;
+          margin: auto 110px;
+        }
+        .content4 .right{
+          right: 0;
+        }
+      </style>
+      <h3>position实现三列宽度自适应布局</h3>
+      <div class="left">左</div>
+      <div class="center">中</div>
+      <div class="right">右</div>
+    </div>
+
+    <!-- box-sizing -->
+    <div>
+      <div 
+        style="background:rgb(104, 164, 233);
+        width:200px;
+        height:100px;
+        border: 1px solid red;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        ">
+          box-sizing:border-box
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
