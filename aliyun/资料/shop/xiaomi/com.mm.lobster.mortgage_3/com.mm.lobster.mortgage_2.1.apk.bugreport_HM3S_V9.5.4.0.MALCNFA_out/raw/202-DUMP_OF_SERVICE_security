@@ -1,9 +1,0 @@
-========================================WAKEPATH DUMP BEGIN========================================
-----------------------------------------
-userId=0
-whitelist=[com.miui.home, com.miui.securitycenter]
-rule info index=0 size=5
-rule info index=1 size=23
-rule info index=2 size=16
-rule info index=3 size=80
-========================================WAKEPATH DUMP END========================================

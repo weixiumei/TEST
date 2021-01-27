@@ -1,0 +1,9 @@
+<!--pages/word/word.wxml-->
+<view>
+  <view class="word" wx:for="{{wordList}}" wx:for-item="word" wx:key="word">
+    <view class="key">{{word.key}}</view>
+    <view>{{word.sound}}</view>
+    <a href="javascript:void(0);" data-sound-lan="uk&amp;lock" data-sound-text="abandon" class="op-sound"> <span class="icon-sound sound-btn"></span> </a>
+    <view>{{word.translate}}</view>
+  </view>
+</view>

@@ -1,7 +1,0 @@
-CarrierConfigLoader: com.android.phone.CarrierConfigLoader@20139eb
-  Phone Id=0
-  mConfigFromDefaultApp=null
-  mConfigFromCarrierApp=null
-  Phone Id=1
-  mConfigFromDefaultApp=null
-  mConfigFromCarrierApp=null

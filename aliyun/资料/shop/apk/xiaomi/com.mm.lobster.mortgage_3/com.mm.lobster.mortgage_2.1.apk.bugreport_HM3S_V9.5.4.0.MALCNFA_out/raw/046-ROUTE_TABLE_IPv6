@@ -1,5 +1,0 @@
-local ::1 dev lo  proto none  metric 0 
-local fe80::c9b:a7ff:fe39:4df5 dev lo  proto none  metric 0 
-ff00::/8 dev dummy0  metric 256 
-[ip: 0.020s elapsed]
-

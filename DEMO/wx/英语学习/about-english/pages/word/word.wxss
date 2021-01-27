@@ -1,0 +1,8 @@
+/* pages/word/word.wxss */
+.word{
+  padding: 20rpx;
+}
+.key{
+  color: #08a293;
+  font-size: 40rpx;
+}
