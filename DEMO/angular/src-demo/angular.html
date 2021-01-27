@@ -1,0 +1,51 @@
+<!--  head：页面的</head>之前代码 -->
+<#include 'inc.head.html'>
+<body>
+	<!-- header：body的共同header -->
+    <#include 'inc.header.html'>
+    
+    <div class="container" ng-controller="angular">
+        <custom-directive></custom-directive>
+        <br>
+        <div hello>这是指令内部的内容！</div>
+        <br>
+        <div hello2>这是指令内部的内容！</div>
+        <br>
+        <div loader howToLoad="loadData1()">点击加载数据1</div>
+    </div>
+
+    <div class="container" ng-controller="angular2">
+        <div loader howToLoad="loadData2()">点击加载数据2</div>
+        <superman class="strong">力量</superman>
+        <superman class="strong speed">力量and速度</superman>
+        <superman class="strong speed light">力量and速度and发光</superman>
+        <br>
+        <br>
+        <input type="text" ng-model="myUrl">
+        <div my-directive my-url="{{myUrl}}" my-link-text="click me">{{myUrl}}</div>
+        <br>
+        <br>
+        controller:<input type="text" ng-model="crl_flavor">
+        <br>
+        directive :<drink flavor="crl_flavor"></drink>
+        <br>
+        <br>
+        <greeting greet="greet_click(name)"></greeting>
+    </div>
+
+    <form class="container"  name="myForm" ng-submit="save()" ng-controller="testForm"> 
+        <h3>form</h3>
+        <input type="text" name="userName" ng-model="user.userName" required>
+        <input type="password" name="password" ng-model="user.password" required>
+        <button type="submit" ng-disabled="myForm.$invalid" class="btn btn-primary">save</button>
+    </form>
+    <!-- script：引入 js 文件 -->
+    <#include 'inc.script.html'>
+
+    <script type="text/javascript">
+    	// piwik
+        document.title = 'angular';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+<#include 'inc.bottom.html'>

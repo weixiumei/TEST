@@ -1,0 +1,160 @@
+<!--  head：页面的</head>之前代码 -->
+<!DOCTYPE html>
+<html ng-app="NtSF" ng-cloak="" class="ng-cloak">
+<head>
+    <meta charset="UTF-8">
+    <title>data insight</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="project.js"></script>
+</head>
+<body ng-controller="dataInsightListContrl">
+    <div class="title">零售数据洞察 
+    	<div class="add_insight_small" ng-click="go_data_insight()">
+    		<span class="glyphicon glyphicon-plus"></span> 
+        	添加洞察内容
+    	</div>
+    </div>
+    <div class="compare">
+        <div>已选择2项数据进行对比</div>
+        <button class="start_compare" ng-click="go_data_echarts_compare()">开始对比</button>
+        <button class="cancel" ng-click="cancel()">取消</button>
+    </div>
+    <div class="content_div1">
+    	<h2>为商品找消费者</h2>
+    	<div class="block" ng-repeat="item in list_data[0]">
+    		<div class="left"></div>
+            <div class="right">
+        		<input type="checkbox" ng-click="check(item,0)" ng-model="item.checked" ng-disabled="item.disalbe_checked">
+                <div class="suolue_div" ng-click="suolue_click('content_div1',$index)">
+        		  <img class="suolue" src="assets/images/suolue.png">
+                </div>
+                <div class="drop-down pop{{$index}}">
+                    <img src="assets/images/jiantou.png">
+                    <div ng-click="edit(item)">编辑</div>
+                    <div ng-click="delete(0,$index)">删除</div>
+                </div>
+            </div>
+    		<div class="name" ng-click="go_data_echarts()">{{item.name}}</div>
+    		<div class="yugu">预估人数<span>{{item.people_num}}</span></div>
+    		<div class="date">生成日期<span>{{item.date}}</span></div>
+    	</div>
+    </div>
+
+    <div class="content_div2">
+    	<h2>为消费者推荐商品</h2>
+    	<div class="block" ng-repeat="item in list_data[1]">
+    		<div class="left"></div>
+            <div class="right">
+                <input type="checkbox" ng-click="check(item,1)" ng-model="item.checked" ng-disabled="item.disalbe_checked">
+                <div class="suolue_div" ng-click="suolue_click('content_div2',$index)">
+                    <img class="suolue" src="assets/images/suolue.png">
+                </div>
+                <div class="drop-down pop{{$index}}">
+                    <img src="assets/images/jiantou.png">
+                    <div ng-click="edit(item)">编辑</div>
+                    <div ng-click="delete(1,$index)">删除</div>
+                </div>
+            </div>
+            <div class="name" ng-click="go_data_echarts()">{{item.name}}</div>
+            <div class="yugu">预估人数<span>{{item.people_num}}</span></div>
+            <div class="date">生成日期<span>{{item.date}}</span></div>
+    	</div>
+    </div>
+
+    <div class="content_div3">
+    	<h2>推荐商品搭配</h2>
+    	<div class="block" ng-repeat="item in list_data[2]">
+    		<div class="left"></div>
+            <div class="right">
+                <input type="checkbox" ng-click="check(item,2)" ng-model="item.checked" ng-disabled="item.disalbe_checked">
+                <div class="suolue_div" ng-click="suolue_click('content_div3',$index)">
+                    <img class="suolue" src="assets/images/suolue.png">
+                </div>
+                <div class="drop-down pop{{$index}}">
+                    <img src="assets/images/jiantou.png">
+                    <div ng-click="edit(item)">编辑</div>
+                    <div ng-click="delete(2,$index)">删除</div>
+                </div>
+            </div>
+            <div class="name" ng-click="go_data_echarts()">{{item.name}}</div>
+            <div class="yugu">预估人数<span>{{item.people_num}}</span></div>
+            <div class="date">生成日期<span>{{item.date}}</span></div>
+            
+    	</div>
+    </div>
+    <div class="edit">
+        <textarea ng-model="edit_name"></textarea>
+        <button class="btn btn-primary" ng-click="qr()">确认</button>
+        <button class="btn btn-default" ng-click="qx()">取消</button>
+    </div>
+
+    <!-- script：引入 js 文件 -->
+    
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/common.js"></script>
+<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+<script src="assets/js/angular-1.4.8.min.js"></script>
+<script src="assets/js/angular-resource.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/api/api.config.js"></script>
+<script src="assets/api/api.js"></script>
+<script>
+	
+</script>
+    <script type="text/javascript">
+        // piwik
+        document.title = '零售数据洞察';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+    <script>
+      var _paq = _paq || [];
+
+      _paq.push(['enableLinkTracking', true]);
+      (function() {
+          try {
+              var storage, SiteId, UserId;
+              if(!!window.sessionStorage){
+                  storage = window.sessionStorage;
+                  SiteId = getUrlParameter('SiteId') || storage.getItem("SiteId") || P_SiteId;
+                  UserId = getUrlParameter('UserId') || storage.getItem("UserId") || '';
+              }else{
+                  SiteId = getUrlParameter('SiteId') || P_SiteId;
+                  UserId = getUrlParameter('UserId') || '';
+              }
+
+              if(!!window.sessionStorage){
+                  storage = window.sessionStorage;
+                  storage.setItem("SiteId", SiteId);
+                  storage.setItem("UserId", UserId) ;
+              }
+              // 如果SiteId是false,则不发送Piwik数据
+              if(SiteId == '' || SiteId == false){
+                  return
+              }
+              var u="http://a.nexttao.com/";
+              // 当url为空不发送
+              if(u == "" || u == "false" || u == false){
+                  return
+              }
+              if(!!UserId){
+                  _paq.push(['setUserId', UserId]);
+              }
+              _paq.push(['setTrackerUrl', u+'piwik.php']);
+              _paq.push(['setSiteId', SiteId]);
+              _paq.push(['setCustomVariable',"5","AppVersion",P_CV.AppVersion,'page']);
+              _paq.push(['trackPageView']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          }catch (e){
+              console.log(e);
+          }
+      })();
+    </script>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+  </body>
+</html>

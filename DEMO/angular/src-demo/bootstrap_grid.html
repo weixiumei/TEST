@@ -1,0 +1,201 @@
+<#include 'inc.head.html'>
+<body>
+  <!-- header：body的共同header -->
+    <#include 'inc.header.html'>
+    <!-- <a href="index.html">首页</a><br><br> -->
+    <div class="container" ng-controller="grid">
+      <h3>你好，栅格！</h3>
+      <div class='container div1'>container</div>
+      <div class='container-fluid div2'>container-fluid(100%)</div>
+
+      <div>栅格参数</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-xs-2">栅格参数</div>
+          <div class="col-xs-2">超小屏幕 手机 (<768px)</div>
+          <div class="col-xs-2">小屏幕 平板 (≥768px)</div>
+          <div class="col-xs-3">中等屏幕 桌面显示器 (≥992px)</div>
+          <div class="col-xs-3">大屏幕 大桌面显示器 (≥1200px)</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">栅格系统行为</div>
+          <div class="col-xs-2">总是水平排列</div>
+          <div class="col-xs-8">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">.container 最大宽度</div>
+          <div class="col-xs-2">None （自动）</div>
+          <div class="col-xs-2">750px</div>
+          <div class="col-xs-3">970px</div>
+          <div class="col-xs-3">1170px</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">类前缀</div>
+          <div class="col-xs-2">.col-xs-</div>
+          <div class="col-xs-2">.col-sm-</div>
+          <div class="col-xs-3">.col-md-</div>
+          <div class="col-xs-3">.col-lg-</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">列（column）数</div>
+          <div class="col-xs-10">12</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">最大列（column）宽</div>
+          <div class="col-xs-2">自动</div>
+          <div class="col-xs-2">~62px</div>
+          <div class="col-xs-3">~81px</div>
+          <div class="col-xs-3">~97px</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">槽（gutter）宽</div>
+          <div class="col-xs-10">30px （每列左右均有 15px）</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">可嵌套</div>
+          <div class="col-xs-10">是</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">偏移（Offsets）</div>
+          <div class="col-xs-10">是</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">列排序</div>
+          <div class="col-xs-10">是</div>
+        </div>
+      </div>
+
+      <div>从堆叠到水平排列</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-6">.col-md-6</div>
+        </div>
+      </div>
+
+      <div>移动设备和桌面屏幕</div>
+      <!-- 针对超小屏幕和中等屏幕设备 -->
+      <div class='container'>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-xs-6">.col-xs-6</div>
+          <div class="col-xs-6">.col-xs-6</div>
+        </div>
+      </div>
+
+      <div>手机、平板、桌面</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+          <!-- Optional: clear the XS cols if their content doesn't match in height -->
+          <div class="clearfix visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        </div>
+      </div>
+
+      <div>多余的列（column）将另起一行排列</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-xs-9">.col-xs-9</div>
+          <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+          <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+        </div>
+      </div>
+
+      <div>响应式列重置</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 <br>Resize your viewport or check it out on your phone for an example.</div>
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+          <!-- Add the extra clearfix for only the required viewport -->
+          <div class="clearfix visible-xs-block"></div>
+
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        </div>
+      </div>
+
+      <div>列偏移</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4(-*为向右几个列的宽度)</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+        </div>
+      </div>
+
+      <div>嵌套列</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+              <div class="col-xs-8 col-sm-6">
+                Level 2: .col-xs-8 .col-sm-6
+              </div>
+              <div class="col-xs-4 col-sm-6">
+                Level 2: .col-xs-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>列排序</div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+          <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

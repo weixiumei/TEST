@@ -1,0 +1,25 @@
+<!-- 销售为零 -->
+<div class="condition_div">
+	<li>
+		<span class="checkbox">
+			<span class="input-checkbox checked">
+				<input type="checkbox" name="checkBox" value="combined" checked="" data-label="" checked />
+				<span class="inner"></span>
+			</span>
+		</span>
+		<span class="style_top"><span tkey="sale_zero"></span></span>
+	</li>
+</div>
+
+<script>
+	jQuery(document).ready(function($){
+	    $('.condition_div li').appendTo($('#condition_ul'));
+
+	    //条件从缓存获取
+	    //是否‘显示销售为零’1:是;
+	    var show_zero_sale = form_id + '_show_zero_sale'
+		if(localStorage[show_zero_sale] == '0'){
+		  	$('input[name=checkBox]').parent().removeClass('checked');
+		}
+	})
+</script>

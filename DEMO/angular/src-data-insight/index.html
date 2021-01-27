@@ -1,0 +1,17 @@
+<!--  head：页面的</head>之前代码 -->
+<#include 'inc.head.html'>
+<body ng-controller="indexContrl">
+    <div class="title">零售数据洞察</div>
+    <div class="add_insight" ng-click="go_data_insight()">
+        <span class="glyphicon glyphicon-plus"></span> 
+        添加洞察内容
+    </div>
+    <!-- script：引入 js 文件 -->
+    <#include 'inc.script.html'>
+    <script type="text/javascript">
+        // piwik
+        document.title = '零售数据洞察';
+    </script>
+
+<!-- bottom：加载loading和piwik -->
+<#include 'inc.bottom.html'>

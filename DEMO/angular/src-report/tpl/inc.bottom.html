@@ -1,0 +1,48 @@
+<script>
+var _paq = _paq || [];
+
+_paq.push(['enableLinkTracking', true]);
+(function() {
+    try {
+        var SiteId = getUrlParameter('SiteId');
+        var UserId = getUrlParameter('UserId') || '';
+        var Appversion = getUrlParameter('Appversion');
+        var Platform = getUrlParameter('Platform');
+        var ShopName = getUrlParameter('ShopName');
+        var TenantName = getUrlParameter('tenant_name');
+        var TenantID = getUrlParameter('tenant_id');
+        // 如果SiteId是false,则不发送Piwik数据
+        if(SiteId == '' || SiteId == false){
+            return
+        }
+        var u="//a.nexttao.com/";
+        // 当url为空不发送
+        if(u == "" || u == "false" || u == false){
+            return
+        }
+
+        if(!!UserId){
+            _paq.push(['setUserId', UserId]);
+        }
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', SiteId]);
+        _paq.push(['setDocumentTitle', '促销规则查询']);
+
+        _paq.push(['setCustomVariable',"5","AppVersion",P_CV.AppVersion,'page']);
+
+        // _paq.push(['setCustomVariable',"1","App version",Appversion]);
+        // _paq.push(['setCustomVariable',"2","Platform",Platform]);
+        // _paq.push(['setCustomVariable',"3","ShopName",ShopName]);
+        // _paq.push(['setCustomVariable',"4","TenantID",TenantName]);
+        // _paq.push(['setCustomVariable',"5", "TenantName", TenantName]);
+        _paq.push(['trackPageView']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    }catch (e){
+        console.log(e);
+    }
+})();
+</script>
+
+</body>
+</html>

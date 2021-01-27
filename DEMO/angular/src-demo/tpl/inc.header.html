@@ -1,0 +1,107 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img class="plum" src="assets/img/plum_2.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+        <li class="li-homepage">
+          <a href="index.html">
+            首页</a>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            angularJS <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="angular_form.html">表单</a></li>
+              <li><a href="angular.html">angular特性</a></li>
+            </ul>
+        </li>
+        <li class="li-application dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            react <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="react_demo.html">栅格</a></li>
+            </ul>
+        </li>
+        <li class="li-application dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            bootstrap <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bootstrap_grid.html">栅格</a></li>
+              <li><a href="bootstrap_type_setting.html">排版</a></li>
+              <li><a href="bootstrap_table.html">表格</a></li>
+            </ul>
+        </li>
+        <li class="li-monitor dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            JS/jQuery <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="js_component.html">JS武器库</a></li>
+              <li><a href="js_table.html">表格</a></li>
+              <li><a href="js_date.html">日期计算</a></li>
+              <li><a href="js_closure_prototype.html">closure prototype</a></li>
+            </ul>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            扩展 <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="less.html">less</a></li>
+            </ul>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            DEMO <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="demo_charts.html">charts</a></li>
+              <li><a href="demo_date.html">datepicker</a></li>
+            </ul>
+        </li>
+        <li class="li-data dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button" aria-haspopup="true" aria-expanded="false">
+            about <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="about_clear.html">clear</a></li>
+              <li><a href="about_datepicker.html">date</a></li>
+              <li><a href="about_layout.html">布局</a></li>
+            </ul>
+        </li>
+        <li class="li-monitor dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Test <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="test.html">test</a></li>
+              <li><a href="test.html">test</a></li> -->
+              <li><a href="ng-iscroll-4.html">ng-iscroll-4</a></li>
+              <li><a href="ng-iscroll-5.html">ng-iscroll-5</a></li>
+              <li><a href="demo_form.html">demo2</a></li>
+              <li><a href="test_multiple_iscrolls.html">demo3</a></li>
+              <li><a href="iscroll-5.html">iscroll-5</a></li>
+              <li><a href="iscroll-4.html">iscroll-4</a></li>
+              <li><a href="test3.html">test3</a></li>
+            </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" ng-cloak ng-controller="userInfo">
+        <li><a href="#" class="avatar "><img src="assets/img/avatar.jpg" ng-src="{{user.avatar}}" alt="{{user.name}}" class="img-circle"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" ng-click="logout()">注销</a></li>
+            <li><a href="#" ng-click="reset()">清除缓存</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,21 @@
+<!-- 商品编码 -->
+<div class="condition_div">
+	<li>
+	    <div class="item-content item-search">
+	        <div class="item-input">
+	          	<!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+	          	<input type="text" placeholder="请输入商品编码" placeholder-key="code_desc" name="name_code" class="">
+	        </div>
+	    </div>
+	</li>
+</div>
+
+<script>
+	jQuery(document).ready(function($){
+	    $('.condition_div li').appendTo($('#condition_ul'));
+
+	    //条件从缓存获取
+	  	//商品编码 
+	  	$('input[name=name_code]').val(localStorage[form_id + '_product_code']);
+	})
+</script>

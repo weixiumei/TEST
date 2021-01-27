@@ -1,0 +1,142 @@
+<!-- 分类 -->
+<div class="condition_div">
+	<li>
+	    <div class="item-content item-relative">
+	        <label><span tkey="skidding_category"></span>:</label>
+	        <div class="item-input">
+	          <!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+	          <input type="text" placeholder="请选择统计分类(可多选)" placeholder-key="category_desc" class="btn-panel relative-value checkAll" data-rel="panel-category" readonly="" data-value="storage4" value="">
+	        </div>
+	    </div>
+	</li>
+</div>
+<!-- panel 分类 -->
+<div class="panel panel-right panel-cover" id='panel-category'>
+  <header>
+    <a href="#" class="close-panel back"></a>  
+    <span tkey="category"></span>
+    <a href="#" class="close-panel confirm confirm_4" tkey="sure"></a>
+  </header> 
+  <!-- Click on link with "close-panel" class will close panel -->
+  <div class="list-block">
+    <p class="small" tkey="category_desc"></p>
+    <p class="all">
+      <span tkey="all_check"></span>
+      <span class="checkbox">
+        <span class="input-checkbox checked">
+          <input type="checkbox" name="type" value="" class="checkedAll" data-label="" checked />
+          <span class="inner"></span>
+        </span>
+      </span>
+    </p>
+    <ul>
+      <!-- Single chekbox item -->
+      <li tkey="loading"></li>
+    </ul>
+  </div>
+</div>
+<script>
+	jQuery(document).ready(function($){
+		$('.condition_div li').appendTo($('#condition_ul'));
+	})
+	var xhr2;
+	if(xhr2){
+        xhr2.abort();
+    }
+    xhr2 = $.ajax({
+        url: form_id == 'form8' ? (API_URL_PREFIX+API_URL['receipt_type']) : (API_URL_PREFIX+API_URL['product_types']),
+        data: JSON.stringify({}),
+        type: 'POST',
+        dataType : "json",
+        contentType: "application/json",
+        success:  function(data){
+            if(data.code != 0){
+                _error_handle(data);
+                return;
+            }
+            data = data.data;
+            var str_checkbox = '',str_radio = '';
+            var checked_category = '';
+            var product_type = form_id + '_product_type';
+
+            for(i=0;i<data.data.length;i++){
+                var name = data.data[i]['type_name'];
+                var code = data.data[i]['type_code'];
+                if(!!localStorage[product_type]){
+                  checked_category = (localStorage[product_type].split(',').indexOf(code+'') != -1)?'checked':'';
+                }
+                str_checkbox += '<li><label class="lb" for="category'+i+'">\
+                          '+ name +'\
+                          <span class="checkbox">\
+                            <span class="input-checkbox '+ checked_category +'">\
+                              <input type="checkbox" name="category" id="category'+i+'" value="'+ code +'" data-label="'+ name +'"  />\
+                              <span class="inner"></span>\
+                            </span>\
+                          </span></label>\
+                        </li>';
+
+                str_radio += '<li><label class="lb" for="category'+i+'">\
+                          '+ name +'\
+                          <span class="checkbox">\
+                            <span class="input-radio '+ checked_category +'">\
+                              <input type="radio" name="category" id="category'+i+'" value="'+ code +'" data-label="'+ name +'" />\
+                              <span class="inner"></span>\
+                            </span>\
+                          </span></label>\
+                        </li>';
+            }
+            $('#panel-category ul').html(form_id == 'form8' ? str_radio : str_checkbox);
+            $(document).on("click", "#panel-category .close-panel.confirm_4", function() {
+                var s = '';
+                if($(this).parents('.panel').find('input[type=checkbox]').size() == $(this).parents('.panel').find('input[type=checkbox]:checked').size()){
+                    if(langCode == 'en'){
+                        s = 'All';
+                    }else{
+                        s = '全部分类类型';
+                    }
+                }else{
+                    $(this).parents('.panel').find('input[type=checkbox]:checked').each(function(){
+                        if(s != ''){
+                            s += ',';
+                        }
+                        s +=  $(this).attr('data-label');
+                    });
+                }
+                $('input[data-value="storage4"]').val(s);
+                // sessionStorage.setItem('category1',s);
+                $('.filter_category').html(s);
+            });
+
+  			// 分类条件从缓存获取
+            var filter_category = form_id + '_filter_category';
+            if(!!localStorage[filter_category]){
+                $('.filter_category').html(localStorage[filter_category]);
+                $('input[data-value="storage4"]').val(localStorage[filter_category]);
+                var product_type_arr = localStorage[product_type].split(',');
+                for(var i=0;i<product_type_arr.length;i++){
+                    $("#panel-category ul li .input-checkbox input[value='"+product_type_arr[i]+"']").click();
+                }
+            }else{
+                // 默认选中
+                $('#panel-category ul li:first-child .input-checkbox input').click();
+            }
+            $('#panel-category .close-panel.confirm_4').click();
+
+            if (langs.indexOf(langCode) != -1){
+              $.getJSON('assets/lang/'+langCode+'.json', {},translate);
+            }else{
+              $.getJSON('assets/lang/cn.json', translate);
+            }
+        },
+        error:    function(data){
+            console.log('error');
+            _error_handle(data);
+        },
+        complete: function(){
+            console.log('complete');
+        },
+        beforeSend : function(request){
+            request.setRequestHeader("token", token);
+        }
+    })
+</script>

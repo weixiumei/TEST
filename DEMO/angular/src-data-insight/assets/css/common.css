@@ -1,0 +1,95 @@
+/*共通css 不可修改*/
+
+[ng\:cloak],[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak{
+  	display:none ! important;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, 
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-weight: inherit; 
+    font-style: inherit; 
+    color: #34495E;
+    /*font-size: 100%; */
+    font-family: inherit; 
+    vertical-align: baseline;
+    text-decoration: none;
+    font: inherit;
+    /*font-family: "PingFangSC-Medium","Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;  
+} 
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+  overflow:auto;
+  /*font-size: 14px;*/
+  background-color: #F7F8FA;
+}
+body{
+    background-color: #F7F8FA;
+    height: 100%;
+    line-height: 1;
+}
+:focus { 
+    outline: 0; 
+} 
+table { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+} 
+caption, th, td { 
+    text-align: left; 
+    font-weight: normal; 
+} 
+a img, iframe { 
+    border: none; 
+} 
+ol, ul { 
+    list-style: none; 
+} 
+select { 
+    /*margin: inherit; */
+} 
+/*.radio{
+    margin: 0px;
+}*/
+button{
+    border-radius: 0;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.hidden{
+	display: none;
+}

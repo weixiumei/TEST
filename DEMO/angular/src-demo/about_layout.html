@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>layout</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,minimum-scale=1, maximum-scale=2.0, user-scalable=no">
+    <style type="text/css">
+        html{
+            font-size: 16px;
+        }
+        /*css居中*/
+        .div1{
+            width: 10rem;
+            height: 10rem;
+            overflow: auto;
+            background: #1dc1a5;
+            /*background: url(assets/img/me.jpg) no-repeat;
+            background-size: cover;*/
+
+            position: relative;
+            margin: 40px auto;/*(定宽，块状的)div1左右居中*/
+        }
+        .div2{
+            width: 5rem;
+            height: 5rem;
+            background: #e65959;
+            /*background: url(assets/img/lu.jpg) no-repeat;
+            background-size: cover;*/
+
+            /*div2内容垂直居中*/
+            line-height: 5rem;
+            /*div2内容左右居中*/
+            text-align: center;
+
+            /*div2垂直水平居中*/
+            position: absolute;
+            /*left: 50%;
+            transform: translateY(-50%);*/
+            top: 0; right: 0; bottom: 0; left: 0;
+            margin: auto;
+        }
+
+        /*flex居中*/
+        .parent{
+            width: 20rem;
+            background: #1dc1a5;
+            margin: auto;
+
+            display:flex;
+        }
+        .child1, .child2, .child3{
+            width: 3rem;
+            background: #e65959;
+            display: inline-block;
+            margin: 3rem auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /*居中*/
+        .wrap{
+            background: #1dc1a5;
+            margin: 1rem;
+            padding: 2rem;
+            position: relative;
+        }
+        .center{
+            background: #e65959;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%)
+        }
+    </style>
+</head>
+<body>
+    css 居中:
+    <div class="div1">div1
+        <div class="div2">div2</div>
+    </div>
+    flex 居中:
+    <div class="parent">
+        <div class="child1">div2</div>
+        <div class="child2">div2</div>
+        <div class="child3">div2</div>
+    </div>
+
+    transform 居中:
+    <div class="wrap">
+        <div class="center">center</div>
+    </div>
+
+</body>
+</html>

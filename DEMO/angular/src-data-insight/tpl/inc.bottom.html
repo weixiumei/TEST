@@ -1,0 +1,48 @@
+    <script>
+      var _paq = _paq || [];
+
+      _paq.push(['enableLinkTracking', true]);
+      (function() {
+          try {
+              var storage, SiteId, UserId;
+              if(!!window.sessionStorage){
+                  storage = window.sessionStorage;
+                  SiteId = getUrlParameter('SiteId') || storage.getItem("SiteId") || P_SiteId;
+                  UserId = getUrlParameter('UserId') || storage.getItem("UserId") || '';
+              }else{
+                  SiteId = getUrlParameter('SiteId') || P_SiteId;
+                  UserId = getUrlParameter('UserId') || '';
+              }
+
+              if(!!window.sessionStorage){
+                  storage = window.sessionStorage;
+                  storage.setItem("SiteId", SiteId);
+                  storage.setItem("UserId", UserId) ;
+              }
+              // 如果SiteId是false,则不发送Piwik数据
+              if(SiteId == '' || SiteId == false){
+                  return
+              }
+              var u="http://a.nexttao.com/";
+              // 当url为空不发送
+              if(u == "" || u == "false" || u == false){
+                  return
+              }
+              if(!!UserId){
+                  _paq.push(['setUserId', UserId]);
+              }
+              _paq.push(['setTrackerUrl', u+'piwik.php']);
+              _paq.push(['setSiteId', SiteId]);
+              _paq.push(['setCustomVariable',"5","AppVersion",P_CV.AppVersion,'page']);
+              _paq.push(['trackPageView']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          }catch (e){
+              console.log(e);
+          }
+      })();
+    </script>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+  </body>
+</html>

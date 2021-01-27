@@ -1,0 +1,48 @@
+<html ng-app="NtCuxiao">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1.0, user-scalable=no"> 
+    <meta content="telephone=no" name="format-detection" />  
+    <script>
+         if (document.documentElement.clientWidth > 1024) { 
+           document.querySelector("meta[name=viewport]").setAttribute(
+             'content', 
+             'width=1024, initial-scale='+(document.documentElement.clientWidth/1024)+', minimum-scale=0.1, maximum-scale=2.0, user-scalable=no');
+       }
+    </script>
+    <link href="assets/css/css.css?r=1849920396" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/datatables.css">
+    <link rel="stylesheet" href="assets/vendor/sm.min.css">
+    <link href="assets/css/style.css"  media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/sm-nx.css">
+    <script src="project.js"></script>
+    <script>
+       function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                // document.writeln("phone");
+                console.log('ipad');
+            } else {
+                // document.writeln("pc");
+                console.log('pc');
+                var link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = 'assets/css/webSite.css';
+                var head = document.getElementsByTagName('head')[0];
+                head.append(link);
+            }
+        }
+
+        browserRedirect();
+    </script>
+</head>

@@ -1,0 +1,115 @@
+<!-- 统计方式 -->
+<div class="condition_div">
+	<li>
+	    <div class="item-content item-relative">
+	        <label><span tkey="form5_total"></span>:</label>
+	        <div class="item-input">
+	          	<!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+	          	<input type="text" placeholder="请选择需汇总统计项目" class="btn-panel relative-value" data-rel="panel-total" readonly="" data-value="storage5" value="">
+	        </div>
+	    </div>
+	</li>
+</div>
+<div class="panel panel-right panel-cover" id='panel-total'>
+    <header>
+    	<a href="#" class="close-panel back"></a>  
+    	<span tkey="form5_total"></span>
+    	<a href="#" class="close-panel confirm confirm_5" tkey="sure"></a>
+    </header>
+    <!-- Click on link with "close-panel" class will close panel -->
+    <div class="list-block">
+      	<p class="small" tkey="total_desc"></p>
+      	<ul>
+        	<!-- Single chekbox item -->
+        	<li tkey="loading"></li>
+      	</ul>
+    </div>
+</div>
+
+<script>
+	jQuery(document).ready(function($){
+	    $('.condition_div li').appendTo($('#condition_ul'));
+
+	    //init 统计方式
+      	if(xhr){
+        	xhr.abort();
+      	}
+      	
+      	xhr = $.ajax({
+	        url: form_id=='form5'?(API_URL_PREFIX+API_URL['sale_statistics_group_type']):(API_URL_PREFIX+API_URL['employee_sale_show_as']),
+	        data: JSON.stringify({}),
+	        type: 'POST',
+	        dataType : "json",
+	        contentType: "application/json",
+	        success:  function(data){
+	          	if(data.code != 0){
+	            	_error_handle(data);
+	            	return;
+	          	}
+	          	data = data.data;
+	          	var str = '';
+	          	var checked_total = '';
+	    		var group_by = form_id + '_group_by'
+	          	for(i=0;i<data.data.length;i++){
+	              	var name = data.data[i]['type_name'];
+	              	var code = data.data[i]['type_code'];
+	              	if(!!localStorage[group_by]){
+	                    checked_total = (localStorage[group_by].split(',').indexOf(code+'') != -1)?'checked':'';
+	                }
+	              	str += '<li><label class="lb" for="total'+i+'">\
+	                      '+ name +'\
+	                      <span class="checkbox">\
+	                        <span class="input-radio '+ checked_total +'">\
+	                          <input type="radio" name="total" id="total'+i+'" value="'+ code +'" data-label="'+ name +'" />\
+	                          <span class="inner"></span>\
+	                        </span>\
+	                      </span></label>\
+	                    </li>';
+	          	}
+	            $('#panel-total ul').html(str);
+	            $(document).on("click", "#panel-total .close-panel.confirm_5", function() {
+	                var s = '';
+	                if($(this).parents('.panel').find('input[type=radio]').size() == $(this).parents('.panel').find('input[type=radio]:checked').size()){
+	                  	s = '全部统计方式';
+	                }else{
+	                  	$(this).parents('.panel').find('input[type=radio]:checked').each(function(){
+	                      	if(s != ''){
+	                          	s += ',';
+	                      	}
+	                      	s +=  $(this).attr('data-label');
+	                  	});
+	                }
+	                $('input[data-value="storage5"]').val(s);
+	                // sessionStorage.setItem('total5',s);
+	                $('.filter_total').html(s);
+	            });
+	            //判断 localStorage 缓存
+	            var filter_total = form_id + '_filter_total';
+	            if(!!localStorage[filter_total]){
+	              	$('.filter_total').html(localStorage[filter_total]);
+	              	$('input[data-value="storage5"]').val(localStorage[filter_total]);
+	              	if(!!localStorage[group_by]){
+	              		var group_by_arr = localStorage[group_by].split(',');
+		              	for(var i=0;i<group_by_arr.length;i++){
+		                	$("#panel-total ul li .input-radio input[value='"+group_by_arr[i]+"']").click();
+		              	}
+	              	}
+	            }else{
+	              	// 默认选中
+	              	$('#panel-total ul li:first-child .input-radio input').click();
+	            }
+	            $('#panel-total .close-panel.confirm_5').click(); 
+	        },
+	        error:    function(data){
+	          	console.log('error');
+	          	_error_handle(data);
+	        },
+	        complete: function(){
+	          	console.log('complete');
+	        },
+	        beforeSend : function(request){
+	          	request.setRequestHeader("token", token);
+	        }
+      	})
+	})
+</script>

@@ -1,0 +1,787 @@
+<html ng-app="NtCuxiao">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1.0, user-scalable=no"> 
+    <meta content="telephone=no" name="format-detection" />  
+    <script>
+         if (document.documentElement.clientWidth > 1024) { 
+           document.querySelector("meta[name=viewport]").setAttribute(
+             'content', 
+             'width=1024, initial-scale='+(document.documentElement.clientWidth/1024)+', minimum-scale=0.1, maximum-scale=2.0, user-scalable=no');
+       }
+    </script>
+    <link href="assets/css/css.css?r=1849920396" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/datatables.css">
+    <link rel="stylesheet" href="assets/vendor/sm.min.css">
+    <link href="assets/css/style.css"  media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/sm-nx.css">
+    <script src="project.js"></script>
+    <script>
+       function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                // document.writeln("phone");
+                console.log('ipad');
+            } else {
+                // document.writeln("pc");
+                console.log('pc');
+                var link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = 'assets/css/webSite.css';
+                var head = document.getElementsByTagName('head')[0];
+                head.append(link);
+            }
+        }
+
+        browserRedirect();
+    </script>
+</head>
+<!-- * 销售统计 -->
+<body class="debugx">
+<div id="bg"></div>
+  <div id="container">
+    <header>
+        <span class="menu"></span>
+        <a class="back_a" href=""><span class="menuBack"></span></a>
+        <span tkey="form2"></span><span class="blue" tkey="form5_tittle"></span>
+        <span class="menuRight" tkey="filter"></span>
+    </header>
+    <section class="filter hidden">
+      <span tkey="store"></span>： <span class="filter_store"></span> ；
+      <span tkey="form5_total"></span>： <span class="filter_total"></span> ；
+      <span tkey="date"></span>： <span class="startDate"></span>/<span class="endDate"></span>
+    </section>
+
+    <div class="condition">
+      <div class="row" >
+        <ul class="col-50" id="condition_ul">
+          <!-- 店仓 -->
+          <!-- 统计方式 -->
+          <!-- 日期 -->
+        </ul>
+        <ul class="col-50" style="width:40%!important">
+          <!-- 查询按钮 -->
+<li class="col-100">
+    <div class="item-content no-border item-button" style="margin-left: 100px">
+      	<button class="button button-fill button-primary nx-btn-display" id="getList" data-table="#example" style="margin-left: 0px;" tkey="search"></button>
+    </div>
+</li>
+        </ul>
+      </div>
+    </div>
+    <!-- data 显示 -->
+    <!-- data显示 -->
+<div class="data hidden">
+  <table class="display nx-datatables" id="example" width="100%">
+    <thead>
+      <tr></tr>
+    </thead>
+  </table>
+  <section class="count" >
+    <p class="blue label"><span tkey="heji"></span>|</p>
+    <p class="footer"></p>
+  </section>
+  <!-- loading -->
+  <div class="data_content">
+    <div>
+      <img src="assets/img/loading_b.gif" alt="">
+    </div>
+  </div>
+  <footer id="mainFooter"></footer>
+</div>
+
+  </div>
+
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var jQuery=$.noConflict();
+    </script>
+
+    <script src="assets/vendor/fastclick.js"></script> 
+
+    
+    <script type="text/javascript" src="assets/vendor/zepto.js"></script>
+    <script src="assets/vendor/sm.min.js"></script> 
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/api.config.js"></script>
+    <!-- <script src="assets/js/host.js"></script> -->
+    <script src="assets/vendor/datatables.js"></script>
+    <script src="assets/vendor/Scroller-1.4.2/js/dataTables.scroller.min.js"></script>
+    <script src="assets/vendor/FixedColumns-3.2.2/js/dataTables.fixedColumns.min.js"></script>
+    <script src="assets/vendor/FixedHeader-3.1.2/js/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script> 
+
+<script>
+var _ID = 0;
+var _count ;//获取侧滑id
+var _NUM = {'product':0,'gift':0};
+var _time_interval = false;
+var shop_id = getUrlParameter('shop_id') * 1;
+var lang = getUrlParameter('lang');
+var back_url='index.html'+ '?shop_id=' + shop_id + '&lang=' + lang; 
+$('.back_a').attr('href',back_url);
+
+//  **************  区分是哪个页面，设定缓存  ************** 
+var form_id = 'form5';
+</script>
+
+<!-- 店仓 -->
+<!-- 店仓 -->
+<div class="condition_div">
+	<li>
+		<div class="item-content item-relative">
+		    <label ><span tkey="skidding_store"></span>:</label>
+		    <div class="item-input">
+		      	<!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+		      	<input type="text" placeholder="请选择需查询店仓(可多选)" placeholder-key="store_desc_input" class="btn-panel relative-value checkAll" data-rel="panel-store" readonly="" data-value="storage2" value="">
+		    </div>
+	  	</div>
+	</li>
+</div>
+<!-- panel 店仓 -->
+<div class="panel panel-right panel-cover" id='panel-store'>
+  <header>
+    <a href="#" class="close-panel back"></a>  
+    <span tkey="store"></span> 
+    <a href="#" class="close-panel confirm confirm_2" tkey="sure"></a>
+  </header>
+  <!-- Click on link with "close-panel" class will close panel -->
+  <div class="list-block">
+    <p class="small">* <span tkey="desc_store"></span></p>
+    <p class="all">
+      <span tkey="all_check"></span>
+      <span class="checkbox">
+        <span class="input-checkbox">
+          <input type="checkbox" name="type" value="" class="checkedAll" data-label="" />
+          <span class="inner"></span>
+        </span>
+      </span>
+    </p>
+    <ul>
+      <!-- Single chekbox item -->
+      <li tkey="loading"></li>
+    </ul>
+  </div>
+</div>
+<script>
+	jQuery(document).ready(function($){
+		$('.condition_div li').appendTo($('#condition_ul'));
+	})
+
+	var xhr1;
+	//init 店仓
+    if(xhr1){
+        xhr1.abort();
+    }
+    var shop_id = getShopId('shop_id=');
+    xhr1 = $.ajax({
+        url: API_URL_PREFIX+API_URL['shop_list'],
+        data: JSON.stringify({"shop_id":shop_id}),
+        type: 'POST',
+        dataType : "json",
+        contentType: "application/json",
+        success:  function(data){
+            if(data.code != 0){
+                _error_handle(data);
+                return;
+            }
+            
+            data = data.data;
+            var str = '';
+            var checked_store = '';
+            var shop_ids = form_id + '_shop_ids';
+
+            for(i=0;i<data.shops.length;i++){
+                var name = data.shops[i]['shop_name'];
+                var code = data.shops[i]['shop_code'];
+                var shop_id = data.shops[i]['shop_id'];
+                if(!!localStorage[shop_ids]){
+                  checked_store = (localStorage[shop_ids].split(',').indexOf(shop_id+'') != -1)?'checked':'';
+                }
+                str += '<li><label class="lb" for="store'+i+'">\
+                        '+ name +'\
+                        <span class="checkbox">\
+                          <span class="input-checkbox '+ checked_store +'">\
+                            <input type="checkbox" name="store" id="store'+i+'" value="'+ shop_id +'" data-label="'+ name +'" />\
+                            <span class="inner"></span>\
+                          </span>\
+                        </span></label>\
+                    </li>';
+            }
+            $('#panel-store ul').html(str);
+            $(document).on("click", "#panel-store .close-panel.confirm_2", function() {
+                var s = '';
+                if($(this).parents('.panel').find('input[type=checkbox]').size() == $(this).parents('.panel').find('input[type=checkbox]:checked').size()){
+                    if(langCode == 'en'){
+                        s = 'All';
+                    }else{
+                        s = '全部门店';
+                    }
+                }else{
+                    $(this).parents('.panel').find('input[type=checkbox]:checked').each(function(){
+                        if(s != ''){
+                            s += ',';
+                        }
+                        s +=  $(this).attr('data-label');
+                    });
+                }
+                $('input[data-value="storage2"]').val(s);
+                $('.filter_store').html(s);
+            });
+
+            // 店仓条件从缓存获取
+            var filter_store = form_id + '_filter_store';
+            if(!!localStorage[filter_store]){
+                $('.filter_store').html(localStorage[filter_store]);
+                $('input[data-value="storage2"]').val(localStorage[filter_store]);
+                var shop_ids_arr = localStorage[shop_ids].split(',');
+                for(var i=0;i<shop_ids_arr.length;i++){
+                    $("#panel-store ul li .input-checkbox input[value='"+shop_ids_arr[i]+"']").click();
+                }
+            }else{
+                // 默认选中
+                $('#panel-store ul li:first-child .input-checkbox input').click();
+            }
+            $('#panel-store .close-panel.confirm_2').click();
+        },
+        error:    function(data){
+            console.log('error');
+            _error_handle(data);
+        },
+        complete: function(){
+            console.log('complete');
+        },
+        beforeSend : function(request){
+            request.setRequestHeader("token", token);
+        }
+    })
+</script>
+
+
+
+
+
+
+
+
+<!-- 统计方式 --> 
+<!-- 统计方式 -->
+<div class="condition_div">
+	<li>
+	    <div class="item-content item-relative">
+	        <label><span tkey="form5_total"></span>:</label>
+	        <div class="item-input">
+	          	<!--relative-value 表示 一个输入框 对应 一个 右侧划入的列表-->
+	          	<input type="text" placeholder="请选择需汇总统计项目" class="btn-panel relative-value" data-rel="panel-total" readonly="" data-value="storage5" value="">
+	        </div>
+	    </div>
+	</li>
+</div>
+<div class="panel panel-right panel-cover" id='panel-total'>
+    <header>
+    	<a href="#" class="close-panel back"></a>  
+    	<span tkey="form5_total"></span>
+    	<a href="#" class="close-panel confirm confirm_5" tkey="sure"></a>
+    </header>
+    <!-- Click on link with "close-panel" class will close panel -->
+    <div class="list-block">
+      	<p class="small" tkey="total_desc"></p>
+      	<ul>
+        	<!-- Single chekbox item -->
+        	<li tkey="loading"></li>
+      	</ul>
+    </div>
+</div>
+
+<script>
+	jQuery(document).ready(function($){
+	    $('.condition_div li').appendTo($('#condition_ul'));
+
+	    //init 统计方式
+      	if(xhr){
+        	xhr.abort();
+      	}
+      	
+      	xhr = $.ajax({
+	        url: form_id=='form5'?(API_URL_PREFIX+API_URL['sale_statistics_group_type']):(API_URL_PREFIX+API_URL['employee_sale_show_as']),
+	        data: JSON.stringify({}),
+	        type: 'POST',
+	        dataType : "json",
+	        contentType: "application/json",
+	        success:  function(data){
+	          	if(data.code != 0){
+	            	_error_handle(data);
+	            	return;
+	          	}
+	          	data = data.data;
+	          	var str = '';
+	          	var checked_total = '';
+	    		var group_by = form_id + '_group_by'
+	          	for(i=0;i<data.data.length;i++){
+	              	var name = data.data[i]['type_name'];
+	              	var code = data.data[i]['type_code'];
+	              	if(!!localStorage[group_by]){
+	                    checked_total = (localStorage[group_by].split(',').indexOf(code+'') != -1)?'checked':'';
+	                }
+	              	str += '<li><label class="lb" for="total'+i+'">\
+	                      '+ name +'\
+	                      <span class="checkbox">\
+	                        <span class="input-radio '+ checked_total +'">\
+	                          <input type="radio" name="total" id="total'+i+'" value="'+ code +'" data-label="'+ name +'" />\
+	                          <span class="inner"></span>\
+	                        </span>\
+	                      </span></label>\
+	                    </li>';
+	          	}
+	            $('#panel-total ul').html(str);
+	            $(document).on("click", "#panel-total .close-panel.confirm_5", function() {
+	                var s = '';
+	                if($(this).parents('.panel').find('input[type=radio]').size() == $(this).parents('.panel').find('input[type=radio]:checked').size()){
+	                  	s = '全部统计方式';
+	                }else{
+	                  	$(this).parents('.panel').find('input[type=radio]:checked').each(function(){
+	                      	if(s != ''){
+	                          	s += ',';
+	                      	}
+	                      	s +=  $(this).attr('data-label');
+	                  	});
+	                }
+	                $('input[data-value="storage5"]').val(s);
+	                // sessionStorage.setItem('total5',s);
+	                $('.filter_total').html(s);
+	            });
+	            //判断 localStorage 缓存
+	            var filter_total = form_id + '_filter_total';
+	            if(!!localStorage[filter_total]){
+	              	$('.filter_total').html(localStorage[filter_total]);
+	              	$('input[data-value="storage5"]').val(localStorage[filter_total]);
+	              	if(!!localStorage[group_by]){
+	              		var group_by_arr = localStorage[group_by].split(',');
+		              	for(var i=0;i<group_by_arr.length;i++){
+		                	$("#panel-total ul li .input-radio input[value='"+group_by_arr[i]+"']").click();
+		              	}
+	              	}
+	            }else{
+	              	// 默认选中
+	              	$('#panel-total ul li:first-child .input-radio input').click();
+	            }
+	            $('#panel-total .close-panel.confirm_5').click(); 
+	        },
+	        error:    function(data){
+	          	console.log('error');
+	          	_error_handle(data);
+	        },
+	        complete: function(){
+	          	console.log('complete');
+	        },
+	        beforeSend : function(request){
+	          	request.setRequestHeader("token", token);
+	        }
+      	})
+	})
+</script>
+
+<!-- 日期 -->
+<!-- 开始/结束日期 -->
+<div class="condition_div">
+	<li>
+		<div>
+		 	<input type="date" data-toggle="date" class="datepicker" value="" name="start_at">
+		  	<span class="datepicker-split">-</span>
+		  	<input type="date" data-toggle="date" class="datepicker" value="" name="end_at">
+		</div>
+	</li>
+</div>
+<script>
+	jQuery(document).ready(function($){
+	    $('.condition_div li').appendTo($('#condition_ul'));
+
+	    var date = new Date();
+	    var didDate = date.setDate(date.getDate()-6);
+	    var year = date.getFullYear();
+	    var month = date.getMonth()+1;
+	    var day = date.getDate();
+	    if(String(month).length == 1){
+	      month = '0' + month;
+	    }
+	    if(String(day).length == 1){
+	      day = '0' + day;
+	    }
+	    var year_month_day = year + '-' + month + '-' + day +'';
+
+	    var start_date = form_id + '_start_date';
+	    var end_date = form_id + '_end_date';
+
+	    // startdate
+	    if(localStorage[start_date]){
+		    $('input[name=start_at]').val(localStorage[start_date]);
+		    $('.startDate').text(localStorage[start_date]);
+		}else{
+		  	$('input[name=start_at]').val(year_month_day);
+		  	$('.startDate').text($('input[name=start_at]').val());
+		}
+
+		// enddate
+		if(localStorage[start_date]){
+		    $('input[name=end_at]').val(localStorage[end_date]);
+		    $('.endDate').text(localStorage[end_date]);
+		}else{
+		  	$('input[name=end_at]').val(new Date().Format("yyyy-MM-dd"));
+    		$('.endDate').text($('input[name=end_at]').val());
+		}
+	})
+</script>
+
+<script>
+var xhr,xhr1;
+var _ID = 0;
+var _count ;//获取侧滑id
+var _NUM = {'product':0,'gift':0};
+var _time_interval = false;
+var shop_id = getUrlParameter('shop_id') * 1;
+var lang = getUrlParameter('lang');
+var back_url='index.html'+ '?shop_id=' + shop_id + '&lang=' + lang; 
+$('.back_a').attr('href',back_url);
+
+jQuery(document).ready(function($){
+  $('.nx-btn-product-search').click(function(){
+    var val = $.trim($('#productCode').val());
+    var r = /^\d+$/;
+
+    if(r.test(val) == true)  
+     {  
+        if(val.length < 6){
+          showError('SKU至少输入6位');
+          $('#productCode').focus();
+          return false;
+        }else{
+          clearError();
+        }
+     }  
+    else  
+    {  
+      if(val.length < 2){
+        showError('商品名称至少输入2个字符');
+        $('#productCode').focus();
+        return false;
+      }else{
+        clearError();
+      }
+    }  
+      tab2_click_callback();
+  })
+
+  var table_example;
+  var TABLE = '';
+  function reset(){
+    if(!!table_example){
+        table_example.destroy();
+    }
+    table_example='';
+    $('.data table').remove();
+    var t = TABLE.clone();
+    $('.data').append(t);
+  }
+  TABLE = $('.data table').clone();
+  var render_table_example1 = function(cols){
+    // if(!!table_example){
+    //   table_example.ajax.reload();
+    //   return;
+    // }
+    
+    var _columns = [];
+    var _columns_sort = ['shop_name'];
+    for(var i = 0; i < cols.length; i++){
+      if($.inArray(cols[i], _columns_sort) >= 0){
+        _columns.push({orderable:false});
+      }else{
+        _columns.push(null);
+      }
+    }
+
+    var tbody_height = $(window).height() - $('header')[0].clientHeight - $('section.filter')[0].clientHeight - 50 - $('section.count')[0].clientHeight - $('footer#mainFooter')[0].clientHeight;
+
+    table_example = $('#example').DataTable({
+      scrollX: '100%',
+      scrollY: tbody_height,
+      searching: false,
+      sort:true,
+      columns:_columns,
+      order:[],
+      "bProcessing" : true,  
+      "bServerSide" : true, 
+      ajax:{
+        url: API_URL_PREFIX+API_URL['sale_statistics'],
+        type: 'POST',
+        headers:{token:token},
+        dataType : "json",
+        contentType: "application/json",
+        data:function(d){
+          // showLoadingToast();
+          var shop_ids = [];
+          var shop_id = getShopId('shop_id=');
+          $('input[name=store5]:checked').each(function(){
+              shop_ids.push($(this).val()*1);
+          })
+          if(shop_ids.length == 0){
+            shop_ids.push(shop_id);
+          }
+
+          d.limit = d.length;
+          d.offset = d.start;
+          d.current_page = 1 + d.start / d.limit;
+          d.shop_ids = shop_ids;
+          d.start_date = $('input[name=start_at]').val();
+          d.end_date = $('input[name=end_at]').val();
+          d.group_by = $('input[name=total5]:checked').val();
+                
+          if(d.order.length > 0){
+            var _order_by = $('.dataTables_scrollHead th:eq('+d.order[0].column+')').attr('data-code');
+            var _is_desc = (d.order[0].dir == 'asc')?0:1;
+
+            d.order_by= _order_by;
+            d.is_desc= _is_desc;
+          }
+          return (JSON.stringify(d));
+        },
+        dataSrc:  function(data){
+          // data = data.data;
+          // $('.data_content').hide();
+          // hideLoadingToast();
+          records = [];
+          if(data['records']){
+            for(var i = 0 ; i < data['records'].length ; i ++){
+              var _data = [];
+                for(var j=0; j < cols.length; j++){
+                  _data.push(data['records'][i][cols[j]]);
+                }
+                records.push(_data);
+            }
+          }
+          window.scrollTo(0,0);
+          return records
+        },
+      },
+
+      "initComplete": function(settings, json) {
+        $('#mainFooter').html('');
+        $('#example_length').appendTo('#mainFooter');
+        $('#example_info').appendTo('#mainFooter');
+        $('#example_paginate').appendTo('#mainFooter');
+        is_show_footer(records);
+      },
+      "lengthMenu": [ [10 , 20, 50, 80], ["10 / 页","20 / 页","50 / 页","80 / 页"] ],
+      "language":   _LANG
+    });
+  }
+      
+  //click search
+  $('.nx-btn-display').click(function(){
+    $('.data_content').show();
+    // showLoadingToast();
+    flag = false;
+    $('.data').removeClass('hidden');
+    $('.allDate').html($('input[name=start_at]').val() +'至'+ $('input[name=end_at]').val() );
+    if($(this).hasClass('disabled')){
+        return;
+    }
+    $(this).addClass('disabled');
+    $(this).html('加载中');
+    reset();
+    var shop_ids = [];
+    var type = [];
+    var shop_id = getShopId('shop_id=');
+
+    $('input[name=store]:checked').each(function(){
+        shop_ids.push($(this).val()*1);
+    })
+    $('input[name=type]:checked').each(function(){
+        type.push($(this).val());
+    })
+    if(shop_ids.length == 0){
+      shop_ids.push(shop_id);
+    }
+
+    var data = {
+      "current_page":1,
+      limit:10,
+      shop_ids:shop_ids,
+      group_by:$('input[name=total]:checked').val(),
+      start_date:$('input[name=start_at]').val(),
+      end_date:$('input[name=end_at]').val(),
+    };
+
+    //条件放人缓存
+    setConditionlocalstorage('form5',data);
+
+    //销售统计查询
+    if(xhr){
+      xhr.abort();
+    }  
+    xhr = $.ajax({
+      url: API_URL_PREFIX+API_URL['sale_statistics'],
+      data: JSON.stringify(data),
+      type: 'POST',
+      dataType : "json",
+      contentType: "application/json",
+      success:  function(data){
+        $('.data_content').hide();
+        if(data.code != 0){
+          _error_handle(data);
+          return;
+        }
+        data = data.data;
+        var data_data = {
+            'record_count':'record_qty',
+            'page_count':'page_qty',
+            'sum_sale_count':'sale_total_qty',
+            'sum_sale_amount':'sale_total_amount',
+            'sum_customer_count':'member_qty',
+            'sum_avg_customer_amount':'avg_vpc',
+            'sum_avg_price':'avg_sale_amount',
+            'sum_bag_rate':'ipc'
+        }
+        for(var ss in data_data){
+            data[ss] = data[data_data[ss]];
+        }
+
+        records = [];
+        if(data['records']){
+          for(var i = 0 ; i < data['records'].length ; i ++){
+            records.push([
+              data['records'][i]['sale_code'],
+              data['records'][i]['brand'],
+              data['records'][i]['sale_count'],
+              data['records'][i]['sale_amount'],
+              data['records'][i]['stock_count'], 
+              data['records'][i]['stock_amount']
+            ])
+          }
+        }
+        var _data = {};
+        var cols = [];
+        var headers = [];
+        var records = [];
+        for(var i = 0 ; i < data.table_headers.length ;i++){
+            for(var ss in data.table_headers[i]){
+                headers.push({title : data.table_headers[i][ss]});
+                cols.push(ss);
+                if($('table thead tr').length == 1){
+                  $('table thead tr').append('<th data-code="'+ss+'">'+data.table_headers[i][ss]+'</th>');
+                }
+            }
+        }
+        for(var i = 0 ; i < data.records.length; i++){
+            var tmp = [];
+            for(var j=0;j<cols.length;j++){
+                tmp[j] = data.records[i][cols[j]];
+            }
+            records.push(tmp);
+        }
+        // _data.records = records;
+        // _data.headers = headers;
+        render_table_example1(cols);
+
+        // footer
+        var footer = '';
+        footer += '<span class="footerStyle"><span tkey="footer3_1"></span>:'+data.sum_sale_count+'</span>\
+        <span class="footerStyle"><span tkey="footer3_2"></span>:'+data.sum_sale_amount+'</span>\
+        <span class="footerStyle"><span tkey="footer3_3"></span>:'+data.sum_avg_price+'</span>\
+        <span class="footerStyle"><span tkey="footer3_4"></span>:'+data.sum_customer_count+'</span>\
+        <span class="footerStyle"><span tkey="footer3_5"></span>:'+data.sum_avg_customer_amount+'</span><br />\
+        <span class="footerStyle"><span tkey="footer3_6"></span>:'+data.sum_bag_rate+'</span>\
+        ' 
+        $('.footer').html(footer);
+        if (langs.indexOf(langCode) != -1){
+          $.getJSON('assets/lang/'+langCode+'.json', {},translate);
+        }else{
+          $.getJSON('assets/lang/cn.json', translate);
+        }
+
+      },
+      error:    function(data){
+        console.log('error');
+        _error_handle(data);
+      },
+      complete: function(){
+        console.log('complete');
+      },
+      beforeSend : function(request){
+        request.setRequestHeader("token", token);
+      }
+    })
+    $(this).removeClass('disabled');
+    $(this).html('查询');
+  })
+})
+</script>
+
+<script type="text/javascript">
+  document.title = '销售统计';
+</script>
+<script>
+var _paq = _paq || [];
+
+_paq.push(['enableLinkTracking', true]);
+(function() {
+    try {
+        var SiteId = getUrlParameter('SiteId');
+        var UserId = getUrlParameter('UserId') || '';
+        var Appversion = getUrlParameter('Appversion');
+        var Platform = getUrlParameter('Platform');
+        var ShopName = getUrlParameter('ShopName');
+        var TenantName = getUrlParameter('tenant_name');
+        var TenantID = getUrlParameter('tenant_id');
+        // 如果SiteId是false,则不发送Piwik数据
+        if(SiteId == '' || SiteId == false){
+            return
+        }
+        var u="//a.nexttao.com/";
+        // 当url为空不发送
+        if(u == "" || u == "false" || u == false){
+            return
+        }
+
+        if(!!UserId){
+            _paq.push(['setUserId', UserId]);
+        }
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', SiteId]);
+        _paq.push(['setDocumentTitle', '促销规则查询']);
+
+        _paq.push(['setCustomVariable',"5","AppVersion",P_CV.AppVersion,'page']);
+
+        // _paq.push(['setCustomVariable',"1","App version",Appversion]);
+        // _paq.push(['setCustomVariable',"2","Platform",Platform]);
+        // _paq.push(['setCustomVariable',"3","ShopName",ShopName]);
+        // _paq.push(['setCustomVariable',"4","TenantID",TenantName]);
+        // _paq.push(['setCustomVariable',"5", "TenantName", TenantName]);
+        _paq.push(['trackPageView']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    }catch (e){
+        console.log(e);
+    }
+})();
+</script>
+
+</body>
+</html>
